@@ -9,7 +9,7 @@
     public class ManagerTests
     {
 
-        private string jsonString = @"{""id"":""FAC2SOUTHX"",""name"":""South District MW        "",""description"":""South District MW                                           "",""selected"":true,""required"":false,""sortOrder"":10}";
+        private string jsonString = @"{""paths"":{""templates"":""name""}}";
 
         [SetUp]
         public void Setup()
@@ -28,7 +28,7 @@
         {
             dynamic config = Indd.Helper.Json.Convert.deserializeObject(this.jsonString);
 
-            Assert.NotNull(config.id);
+            Assert.NotNull(config.paths.templates);
         }
     }
 }

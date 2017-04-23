@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using InDesignServer;
 using ConfigMananger = Indd.Service.Config.Manager;
-
+using Indd.Service.IndesignServerWrapper;
 using Indd.Service.Commandline.Validator.Options;
 
 namespace Indd
@@ -21,6 +18,10 @@ namespace Indd
             string templatePath = result.Value.InputFile;
 
             string templateStoragePath = ConfigMananger.getStoragePath("templates");
+
+            ApplicationMananger manager = new ApplicationMananger();
+
+            InDesignServer.Application app = manager.createInstance();
         }  
     }
 }
