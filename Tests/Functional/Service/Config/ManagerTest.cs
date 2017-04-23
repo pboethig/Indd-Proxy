@@ -1,10 +1,8 @@
-﻿namespace Indd.Tests.Functional.Config
+﻿namespace Indd.Tests.Functional.Service.Config
 {
-    using System;
     using NUnit.Framework;
     using ConfigManager = Indd.Service.Config.Manager;
-    using System.Xml.Linq;
-
+    
     [TestFixture]
     public class ManagerTests
     {

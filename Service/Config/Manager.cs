@@ -41,8 +41,10 @@ namespace Indd.Service.Config
         public static dynamic load(string path)
         {
             string filePath = getRootDirectory() + "\\" + path + ".json";
+            
+            string fileContent = File.ReadAllText(filePath);
 
-            return JsonConvert.DeserializeObject<dynamic>(File.ReadAllText(filePath));
+            return Indd.Helper.Json.Convert.deserializeObject(fileContent);
         }
 
         /// <summary>
