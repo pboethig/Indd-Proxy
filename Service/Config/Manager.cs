@@ -1,6 +1,4 @@
 ﻿using System.IO;
-using System.Xml.Linq;
-using Newtonsoft.Json;
 
 /// <summary>
 /// Contains userconfiguration handler

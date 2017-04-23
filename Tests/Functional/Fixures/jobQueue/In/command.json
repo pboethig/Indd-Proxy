@@ -1,0 +1,12 @@
+[  
+   {  
+      "name":"GenerateProxy",
+      "sourcePath":"Z:\\indd\\templates\\1\\1.indd",
+      "notifyUrl":"http://www.test.de"
+   },
+  {
+    "name": "GenerateProxy",
+    "sourcePath": "Z:\\indd\\templates\\2\\2.indd",
+    "notifyUrl": "http://www.test.de"
+  }
+]

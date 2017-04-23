@@ -1,27 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using ConfigMananger = Indd.Service.Config.Manager;
-using Indd.Service.IndesignServerWrapper;
-using Indd.Service.Commandline.Validator.Options;
+using Indd.Contracts;
+using System.Collections.Generic;
+using CommandLine;
+using Indd.Service.Commands;
+using CliRequest = Indd.Cli.Request.CommandList;
 
+/// <summary>
+/// Handles Incomming cli requests
+/// </summary>
 namespace Indd
 {
+
+    /// <summary>
+    /// Implements main function
+    /// </summary>
     class Proxy
     {
         static void Main(string[] args)
         {
-            var result = CommandLine.Parser.Default.ParseArguments<GenerateProxy>(args);
+            Factory commandFactory = new Factory();
 
-            if (result.Errors.Any()) Console.WriteLine("Press any key to continue"); Console.ReadKey();
+            var result = CliRequest.validate(args);
 
-            string templatePath = result.Value.InputFile;
+            dynamic commandRequests = CliRequest.getCommandList(result.Value.InputFile);
 
-            string templateStoragePath = ConfigMananger.getStoragePath("templates");
+            List<ICommand> commandList  = commandFactory.buildCommandList(commandRequests);
+            
+            //ApplicationMananger manager = new ApplicationMananger();
 
-            ApplicationMananger manager = new ApplicationMananger();
+            //InDesignServer.Application app = manager.createInstance();
 
-            InDesignServer.Application app = manager.createInstance();
-        }  
+        }
     }
 }
