@@ -12,5 +12,10 @@
 - Create a volumne with Z: following path on on your windows: Z:\\indd\\templates
 
 ### Run Tests
-- In Testwindow you can run all nunit tests
+- In Testwindow you can nnow run all nunit tests. All Tests are passed green means, you have installed everything right.
 
+
+### current state
+- Commandline abstraction works 
+- Central storageconfig gets loaded
+- Adobe IndesignServer instance gets crearted successfully
