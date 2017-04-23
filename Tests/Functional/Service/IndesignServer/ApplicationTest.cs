@@ -20,11 +20,15 @@
         [Test]
         public void ApplicationManager_createInstance()
         {
+            for(int i = 0; i < 100; i++) { 
+
             ApplicationMananger manager = new ApplicationMananger();
 
             InDesignServer.Application app = manager.createInstance();
 
             Assert.IsNotNull(app);
+
+            }
         }
     }
 }
