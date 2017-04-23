@@ -3,13 +3,19 @@
 
 ### Prerequissites
 - Visual Studio 2017 64 Bit
+- Installed Adobe Indesign Server (cc2017). Should work with 2015, 2016 too
 
 ### Install
-- Clone repo
-- Open Visual Studio
-- Open Project "Indd.sln"
+- Open Project "Indd.sln" in Visual Studio
 - Project->create
- 
-### Run Tests
-- In Testwindow you can run all nunit tests
+- Follow this short tutorial to add InDesignServer.dll to your references: http://magento2-tuts.blogspot.de/2017/04/connect-to-indesignserver-api-with-c-in.html 
+- Create a volumne with Z: following path on on your windows: Z:\\indd\\templates
 
+### Run Tests
+- In Testwindow you can nnow run all nunit tests. All Tests are passed green means, you have installed everything right.
+
+
+### current state
+- Commandline abstraction works 
+- Central storageconfig gets loaded
+- Adobe IndesignServer instance gets crearted successfully
