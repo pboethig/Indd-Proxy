@@ -18,7 +18,7 @@ namespace Indd.Service.Config
         /// <returns>XDocument</returns>
         public static dynamic getStoragePath(string path)
         {
-             dynamic config = load("storage");
+            dynamic config = load("storage");
 
             dynamic paths = config.paths;
             

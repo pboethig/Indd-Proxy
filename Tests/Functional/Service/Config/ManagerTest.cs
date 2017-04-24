@@ -2,7 +2,8 @@
 {
     using NUnit.Framework;
     using ConfigManager = Indd.Service.Config.Manager;
-    
+    using System;
+    using System.Security.Principal;
     [TestFixture]
     public class ManagerTests
     {
@@ -36,7 +37,7 @@
         {
             string templateStoragePath = ConfigManager.getStoragePath("templates");
             
-            Assert.IsTrue(System.IO.Directory.Exists(templateStoragePath));
+            Assert.IsTrue(System.IO.Directory.Exists("Z:\\indd\\templates"));
         }
 
         [Test]

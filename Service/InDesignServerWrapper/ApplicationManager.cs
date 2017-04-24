@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using InDesignServer;
-
+using Indd.Service.Log;
 
 namespace Indd.Service.IndesignServerWrapper
 {
@@ -21,9 +17,18 @@ namespace Indd.Service.IndesignServerWrapper
         {
             Type type = Type.GetTypeFromProgID("InDesignServer.Application");
 
-            Application app = (Application)Activator.CreateInstance(type, true);
+            try
+            {
+                return (Application)Activator.CreateInstance(type, true); 
+            }
+            catch (System.Exception ex)
+            {
+                Syslog.log("could not get IndesignServer instance: " + ex.Message);
 
-            return app;
+                Environment.Exit(0);
+            }
+
+            return null;
         }
     }
 }

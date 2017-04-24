@@ -59,8 +59,10 @@
     <Compile Include="Service\Commands\Factory.cs" />
     <Compile Include="Service\Commands\GenerateProxy.cs" />
     <Compile Include="Service\InDesignServerWrapper\ApplicationManager.cs" />
+    <Compile Include="Service\Log\Syslog.cs" />
     <Compile Include="Tests\Functional\Cli\CommandLineRequestTest.cs" />
     <Compile Include="Tests\Functional\Helper\Json\ConvertTest.cs" />
+    <Compile Include="Tests\Functional\Log\SyslogTest.cs" />
     <Compile Include="Tests\Functional\Service\IndesignServer\ApplicationTest.cs" />
     <None Include=".gitignore" />
     <None Include="jobqueues.json">

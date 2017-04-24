@@ -2,7 +2,7 @@
 using System.Linq;
 using Indd.Service.Commands;
 using CommandLine;
-using ConfigManager = Indd.Service.Config;
+using Indd.Service.Log;
 
 namespace Indd.Cli.Request
 {
@@ -37,9 +37,13 @@ namespace Indd.Cli.Request
 
             if (!System.IO.File.Exists(result.Value.InputFile))
             {
+                string message = "input file not found: " + result.Value.InputFile; 
+
+                Syslog.log(message); 
+
                 if (result.Value.Silent == false)
                 {
-                    Console.WriteLine("input file not found: " + result.Value.InputFile); Console.ReadKey();
+                    Console.WriteLine(message); Console.ReadKey();
                 }
                 else
                 {
