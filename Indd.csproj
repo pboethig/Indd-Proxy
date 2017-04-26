@@ -57,7 +57,7 @@
     <Compile Include="Contracts\ICommand.cs" />
     <Compile Include="Service\Commands\Abstract.cs" />
     <Compile Include="Service\Commands\Factory.cs" />
-    <Compile Include="Service\Commands\GenerateProxy.cs" />
+    <Compile Include="Service\Commands\OpenDocument.cs" />
     <Compile Include="Service\InDesignServerWrapper\ApplicationManager.cs" />
     <Compile Include="Service\Log\Syslog.cs" />
     <Compile Include="Tests\Functional\Cli\CommandLineRequestTest.cs" />

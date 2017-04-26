@@ -8,15 +8,30 @@ namespace Indd.Service.Commands {
     /// Options to generate proxy
     /// </summary>
 
-    class GenerateProxy : Abstract,  Contracts.ICommand
+    class OpenDocument : Abstract,  Contracts.ICommand
     {
         /// <summary>
         /// Saves dynamic command 
         /// </summary>
         /// <param name="commandRequests"></param>
-        public GenerateProxy(dynamic commandRequest) : base ((object)commandRequest)
+        public OpenDocument(dynamic commandRequest) : base ((object)commandRequest)
         {
            
+        }
+
+        public override bool execute()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool notify()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool saveResponse()
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -30,5 +45,8 @@ namespace Indd.Service.Commands {
             
             return true;
         }
+
+
+
     }
 }

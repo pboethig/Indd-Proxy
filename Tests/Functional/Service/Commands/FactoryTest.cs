@@ -30,7 +30,7 @@
 
             List<Indd.Contracts.ICommand> commandObjectList = commandFactory.buildCommandObjectList(commandList);
 
-            Assert.AreEqual(3, commandObjectList.Count);
+            Assert.AreEqual(1, commandObjectList.Count);
         }
     }
 }

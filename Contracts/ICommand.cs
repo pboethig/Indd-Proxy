@@ -18,8 +18,25 @@ namespace Indd.Contracts
         /// Validates the commandRequest
         /// </summary>
         /// <param name="args"></param>
-        /// <returns>dynamic</returns>
+        /// <returns>bool</returns>
          bool validateRequest();
-        
+
+        /// <summary>
+        /// Executes commandlogic
+        /// </summary>
+        /// <returns>bool</returns>
+        bool execute();
+
+        /// <summary>
+        /// Saves the response object in out queue
+        /// </summary>
+        /// <returns>bool</returns>
+        bool saveResponse();
+
+        /// <summary>
+        /// Notifies clients
+        /// </summary>
+        /// <returns></returns>
+        bool notify();
     }
 }

@@ -28,9 +28,22 @@ namespace Indd.Service.Commands
             
             foreach(dynamic request in commandRequests)
             {
-                ICommand command = new GenerateProxy(request);
+                string className = "Indd.Service.Commands." + request.classname;
                 
-                list.Add(command);
+                try
+                {
+                    Type myType = Type.GetType(className);
+
+                    ICommand command = Activator.CreateInstance(myType, request );
+
+                    list.Add(command);
+                }
+                catch (System.Exception ex)
+                {
+                    string message = "CommandError: " + className + " Inner Message: " + ex.Message; 
+
+                    Indd.Service.Log.Syslog.log(message);
+                }
             }
 
             return list;

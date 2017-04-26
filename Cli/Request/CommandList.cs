@@ -33,7 +33,7 @@ namespace Indd.Cli.Request
         public static dynamic validate(string[] args)
         {
             var result = CommandLine.Parser.Default.ParseArguments<CommandList>(args);
-            if (result.Errors.Any()) Console.WriteLine("Press any key to continue"); Console.ReadKey();
+            if (result.Errors.Any()) Console.WriteLine("Press any key to continue");
 
             if (!System.IO.File.Exists(result.Value.InputFile))
             {
@@ -43,12 +43,11 @@ namespace Indd.Cli.Request
 
                 if (result.Value.Silent == false)
                 {
-                    Console.WriteLine(message); Console.ReadKey();
+                    Console.WriteLine(message);
+                    Console.ReadKey();
                 }
-                else
-                {
-                    Environment.Exit(0);
-                }
+
+                Environment.Exit(0);
             }
             
             return result;

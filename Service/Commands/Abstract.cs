@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Linq;
-using Indd.Service.Commands;
-using CommandLine;
-using System.ComponentModel;
 using Newtonsoft.Json;
 
 namespace Indd.Service.Commands
@@ -11,7 +7,7 @@ namespace Indd.Service.Commands
     /// <summary>
     /// Preimplementation for registered commands
     /// </summary>
-    public abstract class Abstract
+    public abstract class Abstract : Indd.Contracts.ICommand
     {
 
         // Area is a read-only property - only a get accessor is needed:
@@ -49,6 +45,35 @@ namespace Indd.Service.Commands
 
                 this.classname = this.commandRequest.classname;
             }
+
+            try
+            {
+                ///call following methods on child commands
+                this.execute();
+
+                this.saveResponse();
+
+                this.notify();
+            }
+            catch (System.Exception ex)
+            {
+                Indd.Service.Log.Syslog.log("JobticketException: " + this.classname + " throws an Error. Inner Exception:" + ex.Message);
+            }
+        }
+
+        public virtual bool execute()
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual bool notify()
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual bool saveResponse()
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -72,9 +97,7 @@ namespace Indd.Service.Commands
             }
             catch(System.Exception ex)
             {
-                Indd.Service.Log.Syslog.log("Malformat jobticket found. Message:  "  
-                    +  ex.Message + "original jobticket: " 
-                    + JsonConvert.SerializeObject(this.commandRequest));
+                Indd.Service.Log.Syslog.log("Malformat jobticket found. Message:  "  +  ex.Message + "original jobticket: " + JsonConvert.SerializeObject(this.commandRequest));
             }
             
             return true;
