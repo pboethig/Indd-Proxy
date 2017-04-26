@@ -19,7 +19,7 @@ namespace Indd.Contracts
         /// </summary>
         /// <param name="args"></param>
         /// <returns>dynamic</returns>
-         dynamic validateRequest(dynamic args);
+         bool validateRequest();
         
     }
 }

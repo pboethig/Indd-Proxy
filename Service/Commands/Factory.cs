@@ -6,13 +6,15 @@ using System.Collections.Generic;
 /// <summary>
 /// Handles Commands
 /// </summary>
-namespace Indd.Service.Commands {
+namespace Indd.Service.Commands
+{
 
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class Factory :  Abstract
+    class Factory
     {
+       
         public List<ICommand> commands { get; set; }
 
         /// <summary>
@@ -20,21 +22,18 @@ namespace Indd.Service.Commands {
         /// </summary>
         /// <param name="args"></param>
         /// <returns></returns>
-        public List<ICommand> buildCommandList(dynamic commandRequests)
+        public List<ICommand> buildCommandObjectList(dynamic commandRequests)
         {
             List<ICommand> list = new List<ICommand>();
             
             foreach(dynamic request in commandRequests)
             {
-                ICommand command = new GenerateProxy();
-
-                command.validateRequest(request);
-
+                ICommand command = new GenerateProxy(request);
+                
                 list.Add(command);
             }
 
             return list;
         }
-
     }
 }

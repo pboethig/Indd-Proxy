@@ -61,10 +61,7 @@ namespace Indd.Cli.Request
         /// <returns>dynamic</returns>
         public static dynamic getCommandList(string filePath)
         {
-            dynamic commandList = Indd.Helper.Json.Convert.deserializeObject(System.IO.File.ReadAllText(filePath));
-
-            return commandList;
-
+            return Indd.Helper.Json.Convert.deserializeObject(System.IO.File.ReadAllText(filePath));
         }
     }
 }

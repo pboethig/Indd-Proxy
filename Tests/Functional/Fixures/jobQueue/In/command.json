@@ -1,12 +1,29 @@
-[  
-   {  
-      "name":"GenerateProxy",
-      "sourcePath":"Z:\\indd\\templates\\1\\1.indd",
-      "notifyUrl":"http://www.test.de"
-   },
+[
   {
-    "name": "GenerateProxy",
-    "sourcePath": "Z:\\indd\\templates\\2\\2.indd",
-    "notifyUrl": "http://www.test.de"
+    "classname": "OpenDocument",
+    "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+    "version": "1.0"
+  },
+  {
+    "classname": "GenerateProxy",
+    "uuid": "c2335de-5040-3283-3975-f675ed23bd9h",
+    "version": "1.0",
+    "notifyUrl": [ "http://www.test.de", "http://www.test.de" ],
+    "notifyData": [
+      {
+        "filePath": "${sharePath}\\c2335de-5040-3283-3975-f675ed23bd9h\\proxy.json"
+      }
+    ]
+  },
+  {
+    "classname": "CreateCopy",
+    "uuid": "c2335de-5040-3283-3975-f675ed23bd9h",
+    "version": "1.0",
+    "notifyUrl": [ "http://www.test.de", "http://www.test.de" ],
+    "notifyData": [
+      {
+        "uuid": "c2335de-5040-3283-3975-f675ed23bd9h"
+      }
+    ]
   }
 ]

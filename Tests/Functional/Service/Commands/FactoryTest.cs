@@ -1,10 +1,13 @@
 ﻿namespace Indd.Tests.Functional.Service.IndesignServer
 {
     using NUnit.Framework;
+    using Indd.Service.Commands;
     using CliRequest = Indd.Cli.Request.CommandList;
+    using System.Collections.Generic;
+
 
     [TestFixture]
-    public class CommandLineRequestTest
+    public class FactoryTest
     {
         [SetUp]
         public void Setup()
@@ -15,22 +18,19 @@
         public void TearDown()
         {
         }
-        
+
         [Test]
-        public void CliRequestCommandline_getCommandList()
+        public void CommandFactory_buildCommandObjectList()
         {
             string filePath = Indd.Service.Config.Manager.getRootDirectory() + "../../../Tests/Functional/Fixures/jobQueue/In/command.json";
-            
-            dynamic commandList = CliRequest.getCommandList(filePath);
 
-            foreach (dynamic command in commandList)
-            {
-                Assert.NotNull(command.classname);
+            object commandList = CliRequest.getCommandList(filePath);
 
-                Assert.NotNull(command.uuid);
+            Factory commandFactory = new Factory();
 
-                Assert.NotNull(command.version);
-            }
+            List<Indd.Contracts.ICommand> commandObjectList = commandFactory.buildCommandObjectList(commandList);
+
+            Assert.AreEqual(3, commandObjectList.Count);
         }
     }
 }
