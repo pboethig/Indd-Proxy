@@ -22,7 +22,9 @@
         [Test]
         public void CommandFactory_buildCommandObjectList()
         {
-            string filePath = Indd.Service.Config.Manager.getRootDirectory() + "../../../Tests/Functional/Fixures/jobQueue/In/command.json";
+            string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
+
+            string filePath = Indd.Service.Config.Manager.getRootDirectory() + "../../../Tests/Functional/Fixures/jobQueue/In/"+testuuid+".json";
 
             object commandList = CliRequest.getCommandList(filePath);
 

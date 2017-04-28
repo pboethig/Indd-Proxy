@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Linq;
-using Indd.Service.IndesignServerWrapper;
 using Indd.Contracts;
 using System.Collections.Generic;
 /// <summary>
@@ -8,13 +6,11 @@ using System.Collections.Generic;
 /// </summary>
 namespace Indd.Service.Commands
 {
-
     /// <summary>
     /// Options to generate proxy
     /// </summary>
     class Factory
     {
-       
         public List<ICommand> commands { get; set; }
 
         /// <summary>

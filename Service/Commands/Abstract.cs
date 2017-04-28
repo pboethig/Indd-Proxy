@@ -1,5 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
+using Indd.Service.IndesignServerWrapper;
+using ConfigManager=Indd.Service.Config.Manager;
 
 namespace Indd.Service.Commands
 {
@@ -28,6 +30,15 @@ namespace Indd.Service.Commands
         /// </summary>
         public string version;
 
+        /// <summary>
+        /// Path to document
+        /// </summary>
+        public string documentPath;
+
+        /// <summary>
+        /// Indesign Server application
+        /// </summary>
+        public InDesignServer.Application application;
 
         /// <summary>
         /// Stores request and starts validation
@@ -44,6 +55,10 @@ namespace Indd.Service.Commands
                 this.version = this.commandRequest.version;
 
                 this.classname = this.commandRequest.classname;
+                
+                this.application = (new ApplicationMananger()).createInstance();
+
+                this.setDocumentPath(this.buildDocumentPath());
             }
 
             try
@@ -59,6 +74,38 @@ namespace Indd.Service.Commands
             {
                 Indd.Service.Log.Syslog.log("JobticketException: " + this.classname + " throws an Error. Inner Exception:" + ex.Message);
             }
+        }
+
+        /// <summary>
+        /// Builds documentPath
+        /// </summary>
+        /// <returns></returns>
+        public string buildDocumentPath()
+        {
+            string path = ConfigManager.getStoragePath("templates") + "/" + this.uuid + "/" + this.version + ".indd";
+
+            try
+            {
+                if (!System.IO.File.Exists(path))
+                {
+                    throw new System.Exception("document: " + this.documentPath + " not found");
+                }
+            }
+            catch (System.Exception ex)
+            {
+                Indd.Service.Log.Syslog.log(ex.Message);
+            }
+
+            return path;
+        }
+
+        /// <summary>
+        /// builds the document path
+        /// </summary>
+        /// <param name="path"></param>
+        public virtual void setDocumentPath(string path)
+        {
+            this.documentPath = path;
         }
 
         public virtual bool execute()

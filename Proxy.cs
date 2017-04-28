@@ -29,6 +29,11 @@ namespace Indd
 
             commandFactory.buildCommandObjectList(commandList);
 
+            foreach (Indd.Contracts.ICommand command in commandList)
+            {
+                command.execute();
+            }
+
             //ApplicationMananger manager = new ApplicationMananger();
 
             //InDesignServer.Application app = manager.createInstance();

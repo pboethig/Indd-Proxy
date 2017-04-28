@@ -19,7 +19,9 @@
         [Test]
         public void CliRequestCommandline_getCommandList()
         {
-            string filePath = Indd.Service.Config.Manager.getRootDirectory() + "../../../Tests/Functional/Fixures/jobQueue/In/command.json";
+            string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
+
+            string filePath = Indd.Service.Config.Manager.getRootDirectory() + "../../../Tests/Functional/Fixures/jobQueue/In/"+ testuuid + ".json";
             
             dynamic commandList = CliRequest.getCommandList(filePath);
 

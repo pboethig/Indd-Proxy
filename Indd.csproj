@@ -63,6 +63,7 @@
     <Compile Include="Tests\Functional\Cli\CommandLineRequestTest.cs" />
     <Compile Include="Tests\Functional\Helper\Json\ConvertTest.cs" />
     <Compile Include="Tests\Functional\Log\SyslogTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\OpenDocumentTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\FactoryTest.cs" />
     <Compile Include="Tests\Functional\Service\IndesignServer\ApplicationTest.cs" />
     <None Include=".gitignore" />
@@ -78,19 +79,21 @@
     <Compile Include="Proxy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\Functional\Service\Config\ManagerTest.cs" />
-    <None Include="Tests\Functional\Fixures\jobQueue\In\command.json">
+    <None Include="Tests\Functional\Fixures\jobQueue\In\c2335ce8-7000-4287-8972-f355ed23bd7f.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Tests\Functional\Fixures\templates\1\1.indd" />
-    <None Include="Tests\Functional\Fixures\templates\1\TC9990701-IMG01.eps" />
-    <None Include="Tests\Functional\Fixures\templates\1\TC9990701-IMG05.eps" />
-    <None Include="Tests\Functional\Fixures\templates\1\TC9990701-IMG06.eps" />
-    <None Include="Tests\Functional\Fixures\templates\1\TC9990701-IMG07.eps" />
-    <None Include="Tests\Functional\Fixures\templates\1\TC9990701-IMG08.eps" />
-    <None Include="Tests\Functional\Fixures\templates\1\TC9990701-IMG09.eps" />
-    <None Include="Tests\Functional\Fixures\templates\1\TC9990701-LAYOUT-PI2.indd" />
-    <None Include="Tests\Functional\Fixures\templates\1\TC9990701-LAYOUT-PI3.indd" />
-    <None Include="Tests\Functional\Fixures\templates\1\TC9990701-PREVIEW.pdf" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG01.eps" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG05.eps" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG06.eps" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG07.eps" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG08.eps" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG09.eps" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-LAYOUT-PI2.indd" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-LAYOUT-PI3.indd" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-PREVIEW.pdf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -116,9 +119,9 @@
     <Folder Include="Tests\Functional\Fixures\jobQueue\Out\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Tests\Functional\Fixures\templates\1\TC9990701-IMG02.jpg" />
-    <Content Include="Tests\Functional\Fixures\templates\1\TC9990701-IMG03.jpg" />
-    <Content Include="Tests\Functional\Fixures\templates\1\TC9990701-IMG04.jpg" />
+    <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG02.jpg" />
+    <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG03.jpg" />
+    <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG04.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

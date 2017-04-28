@@ -1,15 +1,21 @@
 ﻿using System;
 using System.Linq;
 using CommandLine;
+using Indd.Service.IndesignServerWrapper;
+
 
 namespace Indd.Service.Commands {
 
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-
     class OpenDocument : Abstract,  Contracts.ICommand
     {
+        /// <summary>
+        /// current document
+        /// </summary>
+        public InDesignServer.Document document;
+
         /// <summary>
         /// Saves dynamic command 
         /// </summary>
@@ -19,19 +25,36 @@ namespace Indd.Service.Commands {
            
         }
 
+        /// <summary>
+        /// Open a document, if its not allready open
+        /// </summary>
+        /// <returns></returns>
         public override bool execute()
         {
-            throw new NotImplementedException();
+            foreach (InDesignServer.Document openDocument in this.application.Documents)
+            {
+                if (openDocument.Name == this.version + ".indd")
+                {
+                    this.document = openDocument;
+
+                    return true;
+
+                }
+            }
+
+            this.document = this.application.Open(this.documentPath);
+
+            return true;
         }
 
         public override bool notify()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public override bool saveResponse()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         /// <summary>
@@ -45,8 +68,5 @@ namespace Indd.Service.Commands {
             
             return true;
         }
-
-
-
     }
 }
