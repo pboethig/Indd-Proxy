@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using Indd.Service.IndesignServerWrapper;
 using ConfigManager=Indd.Service.Config.Manager;
+using Indd.Helper.Dynamic;
 
 namespace Indd.Service.Commands
 {
@@ -36,6 +37,11 @@ namespace Indd.Service.Commands
         public string documentPath;
 
         /// <summary>
+        /// if true a InDesignServerInstance will be started
+        /// </summary>
+        public bool serverless = false;
+
+        /// <summary>
         /// Indesign Server application
         /// </summary>
         public InDesignServer.Application application;
@@ -48,19 +54,16 @@ namespace Indd.Service.Commands
         {
             this.commandRequest = _commandRequests;
 
-            if (this.validateRequest() == true)
-            {
-                this.uuid = this.commandRequest.uuid;
+            this.init();
+        }
 
-                this.version = this.commandRequest.version;
 
-                this.classname = this.commandRequest.classname;
-                
-                this.application = (new ApplicationMananger()).createInstance();
-
-                this.setDocumentPath(this.buildDocumentPath());
-            }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public virtual bool processSequence()
+        {
             try
             {
                 ///call following methods on child commands
@@ -74,6 +77,44 @@ namespace Indd.Service.Commands
             {
                 Indd.Service.Log.Syslog.log("JobticketException: " + this.classname + " throws an Error. Inner Exception:" + ex.Message);
             }
+
+            return true;
+        }
+
+        /// <summary>
+        /// INitializes this
+        /// </summary>
+        private void init()
+        {
+            if (this.validateRequest() == true)
+            {
+                this.uuid = this.commandRequest.uuid;
+
+                this.version = this.commandRequest.version;
+
+                this.classname = this.commandRequest.classname;
+
+                if (Property.isset("serverless", this.commandRequest))
+                {
+                    this.serverless = commandRequest.serverless;
+                }
+
+                this.buildServerInstance();
+
+                this.setDocumentPath(this.buildDocumentPath());
+            }
+        }
+
+        /// <summary>
+        /// Build serverinstance if command needs one
+        /// </summary>
+        private void buildServerInstance()
+        {
+            if (this.serverless) {
+                return;
+            }
+
+            this.application = (new ApplicationMananger()).createInstance();
         }
 
         /// <summary>

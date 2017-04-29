@@ -38,5 +38,11 @@ namespace Indd.Contracts
         /// </summary>
         /// <returns></returns>
         bool notify();
+
+        /// <summary>
+        /// runs  sequence of commando factory pipeline
+        /// </summary>
+        /// <returns></returns>
+        bool processSequence();
     }
 }

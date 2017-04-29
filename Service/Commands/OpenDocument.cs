@@ -20,10 +20,7 @@ namespace Indd.Service.Commands {
         /// Saves dynamic command 
         /// </summary>
         /// <param name="commandRequests"></param>
-        public OpenDocument(dynamic commandRequest) : base ((object)commandRequest)
-        {
-           
-        }
+        public OpenDocument(dynamic commandRequest) : base ((object)commandRequest){}
 
         /// <summary>
         /// Open a document, if its not allready open
@@ -38,7 +35,6 @@ namespace Indd.Service.Commands {
                     this.document = openDocument;
 
                     return true;
-
                 }
             }
 

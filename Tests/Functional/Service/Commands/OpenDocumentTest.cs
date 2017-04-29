@@ -28,10 +28,8 @@
             dynamic commandRequest = new { classname = "OpenDocument", uuid = testuuid, version = "1.0" };
             
             string filePath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/"+ testuuid + "/" +commandRequest.version+".indd";
-
-            Indd.Service.Log.Syslog.log(filePath);
             
-            for(int i = 0; i < 10; i++)
+            for(int i = 0; i < 100; i++)
             {
                 OpenDocument openDocumentCommand = new Indd.Service.Commands.OpenDocument(commandRequest);
 

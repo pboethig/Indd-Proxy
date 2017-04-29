@@ -31,7 +31,7 @@ namespace Indd
 
             foreach (Indd.Contracts.ICommand command in commandList)
             {
-                command.execute();
+                command.processSequence();
             }
 
             //ApplicationMananger manager = new ApplicationMananger();

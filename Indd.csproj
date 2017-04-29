@@ -55,18 +55,22 @@
   <ItemGroup>
     <Compile Include="Cli\Request\CommandList.cs" />
     <Compile Include="Contracts\ICommand.cs" />
+    <Compile Include="Helper\Dynamic\Property.cs" />
+    <Compile Include="Helper\IO\Directory.cs" />
     <Compile Include="Service\Commands\Abstract.cs" />
     <Compile Include="Service\Commands\Factory.cs" />
+    <Compile Include="Service\Commands\CreateCopy.cs" />
     <Compile Include="Service\Commands\OpenDocument.cs" />
     <Compile Include="Service\InDesignServerWrapper\ApplicationManager.cs" />
     <Compile Include="Service\Log\Syslog.cs" />
     <Compile Include="Tests\Functional\Cli\CommandLineRequestTest.cs" />
     <Compile Include="Tests\Functional\Helper\Json\ConvertTest.cs" />
     <Compile Include="Tests\Functional\Log\SyslogTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\CreateCopyTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\OpenDocumentTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\FactoryTest.cs" />
     <Compile Include="Tests\Functional\Service\IndesignServer\ApplicationTest.cs" />
-    <None Include=".gitignore" />
+    <None Include="Cli\.gitignore" />
     <None Include="jobqueues.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
