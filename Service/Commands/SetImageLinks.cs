@@ -2,14 +2,15 @@
 using System.Linq;
 using CommandLine;
 using Indd.Service.IndesignServerWrapper;
-
+using System.Collections.Generic;
+using Microsoft.VisualBasic;
 
 namespace Indd.Service.Commands {
 
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class OpenDocument : Abstract,  Contracts.ICommand
+    class SetImageLinks : Abstract,  Contracts.ICommand
     {
         /// <summary>
         /// current document
@@ -17,10 +18,15 @@ namespace Indd.Service.Commands {
         public InDesignServer.Document document;
 
         /// <summary>
+        /// BasePath of linked assets
+        /// </summary>
+        public Dictionary<string, string> frameToImageLinkMap;
+
+        /// <summary>
         /// Saves dynamic command 
         /// </summary>
         /// <param name="commandRequests"></param>
-        public OpenDocument(dynamic commandRequest) : base ((object)commandRequest){}
+        public SetImageLinks(dynamic commandRequest) : base ((object)commandRequest){}
 
         /// <summary>
         /// Open a document, if its not allready open
@@ -28,34 +34,24 @@ namespace Indd.Service.Commands {
         /// <returns></returns>
         public override bool execute()
         {
+            dynamic openDocumentCommandRequest = new { classname = "OpenDocument", uuid = this.uuid, version = "1.0" };
 
+            Indd.Service.Commands.OpenDocument openDocumentCommand = new Indd.Service.Commands.OpenDocument(openDocumentCommandRequest);
+
+            openDocumentCommand.processSequence();
+
+            this.document = openDocumentCommand.document;
+            
             try
             {
-                if (this.application == null)
-                {
-                    this.application = (new ApplicationMananger()).createInstance();
-                }
-
-                foreach (InDesignServer.Document openDocument in this.application.Documents)
-                {
-                    if (openDocument.Name == this.version + ".indd")
-                    {
-                        this.document = openDocument;
-
-                        return true;
-                    }
-                }
-
-                this.document = this.application.Open(this.documentPath);
             }
             catch (System.Exception ex)
             {
-                Indd.Service.Log.Syslog.log("OpenDocument: Cannot open document: + " + this.documentPath);
             }
 
             return true;
         }
-
+        
         public override bool notify()
         {
             return true;
@@ -75,10 +71,12 @@ namespace Indd.Service.Commands {
         {
             base.validateRequest();
             
+            if (this.commandRequest.frameToImageLinkMap==null)
+            {
+                throw new System.Exception("property frameToImageLinkMap missing Jobticket: " + this.commandRequest.uuid);
+            }
+            
             return true;
         }
-
     }
-
-
 }

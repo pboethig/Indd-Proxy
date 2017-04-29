@@ -53,8 +53,6 @@ namespace Indd.Service.Commands
         protected Abstract(dynamic _commandRequests)
         {
             this.commandRequest = _commandRequests;
-
-            this.init();
         }
 
 
@@ -66,6 +64,8 @@ namespace Indd.Service.Commands
         {
             try
             {
+                this.init();
+
                 ///call following methods on child commands
                 this.execute();
 
@@ -75,7 +75,15 @@ namespace Indd.Service.Commands
             }
             catch (System.Exception ex)
             {
-                Indd.Service.Log.Syslog.log("JobticketException: " + this.classname + " throws an Error. Inner Exception:" + ex.Message);
+                string innerExceptionMessage = "";
+
+                if (ex.InnerException != null)
+                {
+                    innerExceptionMessage = "Inner Exception: " + ex.InnerException.Message;
+                }
+
+
+                Indd.Service.Log.Syslog.log("JobticketException: " + this.classname + " throws an Error. Inner Exception:" + ex.Message + innerExceptionMessage);
             }
 
             return true;
@@ -84,7 +92,7 @@ namespace Indd.Service.Commands
         /// <summary>
         /// INitializes this
         /// </summary>
-        private void init()
+        public void init()
         {
             if (this.validateRequest() == true)
             {

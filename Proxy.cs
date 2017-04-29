@@ -33,11 +33,10 @@ namespace Indd
             {
                 command.processSequence();
             }
+                //ApplicationMananger manager = new ApplicationMananger();
 
-            //ApplicationMananger manager = new ApplicationMananger();
+                //InDesignServer.Application app = manager.createInstance();
 
-            //InDesignServer.Application app = manager.createInstance();
-
+            }
         }
-    }
 }

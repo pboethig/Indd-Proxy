@@ -46,8 +46,6 @@ namespace Indd.Service.Commands {
                 this.targetFolderPath = Indd.Service.Config.Manager.getStoragePath("templates") + "/" + this.targetUuid.ToString();
 
                 Indd.Helper.IO.Directory.Copy(this.sourceFolderPath, this.targetFolderPath);
-
-                Indd.Service.Log.Syslog.log("Command CreateCopy success: targetPath:" + this.targetFolderPath);
             }
             catch(System.Exception ex)
             {

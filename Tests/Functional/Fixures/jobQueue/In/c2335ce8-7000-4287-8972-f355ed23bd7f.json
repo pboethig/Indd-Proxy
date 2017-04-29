@@ -1,19 +1,33 @@
 [
   {
+    "classname": "SetImageLinks",
+    "uuid": "f25b767d-3c12-466c-a80a-ccbd45c84281",
+    "version": "1.0",
+    "frameToImageLinkMap": [
+      {
+        "frameId": "121212",
+        "imageId": "5e513f64-2dee-4e21-9871-53af41d6bf7b"
+      },
+      {
+        "frameId": "121212",
+        "imageId": "5e513f64-2dee-4e21-9871-53af41d6bf7b"
+      },
+      {
+        "frameId": "121212",
+        "imageId": "5e513f64-2dee-4e21-9871-53af41d6bf7b"
+      }
+    ]
+  },
+  {
+    "classname": "RelinkAllGraphics",
+    "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+    "version": "1.0",
+    "basePath": "Z:/indd/templates/c2335ce8-7000-4287-8972-f355ed23bd7f"
+  },
+  {
     "classname": "OpenDocument",
     "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
     "version": "1.0"
-  },
-  {
-    "classname": "GenerateProxy",
-    "uuid": "c2335de-5040-3283-3975-f675ed23bd9h",
-    "version": "1.0",
-    "notifyUrl": [ "http://www.test.de", "http://www.test.de" ],
-    "notifyData": [
-      {
-        "filePath": "${sharePath}\\c2335de-5040-3283-3975-f675ed23bd9h\\proxy.json"
-      }
-    ]
   },
   {
     "classname": "CreateCopy",
@@ -26,5 +40,10 @@
       }
     ],
     "serverless": "true"
+  },
+  {
+    "classname": "SaveAndCloseDocument",
+    "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+    "version": "1.0"
   }
 ]

@@ -13,6 +13,8 @@ namespace Indd.Service.Commands
     {
         public List<ICommand> commands { get; set; }
 
+        public string className;
+
         /// <summary>
         /// Builds commandList from commandline parameter
         /// </summary>
@@ -24,11 +26,13 @@ namespace Indd.Service.Commands
             
             foreach(dynamic request in commandRequests)
             {
-                string className = "Indd.Service.Commands." + request.classname;
-                
                 try
                 {
-                    Type myType = Type.GetType(className);
+                    this.className = "Indd.Service.Commands." + request.classname;
+
+                    if (request.classname == null) continue;
+
+                    Type myType = Type.GetType(this.className);
 
                     ICommand command = Activator.CreateInstance(myType, request );
 
@@ -36,7 +40,15 @@ namespace Indd.Service.Commands
                 }
                 catch (System.Exception ex)
                 {
-                    string message = "CommandError: " + className + " Inner Message: " + ex.Message; 
+
+                    string innerExceptionMessage ="";
+
+                    if (ex.InnerException != null)
+                    {
+                        innerExceptionMessage = "Inner Exception: " + ex.InnerException.Message;
+                    }
+
+                    string message = "CommandError: " + this.className + "  Message: " + ex.Message + innerExceptionMessage; 
 
                     Indd.Service.Log.Syslog.log(message);
                 }

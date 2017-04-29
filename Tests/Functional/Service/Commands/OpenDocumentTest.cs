@@ -29,7 +29,7 @@
             
             string filePath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/"+ testuuid + "/" +commandRequest.version+".indd";
             
-            for(int i = 0; i < 100; i++)
+            for(int i = 0; i < 2; i++)
             {
                 OpenDocument openDocumentCommand = new Indd.Service.Commands.OpenDocument(commandRequest);
 
@@ -37,11 +37,13 @@
 
                 openDocumentCommand.setDocumentPath(filePath);
 
-                openDocumentCommand.execute();
+                openDocumentCommand.processSequence();
 
                 Assert.NotNull(openDocumentCommand.document);
 
                 Assert.AreEqual("1.0.indd", openDocumentCommand.document.Name);
+
+                openDocumentCommand.document.Close();
             }
         }
     }

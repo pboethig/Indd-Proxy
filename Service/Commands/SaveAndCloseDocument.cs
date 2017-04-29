@@ -2,25 +2,25 @@
 using System.Linq;
 using CommandLine;
 using Indd.Service.IndesignServerWrapper;
-
+using System.Collections.Generic;
+using Microsoft.VisualBasic;
 
 namespace Indd.Service.Commands {
 
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class OpenDocument : Abstract,  Contracts.ICommand
+    class SaveAndCloseDocument : Abstract,  Contracts.ICommand
     {
         /// <summary>
         /// current document
         /// </summary>
         public InDesignServer.Document document;
-
         /// <summary>
         /// Saves dynamic command 
         /// </summary>
         /// <param name="commandRequests"></param>
-        public OpenDocument(dynamic commandRequest) : base ((object)commandRequest){}
+        public SaveAndCloseDocument(dynamic commandRequest) : base ((object)commandRequest){}
 
         /// <summary>
         /// Open a document, if its not allready open
@@ -28,34 +28,26 @@ namespace Indd.Service.Commands {
         /// <returns></returns>
         public override bool execute()
         {
-
+            dynamic openDocumentCommandRequest = new { classname = "OpenDocument", uuid = this.uuid, version = "1.0" };
+            
             try
             {
-                if (this.application == null)
-                {
-                    this.application = (new ApplicationMananger()).createInstance();
-                }
+                Indd.Service.Commands.OpenDocument openDocumentCommand = new Indd.Service.Commands.OpenDocument(openDocumentCommandRequest);
 
-                foreach (InDesignServer.Document openDocument in this.application.Documents)
-                {
-                    if (openDocument.Name == this.version + ".indd")
-                    {
-                        this.document = openDocument;
+                openDocumentCommand.processSequence();
 
-                        return true;
-                    }
-                }
+                openDocumentCommand.document.Save(this.documentPath, false,"saved", true);
 
-                this.document = this.application.Open(this.documentPath);
+                openDocumentCommand.document.Close();
             }
             catch (System.Exception ex)
             {
-                Indd.Service.Log.Syslog.log("OpenDocument: Cannot open document: + " + this.documentPath);
+                Indd.Service.Log.Syslog.log("SaveAndCloseDocument failed: " + ex.Message);
             }
 
             return true;
         }
-
+        
         public override bool notify()
         {
             return true;
@@ -77,8 +69,5 @@ namespace Indd.Service.Commands {
             
             return true;
         }
-
     }
-
-
 }
