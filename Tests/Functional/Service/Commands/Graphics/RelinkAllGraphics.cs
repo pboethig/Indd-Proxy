@@ -70,6 +70,12 @@
                 RelinkAll relinkCommand = new RelinkAll(relinkCommandRequest);
                 
                 relinkCommand.processSequence();
+
+                List<System.Exception> exceptions = relinkCommand.processSequence();
+
+                Assert.IsEmpty(exceptions);
+
+                relinkCommand.document.Close();
             }
         }
      }

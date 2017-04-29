@@ -45,6 +45,10 @@
 
                 DocumentOpenCommand.processSequence();
 
+                List<System.Exception> exceptions = DocumentOpenCommand.processSequence();
+
+                Assert.IsEmpty(exceptions);
+
                 Assert.NotNull(DocumentOpenCommand.document);
 
                 Assert.AreEqual("1.0.indd", DocumentOpenCommand.document.Name);

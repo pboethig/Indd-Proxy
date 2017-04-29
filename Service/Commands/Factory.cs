@@ -52,7 +52,7 @@ namespace Indd.Service.Commands
                     Indd.Service.Log.Syslog.log(message);
                 }
             }
-
+            
             return list;
         }
     }

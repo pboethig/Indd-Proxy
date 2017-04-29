@@ -35,6 +35,7 @@
             };
 
             SaveAndClose command = new SaveAndClose(commandRequest);
+            command.processSequence();
         }
 
         [Test]
@@ -52,9 +53,11 @@
             
             string filePath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/"+ testuuid + "/" +commandRequest.version+".indd";
 
-            CreateCopy createCopyCommand = new CreateCopy(commandRequest);
+            CreateCopy command = new CreateCopy(commandRequest);
 
-            createCopyCommand.processSequence();
+            List<System.Exception> exceptions = command.processSequence();
+
+            Assert.IsEmpty(exceptions);
         }
         
      }

@@ -19,14 +19,7 @@
         [TearDown]
         public void TearDown()
         {
-            dynamic commandRequest = new
-            {
-                classname = "Document.SaveAndClose",
-                uuid = testuuid,
-                version = "1.0"
-            };
-
-            SaveAndClose command = new SaveAndClose(commandRequest);
+            
         }
 
         [Test]
@@ -40,6 +33,10 @@
             };
             
              SaveAndClose command = new SaveAndClose(commandRequest);
-         }
+
+            List<System.Exception> exceptions = command.processSequence();
+
+            Assert.IsEmpty(exceptions);
+        }
     }
 }

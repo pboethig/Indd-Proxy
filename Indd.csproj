@@ -114,9 +114,15 @@
     <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG09.eps">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-LAYOUT-PI2.indd" />
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-LAYOUT-PI3.indd" />
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-PREVIEW.pdf" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-LAYOUT-PI2.indd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-LAYOUT-PI3.indd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-PREVIEW.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

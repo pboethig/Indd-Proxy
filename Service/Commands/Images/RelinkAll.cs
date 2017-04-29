@@ -79,6 +79,11 @@ namespace Indd.Service.Commands.Images {
 
                 string fileName = this.basePath + "/" + link.Name;
 
+                if (!System.IO.File.Exists(this.basePath + "/" + link.Name))
+                {
+                    throw new System.IO.FileNotFoundException("LinkPath not found: " + fileName);
+                }
+
                 object scriptingFileSystemObject = ScripingFileSystemObject.getObject(fileName);
 
                 link.Relink(scriptingFileSystemObject);

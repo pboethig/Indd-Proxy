@@ -16,6 +16,9 @@ C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\jobque
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Tests\Functional\Fixures\jobQueue\In\c2335ce8-7000-4287-8972-f355ed23bd7f.json
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indd
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Tests\Functional\Fixures\assets\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-LAYOUT-PI2.indd
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-LAYOUT-PI3.indd
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-PREVIEW.pdf
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG02.jpg
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG03.jpg
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG04.jpg
