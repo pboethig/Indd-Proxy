@@ -40,7 +40,6 @@ namespace Indd.Service.Commands
                 }
                 catch (System.Exception ex)
                 {
-
                     string innerExceptionMessage ="";
 
                     if (ex.InnerException != null)

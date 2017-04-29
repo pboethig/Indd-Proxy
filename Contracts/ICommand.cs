@@ -43,6 +43,6 @@ namespace Indd.Contracts
         /// runs  sequence of commando factory pipeline
         /// </summary>
         /// <returns></returns>
-        bool processSequence();
+        List<System.Exception> processSequence();
     }
 }

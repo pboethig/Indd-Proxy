@@ -5,11 +5,9 @@
     using CliRequest = Indd.Cli.Request.CommandList;
     using System.Collections.Generic;
 
-
     [TestFixture]
     public class FactoryTest
     {
-
         object commandList;
 
         string filePath;
@@ -47,7 +45,9 @@
         {
             foreach (Indd.Contracts.ICommand command in commandObjectList)
             {
-                command.processSequence();
+                List<System.Exception> exceptions = command.processSequence();
+
+                Assert.IsEmpty(exceptions);
             }
         }
     }

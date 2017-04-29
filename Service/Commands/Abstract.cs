@@ -4,6 +4,7 @@ using Indd.Service.IndesignServerWrapper;
 using ConfigManager=Indd.Service.Config.Manager;
 using Indd.Helper.Dynamic;
 using Indd.Service.Log;
+using System.Collections.Generic;
 
 namespace Indd.Service.Commands
 {
@@ -61,32 +62,51 @@ namespace Indd.Service.Commands
         /// 
         /// </summary>
         /// <returns></returns>
-        public virtual bool processSequence()
+        public virtual List<System.Exception> processSequence()
         {
+            List<System.Exception> exceptions = new List<System.Exception>();
+
             try
             {
-                this.init();
+                try
+                {
+                    this.init();
 
-                ///call following methods on child commands
-                this.execute();
+                    ///call following methods on child commands
+                    this.execute();
 
-                this.saveResponse();
+                    this.saveResponse();
 
-                this.notify();
+                    this.notify();
+                }
+                catch (System.Exception ex)
+                {
+                    string innerExceptionMessage = "";
+
+                    if (ex.InnerException != null)
+                    {
+                        innerExceptionMessage = "Inner Exception: " + ex.InnerException.Message;
+                    }
+
+                    string message =
+                        "JobticketException: " + this.classname + " throws an Error. Inner Exception:"+ ex.Message + innerExceptionMessage
+                        + " \nPayload:\n " + this.commandRequest;
+
+                    Syslog.log(message);
+
+                    throw new SystemException(message);
+                }
             }
             catch (System.Exception ex)
             {
-                string innerExceptionMessage = "";
-
-                if (ex.InnerException != null)
-                {
-                    innerExceptionMessage = "Inner Exception: " + ex.InnerException.Message;
-                }
-                
-                Syslog.log("JobticketException: " + this.classname + " throws an Error. Inner Exception:" + ex.Message + innerExceptionMessage);
+                exceptions.Add(ex);
             }
 
-            return true;
+            string stat ="Jobticket executed: " + this.classname + " \nPayload:\n " + this.commandRequest;
+
+            Syslog.log(stat, System.Diagnostics.EventLogEntryType.SuccessAudit);
+            
+            return exceptions;
         }
 
         /// <summary>
