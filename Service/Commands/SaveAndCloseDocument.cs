@@ -13,10 +13,6 @@ namespace Indd.Service.Commands {
     class SaveAndCloseDocument : Abstract,  Contracts.ICommand
     {
         /// <summary>
-        /// current document
-        /// </summary>
-        public InDesignServer.Document document;
-        /// <summary>
         /// Saves dynamic command 
         /// </summary>
         /// <param name="commandRequests"></param>
@@ -28,11 +24,16 @@ namespace Indd.Service.Commands {
         /// <returns></returns>
         public override bool execute()
         {
-            dynamic openDocumentCommandRequest = new { classname = "OpenDocument", uuid = this.uuid, version = "1.0" };
+            dynamic openDocumentCommandRequest = new
+            {
+                classname = "OpenDocument",
+                uuid = this.uuid,
+                version = "1.0"
+            };
             
             try
             {
-                Indd.Service.Commands.OpenDocument openDocumentCommand = new Indd.Service.Commands.OpenDocument(openDocumentCommandRequest);
+                OpenDocument openDocumentCommand = new OpenDocument(openDocumentCommandRequest);
 
                 openDocumentCommand.processSequence();
 

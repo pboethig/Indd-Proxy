@@ -8,6 +8,8 @@
     [TestFixture]
     public class RelinkAllGraphicsTest
     {
+        string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
+
         [SetUp]
         public void Setup()
         {
@@ -24,9 +26,12 @@
         {
             for (int i = 0; i <= 5; i++)
             {
-                string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
-
-                dynamic commandRequest = new { classname = "OpenDocument", uuid = testuuid, version = "1.0" };
+                dynamic commandRequest = new
+                {
+                    classname = "OpenDocument",
+                    uuid = testuuid,
+                    version = "1.0"
+                };
 
                 string testFolderPath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/" + testuuid;
 
@@ -47,7 +52,13 @@
                 ///relink all assets to new basePath
                 string basePath = testFolderPath;
 
-                dynamic relinkCommandRequest = commandRequest = new { classname = "Relink", uuid = testuuid, version = "1.0", basePath = basePath };
+                dynamic relinkCommandRequest = new
+                {
+                    classname = "Relink",
+                    uuid = testuuid,
+                    version = "1.0",
+                    basePath = basePath
+                };
 
                 RelinkAllGraphics relinkCommand = new RelinkAllGraphics(relinkCommandRequest);
                 

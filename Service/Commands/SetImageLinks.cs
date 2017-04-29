@@ -36,7 +36,7 @@ namespace Indd.Service.Commands {
         {
             dynamic openDocumentCommandRequest = new { classname = "OpenDocument", uuid = this.uuid, version = "1.0" };
 
-            Indd.Service.Commands.OpenDocument openDocumentCommand = new Indd.Service.Commands.OpenDocument(openDocumentCommandRequest);
+            OpenDocument openDocumentCommand = new OpenDocument(openDocumentCommandRequest);
 
             openDocumentCommand.processSequence();
 
@@ -44,9 +44,11 @@ namespace Indd.Service.Commands {
             
             try
             {
+
             }
             catch (System.Exception ex)
             {
+                Indd.Service.Log.Syslog.log("SetImageLinks: " + ex.Message);
             }
 
             return true;

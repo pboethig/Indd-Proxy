@@ -25,7 +25,7 @@ namespace Indd
 
             dynamic commandRequests = CliRequest.getCommandList(result.Value.InputFile);
 
-            List<ICommand> commandList  = commandFactory.buildCommandObjectList(commandRequests);
+            List<ICommand> commandList = commandFactory.buildCommandObjectList(commandRequests);
 
             commandFactory.buildCommandObjectList(commandList);
 
@@ -33,10 +33,6 @@ namespace Indd
             {
                 command.processSequence();
             }
-                //ApplicationMananger manager = new ApplicationMananger();
-
-                //InDesignServer.Application app = manager.createInstance();
-
-            }
         }
+    }
 }

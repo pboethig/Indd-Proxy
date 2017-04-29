@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using Indd.Service.IndesignServerWrapper;
 using ConfigManager=Indd.Service.Config.Manager;
 using Indd.Helper.Dynamic;
+using Indd.Service.Log;
 
 namespace Indd.Service.Commands
 {
@@ -81,9 +82,8 @@ namespace Indd.Service.Commands
                 {
                     innerExceptionMessage = "Inner Exception: " + ex.InnerException.Message;
                 }
-
-
-                Indd.Service.Log.Syslog.log("JobticketException: " + this.classname + " throws an Error. Inner Exception:" + ex.Message + innerExceptionMessage);
+                
+                Syslog.log("JobticketException: " + this.classname + " throws an Error. Inner Exception:" + ex.Message + innerExceptionMessage);
             }
 
             return true;
@@ -193,7 +193,7 @@ namespace Indd.Service.Commands
             }
             catch(System.Exception ex)
             {
-                Indd.Service.Log.Syslog.log("Malformat jobticket found. Message:  "  +  ex.Message + "original jobticket: " + JsonConvert.SerializeObject(this.commandRequest));
+                Syslog.log("Malformat jobticket found. Message:  "  +  ex.Message + "original jobticket: " + JsonConvert.SerializeObject(this.commandRequest));
             }
             
             return true;

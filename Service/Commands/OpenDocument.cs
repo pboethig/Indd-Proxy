@@ -2,7 +2,7 @@
 using System.Linq;
 using CommandLine;
 using Indd.Service.IndesignServerWrapper;
-
+using Indd.Service.Log;
 
 namespace Indd.Service.Commands {
 
@@ -50,7 +50,7 @@ namespace Indd.Service.Commands {
             }
             catch (System.Exception ex)
             {
-                Indd.Service.Log.Syslog.log("OpenDocument: Cannot open document: + " + this.documentPath);
+                Syslog.log("OpenDocument: Cannot open document: + " + this.documentPath + " Message:" + ex.Message);
             }
 
             return true;

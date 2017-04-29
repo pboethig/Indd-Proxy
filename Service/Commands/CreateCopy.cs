@@ -1,5 +1,7 @@
 ﻿using System;
-
+using Indd.Helper.IO;
+using Indd.Service.Config;
+using System.IO;
 namespace Indd.Service.Commands {
 
     /// <summary>
@@ -39,11 +41,11 @@ namespace Indd.Service.Commands {
         {
             try
             {
-                this.sourceFolderPath = System.IO.Path.GetDirectoryName(this.documentPath);
+                this.sourceFolderPath = Path.GetDirectoryName(this.documentPath);
 
                 this.targetUuid = Guid.NewGuid();
 
-                this.targetFolderPath = Indd.Service.Config.Manager.getStoragePath("templates") + "/" + this.targetUuid.ToString();
+                this.targetFolderPath = Manager.getStoragePath("templates") + "/" + this.targetUuid.ToString();
 
                 Indd.Helper.IO.Directory.Copy(this.sourceFolderPath, this.targetFolderPath);
             }

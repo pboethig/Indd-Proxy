@@ -4,6 +4,7 @@ using CommandLine;
 using Indd.Service.IndesignServerWrapper;
 using System.Collections.Generic;
 using Microsoft.VisualBasic;
+using Indd.Helper.IO;
 
 namespace Indd.Service.Commands {
 
@@ -34,9 +35,14 @@ namespace Indd.Service.Commands {
         /// <returns></returns>
         public override bool execute()
         {
-            dynamic openDocumentCommandRequest = new { classname = "OpenDocument", uuid = this.uuid, version = "1.0" };
+            dynamic openDocumentCommandRequest = new
+            {
+                classname = "OpenDocument",
+                uuid = this.uuid,
+                version = "1.0"
+            };
 
-            Indd.Service.Commands.OpenDocument openDocumentCommand = new Indd.Service.Commands.OpenDocument(openDocumentCommandRequest);
+            OpenDocument openDocumentCommand = new OpenDocument(openDocumentCommandRequest);
 
             openDocumentCommand.processSequence();
 
@@ -72,7 +78,7 @@ namespace Indd.Service.Commands {
 
                 string fileName = this.basePath + "/" + link.Name;
 
-                object scriptingFileSystemObject = Indd.Helper.IO.ScripingFileSystemObject.getObject(fileName);
+                object scriptingFileSystemObject = ScripingFileSystemObject.getObject(fileName);
 
                 link.Relink(scriptingFileSystemObject);
 

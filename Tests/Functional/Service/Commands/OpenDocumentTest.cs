@@ -9,6 +9,9 @@
     [TestFixture]
     public class OpenDocumentTest
     {
+
+        string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
+        
         [SetUp]
         public void Setup()
         {
@@ -23,15 +26,13 @@
         [Test]
         public void Commands_OpenDocument()
         {
-            string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
-
             dynamic commandRequest = new { classname = "OpenDocument", uuid = testuuid, version = "1.0" };
             
             string filePath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/"+ testuuid + "/" +commandRequest.version+".indd";
             
             for(int i = 0; i < 2; i++)
             {
-                OpenDocument openDocumentCommand = new Indd.Service.Commands.OpenDocument(commandRequest);
+                OpenDocument openDocumentCommand = new OpenDocument(commandRequest);
 
                 openDocumentCommand.uuid = testuuid;
 

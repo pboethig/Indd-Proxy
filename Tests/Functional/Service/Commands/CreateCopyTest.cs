@@ -8,36 +8,49 @@
     [TestFixture]
     public class CopyDocumentTest
     {
+
+        private string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
+
         [SetUp]
         public void Setup()
         {
-            string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
+            dynamic commandRequest = new
+            {
+                classname = "SaveAndCloseDocument",
+                uuid = testuuid,
+                version = "1.0"
+            };
 
-            dynamic commandRequest = new { classname = "SaveAndCloseDocument", uuid = testuuid, version = "1.0" };
-
-            SaveAndCloseDocument command = new Indd.Service.Commands.SaveAndCloseDocument(commandRequest);
+            SaveAndCloseDocument command = new SaveAndCloseDocument(commandRequest);
         }
 
         [TearDown]
         public void TearDown()
         {
-            string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
+            dynamic commandRequest = new
+            {
+                classname = "SaveAndCloseDocument",
+                uuid = testuuid,
+                version = "1.0"
+            };
 
-            dynamic commandRequest = new { classname = "SaveAndCloseDocument", uuid = testuuid, version = "1.0" };
-
-            SaveAndCloseDocument command = new Indd.Service.Commands.SaveAndCloseDocument(commandRequest);
+            SaveAndCloseDocument command = new SaveAndCloseDocument(commandRequest);
         }
 
         [Test]
         public void Commands_CopyDocument()
         {
-            string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
-
-            dynamic commandRequest = new { classname = "CreateCopy", uuid = testuuid, version = "1.0", serverless=true };
+            dynamic commandRequest = new
+            {
+                classname = "CreateCopy",
+                uuid = testuuid,
+                version = "1.0",
+                serverless =true
+            };
             
             string filePath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/"+ testuuid + "/" +commandRequest.version+".indd";
 
-            CreateCopy createCopyCommand = new Indd.Service.Commands.CreateCopy(commandRequest);
+            CreateCopy createCopyCommand = new CreateCopy(commandRequest);
 
             createCopyCommand.processSequence();
         }
