@@ -42,3 +42,69 @@ Here comes Indd-Proxy into the game. It takes json payloads with commands for th
 #### Images
 - Images.RelinkAll
 - Images.SetLinks
+
+### JSON Commandlist Payloads
+this payload contains all availabe command:
+
+```
+[
+  {
+    "classname": "Document.SaveAndClose",
+    "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+    "version": "1.0"
+  },
+  {
+    "classname": "Document.CreateCopy",
+    "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+    "version": "1.0",
+    "notifyUrl": [ "http://www.test.de", "http://www.test.de" ],
+    "notifyData": [
+      {
+        "uuid": "${newuuid}"
+      }
+    ],
+    "serverless": "true"
+  },
+  {
+    "classname": "Images.RelinkAll",
+    "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+    "version": "1.0",
+    "basePath": "Z:/indd/templates/c2335ce8-7000-4287-8972-f355ed23bd7f"
+  },
+  {
+    "classname": "Images.SetLinks",
+    "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+    "version": "1.0",
+    "objectToImageLinkMap": [
+      {
+        "objectId": "3222",
+        "imageId": "5e513f64-2dee-4e21-9871-53af41d6bf7b",
+        "type": "jpg",
+        "basePath": "Z:/indd/assets"
+      },
+      {
+        "objectId": "3221",
+        "imageId": "8778687-78676876-54354-786786ghfhgf",
+        "type": "jpg",
+        "basePath": "Z:/indd/assets"
+      }
+    ]
+  },
+  {
+    "classname": "Document.Open",
+    "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+    "version": "1.0"
+  },
+  {
+    "classname": "Document.ExportPDF",
+    "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+    "version": "1.0",
+    "exportFolderPath": "Z:/indd/exports"
+  },
+  {
+    "classname": "Document.SaveAndClose",
+    "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+    "version": "1.0"
+  }
+]
+```
