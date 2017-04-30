@@ -1,7 +1,8 @@
 # Indd-Proxy
-## C# console app to handle InDesign Documents with Indesign Server
+## C# console app to handle InDesign documents with Indesign Server
 ### Prerequissites
 - Visual Studio 2017 64 Bit
+- .Net Framework >=4.5.x
 - Installed Adobe Indesign Server (cc2017). Should work with 2015, 2016 too
 
 ### Install
