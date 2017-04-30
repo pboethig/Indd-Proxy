@@ -16,7 +16,7 @@ Here comes Indd-Proxy into the game. It takes json payloads with commands for th
 - add MicrosoftVisualBasic.dll to your references
 - Project->create
 - Run debug (that creates the testfxures)
-- Create a volumne with Z: following paths on on your windows: 
+- Create a volumne with Z:on your windows: 
 - Copy all folders from your <projectroot>Indd-Proxy\bin\Debug\Tests\Functional\Fixures\* to Z:    
 
 ### Run Tests
