@@ -22,6 +22,17 @@ Here comes Indd-Proxy into the game. It takes json payloads with commands for th
 ### Run Tests
 - In Testwindow you can nnow run all nunit tests. All Tests are passed green means, you have installed everything right.
 
+### usage
+
+- Compile or debug project
+- At the end there is a assambly "Indd-Proxy.exe"
+- create your json commands in a json file 
+- pass the path to the command.json with the payload inside. (See wiki docs)
+
+```
+Indd.proxy.exe -f <path to json payload>
+```
+
 ## current state
 - Commandline abstraction works 
 - Central storageconfig gets loaded
