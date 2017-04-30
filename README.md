@@ -44,6 +44,9 @@ Here comes Indd-Proxy into the game. It takes json payloads with commands for th
 - Images.SetLinks
 
 ### JSON Commandlist Payloads
+
+see further docs: https://github.com/pboethig/Indd-Proxy/wiki/Command-payloads
+
 this payload contains all availabe command:
 
 ```
