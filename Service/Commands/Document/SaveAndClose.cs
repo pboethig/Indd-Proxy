@@ -28,7 +28,7 @@ namespace Indd.Service.Commands.Document {
             {
                 classname = "Document.Open",
                 uuid = this.uuid,
-                version = "1.0"
+                version = this.version
             };
             
             try

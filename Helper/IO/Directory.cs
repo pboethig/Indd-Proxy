@@ -19,11 +19,20 @@ namespace Indd.Helper.IO
             {
                 System.IO.Directory.CreateDirectory(target.FullName);
             }
-            // Copy each file into it’s new directory.
-            foreach (FileInfo fi in source.GetFiles())
+
+            try
             {
-                fi.CopyTo(Path.Combine(target.ToString(), fi.Name), true);
+                // Copy each file into it’s new directory.
+                foreach (FileInfo fi in source.GetFiles())
+                {
+                    fi.CopyTo(Path.Combine(target.ToString(), fi.Name), true);
+                }
             }
+            catch
+            {
+
+            }
+           
         }
     }
 }

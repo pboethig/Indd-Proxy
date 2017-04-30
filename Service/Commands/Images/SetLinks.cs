@@ -11,7 +11,7 @@ namespace Indd.Service.Commands.Images {
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class SetLinks : Abstract,  Contracts.ICommand
+    class SetLinks : Indd.Service.Commands.Images.Base,  Contracts.ICommand
     {
         /// <summary>
         /// current document
@@ -21,7 +21,7 @@ namespace Indd.Service.Commands.Images {
         /// <summary>
         /// BasePath of linked assets
         /// </summary>
-        public Dictionary<string, string> frameToImageLinkMap;
+        public Dictionary<string, string> objectToImageLinkMap;
 
         /// <summary>
         /// Saves dynamic command 
@@ -35,17 +35,43 @@ namespace Indd.Service.Commands.Images {
         /// <returns></returns>
         public override bool execute()
         {
-            dynamic DocumentOpenCommandRequest = new { classname = "Document.Open", uuid = this.uuid, version = "1.0" };
-
-            Open DocumentOpenCommand = new Open(DocumentOpenCommandRequest);
-
-            DocumentOpenCommand.processSequence();
-
-            this.document = DocumentOpenCommand.document;
-            
             try
             {
 
+                dynamic DocumentOpenCommandRequest = new
+                {
+                    classname = "Document.Open",
+                    uuid = this.uuid,
+                    version = this.version
+                };
+
+                Open DocumentOpenCommand = new Open(DocumentOpenCommandRequest);
+
+                DocumentOpenCommand.processSequence();
+
+                this.document = DocumentOpenCommand.document;
+
+                string basePath, fileName;
+
+                int objectId;
+
+                bool result;
+
+                foreach (dynamic item in commandRequest.objectToImageLinkMap)
+                {
+                    basePath = (string)item.basePath;
+
+                    fileName = (string)item.imageId + "." + (string)item.type;
+
+                    objectId=(int)item.objectId;
+
+                    result = base.relink(this.document, basePath, fileName, objectId);
+
+                    if (!result)
+                    {
+                        throw new SystemException("Object with id: " + objectId + " not relinkable for this document"); 
+                    }
+                }
             }
             catch (System.Exception ex)
             {
@@ -54,7 +80,7 @@ namespace Indd.Service.Commands.Images {
 
             return true;
         }
-        
+
         public override bool notify()
         {
             return true;
@@ -74,9 +100,9 @@ namespace Indd.Service.Commands.Images {
         {
             base.validateRequest();
             
-            if (this.commandRequest.frameToImageLinkMap==null)
+            if (this.commandRequest.objectToImageLinkMap==null)
             {
-                throw new System.Exception("property frameToImageLinkMap missing Jobticket: " + this.commandRequest.uuid);
+                throw new System.Exception("property objectToImageLinkMap missing Jobticket: " + this.commandRequest.uuid);
             }
             
             return true;

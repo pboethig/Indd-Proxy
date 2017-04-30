@@ -6,12 +6,13 @@ using System.Collections.Generic;
 using Microsoft.VisualBasic;
 using Indd.Helper.IO;
 using Indd.Service.Commands.Document;
+
 namespace Indd.Service.Commands.Images {
 
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class RelinkAll : Abstract,  Contracts.ICommand
+    class RelinkAll : Indd.Service.Commands.Images.Base,   Contracts.ICommand
     {
         /// <summary>
         /// current document
@@ -38,6 +39,7 @@ namespace Indd.Service.Commands.Images {
             try
             {
 
+
                 dynamic DocumentOpenCommandRequest = new
                 {
                     classname = "Document.Open",
@@ -52,8 +54,8 @@ namespace Indd.Service.Commands.Images {
                 this.document = DocumentOpenCommand.document;
 
                 this.basePath =this.commandRequest.basePath;
-
-                this.relink(this.document.AllGraphics, (string)this.commandRequest.basePath);
+                
+                this.relink(this.document, (string)this.commandRequest.basePath);
             }
             catch (System.Exception ex)
             {
@@ -62,38 +64,40 @@ namespace Indd.Service.Commands.Images {
 
             return true;
         }
-        
+    
         /// <summary>
-        /// relink all graphics 
+        /// Relinks all graphics
         /// </summary>
-        /// <param name="allGrapics"></param>
-        /// <param name=""></param>
+        /// <param name="allGraphics"></param>
+        /// <param name="basePath"></param>
         /// <returns></returns>
-        public bool relink(InDesignServer.Objects allGraphics, string basePath)
+        public bool relink(InDesignServer.Document document, string basePath)
         {
-            foreach (dynamic graphic in allGraphics)
+            foreach (dynamic graphic in document.AllGraphics)
             {
                 InDesignServer.Link link = graphic.ItemLink;
 
                 string path = link.FilePath;
 
                 string fileName = this.basePath + "/" + link.Name;
-
+                
                 if (!System.IO.File.Exists(this.basePath + "/" + link.Name))
                 {
                     throw new System.IO.FileNotFoundException("LinkPath not found: " + fileName);
                 }
-
+                
                 object scriptingFileSystemObject = ScripingFileSystemObject.getObject(fileName);
-
+                
                 link.Relink(scriptingFileSystemObject);
-
+                
                 link.Update();
-            }
 
+            }
+            
             return true;
+
         }
-        
+
         public override bool notify()
         {
             return true;

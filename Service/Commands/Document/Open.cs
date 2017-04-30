@@ -28,9 +28,14 @@ namespace Indd.Service.Commands.Document {
         /// <returns></returns>
         public override bool execute()
         {
-
             try
             {
+
+                if (!System.IO.File.Exists(this.documentPath))
+                {
+                    throw new SystemException("Documentpath: " + this.documentPath + " does not exist.");
+                }
+
                 if (this.application == null)
                 {
                     this.application = (new ApplicationMananger()).createInstance();
@@ -45,7 +50,7 @@ namespace Indd.Service.Commands.Document {
                         return true;
                     }
                 }
-
+                
                 this.document = this.application.Open(this.documentPath);
             }
             catch (System.Exception ex)

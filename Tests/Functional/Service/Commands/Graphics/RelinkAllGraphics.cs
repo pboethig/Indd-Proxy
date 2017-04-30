@@ -12,9 +12,12 @@
     {
         string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
 
+        string rootDir = Indd.Service.Config.Manager.getRootDirectory();
+
         [SetUp]
         public void Setup()
         {
+
         }
 
         [TearDown]
@@ -35,7 +38,7 @@
                     version = "1.0"
                 };
 
-                string testFolderPath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/" + testuuid;
+                string testFolderPath = rootDir + "/Tests/Functional/Fixures/templates/" + testuuid;
 
                 string filePath = testFolderPath + "/" + commandRequest.version + ".indd";
 
@@ -57,16 +60,17 @@
                 Assert.AreEqual(DocumentOpenCommand.document.Name, "1.0.indd");
 
                 ///relink all assets to new basePath
-                string basePath = testFolderPath;
+
+                testFolderPath = rootDir + "/Tests/Functional/Fixures/assets";
 
                 dynamic relinkCommandRequest = new
                 {
                     classname = "Relink",
                     uuid = testuuid,
                     version = "1.0",
-                    basePath = basePath
+                    basePath = testFolderPath
                 };
-
+                
                 RelinkAll relinkCommand = new RelinkAll(relinkCommandRequest);
                 
                 relinkCommand.processSequence();

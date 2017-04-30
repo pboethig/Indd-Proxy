@@ -63,6 +63,7 @@
     <Compile Include="Service\Commands\Factory.cs" />
     <Compile Include="Service\Commands\Document\CreateCopy.cs" />
     <Compile Include="Service\Commands\Document\SaveAndClose.cs" />
+    <Compile Include="Service\Commands\Images\Base.cs" />
     <Compile Include="Service\Commands\Images\SetLinks.cs" />
     <Compile Include="Service\Commands\Images\RelinkAll.cs" />
     <Compile Include="Service\Commands\Document\Open.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Tests\Functional\Helper\Json\ConvertTest.cs" />
     <Compile Include="Tests\Functional\Log\SyslogTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\SaveAndCloseDocumentTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Graphics\SetLinksTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Graphics\RelinkAllGraphics.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\CreateCopyTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\OpenDocumentTest.cs" />
@@ -90,12 +92,37 @@
     <Compile Include="Proxy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\Functional\Service\Config\ManagerTest.cs" />
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG01.eps">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG05.eps">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG06.eps">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG07.eps">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG08.eps">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG09.eps">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-LAYOUT-PI2.indd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-LAYOUT-PI3.indd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-PREVIEW.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Tests\Functional\Fixures\jobQueue\In\c2335ce8-7000-4287-8972-f355ed23bd7f.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indd" />
     <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG01.eps">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -149,6 +176,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Tests\Functional\Fixures\assets\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tests\Functional\Fixures\assets\76576576-7876-6565gfgdgfdj.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tests\Functional\Fixures\assets\8778687-78676876-54354-786786ghfhgf.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tests\Functional\Fixures\assets\TC9990701-IMG02.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tests\Functional\Fixures\assets\TC9990701-IMG03.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tests\Functional\Fixures\assets\TC9990701-IMG04.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG02.jpg">
