@@ -30,7 +30,7 @@ Here comes Indd-Proxy into the game. It takes json payloads with commands for th
 - pass the path to the command.json with the payload inside. (See wiki docs)
 
 ```
-Indd.proxy.exe -f <path to json payload>
+Indd-Proxy.exe -f <path to json payload>
 ```
 
 ## current state
