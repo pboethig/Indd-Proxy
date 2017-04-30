@@ -49,6 +49,11 @@ namespace Indd.Service.Commands
         public InDesignServer.Application application;
 
         /// <summary>
+        /// current document
+        /// </summary>
+        public InDesignServer.Document document;
+
+        /// <summary>
         /// Stores request and starts validation
         /// </summary>
         /// <param name="commandRequests"></param>

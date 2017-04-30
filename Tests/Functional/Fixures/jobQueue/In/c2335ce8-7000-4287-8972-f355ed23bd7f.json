@@ -47,6 +47,12 @@
     "version": "1.0"
   },
   {
+    "classname": "Document.ExportPDF",
+    "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+    "version": "1.0",
+    "exportFolderPath": "Z:/indd/exports"
+  },
+  {
     "classname": "Document.SaveAndClose",
     "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
     "version": "1.0"

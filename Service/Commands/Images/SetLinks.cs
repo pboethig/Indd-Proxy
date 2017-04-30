@@ -14,16 +14,6 @@ namespace Indd.Service.Commands.Images {
     class SetLinks : Indd.Service.Commands.Images.Base,  Contracts.ICommand
     {
         /// <summary>
-        /// current document
-        /// </summary>
-        public InDesignServer.Document document;
-
-        /// <summary>
-        /// BasePath of linked assets
-        /// </summary>
-        public Dictionary<string, string> objectToImageLinkMap;
-
-        /// <summary>
         /// Saves dynamic command 
         /// </summary>
         /// <param name="commandRequests"></param>

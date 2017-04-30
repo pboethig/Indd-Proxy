@@ -41,10 +41,7 @@
         [Test]
         public void Commands_SetLinksV2()
         {
-            
-                string testFolderPath = root + "/Tests/Functional/Fixures/templates/" + testuuid;
-        
-                string test = @" [
+                string mock = @" [
                   {
                     ""objectId"": ""3022"",
                     ""imageId"": ""5e513f64-2dee-4e21-9871-53af41d6bf7b"",
@@ -60,7 +57,7 @@
                 ]
                 ";
 
-                dynamic objectToImageLinkMap = Indd.Helper.Json.Convert.deserializeObject(test);
+                dynamic objectToImageLinkMap = Indd.Helper.Json.Convert.deserializeObject(mock);
 
                 dynamic setLinkCommandRequest = new
                 {

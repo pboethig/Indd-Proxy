@@ -60,6 +60,7 @@
     <Compile Include="Helper\IO\Directory.cs" />
     <Compile Include="Helper\IO\ScripingFileSystemObject.cs" />
     <Compile Include="Service\Commands\Abstract.cs" />
+    <Compile Include="Service\Commands\Document\ExportPDF.cs" />
     <Compile Include="Service\Commands\Factory.cs" />
     <Compile Include="Service\Commands\Document\CreateCopy.cs" />
     <Compile Include="Service\Commands\Document\SaveAndClose.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Tests\Functional\Cli\CommandLineRequestTest.cs" />
     <Compile Include="Tests\Functional\Helper\Json\ConvertTest.cs" />
     <Compile Include="Tests\Functional\Log\SyslogTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Document\ExportPDFTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\SaveAndCloseDocumentTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Graphics\SetLinksTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Graphics\RelinkAllGraphics.cs" />
@@ -122,7 +124,12 @@
     <None Include="Tests\Functional\Fixures\jobQueue\In\c2335ce8-7000-4287-8972-f355ed23bd7f.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indd" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\2.0.indd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG01.eps">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -171,6 +178,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Service\InDesignServerWrapper\Document\" />
+    <Folder Include="Tests\Functional\Fixures\exports\" />
     <Folder Include="Tests\Functional\Fixures\jobQueue\Error\" />
     <Folder Include="Tests\Functional\Fixures\jobQueue\Out\" />
   </ItemGroup>

@@ -37,7 +37,7 @@
         [Test]
         public void CommandFactory_buildCommandObjectList()
         {
-            Assert.AreEqual(6, commandObjectList.Count);
+            Assert.AreEqual(7, commandObjectList.Count);
         }
 
         [Test]

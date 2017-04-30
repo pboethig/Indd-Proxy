@@ -15,11 +15,6 @@ namespace Indd.Service.Commands.Images {
     class RelinkAll : Indd.Service.Commands.Images.Base,   Contracts.ICommand
     {
         /// <summary>
-        /// current document
-        /// </summary>
-        public InDesignServer.Document document;
-
-        /// <summary>
         /// BasePath of linked assets
         /// </summary>
         public string basePath = "";

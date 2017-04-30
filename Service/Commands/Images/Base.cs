@@ -43,6 +43,8 @@ namespace Indd.Service.Commands.Images
 
                 if (objectId == 0 || objectId == targetObjectId)
                 {
+
+                    //link.Parent.Parent.place(filePath);
                     link.Relink(scriptingFileSystemObject);
 
                     link.Update();

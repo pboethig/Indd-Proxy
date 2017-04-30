@@ -8,12 +8,26 @@
     [TestFixture]
     public class CopyDocumentTest
     {
-
+        /// <summary>
+        /// ID to test
+        /// </summary>
         private string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
+
+        /// <summary>
+        /// Root dir of the storage
+        /// </summary>
+        string root = Indd.Service.Config.Manager.getRootDirectory();
+        
+        /// <summary>
+        /// Folder to test
+        /// </summary>
+        string folderPath;
 
         [SetUp]
         public void Setup()
         {
+            folderPath = root + "/" + "/Tests/Functional/Fixures/templates/" + testuuid;
+
             dynamic commandRequest = new
             {
                 classname = "Document.SaveAndClose",
@@ -51,13 +65,16 @@
                 serverless =true
             };
             
-            string filePath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/"+ testuuid + "/" +commandRequest.version+".indd";
+            string filePath = folderPath + "/" +commandRequest.version+".indd";
 
             CreateCopy command = new CreateCopy(commandRequest);
 
             List<System.Exception> exceptions = command.processSequence();
 
             Assert.IsEmpty(exceptions);
+
+            System.IO.Directory.Delete(command.getTargetFolderPath(), true);
+
         }
         
      }

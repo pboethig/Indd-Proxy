@@ -12,11 +12,6 @@ namespace Indd.Service.Commands.Document {
     class Open : Abstract,  Contracts.ICommand
     {
         /// <summary>
-        /// current document
-        /// </summary>
-        public InDesignServer.Document document;
-
-        /// <summary>
         /// Saves dynamic command 
         /// </summary>
         /// <param name="commandRequests"></param>
