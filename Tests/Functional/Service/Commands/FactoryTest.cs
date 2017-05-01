@@ -74,5 +74,27 @@
 
             Assert.AreEqual(commandFactory.ticketExceptions.Count, response.errors.Count);
         }
+
+        [Test]
+        public void CommandFactory_buildJsonResponse()
+        {
+            Response response = commandFactory.processTicket(commandRequests);
+
+            string jsonString = response.toJson();
+
+            Assert.IsNotEmpty(jsonString);
+        }
+
+        [Test]
+        public void CommandFactory_sendResponse()
+        {
+            Response response = commandFactory.processTicket(commandRequests);
+
+            string jsonString = response.toJson();
+
+            List<string> responses = response.send();
+
+            Assert.AreEqual(2, responses.Count);
+        }
     }
 }

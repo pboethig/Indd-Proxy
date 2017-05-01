@@ -73,7 +73,7 @@ namespace Indd.Service.Commands
 
                 if (commandExceptions.Count > 0)
                 {
-                    this.ticketExceptions.Add(commandExceptions);
+                    ticketExceptions.Add(commandExceptions);
                 }
             }
             

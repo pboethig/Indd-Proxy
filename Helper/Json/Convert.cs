@@ -21,5 +21,17 @@ namespace Indd.Helper.Json
 
             return deserializedObject;
         }
+
+        /// <summary>
+        /// Gneerate Jsonstring from object
+        /// </summary>
+        /// <param name="toJsonfyObject"></param>
+        /// <returns></returns>
+        public static string toJson(object toJsonfyObject)
+        {
+            string jsonString = JsonConvert.SerializeObject(toJsonfyObject);
+
+            return jsonString;
+        }
     }
 }

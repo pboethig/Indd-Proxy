@@ -62,17 +62,5 @@ namespace Indd.Cli.Request
         {
             return Indd.Helper.Json.Convert.deserializeObject(System.IO.File.ReadAllText(filePath));
         }
-
-        /// <summary>
-        /// Reads CommandListRequest from filesystem
-        /// </summary>
-        /// <param name="filePath"></param>
-        /// <returns>dynamic</returns>
-        public static dynamic getResponseObject(string filePath)
-        {
-            dynamic ticket = Indd.Helper.Json.Convert.deserializeObject(System.IO.File.ReadAllText(filePath));
-
-            return ticket.response;
-        }
     }
 }

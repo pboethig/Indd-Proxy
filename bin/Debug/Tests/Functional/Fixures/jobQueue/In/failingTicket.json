@@ -4,7 +4,7 @@
     "status": "open",
     "errors": [],
     "additionalData": [],
-    "urls": [ "http://www.test.de", "http://www.test.de" ]
+    "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ]
   },
   "commands": [
     {

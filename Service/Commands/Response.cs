@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Net;
 
 namespace Indd.Service.Commands
 {
@@ -76,6 +77,41 @@ namespace Indd.Service.Commands
                     this.errors.Add(commandException.Message.ToString());
                 }
             }
+        }
+
+        /// <summary>
+        /// Converts object to json
+        /// </summary>
+        /// <param name="toJsonfyObject"></param>
+        /// <returns></returns>
+        public string toJson()
+        {
+            string json = Indd.Helper.Json.Convert.toJson(this);
+
+            return json;
+        }
+
+        /// <summary>
+        /// Sends response
+        /// </summary>
+        /// <returns></returns>
+        public List<string> send()
+        {
+
+            WebClient client = new WebClient();
+
+            List<string> responses = new List<string>();
+
+            foreach (string url in urls)
+            {
+                client.Headers[HttpRequestHeader.ContentType] = "application/json";
+
+                string response = client.UploadString(url, "POST", this.toJson());
+
+                responses.Add(response);
+            }
+            
+            return responses;
         }
     }
 }

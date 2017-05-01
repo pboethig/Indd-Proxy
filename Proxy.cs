@@ -24,7 +24,6 @@ namespace Indd
             dynamic commandRequests = CliRequest.convertJsonTicket(result.Value.InputFile);
 
             commandFactory.processTicket(commandRequests);
-
         }
     }
 }
