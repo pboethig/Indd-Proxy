@@ -14,12 +14,20 @@ namespace Indd.Contracts
     /// </summary>
     interface ICommand
     {
+
         /// <summary>
         /// Validates the commandRequest
         /// </summary>
         /// <param name="args"></param>
         /// <returns>bool</returns>
          bool validateRequest();
+
+        /// <summary>
+        /// Set TicketId
+        /// </summary>
+        /// <param name="ticketId"></param>
+        /// <returns></returns>
+        void setTicketId(string ticketId);
 
         /// <summary>
         /// Executes commandlogic

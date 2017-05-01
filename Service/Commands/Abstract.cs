@@ -19,6 +19,11 @@ namespace Indd.Service.Commands
         public dynamic commandRequest;
 
         /// <summary>
+        /// ticketId
+        /// </summary>
+        public string ticketId;
+
+        /// <summary>
         /// UUID of whatever
         /// </summary>
         public string uuid;
@@ -62,6 +67,15 @@ namespace Indd.Service.Commands
             this.commandRequest = _commandRequests;
         }
 
+        /// <summary>
+        /// Set ticketId
+        /// </summary>
+        /// <param name="ticketId"></param>
+        public void setTicketId(string ticketId)
+        {
+            this.ticketId = ticketId;
+        }
+
 
         /// <summary>
         /// 
@@ -76,8 +90,7 @@ namespace Indd.Service.Commands
                 try
                 {
                     this.init();
-
-                    ///call following methods on child commands
+                    
                     this.execute();
                 }
                 catch (System.Exception ex)
@@ -90,7 +103,9 @@ namespace Indd.Service.Commands
                     }
 
                     string message =
-                        "JobticketException: " + this.classname + " throws an Error. Inner Exception:"+ ex.Message + innerExceptionMessage
+                        "JobticketException: " + this.classname + " throws an Error. " 
+                        +"\nInner Exception:"+ ex.Message + innerExceptionMessage
+                        + " \nTicketId: " + this.ticketId
                         + " \nPayload:\n " + this.commandRequest;
 
                     Syslog.log(message);
@@ -103,7 +118,9 @@ namespace Indd.Service.Commands
                 exceptions.Add(ex);
             }
 
-            string stat ="Jobticket executed: " + this.classname + " \nPayload:\n " + this.commandRequest;
+            string stat ="Jobticket executed: " + this.classname
+                + " \nTicketId: " + this.ticketId
+                + " \nPayload:\n " + this.commandRequest;
 
             Syslog.log(stat, System.Diagnostics.EventLogEntryType.SuccessAudit);
             

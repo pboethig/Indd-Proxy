@@ -69,6 +69,8 @@ namespace Indd.Service.Commands
         {
             foreach (Indd.Contracts.ICommand command in buildCommandObjectList(ticket.commands))
             {
+                command.setTicketId((string)ticket.id) ;
+
                 List<System.Exception> commandExceptions = command.processSequence();
 
                 if (commandExceptions.Count > 0)

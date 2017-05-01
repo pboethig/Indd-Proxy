@@ -68,7 +68,6 @@
     <Compile Include="Service\Commands\Images\SetLinks.cs" />
     <Compile Include="Service\Commands\Images\RelinkAll.cs" />
     <Compile Include="Service\Commands\Document\Open.cs" />
-    <Compile Include="Service\Commands\Notification.cs" />
     <Compile Include="Service\Commands\Response.cs" />
     <Compile Include="Service\InDesignServerWrapper\ApplicationManager.cs" />
     <Compile Include="Service\Log\Syslog.cs" />
