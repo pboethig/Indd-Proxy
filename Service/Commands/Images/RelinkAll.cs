@@ -86,23 +86,12 @@ namespace Indd.Service.Commands.Images {
                 link.Relink(scriptingFileSystemObject);
                 
                 link.Update();
-
             }
             
             return true;
-
         }
 
-        public override bool notify()
-        {
-            return true;
-        }
-
-        public override bool saveResponse()
-        {
-            return true;
-        }
-
+        
         /// <summary>
         /// Validate Request
         /// </summary>

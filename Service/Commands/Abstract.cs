@@ -79,10 +79,6 @@ namespace Indd.Service.Commands
 
                     ///call following methods on child commands
                     this.execute();
-
-                    this.saveResponse();
-
-                    this.notify();
                 }
                 catch (System.Exception ex)
                 {
@@ -179,17 +175,7 @@ namespace Indd.Service.Commands
         {
             throw new NotImplementedException();
         }
-
-        public virtual bool notify()
-        {
-            throw new NotImplementedException();
-        }
-
-        public virtual bool saveResponse()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         /// <summary>
         /// Validates request
         /// </summary>

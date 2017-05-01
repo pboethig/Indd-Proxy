@@ -65,17 +65,7 @@ namespace Indd.Service.Commands.Document {
                 System.IO.File.Delete(this.exportFilePath);  
             }
         }
-
-        public override bool notify()
-        {
-            return true;
-        }
-
-        public override bool saveResponse()
-        {
-            return true;
-        }
-
+        
         /// <summary>
         /// Validate Request
         /// </summary>

@@ -49,17 +49,7 @@ namespace Indd.Service.Commands.Document {
                 throw new SystemException("Document.Open: Cannot open document: + " + this.documentPath + " Message:" + ex.Message);
             }
         }
-
-        public override bool notify()
-        {
-            return true;
-        }
-
-        public override bool saveResponse()
-        {
-            return true;
-        }
-
+        
         /// <summary>
         /// Validate Request
         /// </summary>
@@ -71,8 +61,5 @@ namespace Indd.Service.Commands.Document {
             
             return true;
         }
-
     }
-
-
 }

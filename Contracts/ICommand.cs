@@ -26,19 +26,7 @@ namespace Indd.Contracts
         /// </summary>
         /// <returns>bool</returns>
         bool execute();
-
-        /// <summary>
-        /// Saves the response object in out queue
-        /// </summary>
-        /// <returns>bool</returns>
-        bool saveResponse();
-
-        /// <summary>
-        /// Notifies clients
-        /// </summary>
-        /// <returns></returns>
-        bool notify();
-
+        
         /// <summary>
         /// runs  sequence of commando factory pipeline
         /// </summary>

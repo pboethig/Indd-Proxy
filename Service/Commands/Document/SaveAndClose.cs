@@ -56,16 +56,6 @@ namespace Indd.Service.Commands.Document {
             return true;
         }
         
-        public override bool notify()
-        {
-            return true;
-        }
-
-        public override bool saveResponse()
-        {
-            return true;
-        }
-
         /// <summary>
         /// Validate Request
         /// </summary>
