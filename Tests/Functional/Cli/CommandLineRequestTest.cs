@@ -23,9 +23,9 @@
 
             string filePath = Indd.Service.Config.Manager.getRootDirectory() + "../../../Tests/Functional/Fixures/jobQueue/In/"+ testuuid + ".json";
             
-            dynamic commandList = CliRequest.getCommandList(filePath);
+            dynamic ticket = CliRequest.convertJsonTicket(filePath);
 
-            foreach (dynamic command in commandList)
+            foreach (dynamic command in ticket.commands)
             {
                 Assert.NotNull(command.classname);
 

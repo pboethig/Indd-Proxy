@@ -58,11 +58,9 @@ namespace Indd.Cli.Request
         /// </summary>
         /// <param name="filePath"></param>
         /// <returns>dynamic</returns>
-        public static dynamic getCommandList(string filePath)
+        public static dynamic convertJsonTicket(string filePath)
         {
-            dynamic ticket = Indd.Helper.Json.Convert.deserializeObject(System.IO.File.ReadAllText(filePath));
-            
-            return ticket.commands;
+            return Indd.Helper.Json.Convert.deserializeObject(System.IO.File.ReadAllText(filePath));
         }
 
         /// <summary>

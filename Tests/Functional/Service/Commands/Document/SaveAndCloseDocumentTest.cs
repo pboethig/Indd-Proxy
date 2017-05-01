@@ -29,7 +29,7 @@
             {
                 classname = "Document.SaveAndClose",
                 uuid = testuuid,
-                version = "1.0"
+                version = "2.0"
             };
             
              SaveAndClose command = new SaveAndClose(commandRequest);

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Indd.Service.Commands;
 using CliRequest = Indd.Cli.Request.CommandList;
-
+using ResponseType=Indd.Service.Commands.Response;
 /// <summary>
 /// Handles Incomming cli requests
 /// </summary>
@@ -21,20 +21,9 @@ namespace Indd
 
             var result = CliRequest.validate(args);
 
-            dynamic commandRequests = CliRequest.getCommandList(result.Value.InputFile);
+            dynamic commandRequests = CliRequest.convertJsonTicket(result.Value.InputFile);
 
-            dynamic responseObject = CliRequest.getResponseObject(result.Value.InputFile);
-
-            List<ICommand> commandList = commandFactory.buildCommandObjectList(commandRequests);
-
-            commandFactory.buildCommandObjectList(commandList);
-
-            foreach (Indd.Contracts.ICommand command in commandList)
-            {
-                List<System.Exception> exceptions = command.processSequence();
-            }
-
-
+            commandFactory.processTicket(commandRequests);
 
         }
     }

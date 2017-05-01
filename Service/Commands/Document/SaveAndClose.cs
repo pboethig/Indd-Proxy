@@ -43,7 +43,14 @@ namespace Indd.Service.Commands.Document {
             }
             catch (System.Exception ex)
             {
-                throw new SystemException("Document.SaveAndClose failed: " + ex.Message);
+                string innerExceptionMessage ="";
+
+                if (ex.InnerException != null)
+                {
+                    innerExceptionMessage ="Inner Exception: " + ex.InnerException.Message;
+                }
+                
+                throw new SystemException("Document.SaveAndClose failed: " + ex.Message + innerExceptionMessage);
             }
 
             return true;

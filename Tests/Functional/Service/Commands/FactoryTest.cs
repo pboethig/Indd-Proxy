@@ -4,28 +4,41 @@
     using Indd.Service.Commands;
     using CliRequest = Indd.Cli.Request.CommandList;
     using System.Collections.Generic;
+    using Response = Indd.Service.Commands.Response;
 
     [TestFixture]
     public class FactoryTest
     {
-        object commandList;
+        /// <summary>
+        /// raw json commandlist
+        /// </summary>
+        string jsonTicket;
 
-        string filePath;
-
+        /// <summary>
+        /// UUID to test
+        /// </summary>
         string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
+       
+        /// <summary>
+        /// commandfactory
+        /// </summary>
+        private Factory commandFactory;
 
-        List<Indd.Contracts.ICommand> commandObjectList;
+        /// <summary>
+        /// json converted commands
+        /// </summary>
+        private dynamic commandRequests;
+
+        private string root = Indd.Service.Config.Manager.getRootDirectory();
 
         [SetUp]
         public void Setup()
         {
-            filePath = Indd.Service.Config.Manager.getRootDirectory() + "../../../Tests/Functional/Fixures/jobQueue/In/" + testuuid + ".json";
-
-            commandList = CliRequest.getCommandList(filePath);
-
-            Factory commandFactory = new Factory();
-
-            commandObjectList = commandFactory.buildCommandObjectList(commandList);
+            jsonTicket = root + "../../../Tests/Functional/Fixures/jobQueue/In/" + testuuid + ".json";
+            
+            commandRequests = CliRequest.convertJsonTicket(jsonTicket);
+            
+            commandFactory = new Factory();
         }
 
         [TearDown]
@@ -33,22 +46,33 @@
         {
 
         }
-
-        [Test]
-        public void CommandFactory_buildCommandObjectList()
-        {
-            Assert.AreEqual(7, commandObjectList.Count);
-        }
-
+        
         [Test]
         public void CommandFactory_runCommands()
         {
-            foreach (Indd.Contracts.ICommand command in commandObjectList)
-            {
-                List<System.Exception> exceptions = command.processSequence();
+            Response response = commandFactory.processTicket(commandRequests);
 
-                Assert.IsEmpty(exceptions);
-            }
+            Assert.AreEqual(0, response.errors.Count);
+
+            Assert.AreEqual("ready", response.status);
+
+            Assert.AreEqual(0, commandFactory.ticketExceptions.Count);
+        }
+
+        [Test]
+        public void CommandFactory_runFailingCommands()
+        {
+            jsonTicket = root + "../../../Tests/Functional/Fixures/jobQueue/In/failingTicket.json";
+
+            commandRequests = CliRequest.convertJsonTicket(jsonTicket);
+
+            Response response = commandFactory.processTicket(commandRequests);
+
+            Assert.AreEqual("error", response.status);
+
+            Assert.AreEqual(1, response.errors.Count);
+
+            Assert.AreEqual(commandFactory.ticketExceptions.Count, response.errors.Count);
         }
     }
 }

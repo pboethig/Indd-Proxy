@@ -158,18 +158,11 @@ namespace Indd.Service.Commands
         {
             string path = ConfigManager.getStoragePath("templates") + "/" + this.uuid + "/" + this.version + ".indd";
 
-            try
+            if (!System.IO.File.Exists(path))
             {
-                if (!System.IO.File.Exists(path))
-                {
-                    throw new System.Exception("document: " + this.documentPath + " not found");
-                }
+                throw new System.Exception("document: " + path + " not found");
             }
-            catch (System.Exception ex)
-            {
-                Indd.Service.Log.Syslog.log(ex.Message);
-            }
-
+            
             return path;
         }
 

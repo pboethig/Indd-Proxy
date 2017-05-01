@@ -1,16 +1,16 @@
 {
   "response": {
-    "ticketId": "${ticketId}",
-    "message": "${status}",
-    "errors": [ "${errors}" ],
-    "additionalData": "${additionalData}",
+    "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+    "status": "open",
+    "errors": [],
+    "additionalData": [],
     "urls": [ "http://www.test.de", "http://www.test.de" ]
   },
   "commands": [
     {
       "classname": "Document.SaveAndClose",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
-      "version": "1.0"
+      "version": "2.0"
     },
     {
       "classname": "Document.CreateCopy",
