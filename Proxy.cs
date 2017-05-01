@@ -1,8 +1,6 @@
-﻿using System;
-using System.Linq;
-using Indd.Contracts;
+﻿using Indd.Contracts;
 using System.Collections.Generic;
-using CommandLine;
+
 using Indd.Service.Commands;
 using CliRequest = Indd.Cli.Request.CommandList;
 
@@ -25,14 +23,19 @@ namespace Indd
 
             dynamic commandRequests = CliRequest.getCommandList(result.Value.InputFile);
 
+            dynamic responseObject = CliRequest.getResponseObject(result.Value.InputFile);
+
             List<ICommand> commandList = commandFactory.buildCommandObjectList(commandRequests);
 
             commandFactory.buildCommandObjectList(commandList);
 
             foreach (Indd.Contracts.ICommand command in commandList)
             {
-                command.processSequence();
+                List<System.Exception> exceptions = command.processSequence();
             }
+
+
+
         }
     }
 }
