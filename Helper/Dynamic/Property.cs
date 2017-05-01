@@ -31,5 +31,23 @@ namespace Indd.Helper.Dynamic
             return (propInfoSrcObj != null);
         }
 
+        /// <summary>
+        /// returns value by propertyname
+        /// </summary>
+        /// <param name="srcObject"></param>
+        /// <param name="propertyName"></param>
+        /// <returns>dynamic</returns>
+        public static dynamic getValue(dynamic srcObject, string propertyName)
+        {
+               System.Type type = srcObject.GetType();
+            
+                PropertyInfo property = type.GetProperty(propertyName);
+
+                if (property == null) throw new System.Exception("No property: " + propertyName);
+
+                dynamic value = property.GetValue(srcObject, null);
+
+                return value;
+        }
     }
 }

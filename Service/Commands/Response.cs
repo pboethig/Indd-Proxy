@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Net;
 using Indd.Contracts;
-using System.Reflection;
 
 namespace Indd.Service.Commands
 {
@@ -78,25 +77,15 @@ namespace Indd.Service.Commands
         /// <param name="command"></param>
         private void addAdditionalDataItem(dynamic additionalDataItem, dynamic command)
         {
-            string key =  (string)additionalDataItem.classname;
-
-            ICommand _command = (ICommand)command;
-
             string objectPath = "";
 
             try
             {
-                System.Type type = _command.GetType();
-
                 string propertyName = (string)additionalDataItem.property;
+                
+                dynamic value = Indd.Helper.Dynamic.Property.getValue(command, propertyName);
 
-                PropertyInfo property = type.GetProperty(propertyName);
-
-                if (property == null) throw new System.Exception("No property: " + propertyName + " found in Class: " + command.classname);
-
-                dynamic value = property.GetValue(_command, null);
-
-                objectPath = key + "." + propertyName;
+                objectPath = additionalDataItem.classname + "." + propertyName;
 
                 KeyValuePair<string, dynamic> propertyValue = new KeyValuePair<string, dynamic>(objectPath, value);
 
