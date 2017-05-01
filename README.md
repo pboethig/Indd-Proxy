@@ -62,18 +62,29 @@ this payload contains all availabe command:
 
 ```
 {
-  "response": {
-    "ticketId": "${ticketId}",
-    "message": "${status}",
-    "errors": [ "${errors}" ],
-    "additionalData": "${additionalData}",
-    "urls": [ "http://www.test.de", "http://www.test.de" ]
+  "id": "213123-12312-3123-asdd-asdasdasdasd",
+  "response": 
+  {
+      "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+      "status": "open",
+      "errors": [],
+      "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ],
+      "additionalData": [
+        {
+          "classname": "Document.CreateCopy",
+          "property": "targetUuid"
+        },
+        {
+          "classname": "Document.CreateCopy",
+          "property": "targetFolderPath"
+        }
+    ]
   },
   "commands": [
     {
       "classname": "Document.SaveAndClose",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
-      "version": "1.0"
+      "version": "2.0"
     },
     {
       "classname": "Document.CreateCopy",
