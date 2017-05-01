@@ -2,11 +2,20 @@
   "id": "213123-12312-3123-asdd-asdasdasdasd",
   "response": 
   {
-    "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
-    "status": "open",
-    "errors": [],
-    "additionalData": [],
-    "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ]
+      "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+      "status": "open",
+      "errors": [],
+      "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ],
+      "additionalData": [
+        {
+          "classname": "Document.CreateCopy",
+          "property": "targetUuid"
+        },
+        {
+          "classname": "Document.CreateCopy",
+          "property": "targetFolderPath"
+        }
+    ]
   },
   "commands": [
     {

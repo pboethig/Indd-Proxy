@@ -81,10 +81,26 @@
         public void CommandFactory_buildJsonResponse()
         {
             Response response = commandFactory.processTicket(commandRequests);
+            
+            string jsonString = response.toJson();
+            
+            Assert.IsNotEmpty(jsonString);
+        }
+
+        [Test]
+        public void CommandFactory_BuildAdditionalData()
+        {
+            Response response = commandFactory.processTicket(commandRequests);
+
+            Assert.IsNotEmpty(response.additionalData);
+
+            Assert.AreEqual(2, response.additionalData.Count);
 
             string jsonString = response.toJson();
 
-            Assert.IsNotEmpty(jsonString);
+             dynamic decodedResponse = Indd.Helper.Json.Convert.deserializeObject(jsonString);
+
+            Assert.AreEqual(decodedResponse.additionalData.Count, response.additionalData.Count);  
         }
 
         [Test]

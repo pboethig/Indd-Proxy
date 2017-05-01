@@ -1,5 +1,4 @@
 ﻿using System;
-using Indd.Helper.IO;
 using Indd.Service.Config;
 using System.IO;
 namespace Indd.Service.Commands.Document {
@@ -17,12 +16,12 @@ namespace Indd.Service.Commands.Document {
         /// <summary>
         /// Guid of the target copy
         /// </summary>
-        private Guid targetUuid;
+        public Guid targetUuid { get; set; }
 
         /// <summary>
         /// path of target
         /// </summary>
-        private string targetFolderPath;
+        public string targetFolderPath { get; set; }
 
         /// <summary>
         /// Saves dynamic command 

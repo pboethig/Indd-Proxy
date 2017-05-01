@@ -103,7 +103,7 @@ namespace Indd.Service.Commands
                 exceptions.Add(ex);
             }
 
-            string stat ="Jobticket executed: " + this.classname
+            string stat ="Command executed: " + this.classname
                 + " \nTicketId: " + this.commandRequest.ticketId
                 + " \nPayload:\n " + this.commandRequest;
 

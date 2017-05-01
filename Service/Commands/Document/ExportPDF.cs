@@ -16,7 +16,7 @@ namespace Indd.Service.Commands.Document {
         /// <summary>
         /// Contains the exported filepath
         /// </summary>
-        public string exportFilePath;
+        public string exportFilePath { get; set; }
 
         /// <summary>
         /// Open a document, if its not allready open

@@ -82,8 +82,10 @@ namespace Indd.Service.Commands
                     ticketExceptions.Add(commandExceptions);
                 }
             }
+
+            Response response = new Response(ticket, ticketExceptions, commands);
             
-            return new Response(ticket, ticketExceptions, commands);
+            return response;
         }
     }
 }

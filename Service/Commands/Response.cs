@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Net;
 using Indd.Contracts;
+using System.Reflection;
+
 namespace Indd.Service.Commands
 {
     /// <summary>
@@ -26,7 +28,7 @@ namespace Indd.Service.Commands
         /// <summary>
         /// Can be used to pass custom data to client
         /// </summary>
-        public List<dynamic> additionalData = new List<dynamic>();
+        public List<KeyValuePair<string,dynamic>> additionalData = new List<KeyValuePair<string,dynamic>>();
 
         /// <summary>
         /// Urls to notifiy
@@ -54,17 +56,65 @@ namespace Indd.Service.Commands
         /// Adds requested objectproperties, if exists on object
         /// </summary>
         /// <param name="ticket"></param>
-        /// <param name="command"></param>
-        private void handleAdditionalData(dynamic ticket, List<ICommand> command)
+        /// <param name="commands"></param>
+        private void handleAdditionalData(dynamic ticket, List<ICommand> commands)
         {
-            this.additionalData.Add(ticket.response.additionalData);
+            foreach (dynamic command in commands)
+            {
+                foreach (dynamic additionalDataItem in ticket.response.additionalData)
+                {
+                    if (additionalDataItem.classname == command.classname)
+                    {
+                        this.addAdditionalDataItem(additionalDataItem, command);
+                    }
+                }
+            }
         }
 
         /// <summary>
-        /// Handles ticketExceptions
+        /// Adds additionalDataItem to response
         /// </summary>
-        /// <param name="ticketExceptions"></param>
-        private void handleExceptions(List<List<System.Exception>> ticketExceptions)
+        /// <param name="additionalDataItem"></param>
+        /// <param name="command"></param>
+        private void addAdditionalDataItem(dynamic additionalDataItem, dynamic command)
+        {
+            string key =  (string)additionalDataItem.classname;
+
+            ICommand _command = (ICommand)command;
+
+            string objectPath = "";
+
+            try
+            {
+                System.Type type = _command.GetType();
+
+                string propertyName = (string)additionalDataItem.property;
+
+                PropertyInfo property = type.GetProperty(propertyName);
+
+                if (property == null) throw new System.Exception("No property: " + propertyName + " found in Class: " + command.classname);
+
+                dynamic value = property.GetValue(_command, null);
+
+                objectPath = key + "." + propertyName;
+
+                KeyValuePair<string, dynamic> propertyValue = new KeyValuePair<string, dynamic>(objectPath, value);
+
+                this.additionalData.Add(propertyValue);
+            }
+            catch (System.Exception ex)
+            {
+                KeyValuePair<string, dynamic> propertyValue = new KeyValuePair<string, dynamic>(objectPath, ex.Message);
+
+                this.additionalData.Add(propertyValue);
+            }
+        }
+
+    /// <summary>
+    /// Handles ticketExceptions
+    /// </summary>
+    /// <param name="ticketExceptions"></param>
+    private void handleExceptions(List<List<System.Exception>> ticketExceptions)
         {
             if (ticketExceptions.Count > 0)
             {
