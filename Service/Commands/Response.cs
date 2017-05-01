@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Net;
-
+using Indd.Contracts;
 namespace Indd.Service.Commands
 {
     /// <summary>
@@ -26,7 +26,7 @@ namespace Indd.Service.Commands
         /// <summary>
         /// Can be used to pass custom data to client
         /// </summary>
-        public dynamic additionalData;
+        public List<dynamic> additionalData = new List<dynamic>();
 
         /// <summary>
         /// Urls to notifiy
@@ -37,17 +37,27 @@ namespace Indd.Service.Commands
         /// Saves RequestData
         /// </summary>
         /// <param name="ticket"></param>
-        public Response(dynamic ticket, List<List<System.Exception>> ticketExceptions)
+        public Response(dynamic ticket, List<List<System.Exception>> ticketExceptions, List<ICommand> commands)
         {
             this.ticketId = ticket.response.ticketId;
             
             this.status = "ready";
 
-            this.additionalData = ticket.response.additionalData;
+           this.handleAdditionalData(ticket, commands);
 
             this.urls = ticket.response.urls;
 
             this.handleExceptions(ticketExceptions);
+        }
+
+        /// <summary>
+        /// Adds requested objectproperties, if exists on object
+        /// </summary>
+        /// <param name="ticket"></param>
+        /// <param name="command"></param>
+        private void handleAdditionalData(dynamic ticket, List<ICommand> command)
+        {
+            this.additionalData.Add(ticket.response.additionalData);
         }
 
         /// <summary>

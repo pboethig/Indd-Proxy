@@ -71,7 +71,9 @@ namespace Indd.Service.Commands
         /// <returns>Response</returns>
         public Response processTicket(dynamic ticket)
         {
-            foreach (Indd.Contracts.ICommand command in buildCommandObjectList(ticket))
+            List<ICommand> commands = buildCommandObjectList(ticket);
+
+            foreach (Indd.Contracts.ICommand command in commands)
             {
                 List<System.Exception> commandExceptions = command.processSequence();
 
@@ -81,7 +83,7 @@ namespace Indd.Service.Commands
                 }
             }
             
-            return new Response(ticket, ticketExceptions);
+            return new Response(ticket, ticketExceptions, commands);
         }
     }
 }
