@@ -30,7 +30,8 @@
             {
                 classname = "Document.Open",
                 uuid = testuuid,
-                version = "1.0"
+                version = "1.0",
+                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
             };
             
             string filePath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/"+ testuuid + "/" +commandRequest.version+".indd";
@@ -40,7 +41,7 @@
                 Open DocumentOpenCommand = new Open(commandRequest);
 
                 DocumentOpenCommand.uuid = testuuid;
-
+                
                 DocumentOpenCommand.setDocumentPath(filePath);
 
                 DocumentOpenCommand.processSequence();

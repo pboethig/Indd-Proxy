@@ -17,12 +17,7 @@ namespace Indd.Service.Commands
 
         // Area is a read-only property - only a get accessor is needed:
         public dynamic commandRequest;
-
-        /// <summary>
-        /// ticketId
-        /// </summary>
-        public string ticketId;
-
+        
         /// <summary>
         /// UUID of whatever
         /// </summary>
@@ -66,17 +61,7 @@ namespace Indd.Service.Commands
         {
             this.commandRequest = _commandRequests;
         }
-
-        /// <summary>
-        /// Set ticketId
-        /// </summary>
-        /// <param name="ticketId"></param>
-        public void setTicketId(string ticketId)
-        {
-            this.ticketId = ticketId;
-        }
-
-
+        
         /// <summary>
         /// 
         /// </summary>
@@ -105,7 +90,7 @@ namespace Indd.Service.Commands
                     string message =
                         "JobticketException: " + this.classname + " throws an Error. " 
                         +"\nInner Exception:"+ ex.Message + innerExceptionMessage
-                        + " \nTicketId: " + this.ticketId
+                        + " \nTicketId: " + this.commandRequest.ticketId
                         + " \nPayload:\n " + this.commandRequest;
 
                     Syslog.log(message);
@@ -119,7 +104,7 @@ namespace Indd.Service.Commands
             }
 
             string stat ="Jobticket executed: " + this.classname
-                + " \nTicketId: " + this.ticketId
+                + " \nTicketId: " + this.commandRequest.ticketId
                 + " \nPayload:\n " + this.commandRequest;
 
             Syslog.log(stat, System.Diagnostics.EventLogEntryType.SuccessAudit);

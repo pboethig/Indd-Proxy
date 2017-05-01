@@ -28,18 +28,22 @@ namespace Indd.Service.Commands
         /// </summary>
         /// <param name="args"></param>
         /// <returns></returns>
-        public List<ICommand> buildCommandObjectList(dynamic commandRequests)
+        public List<ICommand> buildCommandObjectList(dynamic ticket)
         {
+            dynamic commandRequests = ticket.commands;
+
             foreach (dynamic request in commandRequests)
             {
                 string className = "Indd.Service.Commands." + request.classname;
 
                 try
                 {
+                    request.ticketId = ticket.id;
+
                     Type myType = Type.GetType(className);
 
                     ICommand command = Activator.CreateInstance(myType, request );
-
+                    
                     commandList.Add(command);
                 }
                 catch (System.Exception ex)
@@ -67,10 +71,8 @@ namespace Indd.Service.Commands
         /// <returns>Response</returns>
         public Response processTicket(dynamic ticket)
         {
-            foreach (Indd.Contracts.ICommand command in buildCommandObjectList(ticket.commands))
+            foreach (Indd.Contracts.ICommand command in buildCommandObjectList(ticket))
             {
-                command.setTicketId((string)ticket.id) ;
-
                 List<System.Exception> commandExceptions = command.processSequence();
 
                 if (commandExceptions.Count > 0)

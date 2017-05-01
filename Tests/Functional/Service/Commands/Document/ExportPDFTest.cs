@@ -27,7 +27,8 @@
                 classname = "Document.ExportPDF",
                 uuid = testuuid,
                 version = "2.0",
-                exportFolderPath = exportFolderPath
+                exportFolderPath = exportFolderPath,
+                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd"
             };
 
             filePath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/" + testuuid + "/" + commandRequest.version + ".indd";

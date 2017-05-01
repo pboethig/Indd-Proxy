@@ -52,6 +52,8 @@
         {
             Response response = commandFactory.processTicket(commandRequests);
 
+            Assert.IsNotEmpty(response.ticketId);
+
             Assert.AreEqual(0, response.errors.Count);
 
             Assert.AreEqual("ready", response.status);

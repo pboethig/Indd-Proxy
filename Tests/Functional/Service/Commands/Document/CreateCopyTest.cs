@@ -45,10 +45,12 @@
             {
                 classname = "Document.SaveAndClose",
                 uuid = testuuid,
-                version = "1.0"
+                version = "1.0",
+                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
             };
 
             SaveAndClose command = new SaveAndClose(commandRequest);
+
             command.processSequence();
         }
 
@@ -60,6 +62,7 @@
             dynamic commandRequest = new
             {
                 classname = "CreateCopy",
+                ticketId="dsedsd-sdsdsd-sdsdsd-sdsdsd",
                 uuid = testuuid,
                 version = "1.0",
                 serverless =true
@@ -74,8 +77,6 @@
             Assert.IsEmpty(exceptions);
 
             System.IO.Directory.Delete(command.getTargetFolderPath(), true);
-
         }
-        
      }
 }

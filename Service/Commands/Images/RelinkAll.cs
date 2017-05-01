@@ -39,7 +39,8 @@ namespace Indd.Service.Commands.Images {
                 {
                     classname = "Document.Open",
                     uuid = this.uuid,
-                    version = "1.0"
+                    version = "1.0",
+                    ticketId = this.commandRequest.ticketId
                 };
 
                 Open DocumentOpenCommand = new Open(DocumentOpenCommandRequest);

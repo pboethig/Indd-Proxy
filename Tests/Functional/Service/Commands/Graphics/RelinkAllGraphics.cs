@@ -35,7 +35,8 @@
                 {
                     classname = "Document.Open",
                     uuid = testuuid,
-                    version = "1.0"
+                    version = "1.0",
+                    ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd"
                 };
 
                 string testFolderPath = rootDir + "/Tests/Functional/Fixures/templates/" + testuuid;
@@ -46,7 +47,8 @@
                 {
                     classname = "Document.Open",
                     uuid = testuuid,
-                    version = "1.0"
+                    version = "1.0",
+                    ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd"
                 };
                 
                 Open DocumentOpenCommand = new Open(commandRequest);
@@ -68,7 +70,8 @@
                     classname = "Relink",
                     uuid = testuuid,
                     version = "1.0",
-                    basePath = testFolderPath
+                    basePath = testFolderPath,
+                    ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
                 };
                 
                 RelinkAll relinkCommand = new RelinkAll(relinkCommandRequest);
