@@ -123,6 +123,21 @@ this payload contains all availabe command:
       "version": "1.0"
     },
     {
+      "classname": "TextFrames.SetContents",
+      "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "version": "1.0",
+      "frameIdToContentsMap": [
+        {
+          "frameId": "7256",
+          "contents": "Here is a text"
+        },
+        {
+          "frameId": "7233",
+          "contents": "and here is another"
+        }
+      ]
+    },
+    {
       "classname": "Document.ExportPDF",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
       "version": "1.0",
