@@ -30,7 +30,8 @@
                 classname = "Document.SaveAndClose",
                 uuid = testuuid,
                 version = "2.0",
-                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd"
+                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
+                extension="indd"
             };
             
              SaveAndClose command = new SaveAndClose(commandRequest);

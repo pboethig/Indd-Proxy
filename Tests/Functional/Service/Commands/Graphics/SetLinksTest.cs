@@ -27,7 +27,8 @@
                 classname = "Document.SaveAndClose",
                 uuid = testuuid,
                 version = "2.0",
-                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd"
+                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
+                extension="indd"
             };
 
             SaveAndClose command = new SaveAndClose(commandRequest);
@@ -60,20 +61,21 @@
 
                 dynamic objectToImageLinkMap = Indd.Helper.Json.Convert.deserializeObject(mock);
 
-                dynamic setLinkCommandRequest = new
-                {
-                    classname = "Relink",
-                    uuid = testuuid,
-                    version = "2.0",
-                    objectToImageLinkMap,
-                    ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd"
+            dynamic setLinkCommandRequest = new
+            {
+                classname = "Relink",
+                uuid = testuuid,
+                version = "2.0",
+                objectToImageLinkMap,
+                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
+                extension = "indd"
                 };
             
             SetLinks setLinkCommand = new SetLinks(setLinkCommandRequest);
 
             setLinkCommand.processSequence();
 
-            Assert.AreEqual("2.0.indd", setLinkCommand.document.Name);
+            Assert.AreEqual("2.0." + setLinkCommandRequest.extension, setLinkCommand.document.Name);
             
             List<System.Exception> exceptions = setLinkCommand.processSequence();
 
@@ -110,14 +112,15 @@
             uuid = testuuid,
             version = "1.0",
             objectToImageLinkMap,
-            ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd"
+            ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
+            extension="indd"
         };
 
         SetLinks setLinkCommand = new SetLinks(setLinkCommandRequest);
 
         setLinkCommand.processSequence();
 
-        Assert.AreEqual("1.0.indd", setLinkCommand.document.Name);
+        Assert.AreEqual("1.0." + setLinkCommandRequest.extension, setLinkCommand.document.Name);
 
         List<System.Exception> exceptions = setLinkCommand.processSequence();
 

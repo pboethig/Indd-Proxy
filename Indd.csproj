@@ -60,6 +60,7 @@
     <Compile Include="Helper\IO\Directory.cs" />
     <Compile Include="Helper\IO\ScripingFileSystemObject.cs" />
     <Compile Include="Service\Commands\Abstract.cs" />
+    <Compile Include="Service\Commands\Book\Open.cs" />
     <Compile Include="Service\Commands\Document\ExportPDF.cs" />
     <Compile Include="Service\Commands\Factory.cs" />
     <Compile Include="Service\Commands\Document\CreateCopy.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Tests\Functional\Cli\CommandLineRequestTest.cs" />
     <Compile Include="Tests\Functional\Helper\Json\ConvertTest.cs" />
     <Compile Include="Tests\Functional\Log\SyslogTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Book\OpenBookTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportPDFTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\SaveAndCloseDocumentTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Graphics\SetLinksTest.cs" />
@@ -97,6 +99,9 @@
     <Compile Include="Proxy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\Functional\Service\Config\ManagerTest.cs" />
+    <None Include="Tests\Functional\Fixures\assets\2.0.indd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG01.eps">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -130,6 +135,7 @@
     <None Include="Tests\Functional\Fixures\jobQueue\In\c2335ce8-7000-4287-8972-f355ed23bd7f.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indb" />
     <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indd">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

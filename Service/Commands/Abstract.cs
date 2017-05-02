@@ -44,6 +44,11 @@ namespace Indd.Service.Commands
         public bool serverless = false;
 
         /// <summary>
+        /// document extension
+        /// </summary>
+        public string extension = "indd";
+
+        /// <summary>
         /// Indesign Server application
         /// </summary>
         public InDesignServer.Application application;
@@ -125,6 +130,8 @@ namespace Indd.Service.Commands
 
                 this.classname = this.commandRequest.classname;
 
+                this.extension = this.commandRequest.extension;
+
                 if (Property.isset("serverless", this.commandRequest))
                 {
                     this.serverless = commandRequest.serverless;
@@ -154,7 +161,7 @@ namespace Indd.Service.Commands
         /// <returns></returns>
         public string buildDocumentPath()
         {
-            string path = ConfigManager.getStoragePath("templates") + "/" + this.uuid + "/" + this.version + ".indd";
+            string path = ConfigManager.getStoragePath("templates") + "/" + this.uuid + "/" + this.version + "." + this.extension;
 
             if (!System.IO.File.Exists(path))
             {

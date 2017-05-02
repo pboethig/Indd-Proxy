@@ -28,7 +28,8 @@
                 classname = "Document.SaveAndClose",
                 uuid = testuuid,
                 version = "1.0",
-                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd"
+                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
+                extension="indd"
             };
 
             SaveAndClose command = new SaveAndClose(commandRequest);
@@ -59,6 +60,7 @@
                     uuid = testuuid,
                     version = "1.0",
                     ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
+                    extension = "indd",
                     frameIdToContentsMap=Indd.Helper.Json.Convert.deserializeObject(mock)
                 };
                 

@@ -1,16 +1,19 @@
 ﻿using System;
-using System.Linq;
-using CommandLine;
 using Indd.Service.IndesignServerWrapper;
-using Indd.Service.Log;
 
-namespace Indd.Service.Commands.Document {
+
+namespace Indd.Service.Commands.Book {
 
     /// <summary>
     /// Options to generate proxy
     /// </summary>
     class Open : Abstract,  Contracts.ICommand
     {
+        /// <summary>
+        /// Indesign book 
+        /// </summary>
+        public InDesignServer.Book book;
+
         /// <summary>
         /// Saves dynamic command 
         /// </summary>
@@ -30,23 +33,23 @@ namespace Indd.Service.Commands.Document {
                     this.application = (new ApplicationMananger()).createInstance();
                 }
 
-                foreach (InDesignServer.Document _document in this.application.Documents)
+                foreach (InDesignServer.Book _book in this.application.Books)
                 {
-                    if (_document.Name == this.version + "." + this.extension)
+                    if (_book.Name ==  this.version + "." + this.extension)
                     {
-                        this.document =_document;
+                        this.book =_book;
 
                         return true;
                     }
                 }
                 
-                this.document = this.application.Open(this.documentPath);
+                this.book = this.application.Open(this.documentPath);
 
                 return true;
             }
             catch (System.Exception ex)
             {
-                throw new SystemException("Document.Open: Cannot open document: + " + this.documentPath + " Message:" + ex.Message);
+                throw new SystemException("Book.Open: Cannot open book: + " + this.documentPath + " Message:" + ex.Message);
             }
         }
         

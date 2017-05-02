@@ -32,7 +32,8 @@
             {
                 classname = "Document.SaveAndClose",
                 uuid = testuuid,
-                version = "1.0"
+                version = "1.0",
+                extenstion = "indd"
             };
 
             SaveAndClose command = new SaveAndClose(commandRequest);
@@ -47,6 +48,7 @@
                 uuid = testuuid,
                 version = "1.0",
                 ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
+                extenstion = "indd"
             };
 
             SaveAndClose command = new SaveAndClose(commandRequest);
@@ -65,10 +67,11 @@
                 ticketId="dsedsd-sdsdsd-sdsdsd-sdsdsd",
                 uuid = testuuid,
                 version = "1.0",
-                serverless =true
+                serverless =true,
+                extension = "indd"
             };
             
-            string filePath = folderPath + "/" +commandRequest.version+".indd";
+            string filePath = folderPath + "/" +commandRequest.version+"." + commandRequest.extension;
 
             CreateCopy command = new CreateCopy(commandRequest);
 

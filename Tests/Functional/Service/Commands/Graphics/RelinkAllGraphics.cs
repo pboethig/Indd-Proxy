@@ -36,34 +36,12 @@
                     classname = "Document.Open",
                     uuid = testuuid,
                     version = "1.0",
-                    ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd"
-                };
-
-                string testFolderPath = rootDir + "/Tests/Functional/Fixures/templates/" + testuuid;
-
-                string filePath = testFolderPath + "/" + commandRequest.version + ".indd";
-
-                commandRequest = new
-                {
-                    classname = "Document.Open",
-                    uuid = testuuid,
-                    version = "1.0",
-                    ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd"
+                    ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
+                    extension="indd"
                 };
                 
-                Open DocumentOpenCommand = new Open(commandRequest);
-
-                DocumentOpenCommand.uuid = testuuid;
-
-                DocumentOpenCommand.setDocumentPath(filePath);
-
-                DocumentOpenCommand.processSequence();
-
-                Assert.AreEqual(DocumentOpenCommand.document.Name, "1.0.indd");
-
                 ///relink all assets to new basePath
-
-                testFolderPath = rootDir + "/Tests/Functional/Fixures/assets";
+                string testFolderPath = rootDir + "/Tests/Functional/Fixures/assets";
 
                 dynamic relinkCommandRequest = new
                 {
@@ -72,6 +50,7 @@
                     version = "1.0",
                     basePath = testFolderPath,
                     ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
+                    extension = "indd"
                 };
                 
                 RelinkAll relinkCommand = new RelinkAll(relinkCommandRequest);

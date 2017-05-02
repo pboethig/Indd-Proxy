@@ -40,7 +40,8 @@ namespace Indd.Service.Commands.Images {
                     classname = "Document.Open",
                     uuid = this.uuid,
                     version = this.version,
-                    ticketId = this.commandRequest.ticketId
+                    ticketId = this.commandRequest.ticketId,
+                    extension=this.extension
                 };
 
                 Open DocumentOpenCommand = new Open(DocumentOpenCommandRequest);
@@ -77,7 +78,7 @@ namespace Indd.Service.Commands.Images {
 
                 string fileName = this.basePath + "/" + link.Name;
                 
-                if (!System.IO.File.Exists(this.basePath + "/" + link.Name))
+                if (!System.IO.File.Exists(fileName))
                 {
                     throw new System.IO.FileNotFoundException("LinkPath not found: " + fileName);
                 }

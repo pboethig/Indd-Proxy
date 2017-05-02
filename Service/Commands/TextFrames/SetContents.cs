@@ -38,7 +38,8 @@ namespace Indd.Service.Commands.TextFrames
                     classname = "Document.Open",
                     uuid = this.uuid,
                     version = this.version,
-                    ticketId = this.commandRequest.ticketId
+                    ticketId = this.commandRequest.ticketId,
+                    extension=this.extension
                 };
 
                 Open DocumentOpenCommand = new Open(DocumentOpenCommandRequest);

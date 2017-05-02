@@ -28,10 +28,11 @@
                 uuid = testuuid,
                 version = "2.0",
                 exportFolderPath = exportFolderPath,
-                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd"
+                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
+                extension="indd"
             };
 
-            filePath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/" + testuuid + "/" + commandRequest.version + ".indd";
+            filePath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/" + testuuid + "/" + commandRequest.version + "." + commandRequest.extension;
         }
 
         [TearDown]

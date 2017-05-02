@@ -46,3 +46,4 @@ C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\nunit.
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Indd-proyx.exe
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Indd-proyx.pdb
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Tests\Functional\Fixures\jobQueue\In\failingTicket.json
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Tests\Functional\Fixures\assets\2.0.indd
