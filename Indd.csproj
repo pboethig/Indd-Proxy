@@ -64,6 +64,7 @@
     <Compile Include="Service\Commands\Factory.cs" />
     <Compile Include="Service\Commands\Document\CreateCopy.cs" />
     <Compile Include="Service\Commands\Document\SaveAndClose.cs" />
+    <Compile Include="Service\Commands\TextFrames\SetContents.cs" />
     <Compile Include="Service\Commands\Images\Base.cs" />
     <Compile Include="Service\Commands\Images\SetLinks.cs" />
     <Compile Include="Service\Commands\Images\RelinkAll.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Tests\Functional\Service\Commands\Document\CreateCopyTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\OpenDocumentTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\FactoryTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\TextFrames\SetContents.cs" />
     <Compile Include="Tests\Functional\Service\IndesignServer\ApplicationTest.cs" />
     <None Include="Cli\.gitignore" />
     <None Include="jobqueues.json">
