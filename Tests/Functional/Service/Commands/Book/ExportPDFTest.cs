@@ -1,8 +1,8 @@
-﻿namespace Indd.Tests.Functional.Service.IndesignServer
+﻿namespace Indd.Tests.Functional.Service.Command.Book
 {
     using NUnit.Framework;
     using System.Collections.Generic;
-    using Indd.Service.Commands.Book;
+    using Indd.Service.Commands.Document;
 
     [TestFixture]
     public class ExportPDFTest
@@ -24,12 +24,12 @@
 
             commandRequest = new
             {
-                classname = "Book.ExportPDF",
+                classname = "Document.ExportPDF",
                 uuid = testuuid,
-                version = "1.0",
+                version = "2.0",
                 exportFolderPath = exportFolderPath,
                 ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
-                extension="indb"
+                extension="indd"
             };
 
             filePath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/" + testuuid + "/" + commandRequest.version + "." + commandRequest.extension;
@@ -42,7 +42,7 @@
         }
 
         [Test]
-        public void Commands_Book_ExportPDF()
+        public void Commands_Document_ExportPDF()
         {
                 ExportPDF command = new ExportPDF(commandRequest);
 
@@ -59,7 +59,7 @@
 
                 Assert.IsTrue(System.IO.File.Exists(command.exportFilePath));
 
-                command.book.Close();
+                command.document.Close();
 
                 System.IO.File.Delete(command.exportFilePath);
         }

@@ -10,11 +10,6 @@ namespace Indd.Service.Commands.Book {
     class Open : Abstract,  Contracts.ICommand
     {
         /// <summary>
-        /// Indesign book 
-        /// </summary>
-        public InDesignServer.Book book;
-
-        /// <summary>
         /// Saves dynamic command 
         /// </summary>
         /// <param name="commandRequests"></param>

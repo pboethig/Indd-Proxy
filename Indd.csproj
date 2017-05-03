@@ -60,6 +60,7 @@
     <Compile Include="Helper\IO\Directory.cs" />
     <Compile Include="Helper\IO\ScripingFileSystemObject.cs" />
     <Compile Include="Service\Commands\Abstract.cs" />
+    <Compile Include="Service\Commands\Book\ExportPDF.cs" />
     <Compile Include="Service\Commands\Book\Open.cs" />
     <Compile Include="Service\Commands\Document\ExportPDF.cs" />
     <Compile Include="Service\Commands\Factory.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Tests\Functional\Cli\CommandLineRequestTest.cs" />
     <Compile Include="Tests\Functional\Helper\Json\ConvertTest.cs" />
     <Compile Include="Tests\Functional\Log\SyslogTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Book\ExportPDFTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Book\OpenBookTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportPDFTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\SaveAndCloseDocumentTest.cs" />

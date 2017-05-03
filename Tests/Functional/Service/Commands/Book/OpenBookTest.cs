@@ -44,7 +44,7 @@
             BookOpenCommand.setDocumentPath(filePath);
 
             BookOpenCommand.processSequence();
-
+            
             List<System.Exception> exceptions = BookOpenCommand.processSequence();
 
             Assert.IsEmpty(exceptions);
