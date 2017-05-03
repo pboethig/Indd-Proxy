@@ -53,6 +53,9 @@ Indd-Proxy.exe -f <path to json payload>
 #### Images
 - Images.RelinkAll
 - Images.SetLinks
+#### Book
+- Book.Open
+- Book.ExportPdf
 
 ### JSON Commandlist Payloads
 
@@ -84,23 +87,27 @@ this payload contains all availabe command:
     {
       "classname": "Document.SaveAndClose",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
       "version": "2.0"
     },
     {
       "classname": "Document.CreateCopy",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
       "version": "1.0",
       "serverless": "true"
     },
     {
       "classname": "Images.RelinkAll",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
       "version": "1.0",
       "basePath": "Z:/indd/templates/c2335ce8-7000-4287-8972-f355ed23bd7f"
     },
     {
       "classname": "Images.SetLinks",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
       "version": "1.0",
       "objectToImageLinkMap": [
         {
@@ -120,11 +127,13 @@ this payload contains all availabe command:
     {
       "classname": "Document.Open",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
       "version": "1.0"
     },
     {
       "classname": "TextFrames.SetContents",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
       "version": "1.0",
       "frameIdToContentsMap": [
         {
@@ -140,13 +149,28 @@ this payload contains all availabe command:
     {
       "classname": "Document.ExportPDF",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
       "version": "1.0",
       "exportFolderPath": "Z:/indd/exports"
     },
     {
       "classname": "Document.SaveAndClose",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
       "version": "1.0"
+    },
+    {
+      "classname": "Book.Open",
+      "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indb",
+      "version": "1.0"
+    },
+    {
+      "classname": "Book.ExportPDF",
+      "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indb",
+      "version": "1.0",
+      "exportFolderPath": "Z:/indd/exports"
     }
   ]
 }
