@@ -144,7 +144,7 @@ namespace Indd.Service.Commands
 
                 this.buildServerInstance();
 
-                this.setDocumentPath(this.buildDocumentPath());
+                this.setDocumentPath(this.buildDocumentPath(this.uuid, this.version, this.extension));
             }
         }
 
@@ -164,9 +164,9 @@ namespace Indd.Service.Commands
         /// Builds documentPath
         /// </summary>
         /// <returns></returns>
-        public string buildDocumentPath()
+        public string buildDocumentPath(string uuid, string version, string extension)
         {
-            string path = ConfigManager.getStoragePath("templates") + "/" + this.uuid + "/" + this.version + "." + this.extension;
+            string path = ConfigManager.getStoragePath("templates") + "\\" + uuid + "\\" + version + "." + extension;
 
             if (!System.IO.File.Exists(path))
             {

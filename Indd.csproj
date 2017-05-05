@@ -60,6 +60,7 @@
     <Compile Include="Helper\IO\Directory.cs" />
     <Compile Include="Helper\IO\ScripingFileSystemObject.cs" />
     <Compile Include="Service\Commands\Abstract.cs" />
+    <Compile Include="Service\Commands\BookContent\Add.cs" />
     <Compile Include="Service\Commands\Book\ExportPDF.cs" />
     <Compile Include="Service\Commands\Book\Open.cs" />
     <Compile Include="Service\Commands\Document\ExportPDF.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Tests\Functional\Cli\CommandLineRequestTest.cs" />
     <Compile Include="Tests\Functional\Helper\Json\ConvertTest.cs" />
     <Compile Include="Tests\Functional\Log\SyslogTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\BookContents\AddTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Book\ExportPDFTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Book\OpenBookTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportPDFTest.cs" />
@@ -137,13 +139,22 @@
     <None Include="Tests\Functional\Fixures\jobQueue\In\c2335ce8-7000-4287-8972-f355ed23bd7f.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indb" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indd">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\2.0.indd">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\3.0.indd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\4.0.indd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\5.0.indb" />
     <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG01.eps">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

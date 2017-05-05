@@ -79,13 +79,14 @@
             
             List<System.Exception> exceptions = setLinkCommand.processSequence();
 
+            setLinkCommand.document.Close();
+
             Assert.IsEmpty(exceptions);
         }
 
     [Test]
     public void Commands_SetLinksV1()
     {
-
         string testFolderPath = root + "/Tests/Functional/Fixures/templates/" + testuuid;
 
         string test = @" [

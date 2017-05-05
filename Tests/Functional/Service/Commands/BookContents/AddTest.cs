@@ -1,18 +1,16 @@
-﻿namespace Indd.Tests.Functional.Service.IndesignServer
+﻿namespace Indd.Tests.Functional.Service.Command.BookContents
 {
     using NUnit.Framework;
     using System.Collections.Generic;
-    using Indd.Service.Commands.Book;
+    using Indd.Service.Commands.BookContents;
 
     [TestFixture]
-    public class ExportPDFTest
+    public class AddTest
     {
         string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
         
         string root = Indd.Service.Config.Manager.getRootDirectory();
-
-        string exportFolderPath;
-
+        
         dynamic commandRequest;
 
         string filePath;
@@ -20,14 +18,26 @@
         [SetUp]
         public void Setup()
         {
-            exportFolderPath = root + "/Tests/Functional/Fixures/exports";
-
+            string documentUuids = @" [
+                  {
+                    ""uuid"": ""c2335ce8-7000-4287-8972-f355ed23bd7f"",
+                    ""extension"": ""indd"",
+                    ""version"": ""2.0""
+                  },
+                  {
+                    ""uuid"": ""c2335ce8-7000-4287-8972-f355ed23bd7f"",
+                    ""extension"": ""indd"",
+                    ""version"": ""3.0""
+                  }
+                ]
+                ";
+            
             commandRequest = new
             {
-                classname = "Book.ExportPDF",
+                classname = "BookContent.Add",
                 uuid = testuuid,
-                version = "5.0 - Kopie",
-                exportFolderPath = exportFolderPath,
+                version = "1.0",
+                documentUuids = Indd.Helper.Json.Convert.deserializeObject(documentUuids),
                 ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
                 extension="indb"
             };
@@ -42,26 +52,22 @@
         }
 
         [Test]
-        public void Commands_Book_ExportPDF()
+        public void Commands_BookContents_Add()
         {
-                ExportPDF command = new ExportPDF(commandRequest);
+                Add command = new Add(commandRequest);
 
                 //set fixurepath
                 command.setDocumentPath(filePath);
-
-                command.processSequence();
-
+            
                 List<System.Exception> exceptions = command.processSequence();
 
                 Assert.IsEmpty(exceptions);
 
-                Assert.IsNotEmpty(command.exportFilePath);
+                Assert.IsNotNull(command.commandRequest.documentUuids);
 
-                Assert.IsTrue(System.IO.File.Exists(command.exportFilePath));
+                Assert.IsNotEmpty(command.commandRequest.ticketId);
 
                 command.book.Close();
-            
-                System.IO.File.Delete(command.exportFilePath);
         }
     }
 }

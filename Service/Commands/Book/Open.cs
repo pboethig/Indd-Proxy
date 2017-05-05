@@ -34,7 +34,7 @@ namespace Indd.Service.Commands.Book {
                     {
                         this.book =_book;
 
-                        return true;
+                       return true;
                     }
                 }
                 
