@@ -4,11 +4,13 @@
     using CliRequest = Indd.Cli.Request.CommandList;
 
     [TestFixture]
-    public class CommandLineRequestTest
+    public class CommandLineRequestTest : TestAbstract
     {
         [SetUp]
         public void Setup()
         {
+
+            ticket = this.getTicket("c2335ce8-7000-4287-8972-f355ed23bd7f");
         }
 
         [TearDown]
@@ -19,12 +21,6 @@
         [Test]
         public void CliRequestCommandline_getCommandList()
         {
-            string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
-
-            string filePath = Indd.Service.Config.Manager.getRootDirectory() + "../../../Tests/Functional/Fixures/jobQueue/In/"+ testuuid + ".json";
-            
-            dynamic ticket = CliRequest.convertJsonTicket(filePath);
-
             foreach (dynamic command in ticket.commands)
             {
                 Assert.NotNull(command.classname);

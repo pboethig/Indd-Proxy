@@ -1,38 +1,14 @@
-﻿namespace Indd.Tests.Functional.Service.Command.Book
+﻿namespace Indd.Tests.Functional.Service.IndesignServer.Commands.Book
 {
     using NUnit.Framework;
-    using System.Collections.Generic;
-    using Indd.Service.Commands.Document;
-
+    using CommandResponse = Indd.Service.Commands.Response;
     [TestFixture]
-    public class ExportPDFTest
+    public class ExportPDFTest : TestAbstract
     {
-        string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
         
-        string root = Indd.Service.Config.Manager.getRootDirectory();
-
-        string exportFolderPath;
-
-        dynamic commandRequest;
-
-        string filePath;
-
-        [SetUp]
+      [SetUp]
         public void Setup()
         {
-            exportFolderPath = root + "/Tests/Functional/Fixures/exports";
-
-            commandRequest = new
-            {
-                classname = "Document.ExportPDF",
-                uuid = testuuid,
-                version = "2.0",
-                exportFolderPath = exportFolderPath,
-                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
-                extension="indd"
-            };
-
-            filePath = Indd.Service.Config.Manager.getRootDirectory() + "/Tests/Functional/Fixures/templates/" + testuuid + "/" + commandRequest.version + "." + commandRequest.extension;
         }
 
         [TearDown]
@@ -42,26 +18,15 @@
         }
 
         [Test]
-        public void Commands_Document_ExportPDF()
+        public void Commands_Book_ExportPDF()
         {
-                ExportPDF command = new ExportPDF(commandRequest);
+            ticket = base.getTicket("Book.ExportPDF");
 
-                //set fixurepath
-                command.setDocumentPath(filePath);
+            CommandResponse response = commandFactory.processTicket(ticket);
 
-                command.processSequence();
+            Assert.IsEmpty(response.errors);
 
-                List<System.Exception> exceptions = command.processSequence();
-
-                Assert.IsEmpty(exceptions);
-
-                Assert.IsNotEmpty(command.exportFilePath);
-
-                Assert.IsTrue(System.IO.File.Exists(command.exportFilePath));
-
-                command.document.Close();
-
-                System.IO.File.Delete(command.exportFilePath);
+            //System.IO.File.Delete(command.exportFilePath);
         }
     }
 }

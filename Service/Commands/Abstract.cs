@@ -6,15 +6,15 @@ using Indd.Helper.Dynamic;
 using Indd.Service.Log;
 using System.Collections.Generic;
 
+using DocumentOpenCommand=Indd.Service.Commands.Document.Open;
+using BookOpenCommand = Indd.Service.Commands.Book.Open;
 namespace Indd.Service.Commands
 {
-
     /// <summary>
     /// Preimplementation for registered commands
     /// </summary>
     public abstract class Abstract : Indd.Contracts.ICommand
     {
-
         // Area is a read-only property - only a get accessor is needed:
         public dynamic commandRequest;
         
@@ -64,6 +64,16 @@ namespace Indd.Service.Commands
         public InDesignServer.Book book;
 
         /// <summary>
+        /// TicketId
+        /// </summary>
+        public string ticketId;
+
+        /// <summary>
+        /// Contains documentFolderPath
+        /// </summary>
+        public string documentFolderPath;
+
+        /// <summary>
         /// Stores request and starts validation
         /// </summary>
         /// <param name="commandRequests"></param>
@@ -100,7 +110,7 @@ namespace Indd.Service.Commands
                     string message =
                         "JobticketException: " + this.classname + " throws an Error. " 
                         +"\nInner Exception:"+ ex.Message + innerExceptionMessage
-                        + " \nTicketId: " + this.commandRequest.ticketId
+                        + " \nTicketId: " + this.ticketId
                         + " \nPayload:\n " + this.commandRequest;
 
                     Syslog.log(message);
@@ -114,7 +124,7 @@ namespace Indd.Service.Commands
             }
 
             string stat ="Command executed: " + this.classname
-                + " \nTicketId: " + this.commandRequest.ticketId
+                + " \nTicketId: " + this.ticketId
                 + " \nPayload:\n " + this.commandRequest;
 
             Syslog.log(stat, System.Diagnostics.EventLogEntryType.SuccessAudit);
@@ -136,6 +146,10 @@ namespace Indd.Service.Commands
                 this.classname = this.commandRequest.classname;
 
                 this.extension = this.commandRequest.extension;
+
+                this.documentFolderPath = this.commandRequest.documentFolderPath;
+
+                this.ticketId = this.commandRequest.ticketId;
 
                 if (Property.isset("serverless", this.commandRequest))
                 {
@@ -166,7 +180,7 @@ namespace Indd.Service.Commands
         /// <returns></returns>
         public string buildDocumentPath(string uuid, string version, string extension)
         {
-            string path = ConfigManager.getStoragePath("templates") + "\\" + uuid + "\\" + version + "." + extension;
+            string path = this.documentFolderPath + "\\" + uuid + "\\" + version + "." + extension;
 
             if (!System.IO.File.Exists(path))
             {
@@ -216,5 +230,50 @@ namespace Indd.Service.Commands
             
             return true;
         }
+
+        /// <summary>
+        /// Opens document
+        /// </summary>
+        /// <returns></returns>
+        public void openDocument()
+        {
+            dynamic DocumentOpenCommandRequest = new
+            {
+                classname = "Document.Open",
+                uuid = this.uuid,
+                version = this.version,
+                ticketId = this.ticketId,
+                extension = this.extension,
+                documentFolderPath = this.documentFolderPath
+            };
+
+            DocumentOpenCommand DocumentOpenCommand = new DocumentOpenCommand(DocumentOpenCommandRequest);
+
+            DocumentOpenCommand.processSequence();
+
+            this.document = DocumentOpenCommand.document;
+        }
+    
+        /// <summary>
+        /// Opens a book
+        /// </summary>
+    public void openBook()
+    {
+        dynamic openCommandRequest = new
+        {
+            classname = "Book.Open",
+            uuid = this.uuid,
+            version = this.version,
+            ticketId = this.ticketId,
+            extension = this.extension,
+            documentFolderPath = this.documentFolderPath
+        };
+
+            BookOpenCommand openCommand = new BookOpenCommand(openCommandRequest);
+
+            openCommand.processSequence();
+
+            this.book = openCommand.book;
+            }
     }
 }

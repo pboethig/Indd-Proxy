@@ -21,7 +21,7 @@ namespace Indd
 
             var result = CliRequest.validate(args);
 
-            dynamic commandRequests = CliRequest.convertJsonTicket(result.Value.InputFile);
+            dynamic commandRequests = commandFactory.convertJsonTicket(result.Value.InputFile);
 
             commandFactory.processTicket(commandRequests);
         }

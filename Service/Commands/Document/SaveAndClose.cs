@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Linq;
-using CommandLine;
 using Indd.Service.IndesignServerWrapper;
-using System.Collections.Generic;
-using Microsoft.VisualBasic;
-
 namespace Indd.Service.Commands.Document {
 
     /// <summary>
@@ -24,24 +19,25 @@ namespace Indd.Service.Commands.Document {
         /// <returns></returns>
         public override bool execute()
         {
-            dynamic DocumentOpenCommandRequest = new
-            {
-                classname = "Document.Open",
-                uuid = this.uuid,
-                version = this.version,
-                ticketId = this.commandRequest.ticketId,
-                extension = this.extension
-            };
-            
             try
             {
-                Open DocumentOpenCommand = new Open(DocumentOpenCommandRequest);
 
-                DocumentOpenCommand.processSequence();
+                if (this.application == null)
+                {
+                    this.application = (new ApplicationMananger()).createInstance();
+                }
 
-                DocumentOpenCommand.document.Save(this.documentPath, false,"saved", true);
+                foreach (InDesignServer.Document _document in this.application.Documents)
+                {
+                    if (_document.FullName == this.documentPath)
+                    {
+                        this.document = _document;
 
-                DocumentOpenCommand.document.Close();
+                        _document.Save(this.documentPath, false, "saved", true);
+
+                        _document.Close();
+                    }
+                }
             }
             catch (System.Exception ex)
             {
@@ -54,10 +50,9 @@ namespace Indd.Service.Commands.Document {
                 
                 throw new SystemException("Document.SaveAndClose failed: " + ex.Message + innerExceptionMessage);
             }
-
             return true;
         }
-        
+
         /// <summary>
         /// Validate Request
         /// </summary>

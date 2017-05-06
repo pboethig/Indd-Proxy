@@ -24,26 +24,13 @@ namespace Indd.Service.Commands.Book {
         /// <returns></returns>
         public override bool execute()
         {
-            dynamic openCommandRequest = new
-            {
-                classname = "Book.Open",
-                uuid = this.uuid,
-                version = this.version,
-                ticketId = this.commandRequest.ticketId,
-                extension = this.extension
-            };
-            
             try
             {
-                Open openCommand = new Open(openCommandRequest);
-
-                openCommand.processSequence();
-
-                this.book = openCommand.book;
+                this.openBook();
 
                 this.buildExportFilePath();
 
-                openCommand.book.Export(InDesignServer.idExportFormat.idPDFType, this.exportFilePath);
+               this.book.Export(InDesignServer.idExportFormat.idPDFType, this.exportFilePath);
                 
             }
             catch (System.Exception ex)
@@ -60,7 +47,15 @@ namespace Indd.Service.Commands.Book {
         /// <returns></returns>
         public void buildExportFilePath()
         {
-            this.exportFilePath = this.commandRequest.exportFolderPath + "/" + this.uuid + ".pdf";
+
+            string folderPath = (string)this.commandRequest.exportFolderPath + "\\" + this.uuid;
+
+            if (!System.IO.Directory.Exists(folderPath))
+            {
+                System.IO.Directory.CreateDirectory(folderPath);
+            }
+
+            this.exportFilePath = folderPath + "\\book_" + this.version + ".pdf";
 
             if (System.IO.File.Exists(this.exportFilePath))
             {

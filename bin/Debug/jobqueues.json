@@ -1,5 +1,5 @@
 ﻿{
-  "In": "Z:\\indd\\JobQueues\\In",
-  "Out": "Z:\\indd\\JobQueues\\Out",
-  "Error": "Z:\\indd\\JobQueues\\Error"
+  "In": "$root\\Tests\\Functional\\Fixures\\indd\\JobQueues\\In",
+  "Out": "$root\\Tests\\Functional\\Fixures\\indd\\JobQueues\\Out",
+  "Error": "$root\\Tests\\Functional\\Fixures\\indd\\JobQueues\\Error"
 }

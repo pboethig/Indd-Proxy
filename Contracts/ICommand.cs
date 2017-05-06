@@ -12,7 +12,7 @@ namespace Indd.Contracts
     /// <summary>
     /// Interface for all commands
     /// </summary>
-    interface ICommand
+    public interface ICommand
     {
 
         /// <summary>

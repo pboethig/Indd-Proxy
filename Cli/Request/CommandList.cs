@@ -35,9 +35,15 @@ namespace Indd.Cli.Request
             var result = CommandLine.Parser.Default.ParseArguments<CommandList>(args);
             if (result.Errors.Any()) Console.WriteLine("Press any key to continue");
 
-            if (!System.IO.File.Exists(result.Value.InputFile))
+            string root = Indd.Service.Config.Manager.getRootDirectory().Replace("bin\\Debug", "");
+
+            string jsonCommandFilePath = result.Value.InputFile;
+
+            jsonCommandFilePath = jsonCommandFilePath.Replace("$root", root);
+            
+            if (!System.IO.File.Exists(jsonCommandFilePath))
             {
-                string message = "input file not found: " + result.Value.InputFile; 
+                string message = "input file not found: " + jsonCommandFilePath; 
 
                 Syslog.log(message); 
 
@@ -50,17 +56,9 @@ namespace Indd.Cli.Request
                 Environment.Exit(0);
             }
             
-            return result;
-        }
+            result.Value.InputFile = jsonCommandFilePath;
 
-        /// <summary>
-        /// Reads CommandListRequest from filesystem
-        /// </summary>
-        /// <param name="filePath"></param>
-        /// <returns>dynamic</returns>
-        public static dynamic convertJsonTicket(string filePath)
-        {
-            return Indd.Helper.Json.Convert.deserializeObject(System.IO.File.ReadAllText(filePath));
+            return result;
         }
     }
 }

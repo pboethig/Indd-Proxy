@@ -7,7 +7,7 @@ namespace Indd.Service.Commands
     /// <summary>
     /// Builds response on commandRequest
     /// </summary>
-    class Response
+    public class Response
     {
         /// <summary>
         /// UUI of the ticket
@@ -44,7 +44,7 @@ namespace Indd.Service.Commands
             
             this.status = "ready";
 
-           this.handleAdditionalData(ticket, commands);
+            this.handleAdditionalData(ticket, commands);
 
             this.urls = ticket.response.urls;
 
@@ -60,6 +60,8 @@ namespace Indd.Service.Commands
         {
             foreach (dynamic command in commands)
             {
+                if (ticket.response.additionalData == null) continue;
+
                 foreach (dynamic additionalDataItem in ticket.response.additionalData)
                 {
                     if (additionalDataItem.classname == command.classname)
@@ -99,11 +101,11 @@ namespace Indd.Service.Commands
             }
         }
 
-    /// <summary>
-    /// Handles ticketExceptions
-    /// </summary>
-    /// <param name="ticketExceptions"></param>
-    private void handleExceptions(List<List<System.Exception>> ticketExceptions)
+        /// <summary>
+        /// Handles ticketExceptions
+        /// </summary>
+        /// <param name="ticketExceptions"></param>
+        private void handleExceptions(List<List<System.Exception>> ticketExceptions)
         {
             if (ticketExceptions.Count > 0)
             {
@@ -161,6 +163,24 @@ namespace Indd.Service.Commands
             }
             
             return responses;
+        }
+
+        /// <summary>
+        /// Returns value of given objectpath
+        /// </summary>
+        /// <param name="objectPath"></param>
+        /// <returns>dynamic</returns>
+        public dynamic getAdditionalDataPropertyValue(string propertyPath)
+        {
+            foreach (KeyValuePair<string, dynamic> additionalData in this.additionalData)
+            {
+                if (additionalData.Key == propertyPath)
+                {
+                    return additionalData.Value;
+                }
+            }
+
+            throw new System.Exception("propertyPath " + propertyPath + "not found in response");
         }
     }
 }

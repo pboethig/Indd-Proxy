@@ -42,6 +42,8 @@ namespace Indd.Service.Config
             
             string fileContent = File.ReadAllText(filePath);
 
+            fileContent = fileContent.Replace("$root", getRootDirectory().Replace("\\", "\\\\"));
+
             return Indd.Helper.Json.Convert.deserializeObject(fileContent);
         }
 
@@ -51,7 +53,7 @@ namespace Indd.Service.Config
         /// <returns>string</returns>
         public static string getRootDirectory()
         {
-            return System.IO.Path.GetDirectoryName(Path.Combine(System.Reflection.Assembly.GetExecutingAssembly().Location));
+            return System.IO.Path.GetDirectoryName(Path.Combine(System.Reflection.Assembly.GetExecutingAssembly().Location)).Replace("\\bin\\Debug", "");
         }
     }
 }

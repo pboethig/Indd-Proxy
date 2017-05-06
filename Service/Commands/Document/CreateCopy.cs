@@ -44,8 +44,8 @@ namespace Indd.Service.Commands.Document {
 
                 this.targetUuid = Guid.NewGuid();
 
-                this.targetFolderPath = Manager.getStoragePath("templates") + "/" + this.targetUuid.ToString();
-
+                this.targetFolderPath = this.buildTargetFolderPath();
+                
                 Indd.Helper.IO.Directory.Copy(this.sourceFolderPath, this.targetFolderPath);
             }
             catch(System.Exception ex)
@@ -55,7 +55,20 @@ namespace Indd.Service.Commands.Document {
 
             return true;
         }
-        
+
+        /// <summary>
+        /// Builds targetfolder path
+        /// </summary>
+        /// <returns>string</returns>
+        public string buildTargetFolderPath()
+        {
+            targetFolderPath =(string)this.commandRequest.targetFolderPath;
+
+            targetFolderPath = targetFolderPath.Replace("$root", Indd.Service.Config.Manager.getRootDirectory() );
+
+            return this.targetFolderPath + "\\" + this.targetUuid.ToString();
+        }
+
         /// <summary>
         /// Validate Request
         /// </summary>
@@ -64,7 +77,12 @@ namespace Indd.Service.Commands.Document {
         public override bool validateRequest() 
         {
             base.validateRequest();
-            
+
+            if (this.commandRequest.targetFolderPath == null)
+            {
+                throw new System.Exception("property targetFolderPath is missing in commandRequest");
+            }
+
             return true;
         }
 

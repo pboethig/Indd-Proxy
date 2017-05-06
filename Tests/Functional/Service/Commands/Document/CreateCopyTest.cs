@@ -1,85 +1,37 @@
-﻿namespace Indd.Tests.Functional.Service.IndesignServer
+﻿namespace Indd.Tests.Functional.Service.IndesignServer.Commands.Documents
 {
     using NUnit.Framework;
-    using Indd.Service.Commands.Document;
-    using CliRequest = Indd.Cli.Request.CommandList;
     using System.Collections.Generic;
 
+    using CommandResponse = Indd.Service.Commands.Response;
     [TestFixture]
-    public class CopyDocumentTest
+    public class DocumentCreateCopyTest : TestAbstract
     {
-        /// <summary>
-        /// ID to test
-        /// </summary>
-        private string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
-
-        /// <summary>
-        /// Root dir of the storage
-        /// </summary>
-        string root = Indd.Service.Config.Manager.getRootDirectory();
-        
-        /// <summary>
-        /// Folder to test
-        /// </summary>
-        string folderPath;
 
         [SetUp]
         public void Setup()
         {
-            folderPath = root + "/" + "/Tests/Functional/Fixures/templates/" + testuuid;
-
-            dynamic commandRequest = new
-            {
-                classname = "Document.SaveAndClose",
-                uuid = testuuid,
-                version = "1.0",
-                extenstion = "indd"
-            };
-
-            SaveAndClose command = new SaveAndClose(commandRequest);
+            ticket = base.getTicket("Document.CreateCopy");
         }
 
         [TearDown]
         public void TearDown()
         {
-            dynamic commandRequest = new
-            {
-                classname = "Document.SaveAndClose",
-                uuid = testuuid,
-                version = "1.0",
-                ticketId = "dsedsd-sdsdsd-sdsdsd-sdsdsd",
-                extenstion = "indd"
-            };
 
-            SaveAndClose command = new SaveAndClose(commandRequest);
-
-            command.processSequence();
         }
 
         [Test]
-        public void Commands_CopyDocument()
+        public void Commands_Document_CreateCopy()
         {
-            string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
+            CommandResponse response = commandFactory.processTicket(ticket);
 
-            dynamic commandRequest = new
-            {
-                classname = "CreateCopy",
-                ticketId="dsedsd-sdsdsd-sdsdsd-sdsdsd",
-                uuid = testuuid,
-                version = "1.0",
-                serverless =true,
-                extension = "indd"
-            };
+            Assert.IsEmpty(response.errors);
             
-            string filePath = folderPath + "/" +commandRequest.version+"." + commandRequest.extension;
+            dynamic propertyValue = response.getAdditionalDataPropertyValue("Document.CreateCopy.targetFolderPath");
+            
+             Assert.IsNotNull(propertyValue);
 
-            CreateCopy command = new CreateCopy(commandRequest);
-
-            List<System.Exception> exceptions = command.processSequence();
-
-            Assert.IsEmpty(exceptions);
-
-            System.IO.Directory.Delete(command.getTargetFolderPath(), true);
+            System.IO.Directory.Delete(propertyValue, true);
         }
-     }
+    }
 }

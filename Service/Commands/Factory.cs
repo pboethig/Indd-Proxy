@@ -11,7 +11,7 @@ namespace Indd.Service.Commands
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class Factory
+    public class Factory
     {
         /// <summary>
         /// Contains all commands
@@ -39,6 +39,8 @@ namespace Indd.Service.Commands
                 try
                 {
                     request.ticketId = ticket.id;
+
+                    request.documentFolderPath = ticket.documentFolderPath;
 
                     Type myType = Type.GetType(className);
 
@@ -87,5 +89,40 @@ namespace Indd.Service.Commands
             
             return response;
         }
+
+        /// <summary>$
+        /// Return Jobticket
+        /// </summary>
+        /// <param name="classname"></param>
+        /// <returns>dynamic</returns>
+        public dynamic getJsonTicket(string filePath)
+        {
+            if (!System.IO.File.Exists(filePath))
+            {
+                throw new System.Exception("Ticket not found under: " + filePath);
+            }
+
+            string json = System.IO.File.ReadAllText(filePath);
+
+            string directory = Indd.Service.Config.Manager.getStoragePath("root");
+            
+            json = json.Replace("$root", directory.Replace("\\", "\\\\"));
+
+            dynamic ticket = Indd.Helper.Json.Convert.deserializeObject(json);
+
+            return ticket;
+        }
+
+
+        /// <summary>
+        /// Reads CommandListRequest from filesystem
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <returns>dynamic</returns>
+        public  dynamic convertJsonTicket(string filePath)
+        {
+            return this.getJsonTicket(filePath) ;
+        }
+
     }
 }

@@ -7,50 +7,43 @@
     using Response = Indd.Service.Commands.Response;
 
     [TestFixture]
-    public class FactoryTest
+    public class FactoryTest : TestAbstract
     {
         /// <summary>
-        /// raw json commandlist
+        /// Response to test
         /// </summary>
-        string jsonTicket;
-
-        /// <summary>
-        /// UUID to test
-        /// </summary>
-        string testuuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
-       
-        /// <summary>
-        /// commandfactory
-        /// </summary>
-        private Factory commandFactory;
-
-        /// <summary>
-        /// json converted commands
-        /// </summary>
-        private dynamic commandRequests;
-
-        private string root = Indd.Service.Config.Manager.getRootDirectory();
-
+        Response response;
+        
         [SetUp]
         public void Setup()
         {
-            jsonTicket = root + "../../../Tests/Functional/Fixures/jobQueue/In/" + testuuid + ".json";
-            
-            commandRequests = CliRequest.convertJsonTicket(jsonTicket);
-            
-            commandFactory = new Factory();
+            ticket = this.getTicket("c2335ce8-7000-4287-8972-f355ed23bd7f");
         }
 
         [TearDown]
         public void TearDown()
         {
+            //delete test data
+            try
+            {
+                dynamic propertyValue = response.getAdditionalDataPropertyValue("Document.CreateCopy.targetFolderPath");
 
+                if (System.IO.Directory.Exists(propertyValue))
+                {
+                    System.IO.Directory.Delete(propertyValue, true);
+                }
+            }
+            catch
+            {
+
+            }
+            
         }
         
         [Test]
         public void CommandFactory_runCommands()
         {
-            Response response = commandFactory.processTicket(commandRequests);
+            response = commandFactory.processTicket(ticket);
 
             Assert.IsNotEmpty(response.ticketId);
 
@@ -64,12 +57,9 @@
         [Test]
         public void CommandFactory_runFailingCommands()
         {
-            jsonTicket = root + "../../../Tests/Functional/Fixures/jobQueue/In/failingTicket.json";
-
-            commandRequests = CliRequest.convertJsonTicket(jsonTicket);
-
-            Response response = commandFactory.processTicket(commandRequests);
-
+            ticket = this.getTicket("failingTicket");
+            response = commandFactory.processTicket(ticket);
+            
             Assert.AreEqual("error", response.status);
 
             Assert.AreEqual(1, response.errors.Count);
@@ -80,8 +70,11 @@
         [Test]
         public void CommandFactory_buildJsonResponse()
         {
-            Response response = commandFactory.processTicket(commandRequests);
-            
+
+            ticket = this.getTicket("c2335ce8-7000-4287-8972-f355ed23bd7f");
+
+            response = commandFactory.processTicket(ticket);
+           
             string jsonString = response.toJson();
             
             Assert.IsNotEmpty(jsonString);
@@ -90,7 +83,9 @@
         [Test]
         public void CommandFactory_BuildAdditionalData()
         {
-            Response response = commandFactory.processTicket(commandRequests);
+            ticket = this.getTicket("c2335ce8-7000-4287-8972-f355ed23bd7f");
+
+            response = commandFactory.processTicket(ticket);
 
             Assert.IsNotEmpty(response.additionalData);
 
@@ -100,19 +95,33 @@
 
              dynamic decodedResponse = Indd.Helper.Json.Convert.deserializeObject(jsonString);
 
-            Assert.AreEqual(decodedResponse.additionalData.Count, response.additionalData.Count);  
+            Assert.AreEqual(decodedResponse.additionalData.Count, response.additionalData.Count);
         }
 
         [Test]
         public void CommandFactory_sendResponse()
         {
-            Response response = commandFactory.processTicket(commandRequests);
+            ticket = this.getTicket("c2335ce8-7000-4287-8972-f355ed23bd7f");
+
+            response = commandFactory.processTicket(ticket);
 
             string jsonString = response.toJson();
 
             List<string> responses = response.send();
 
             Assert.AreEqual(2, responses.Count);
+        }
+
+        [Test]
+        public void CommandFactory_convertJsonTicket()
+        {
+            string filePath = this.getJobInQueue() + "\\" + "c2335ce8-7000-4287-8972-f355ed23bd7f.json";
+
+            Factory factory = new Factory();
+
+            dynamic ticket = factory.convertJsonTicket(filePath);
+            
+            Assert.IsNotEmpty((string)ticket.id);
         }
     }
 }

@@ -60,7 +60,7 @@
     <Compile Include="Helper\IO\Directory.cs" />
     <Compile Include="Helper\IO\ScripingFileSystemObject.cs" />
     <Compile Include="Service\Commands\Abstract.cs" />
-    <Compile Include="Service\Commands\BookContent\Add.cs" />
+    <Compile Include="Service\Commands\BookContents\Add.cs" />
     <Compile Include="Service\Commands\Book\ExportPDF.cs" />
     <Compile Include="Service\Commands\Book\Open.cs" />
     <Compile Include="Service\Commands\Document\ExportPDF.cs" />
@@ -68,9 +68,9 @@
     <Compile Include="Service\Commands\Document\CreateCopy.cs" />
     <Compile Include="Service\Commands\Document\SaveAndClose.cs" />
     <Compile Include="Service\Commands\TextFrames\SetContents.cs" />
-    <Compile Include="Service\Commands\Images\Base.cs" />
-    <Compile Include="Service\Commands\Images\SetLinks.cs" />
-    <Compile Include="Service\Commands\Images\RelinkAll.cs" />
+    <Compile Include="Service\Commands\Graphics\Base.cs" />
+    <Compile Include="Service\Commands\Graphics\SetLinks.cs" />
+    <Compile Include="Service\Commands\Graphics\RelinkAll.cs" />
     <Compile Include="Service\Commands\Document\Open.cs" />
     <Compile Include="Service\Commands\Response.cs" />
     <Compile Include="Service\InDesignServerWrapper\ApplicationManager.cs" />
@@ -79,17 +79,18 @@
     <Compile Include="Tests\Functional\Helper\Json\ConvertTest.cs" />
     <Compile Include="Tests\Functional\Log\SyslogTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\BookContents\AddTest.cs" />
-    <Compile Include="Tests\Functional\Service\Commands\Book\ExportPDFTest.cs" />
-    <Compile Include="Tests\Functional\Service\Commands\Book\OpenBookTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportPDFTest.cs" />
-    <Compile Include="Tests\Functional\Service\Commands\Document\SaveAndCloseDocumentTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Book\BookOpenTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Book\ExportPDFTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Document\SaveAndCloseTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Graphics\SetLinksTest.cs" />
-    <Compile Include="Tests\Functional\Service\Commands\Graphics\RelinkAllGraphics.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Graphics\RelinkAll.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\CreateCopyTest.cs" />
-    <Compile Include="Tests\Functional\Service\Commands\Document\OpenDocumentTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Document\DocumentOpenTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\FactoryTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\TextFrames\SetContents.cs" />
     <Compile Include="Tests\Functional\Service\IndesignServer\ApplicationTest.cs" />
+    <Compile Include="Tests\Functional\TestAbstract.cs" />
     <None Include="Cli\.gitignore" />
     <None Include="jobqueues.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -103,85 +104,44 @@
     <Compile Include="Proxy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\Functional\Service\Config\ManagerTest.cs" />
-    <None Include="Tests\Functional\Fixures\assets\2.0.indd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG01.eps">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG05.eps">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG06.eps">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG07.eps">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG08.eps">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG09.eps">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\assets\TC9990701-LAYOUT-PI2.indd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\assets\TC9990701-LAYOUT-PI3.indd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\assets\TC9990701-PREVIEW.pdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\jobQueue\In\failingTicket.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\jobQueue\In\c2335ce8-7000-4287-8972-f355ed23bd7f.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\2.0.indd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\3.0.indd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\4.0.indd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Tests\Functional\Fixures\assets\2.0.indd" />
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG01.eps" />
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG05.eps" />
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG06.eps" />
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG07.eps" />
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG08.eps" />
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-IMG09.eps" />
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-LAYOUT-PI2.indd" />
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-LAYOUT-PI3.indd" />
+    <None Include="Tests\Functional\Fixures\assets\TC9990701-PREVIEW.pdf" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\c2335ce8-7000-4287-8972-f355ed23bd7f.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Document.CreateCopy.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Document.SaveAndClose.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Graphics.SetLinks.V1.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\TextFrames.SetContents.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Graphics.RelinkAll.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Document.Open.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportPDF.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Book.Open.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Book.Contents.Add.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Book.ExportPDF.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\failingTicket.json" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indb" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indd" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\2.0.indd" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\3.0.indd" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\4.0.indd" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\5.0 - Kopie.indb" />
     <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\5.0.indb" />
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG01.eps">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG05.eps">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG06.eps">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG07.eps">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG08.eps">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG09.eps">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-LAYOUT-PI2.indd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-LAYOUT-PI3.indd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-PREVIEW.pdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG01.eps" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG05.eps" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG06.eps" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG07.eps" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG08.eps" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG09.eps" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-LAYOUT-PI2.indd" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-LAYOUT-PI3.indd" />
+    <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-PREVIEW.pdf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -208,36 +168,16 @@
     <Folder Include="Tests\Functional\Fixures\jobQueue\Out\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Tests\Functional\Fixures\assets\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Tests\Functional\Fixures\assets\76576576-7876-6565gfgdgfdj.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Tests\Functional\Fixures\assets\8778687-78676876-54354-786786ghfhgf.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Tests\Functional\Fixures\assets\TC9990701-IMG02.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Tests\Functional\Fixures\assets\TC9990701-IMG03.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Tests\Functional\Fixures\assets\TC9990701-IMG04.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG02.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG03.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG04.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Tests\Functional\Fixures\assets\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg" />
+    <Content Include="Tests\Functional\Fixures\assets\76576576-7876-6565gfgdgfdj.jpg" />
+    <Content Include="Tests\Functional\Fixures\assets\8778687-78676876-54354-786786ghfhgf.jpg" />
+    <Content Include="Tests\Functional\Fixures\assets\TC9990701-IMG02.jpg" />
+    <Content Include="Tests\Functional\Fixures\assets\TC9990701-IMG03.jpg" />
+    <Content Include="Tests\Functional\Fixures\assets\TC9990701-IMG04.jpg" />
+    <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg" />
+    <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG02.jpg" />
+    <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG03.jpg" />
+    <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG04.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

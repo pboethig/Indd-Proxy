@@ -32,7 +32,7 @@ namespace Indd.Service.Commands.Document {
 
                 foreach (InDesignServer.Document _document in this.application.Documents)
                 {
-                    if (_document.Name == this.version + "." + this.extension)
+                    if (_document.FullName == this.documentPath)
                     {
                         this.document =_document;
 

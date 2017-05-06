@@ -37,7 +37,7 @@
         {
             string templateStoragePath = ConfigManager.getStoragePath("templates");
             
-            Assert.IsTrue(System.IO.Directory.Exists("Z:\\indd\\templates"));
+            Assert.IsTrue(System.IO.Directory.Exists(templateStoragePath));
         }
 
         [Test]

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Linq;
-using CommandLine;
-using Indd.Service.IndesignServerWrapper;
-using System.Collections.Generic;
-using Microsoft.VisualBasic;
-using Indd.Helper.IO;
-using Indd.Service.Commands.Document;
 
 namespace Indd.Service.Commands.TextFrames
 {
@@ -33,20 +26,7 @@ namespace Indd.Service.Commands.TextFrames
         {
             try
             {
-                dynamic DocumentOpenCommandRequest = new
-                {
-                    classname = "Document.Open",
-                    uuid = this.uuid,
-                    version = this.version,
-                    ticketId = this.commandRequest.ticketId,
-                    extension=this.extension
-                };
-
-                Open DocumentOpenCommand = new Open(DocumentOpenCommandRequest);
-
-                DocumentOpenCommand.processSequence();
-
-                this.document = DocumentOpenCommand.document;
+                this.openDocument();
 
                 this.frameIdToContentsMap = this.commandRequest.frameIdToContentsMap;
 
@@ -81,7 +61,7 @@ namespace Indd.Service.Commands.TextFrames
 
             if (this.commandRequest.frameIdToContentsMap == null)
             {
-                throw new System.Exception("property frameIdToContentsMap missing Jobticket: " + this.commandRequest.ticketId);
+                throw new System.Exception("property frameIdToContentsMap missing Jobticket: " + this.ticketId);
             }
             
             return true;

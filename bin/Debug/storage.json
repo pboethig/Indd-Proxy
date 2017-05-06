@@ -1,5 +1,6 @@
 ﻿{
   "paths": {
-    "templates": "Z:\\indd\\templates"
+    "root": "$root",
+    "templates": "$root\\Tests\\Functional\\Fixures\\templates"
   }
 }

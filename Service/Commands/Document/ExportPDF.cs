@@ -24,26 +24,15 @@ namespace Indd.Service.Commands.Document {
         /// <returns></returns>
         public override bool execute()
         {
-            dynamic DocumentOpenCommandRequest = new
-            {
-                classname = "Document.Open",
-                uuid = this.uuid,
-                version = this.version,
-                ticketId = this.commandRequest.ticketId,
-                extension = this.extension
-            };
+            
             
             try
             {
-                Open DocumentOpenCommand = new Open(DocumentOpenCommandRequest);
-
-                DocumentOpenCommand.processSequence();
-
-                this.document = DocumentOpenCommand.document;
+                this.openDocument();
 
                 this.buildExportFilePath();
 
-                DocumentOpenCommand.document.Export(InDesignServer.idExportFormat.idPDFType, this.exportFilePath);
+                this.document.Export(InDesignServer.idExportFormat.idPDFType, this.exportFilePath);
                 
             }
             catch (System.Exception ex)
@@ -60,7 +49,7 @@ namespace Indd.Service.Commands.Document {
         /// <returns></returns>
         public void buildExportFilePath()
         {
-            this.exportFilePath = this.commandRequest.exportFolderPath + "/" + this.uuid + ".pdf";
+            this.exportFilePath = this.commandRequest.exportFolderPath + "\\" + this.uuid + "\\document_"+ this.version+".pdf";
 
             if (System.IO.File.Exists(this.exportFilePath))
             {
