@@ -5,7 +5,7 @@ As a backend base to colaborate on marketing materials like flyer, posters, busi
 
 Here comes Indd-Proxy into the game. It takes json payloads with commands for the server like "exporting as pdf, set a new image on a specific frame, set a new text etc". After Indd-Proxy finished his task, he will notify the client with a http request and a client defined payload, so called webhooks. 
 
-### Prerequissites
+### Prerequisites
 - Visual Studio 2017 64 Bit
 - .Net Framework >=4.5.x
 - Installed Adobe Indesign Server (cc2017). Should work with 2015, 2016 too
@@ -17,12 +17,11 @@ Here comes Indd-Proxy into the game. It takes json payloads with commands for th
 - Project->create
 
 ### Run Tests
-- In Testwindow you can nnow run all nunit tests. All Tests are passed green means, you have installed everything right.
+- In your Visual Studio testwindow you can now run all nunit tests. All Tests are passed green means, you have installed everything right.
 
 ### usage
 
-- Compile or debug project
-- At the end there is a assambly "Indd-Proxy.exe"
+- Compile or debug project to get the Indd-Proxy.exe
 - create your json commands in a json file 
 - pass the path to the command.json with the payload inside. (See wiki docs)
 
