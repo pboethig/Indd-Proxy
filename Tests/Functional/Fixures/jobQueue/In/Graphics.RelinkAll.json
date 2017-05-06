@@ -9,7 +9,7 @@
   },
   "commands": [
     {
-      "classname": "Images.RelinkAll",
+      "classname": "Graphics.RelinkAll",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
       "extension": "indd",
       "version": "1.0",

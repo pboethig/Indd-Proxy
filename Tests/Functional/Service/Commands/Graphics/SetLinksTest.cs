@@ -5,12 +5,6 @@
     [TestFixture]
     public class SetLinksV1Test : TestAbstract
     {
-        [SetUp]
-        public void Setup()
-        {
-            CommandResponse response = commandFactory.processTicket(getTicket("Document.SaveAndClose"));
-        }
-
         [TearDown]
         public void TearDown()
         {

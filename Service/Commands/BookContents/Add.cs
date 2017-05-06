@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Indd.Service.Commands.Book;
 
 namespace Indd.Service.Commands.BookContents {
 
@@ -26,31 +25,11 @@ namespace Indd.Service.Commands.BookContents {
         /// <returns></returns>
         public override bool execute()
         {
-            dynamic openCommandRequest = new
-            {
-                classname = "Book.Open",
-                uuid = this.uuid,
-                version = this.version,
-                ticketId = this.ticketId,
-                extension = this.extension,
-                documentFolderPath = this.documentFolderPath
-            };
-
             try
             {
-                Open openCommand = new Open(openCommandRequest);
 
-                openCommand.processSequence();
-
-                this.book = openCommand.book;
-
-                ///close book and reopen it. Find cause of this mess.
-                this.book.Close();
-
-                openCommand.processSequence();
-
-                this.book = openCommand.book;
-
+                this.openBook();
+                
                 string documentToAddFilePath = "";
                 
                 foreach (dynamic documentUuid in this.commandRequest.documentUuids)

@@ -2,11 +2,11 @@
 {
     using NUnit.Framework;
     using Indd.Service.Commands;
-    using CliRequest = Indd.Cli.Request.CommandList;
     using System.Collections.Generic;
     using Response = Indd.Service.Commands.Response;
-
-    [TestFixture]
+    using Indd.Contracts;
+    
+        [TestFixture]
     public class FactoryTest : TestAbstract
     {
         /// <summary>
@@ -39,7 +39,18 @@
             }
             
         }
-        
+
+        /// <summary>
+        /// Tests commandlist build
+        /// </summary>
+        [Test]
+        public void CommandFactory_buildCommandObjectList()
+        {
+            List<ICommand> commands = commandFactory.buildCommandObjectList(ticket);
+
+            Assert.IsEmpty(commandFactory.ticketExceptions);
+        }
+
         [Test]
         public void CommandFactory_runCommands()
         {

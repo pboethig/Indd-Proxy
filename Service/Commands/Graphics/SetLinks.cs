@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Linq;
-using CommandLine;
-using Indd.Service.IndesignServerWrapper;
-using System.Collections.Generic;
-using Microsoft.VisualBasic;
-using Indd.Service.Commands.Document;
 
-namespace Indd.Service.Commands.Images {
+namespace Indd.Service.Commands.Graphics {
 
     /// <summary>
     /// Options to generate proxy

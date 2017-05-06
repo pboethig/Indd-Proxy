@@ -25,6 +25,8 @@
         {
             CommandResponse response = commandFactory.processTicket(ticket);
 
+            Assert.IsEmpty(commandFactory.ticketExceptions);
+
             Assert.IsEmpty(response.errors);
         }
     }

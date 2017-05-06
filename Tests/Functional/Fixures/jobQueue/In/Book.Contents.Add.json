@@ -9,11 +9,11 @@
   },
   "commands": [
     {
-      "classname": "Book.Contents.Add",
+      "classname": "BookContents.Add",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
       "extension": "indb",
       "version": "5.0 - Kopie",
-      "Uuids": [
+      "documentUuids": [
         {
           "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
           "extension": "indd",

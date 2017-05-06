@@ -35,32 +35,35 @@ namespace Indd.Service.Commands
             foreach (dynamic request in commandRequests)
             {
                 string className = "Indd.Service.Commands." + request.classname;
-
-                try
-                {
-                    request.ticketId = ticket.id;
-
-                    request.documentFolderPath = ticket.documentFolderPath;
-
-                    Type myType = Type.GetType(className);
-
-                    ICommand command = Activator.CreateInstance(myType, request );
-                    
-                    commandList.Add(command);
-                }
-                catch (System.Exception ex)
-                {
-                    string innerExceptionMessage ="";
-
-                    if (ex.InnerException != null)
+                    try
                     {
-                        innerExceptionMessage = "Inner Exception: " + ex.InnerException.Message;
+                        request.ticketId = ticket.id;
+
+                        request.documentFolderPath = ticket.documentFolderPath;
+
+                        Type commandType = Type.GetType(className);
+
+                        if (commandType == null) throw new System.Exception("Command " + className + " not implemented");
+
+                        ICommand command = Activator.CreateInstance(commandType, request);
+
+                        commandList.Add(command);
                     }
+                    catch (System.Exception ex)
+                    {
+                        string innerExceptionMessage = "";
 
-                    string message = "CommandError: " + className + "  Message: " + ex.Message + innerExceptionMessage; 
+                        if (ex.InnerException != null)
+                        {
+                            innerExceptionMessage = "Inner Exception: " + ex.InnerException.Message;
+                        }
 
-                    Indd.Service.Log.Syslog.log(message);
-                }
+                        string message = "CommandError: " + className + "  Message: " + ex.Message + innerExceptionMessage;
+
+                        Indd.Service.Log.Syslog.log(message);
+
+                        throw new System.Exception("CommandObjectList failed:" + message);
+                    }
             }
             
             return commandList;
