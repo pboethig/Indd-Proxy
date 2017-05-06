@@ -1,5 +1,6 @@
 {
   "id": "213123-12312-3123-asdd-asdasdasdasd",
+  "documentFolderPath": "fail the ticket with an invalid path",
   "response": {
     "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
     "status": "open",

@@ -26,8 +26,6 @@
             CommandResponse response = commandFactory.processTicket(ticket);
 
             Assert.IsEmpty(response.errors);
-
-            //System.IO.File.Delete(command.exportFilePath);
         }
     }
 }

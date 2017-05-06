@@ -111,6 +111,7 @@ namespace Indd.Service.Commands
                         "JobticketException: " + this.classname + " throws an Error. " 
                         +"\nInner Exception:"+ ex.Message + innerExceptionMessage
                         + " \nTicketId: " + this.ticketId
+                        + " \nDocumentFolderPath: " + this.documentFolderPath
                         + " \nPayload:\n " + this.commandRequest;
 
                     Syslog.log(message);
