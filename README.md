@@ -33,30 +33,7 @@ Here comes Indd-Proxy into the game. It takes json payloads with commands for th
 Indd-Proxy.exe -f <path to json payload>
 ```
 
-## current state
-- Commandline abstraction works 
-- Central storageconfig gets loaded
-- Adobe IndesignServer instance gets crearted successfully
-- Json Commands gets successfully converted to a dynamic commandlist
-- Commands gets executed
-- All available tests are running
-- IndesignDocument gets lodad
-- Syslog gets written
-- IndesignServerinstance gets successfully created
-
-### Available commands
-#### Document
-- Document.Open
-- Document.SaveAndClose
-- Document.ExportPDF
-- Document.CreateCopy
-#### Images
-- Images.RelinkAll
-- Images.SetLinks
-#### Book
-- Book.Open
-- Book.ExportPdf
-
+## Available commands
 ### JSON Commandlist Payloads
 
 see further docs: https://github.com/pboethig/Indd-Proxy/wiki/Command-payloads
