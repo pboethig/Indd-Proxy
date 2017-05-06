@@ -66,21 +66,21 @@ this payload contains all availabe command:
 ```
 {
   "id": "213123-12312-3123-asdd-asdasdasdasd",
-  "response": 
-  {
-      "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
-      "status": "open",
-      "errors": [],
-      "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ],
-      "additionalData": [
-        {
-          "classname": "Document.CreateCopy",
-          "property": "targetUuid"
-        },
-        {
-          "classname": "Document.CreateCopy",
-          "property": "targetFolderPath"
-        }
+  "documentFolderPath": "$root\\Tests\\Functional\\Fixures\\templates",
+  "response": {
+    "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+    "status": "open",
+    "errors": [],
+    "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ],
+    "additionalData": [
+      {
+        "classname": "Document.CreateCopy",
+        "property": "targetUuid"
+      },
+      {
+        "classname": "Document.CreateCopy",
+        "property": "targetFolderPath"
+      }
     ]
   },
   "commands": [
@@ -90,12 +90,13 @@ this payload contains all availabe command:
       "extension": "indd",
       "version": "2.0"
     },
-    {
+   {
       "classname": "Document.CreateCopy",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
       "extension": "indd",
       "version": "1.0",
-      "serverless": "true"
+      "serverless": "true",
+      "targetFolderPath": "$root\\Tests\\Functional\\Fixures\\Templates"
     },
     {
       "classname": "Images.RelinkAll",
@@ -104,7 +105,7 @@ this payload contains all availabe command:
       "version": "1.0",
       "basePath": "Z:/indd/templates/c2335ce8-7000-4287-8972-f355ed23bd7f"
     },
-    {
+     {
       "classname": "Images.SetLinks",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
       "extension": "indd",
@@ -114,17 +115,17 @@ this payload contains all availabe command:
           "objectId": "3222",
           "imageId": "5e513f64-2dee-4e21-9871-53af41d6bf7b",
           "type": "jpg",
-          "basePath": "Z:/indd/assets"
+          "basePath": "$root\\Tests\\Functional\\Fixures\\assets"
         },
         {
-          "objectId": "3221",
+          "objectId": "3223",
           "imageId": "8778687-78676876-54354-786786ghfhgf",
           "type": "jpg",
-          "basePath": "Z:/indd/assets"
+          "basePath": "$root\\Tests\\Functional\\Fixures\\assets"
         }
       ]
     },
-    {
+   {
       "classname": "Document.Open",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
       "extension": "indd",
@@ -165,12 +166,30 @@ this payload contains all availabe command:
       "extension": "indb",
       "version": "1.0"
     },
-    {
+   {
       "classname": "Book.ExportPDF",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
       "extension": "indb",
-      "version": "1.0",
-      "exportFolderPath": "Z:/indd/exports"
+      "version": "5.0 - Kopie",
+      "exportFolderPath": "$root\\Tests\\Functional\\Fixures\\exports"
+    },
+     {
+      "classname": "Book.Contents.Add",
+      "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indb",
+      "version": "5.0 - Kopie",
+      "Uuids": [
+        {
+          "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+          "extension": "indd",
+          "version": "2.0"
+        },
+        {
+          "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+          "extension": "indd",
+          "version": "3.0"
+        }
+      ]
     }
   ]
 }
