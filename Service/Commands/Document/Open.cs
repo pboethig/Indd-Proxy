@@ -35,7 +35,7 @@ namespace Indd.Service.Commands.Document {
                     if (_document.FullName == this.documentPath)
                     {
                         this.document =_document;
-
+                        
                         return true;
                     }
                 }

@@ -1,0 +1,39 @@
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+	margin:0;
+	padding:0;
+	border-width:0;
+}
+body {
+	-epub-hyphens:auto;
+}
+div.Einfacher-Grafikrahmen {
+	border-color:#000000;
+	border-width:1px;
+	border-style:solid;
+}
+#_idContainer000 {
+	display:inline-block;
+	height:172px;
+	width:354px;
+}
+#_idContainer001 {
+	display:inline-block;
+	height:74px;
+	width:212px;
+}
+#_idContainer002 {
+	display:inline-block;
+	height:244px;
+	width:305px;
+}
+img._idGenObjectAttribute-1 {
+	height:100.00%;
+	min-width:100%;
+	width:100.00%;
+}
+div._idGenObjectStyleOverride-1 {
+	background-color:#ffffff;
+}
+div._idGenObjectLayout-1 {
+	text-align:center;
+}

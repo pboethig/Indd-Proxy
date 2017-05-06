@@ -5,13 +5,13 @@ namespace Indd.Service.Commands.Document {
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class ExportPDF : Abstract,  Contracts.ICommand
+    class ExportHTMLFX : Abstract,  Contracts.ICommand
     {
         /// <summary>
         /// Saves dynamic command 
         /// </summary>
         /// <param name="commandRequests"></param>
-        public ExportPDF(dynamic commandRequest) : base ((object)commandRequest){}
+        public ExportHTMLFX(dynamic commandRequest) : base ((object)commandRequest){}
 
         /// <summary>
         /// Contains the exported filepath
@@ -30,11 +30,11 @@ namespace Indd.Service.Commands.Document {
 
                 this.buildExportFilePath();
 
-                this.document.Export(InDesignServer.idExportFormat.idPDFType, this.exportFilePath);
+                this.document.Export(InDesignServer.idExportFormat.idHTMLFXL, this.exportFilePath);
             }
             catch (System.Exception ex)
             {
-                throw new SystemException("Document.Export to PDF failed: " + ex.Message);
+                throw new SystemException("Document.Export to HTML FX failed: " + ex.Message);
             }
 
             return true;
@@ -43,10 +43,10 @@ namespace Indd.Service.Commands.Document {
         /// <summary>
         /// Build export filepath
         /// </summary>
-        /// <returns></returns>
+        /// <returns>void</returns>
         public void buildExportFilePath()
         {
-            this.exportFilePath = this.commandRequest.exportFolderPath + "\\" + this.uuid + "\\document_"+ this.version+".pdf";
+            this.exportFilePath = this.commandRequest.exportFolderPath + "\\" + this.uuid + "\\document_"+ this.version+".html";
 
             if (System.IO.File.Exists(this.exportFilePath))
             {
