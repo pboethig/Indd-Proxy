@@ -10,7 +10,7 @@ namespace Indd.Service.CustomExport.Json.Types
         /// <summary>
         /// Rectangle
         /// </summary>
-        public string Type = "Note";
+        public string Type = "Layer";
 
         /// <summary>
         /// Id
