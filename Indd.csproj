@@ -63,6 +63,18 @@
     <Compile Include="Service\Commands\BookContents\Add.cs" />
     <Compile Include="Service\Commands\Book\ExportPDF.cs" />
     <Compile Include="Service\Commands\Book\Open.cs" />
+    <Compile Include="Service\Commands\Document\ExportJSON.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\Layer.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\Link.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\Image.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\Note.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\Rectangle.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\TextFrame.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\Document.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\Color.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\Spread.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\Page.cs" />
+    <Compile Include="Service\Document.cs" />
     <Compile Include="Service\Commands\Document\ExportHTMLFX.cs" />
     <Compile Include="Service\Commands\Document\ExportPDF.cs" />
     <Compile Include="Service\Commands\Factory.cs" />
@@ -74,12 +86,14 @@
     <Compile Include="Service\Commands\Graphics\RelinkAll.cs" />
     <Compile Include="Service\Commands\Document\Open.cs" />
     <Compile Include="Service\Commands\Response.cs" />
+    <Compile Include="Service\CustomExport\Json\Document.cs" />
     <Compile Include="Service\InDesignServerWrapper\ApplicationManager.cs" />
     <Compile Include="Service\Log\Syslog.cs" />
     <Compile Include="Tests\Functional\Cli\CommandLineRequestTest.cs" />
     <Compile Include="Tests\Functional\Helper\Json\ConvertTest.cs" />
     <Compile Include="Tests\Functional\Log\SyslogTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\BookContents\AddTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Document\ExportJSONTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportHTMLFX.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportPDFTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Book\BookOpenTest.cs" />
@@ -91,6 +105,8 @@
     <Compile Include="Tests\Functional\Service\Commands\Document\DocumentOpenTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\FactoryTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\TextFrames\SetContents.cs" />
+    <Compile Include="Tests\Functional\Service\CustomExport\Json\DocumentTest.cs" />
+    <Compile Include="Tests\Functional\Service\DocumentTest.cs" />
     <Compile Include="Tests\Functional\Service\IndesignServer\ApplicationTest.cs" />
     <Compile Include="Tests\Functional\TestAbstract.cs" />
     <None Include="Cli\.gitignore" />
@@ -118,6 +134,7 @@
     <None Include="Tests\Functional\Fixures\assets\TC9990701-PREVIEW.pdf" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\c2335ce8-7000-4287-8972-f355ed23bd7f.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.CreateCopy.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportJSON.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportHTMLFX.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.SaveAndClose.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Graphics.SetLinks.V1.json" />
@@ -169,6 +186,7 @@
     <Folder Include="Tests\Functional\Fixures\exports\" />
     <Folder Include="Tests\Functional\Fixures\jobQueue\Error\" />
     <Folder Include="Tests\Functional\Fixures\jobQueue\Out\" />
+    <Folder Include="ValueObjects\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Tests\Functional\Fixures\assets\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg" />

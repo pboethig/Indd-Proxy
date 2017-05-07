@@ -29,7 +29,7 @@ namespace Indd.Helper.Json
         /// <returns></returns>
         public static string toJson(object toJsonfyObject)
         {
-            string jsonString = JsonConvert.SerializeObject(toJsonfyObject);
+            string jsonString = JsonConvert.SerializeObject(toJsonfyObject, Formatting.Indented);
 
             return jsonString;
         }

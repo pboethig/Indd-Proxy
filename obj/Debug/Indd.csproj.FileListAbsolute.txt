@@ -9,8 +9,8 @@ C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\nunit.
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\CommandLine.xml
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Newtonsoft.Json.xml
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\nunit.framework.xml
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Indd.csprojResolveAssemblyReference.cache
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Interop.InDesignServer.dll
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Indd.csproj.ResolveComReference.cache
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Indd-proyx.exe
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Indd-proyx.pdb
-C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Indd.csprojResolveAssemblyReference.cache

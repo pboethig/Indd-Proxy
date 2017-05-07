@@ -1,0 +1,404 @@
+{
+  "Type": "Document",
+  "Id": 60,
+  "Name": "7.0.indd",
+  "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\7.0.indd",
+  "Label": "",
+  "Index": 1,
+  "Visible": false,
+  "HorizontalMeasurementUnits": "idMillimeters",
+  "VerticalMeasurementUnits": "idMillimeters",
+  "PointsPerInch": 72.0,
+  "TextSizeMeasurementUnits": "idPoints",
+  "TypographicMeasurementUnits": "idPoints",
+  "Layers": [
+    {
+      "Type": "Note",
+      "Id": 325,
+      "Name": "Ebene 4",
+      "Label": "",
+      "Index": 1,
+      "Visible": true
+    },
+    {
+      "Type": "Note",
+      "Id": 318,
+      "Name": "Ebene 3",
+      "Label": "",
+      "Index": 2,
+      "Visible": true
+    },
+    {
+      "Type": "Note",
+      "Id": 311,
+      "Name": "Ebene 2",
+      "Label": "",
+      "Index": 3,
+      "Visible": true
+    },
+    {
+      "Type": "Note",
+      "Id": 196,
+      "Name": "Ebene 1",
+      "Label": "",
+      "Index": 4,
+      "Visible": true
+    }
+  ],
+  "Spreads": [
+    {
+      "Type": "Spread",
+      "Id": 199,
+      "Name": "",
+      "Label": "",
+      "Index": 1,
+      "PageTransitionDirection": "idNotApplicable",
+      "PageTransitionDuration": "idMedium",
+      "PageTransitionType": "idNone",
+      "Pages": [
+        {
+          "Type": "Page",
+          "Id": 204,
+          "Name": "1",
+          "Label": "",
+          "Index": 1,
+          "PageColor": 1346594413,
+          "Bounds": [
+            0.0,
+            0.0,
+            296.99999999949637,
+            209.99999999990081
+          ],
+          "DocumentOffset": 1,
+          "OptionalPage": false,
+          "Side": 1919382632,
+          "Rectangles": [],
+          "TextFrames": [
+            {
+              "Type": "TextFrame",
+              "Id": 269,
+              "Name": "",
+              "Label": "",
+              "Index": 3,
+              "Visible": true,
+              "ItemLayer": 196,
+              "GeometricBounds": [
+                126.4999999997482,
+                20.5,
+                207.49999999974818,
+                178.5
+              ],
+              "Contents": "Busdae corum vent latius qui iuritiostiis descidundam nia sitaesti atia naturibus voluptae voluptaspel ipsum impor alici blab inctem asperer isciis sequasim quas maxima ditio. Ut estrum harci con ra dolore et magnis\u0004 ﻿eum es quo escitem aliquodit eaquae. Itas es vendignatem eos elenihil int quas veles cum inctemo il et ea non etus alitatu ribusam fugit, ea velectaspe ipsam a a venis sunti omniae pa sunt lanimet ullaborias verio et peris et volupta turepudant aut quidunt iamusaperum a volorer natest et, unt erferci denihilique inumetus, iscimol uptatis corescilla es doles autem fugit volorerio. Et esto culluptas dollibus vendantemqui ut optatur?\rUnt vernam, nam est, et arum re endiati oribus eos anihicias undam aspitas consecus maxim facculpa delit eniment re raesto dis sae nobis ima vitionserum vent omniani ssecum quam doluptatet eatur, abo. Itatus eictum et quiat.\rAliquo vitae vero te niatio od erferore sum volessuntio to cus de nimust dendantius mi, temquatia core ne invenienis experi aut aut ad quistore atia quid eum denimus essi te qui officia vellatibus duciisin ni seri tenisita nist, ut﻿at es arit et voluptatis volenis quatinc tusdaerciati comnis nonet demporae et porerrume voloremquam volectate sitatemposa aborem atquiati occaestius, veris quiae providel eumqui coreict ectiur autest officia dolupti optas sandae. ",
+              "Images": []
+            },
+            {
+              "Type": "TextFrame",
+              "Id": 246,
+              "Name": "",
+              "Label": "",
+              "Index": 4,
+              "Visible": true,
+              "ItemLayer": 196,
+              "GeometricBounds": [
+                23.999999999748191,
+                20.5,
+                82.999999999748184,
+                175.5
+              ],
+              "Contents": "Uptiam facculpa quam velia venihic tet autet pre, quia sint molla qui si dolorio. Itaturio mil es dolupta doloremporem et veliquid quam dus dolupta spienet volorem postion esent, officilit officium voloriam fugit facium re re volore et optatem. Obit vendesti cor alit eum voluptinti tetur sumqui occuptas custo eiciendae la vellorehenim qui veles consequ odiciatiis que veles voluptatur?\rExerroritia non cum inventur asperum voluptat ipissus cienihitiis rem. Unditiam, solorio nsent, simil inihit de nus necumenimus es dolestia commodis estis dolupta spernam, cusande rrovit lab inim re magnihi taecesti temperum consect urionest, in ra conserf ererrunt alitatio. Ovitios unt.\rTasita ditate sim hitas im rem volum arit eum\u0004 et pratempost, none doluptas exceprat volo quunt omniature, sam remporionet occabor ehendit exeristrum laboristet occuptas enimu",
+              "Images": []
+            },
+            {
+              "Type": "TextFrame",
+              "Id": 351,
+              "Name": "",
+              "Label": "",
+              "Index": 2,
+              "Visible": true,
+              "ItemLayer": 311,
+              "GeometricBounds": [
+                224.0,
+                25.0,
+                268.99999999974824,
+                175.5
+              ],
+              "Contents": "dsasd sdasd\r",
+              "Images": []
+            },
+            {
+              "Type": "TextFrame",
+              "Id": 374,
+              "Name": "",
+              "Label": "",
+              "Index": 1,
+              "Visible": true,
+              "ItemLayer": 318,
+              "GeometricBounds": [
+                93.499999999748184,
+                23.000000000000004,
+                117.9999999997482,
+                175.5
+              ],
+              "Contents": "dssadsa sadasdas sadasdsa sadsad sdasd",
+              "Images": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Spread",
+      "Id": 205,
+      "Name": "",
+      "Label": "",
+      "Index": 2,
+      "PageTransitionDirection": "idNotApplicable",
+      "PageTransitionDuration": "idMedium",
+      "PageTransitionType": "idNone",
+      "Pages": [
+        {
+          "Type": "Page",
+          "Id": 210,
+          "Name": "2",
+          "Label": "",
+          "Index": 1,
+          "PageColor": 1346594413,
+          "Bounds": [
+            0.0,
+            0.0,
+            296.99999999949642,
+            209.99999999990081
+          ],
+          "DocumentOffset": 2,
+          "OptionalPage": false,
+          "Side": 1818653800,
+          "Rectangles": [],
+          "TextFrames": []
+        },
+        {
+          "Type": "Page",
+          "Id": 211,
+          "Name": "3",
+          "Label": "",
+          "Index": 2,
+          "PageColor": 1346594413,
+          "Bounds": [
+            0.0,
+            209.99999999990081,
+            296.99999999949642,
+            419.99999999980162
+          ],
+          "DocumentOffset": 3,
+          "OptionalPage": false,
+          "Side": 1919382632,
+          "Rectangles": [],
+          "TextFrames": [
+            {
+              "Type": "TextFrame",
+              "Id": 436,
+              "Name": "",
+              "Label": "",
+              "Index": 1,
+              "Visible": true,
+              "ItemLayer": 325,
+              "GeometricBounds": [
+                23.500000000286949,
+                227.99999999990081,
+                274.00000000028695,
+                396.99999999990081
+              ],
+              "Contents": "Am eumque volupta dolores truptio quis debis expe vel invel in est et eum hicatatet aspiciu samusa as et estrum quam, quam a doluptias et velesti onseque quatium eum sum quianda ent is sae nosamendam et apition explis eosti tes aut ommollia si que omniati beariore autemquam et quo id magnihillut quae imet fugit esequia por a sae. Nem que sunt, corem verumetus atus solor apidis dolest harit enient.￼\rNatur, ommo blabo. Faceatius.\rDe nimusanima nonsed quibus veliqui stibeaquis iniet quianis esed everati istibus nobisinctur sa simi, quibusae ne nes nest, tem. Hendempos mi, ea dellaborio. Itatatur, volupid entemo dolupta velibus, cullacimeni te quiandi pidunte dunt laborese nullaci dignim quatia ducimi, nat list, saperes et, coribusa prae re verum harchil iquodionsed modit lani ut ad ut quiditi dest del experrum ut que as ea nulla idusam, omnimoluptur accae quisi solorat qui des evenihi ctorerio explant explatecus aut raes asimin conseque is essitat aliquo magnihil int eatectur?\rDias electioriae. Ut quiae nienditium eturest, nullaut rehenihilis minvell accusant et, offictate esequam nonseru ntoritat ipis si qui bero ent voloratem fugitis rerchicil moluptam iditi volum que id quae qui niendus excerorest, quaturecest, omnihil es assediam que reicillabo. Nam estia con ressimolupis et et eost lacepre rferum aut ant, quos dollica tistem quam ut fugitam sintius am, quatia quiam facid ut latesciti quos es aliatecto voluptatem. Nam, sero im rero idus mo mostem auditem fugiae parum reperumqui rehendis prae pediste nest pro ma consectis acernam fugiatquam, offici ulpa ped mo est odi aut la vendem atiatur saerest facia core pe ligendam reptatem quia vellaborese nonsed ￼qui dios aspictur aut qui rem quae none consequi quiae ea di officit ut odit verat.\rSendi ut aut lit excerem qui unti dolent esto tem volesci as a nitas dit voluptas de earumquo omnisin tiumqui atistec toresci ducilit odiost qui delendem remos dolupie ndest, cullaborrum ad quo et eniscid que experia tectat a disiti asinci vent ut quo que eseque que qui nulpa andellore ant evellaccum aborpor enihit, ut ad qui officae a dendit parior as eaquodi gnihicia verunt am quiatem alitibus et, int.\rUga. Iscit volupt￼at. Otatur mos rae optatur aut omnitio que sequi solupta quaturit ea que consequam doluptatias veliquiamus pa sin res volorisimus et quam etusda voluptae prorectiunt eaquidu ciusciat.\rEquatem odition sendia quia di ut es ut voluptio. Ovid es volorio. Itatusam quas acearum sus eos autemqu istibusa debit mi, simoditis nusaper orerepe llaborit, te everspe voluptation et volore consecepra doluptaecto dolorpos sit moluptatas anieniet prore omnis sandis custrum iuntum quae ped moluptatem venduciis quiant veraerum eos earum nobitiusdae dus, qui nectur? Ferectur? Quisqui odipsum, nationsequi ad eosaped iscimporite pelique net labor a sum nectemolo blant aut evendis earibus nonem eles dolupta tiaerum venis nis nisi acimaxim eiciderem que rehenda dende dempore id excera in nis consed quiamusdant vidus mil mossim facesequis vent, occaborpor alit ulparum fugiam qui destiat enducitatur?\rIcient veruntibus ipsam ipsam conserspit molo iuntece aquosae ctibusd aerepta cum fuga. Ita sitasi illabo. Ectatem aditi archil ipit, idis et latiatio quae nostiam soluptae et vel mi, occae. Ita sit molupicatem lab in remquis cieturiorum ariassimus verovidunt que imporposam, exerepu distem ipiderae nonsent explabo. As mos sit hilles aditi utemolorro enihiciendis estis apiscias et est, solest, ut ad ma quidebi tatemporia quidio. Ehent omnisquos acculparum quam debitet lant ipsumqu iberciis eumquatur, sandips apitatint.\rSam, ius. Offictorecto es invenem porepreprem fuga. Nam seditatio id quod qui iduciusandam vent magniae. Officiam voluptatum, qui nia niet ut et voloreptatur accusanto moluptas molorestore sum dolo mod quas re perio. Ipietur?\rRatur? Lenditatur aute offic tet repudae soluptas serumquam, nihit asimpor ernatur alique voluptint eosam illicab oreped expelique vel ipsum dusda aut plabo. Nam et late reste nitiisi nimodite net idem fugiaec ersperibus re eum digendi am vellam qui officiis pa consequis dic to etur?\rGa. Ihil intiur atibusam, si conese vel et et utem qui vit int maximodis doluptat.",
+              "Images": [
+                {
+                  "Type": "Image",
+                  "Id": 280,
+                  "Name": "",
+                  "Label": "",
+                  "Index": 1,
+                  "ItemLayer": 325,
+                  "Visible": true,
+                  "Link": {
+                    "Type": "Link",
+                    "Id": 283,
+                    "Name": "8778687-78676876-54354-786786ghfhgf.jpg",
+                    "Label": "",
+                    "Index": 1,
+                    "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\8778687-78676876-54354-786786ghfhgf.jpg",
+                    "AssetURL": "",
+                    "AssetID": ""
+                  }
+                },
+                {
+                  "Type": "Image",
+                  "Id": 286,
+                  "Name": "",
+                  "Label": "",
+                  "Index": 1,
+                  "ItemLayer": 325,
+                  "Visible": true,
+                  "Link": {
+                    "Type": "Link",
+                    "Id": 289,
+                    "Name": "5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
+                    "Label": "",
+                    "Index": 2,
+                    "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
+                    "AssetURL": "",
+                    "AssetID": ""
+                  }
+                },
+                {
+                  "Type": "Image",
+                  "Id": 463,
+                  "Name": "",
+                  "Label": "",
+                  "Index": 1,
+                  "ItemLayer": 325,
+                  "Visible": true,
+                  "Link": {
+                    "Type": "Link",
+                    "Id": 467,
+                    "Name": "TC9990701-IMG02.jpg",
+                    "Label": "",
+                    "Index": 3,
+                    "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\TC9990701-IMG02.jpg",
+                    "AssetURL": "",
+                    "AssetID": ""
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Colors": [
+    {
+      "Type": "Color",
+      "Id": 11,
+      "Name": "Black",
+      "Label": "",
+      "Index": 1,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 18,
+      "Name": "C=0 M=0 Y=100 K=0",
+      "Label": "",
+      "Index": 2,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 19,
+      "Name": "C=0 M=100 Y=0 K=0",
+      "Label": "",
+      "Index": 3,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 20,
+      "Name": "C=100 M=0 Y=0 K=0",
+      "Label": "",
+      "Index": 4,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 21,
+      "Name": "C=100 M=90 Y=10 K=0",
+      "Label": "",
+      "Index": 5,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 22,
+      "Name": "C=15 M=100 Y=100 K=0",
+      "Label": "",
+      "Index": 6,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 23,
+      "Name": "C=75 M=5 Y=100 K=0",
+      "Label": "",
+      "Index": 7,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 12,
+      "Name": "Cyan",
+      "Label": "",
+      "Index": 8,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 13,
+      "Name": "Magenta",
+      "Label": "",
+      "Index": 9,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 15,
+      "Name": "Paper",
+      "Label": "",
+      "Index": 10,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 16,
+      "Name": "Registration",
+      "Label": "",
+      "Index": 11,
+      "Model": "idRegistration",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 17,
+      "Name": "Yellow",
+      "Label": "",
+      "Index": 12,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 140,
+      "Name": "",
+      "Label": "",
+      "Index": 13,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 142,
+      "Name": "",
+      "Label": "",
+      "Index": 14,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    }
+  ]
+}

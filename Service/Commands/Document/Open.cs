@@ -25,20 +25,7 @@ namespace Indd.Service.Commands.Document {
         {
             try
             {
-                if (this.application == null)
-                {
-                    this.application = (new ApplicationMananger()).createInstance();
-                }
-
-                foreach (InDesignServer.Document _document in this.application.Documents)
-                {
-                    if (_document.FullName == this.documentPath)
-                    {
-                        this.document =_document;
-                        
-                        return true;
-                    }
-                }
+                
                 
                 this.document = this.application.Open(this.documentPath);
 
