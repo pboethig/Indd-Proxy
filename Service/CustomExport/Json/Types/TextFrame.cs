@@ -63,6 +63,12 @@ namespace Indd.Service.CustomExport.Json.Types
         public List<Image> Images = new List<Image>();
 
         /// <summary>
+        /// List of Paragraphs
+        /// </summary>
+        public List<Paragraph> Paragraphs = new List<Paragraph>();
+
+
+        /// <summary>
         /// TextFrame
         /// </summary>
         /// <param name="TextFrame"></param>
@@ -87,6 +93,20 @@ namespace Indd.Service.CustomExport.Json.Types
             this.setGraphics(textFrame);
 
             this.setNotes(textFrame);
+
+            this.setParagraphs(textFrame);
+        }
+
+        /// <summary>
+        /// Set Paragraphs
+        /// </summary>
+        /// <param name="textFrame"></param>
+        void setParagraphs(InDesignServer.TextFrame textFrame)
+        {
+            foreach (InDesignServer.Paragraph paragraph in textFrame.Paragraphs)
+            {
+                this.Paragraphs.Add(new Paragraph(paragraph));
+            }
         }
 
         void setGraphics(InDesignServer.TextFrame textFrame)

@@ -61,7 +61,14 @@ namespace Indd.Service.CustomExport.Json.Types
 
             this.Id = image.Id;
 
-            this.ItemLayer = image.ItemLayer.Id;
+            try
+            {
+                this.ItemLayer = image.ItemLayer.Id;
+            }
+            catch
+            {
+
+            }
 
             this.Link = new Link(image.ItemLink);
             

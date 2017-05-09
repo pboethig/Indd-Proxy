@@ -78,6 +78,11 @@ namespace Indd.Service.CustomExport.Json.Types
         /// </summary>
         public List<Color> Colors = new List<Color>();
         
+        /// <summary>
+        /// List of ParagraphStyles
+        /// </summary>
+        public List<ParagraphStyle> PargraphStyles= new List<ParagraphStyle>();
+
         /// </summary>
         /// <param name="document"></param>
         public Document(InDesignServer.Document document)
@@ -109,6 +114,20 @@ namespace Indd.Service.CustomExport.Json.Types
             this.setSpreads(document);
 
             this.setColors(document);
+
+            this.setParagraphStyles(document);
+        }
+
+        /// <summary>
+        /// Set paragraphStyles
+        /// </summary>
+        /// <param name="document"></param>
+        void setParagraphStyles(InDesignServer.Document document)
+        {
+            foreach (InDesignServer.ParagraphStyle paragraphStyle in document.AllParagraphStyles)
+            {
+                this.PargraphStyles.Add(new ParagraphStyle(paragraphStyle));
+            }
         }
 
         /// <summary>

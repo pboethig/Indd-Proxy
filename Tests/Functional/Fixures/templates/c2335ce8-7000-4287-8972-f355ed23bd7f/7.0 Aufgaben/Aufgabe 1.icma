@@ -144,6 +144,12 @@
 				<PreviewColor type="enumeration">Nothing</PreviewColor>
 			</Properties>
 		</ParagraphStyle>
+		<ParagraphStyle Self="ParagraphStyle/testparagraph" Name="testparagraph" Imported="false" NextStyle="ParagraphStyle/testparagraph" SplitDocument="false" EmitCss="true" StyleUniqueId="f13c7dd6-2e77-4b0c-96fc-c2225557f46e" EmptyNestedStyles="true" EmptyLineStyles="true" EmptyGrepStyles="true" KeyboardShortcut="0 0" PointSize="30" Capitalization="SmallCaps">
+			<Properties>
+				<BasedOn type="string">$ID/[No paragraph style]</BasedOn>
+				<PreviewColor type="enumeration">Nothing</PreviewColor>
+			</Properties>
+		</ParagraphStyle>
 		<ParagraphStyle Self="ParagraphStyle/footnote" Name="footnote" Imported="false" NextStyle="ParagraphStyle/footnote" SplitDocument="false" EmitCss="true" StyleUniqueId="9e5ca594-cca2-4a05-af08-bfd0798ea4a6" EmptyNestedStyles="true" EmptyLineStyles="true" EmptyGrepStyles="true" KeyboardShortcut="0 0" FillColor="Color/C=100 M=0 Y=0 K=0">
 			<Properties>
 				<BasedOn type="string">$ID/[No paragraph style]</BasedOn>
@@ -546,15 +552,15 @@
             xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/">
          <dc:format>application/x-indesign</dc:format>
          <xmp:CreateDate>2017-05-07T19:04:37+02:00</xmp:CreateDate>
-         <xmp:MetadataDate>2017-05-07T19:48:24+02:00</xmp:MetadataDate>
-         <xmp:ModifyDate>2017-05-07T19:48:24+02:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2017-05-09T00:01:06+02:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2017-05-09T00:01:06+02:00</xmp:ModifyDate>
          <xmp:CreatorTool>Adobe InDesign CC 2017 (Windows)</xmp:CreatorTool>
-         <xmpMM:InstanceID>xmp.iid:69f21a75-807b-5e46-b33c-e1d9120493ac</xmpMM:InstanceID>
-         <xmpMM:DocumentID>xmp.did:b7e4d1c7-c5ea-c742-b93b-737600bcc974</xmpMM:DocumentID>
+         <xmpMM:InstanceID>xmp.iid:2193e715-bf68-9643-b730-3035f3cda534</xmpMM:InstanceID>
+         <xmpMM:DocumentID>xmp.did:229e6e20-09e3-804b-9b69-2e46c7679a4a</xmpMM:DocumentID>
          <xmpMM:OriginalDocumentID>xmp.did:95ef30bf-ed1b-d846-a1f8-17d19ee81345</xmpMM:OriginalDocumentID>
          <xmpMM:RenditionClass>default</xmpMM:RenditionClass>
          <xmpMM:DerivedFrom rdf:parseType="Resource">
-            <stRef:instanceID>xmp.iid:2dc3d1a8-99a1-4f45-959d-940eed174790</stRef:instanceID>
+            <stRef:instanceID>xmp.iid:38e3bac6-c50a-d646-b6d9-a1922e2f6d45</stRef:instanceID>
             <stRef:documentID>xmp.did:95ef30bf-ed1b-d846-a1f8-17d19ee81345</stRef:documentID>
             <stRef:originalDocumentID>xmp.did:95ef30bf-ed1b-d846-a1f8-17d19ee81345</stRef:originalDocumentID>
             <stRef:renditionClass>default</stRef:renditionClass>
@@ -672,14 +678,39 @@
 	<TextVariable Self="dTextVariablenÄnderungsdatum" Name="Änderungsdatum" VariableType="ModificationDateType">
 		<DateVariablePreference TextBefore="" Format="d. MMMM yyyy, h:mm aa" TextAfter="" />
 	</TextVariable>
+	<XMLTag Self="XMLTag/Bild" Name="Bild">
+		<Properties>
+			<TagColor type="enumeration">Violet</TagColor>
+		</Properties>
+	</XMLTag>
 	<XMLTag Self="XMLTag/Root" Name="Root">
 		<Properties>
 			<TagColor type="enumeration">LightBlue</TagColor>
 		</Properties>
 	</XMLTag>
+	<XMLTag Self="XMLTag/Textabschnitt" Name="Textabschnitt">
+		<Properties>
+			<TagColor type="enumeration">BrickRed</TagColor>
+		</Properties>
+	</XMLTag>
 	<Layer Self="uc4" Name="Ebene 1" Visible="true" Locked="false" IgnoreWrap="false" ShowGuides="true" LockGuides="false" UI="true" Expendable="true" Printable="true">
 		<Properties>
 			<LayerColor type="enumeration">LightBlue</LayerColor>
+		</Properties>
+	</Layer>
+	<Layer Self="u137" Name="Ebene 2" Visible="true" Locked="false" IgnoreWrap="false" ShowGuides="true" LockGuides="false" UI="true" Expendable="true" Printable="true">
+		<Properties>
+			<LayerColor type="enumeration">Red</LayerColor>
+		</Properties>
+	</Layer>
+	<Layer Self="u13e" Name="Ebene 3" Visible="true" Locked="false" IgnoreWrap="false" ShowGuides="true" LockGuides="false" UI="true" Expendable="true" Printable="true">
+		<Properties>
+			<LayerColor type="enumeration">Green</LayerColor>
+		</Properties>
+	</Layer>
+	<Layer Self="u145" Name="Ebene 4" Visible="true" Locked="false" IgnoreWrap="false" ShowGuides="true" LockGuides="false" UI="true" Expendable="true" Printable="true">
+		<Properties>
+			<LayerColor type="enumeration">Blue</LayerColor>
 		</Properties>
 	</Layer>
 	<MasterSpread Self="ud5" ItemTransform="1 0 0 1 0 0" OverriddenPageItemProps="" Name="A-Musterseite" NamePrefix="A" BaseName="Musterseite" ShowMasterItems="true" PageCount="2" PrimaryTextFrame="n">
@@ -799,6 +830,76 @@
 				</Properties>
 			</ObjectExportOption>
 		</TextFrame>
+		<TextFrame Self="u15f" ParentStory="u14d" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u137" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 284.1732283464567 277.7952755909081">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-213.30708661417324 -63.77952755869819" LeftDirection="-213.30708661417324 -63.77952755869819" RightDirection="-213.30708661417324 -63.77952755869819" />
+							<PathPointType Anchor="-213.30708661417324 63.77952755869825" LeftDirection="-213.30708661417324 63.77952755869825" RightDirection="-213.30708661417324 63.77952755869825" />
+							<PathPointType Anchor="213.30708661417322 63.77952755869825" LeftDirection="213.30708661417322 63.77952755869825" RightDirection="213.30708661417322 63.77952755869825" />
+							<PathPointType Anchor="213.30708661417322 -63.77952755869819" LeftDirection="213.30708661417322 -63.77952755869819" RightDirection="213.30708661417322 -63.77952755869819" />
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="426.61417322834643" TextColumnMaxWidth="0">
+				<Properties>
+					<InsetSpacing type="list">
+						<ListItem type="unit">0</ListItem>
+						<ListItem type="unit">0</ListItem>
+						<ListItem type="unit">0</ListItem>
+						<ListItem type="unit">0</ListItem>
+					</InsetSpacing>
+				</Properties>
+			</TextFramePreference>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+				</Properties>
+			</TextWrapPreference>
+			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+				<Properties>
+					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+				</Properties>
+			</ObjectExportOption>
+		</TextFrame>
+		<TextFrame Self="u176" ParentStory="u164" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u13e" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 281.33858267716533 -121.18110236220474">
+			<Properties>
+				<PathGeometry>
+					<GeometryPathType PathOpen="false">
+						<PathPointArray>
+							<PathPointType Anchor="-216.14173228346453 -34.7244094488189" LeftDirection="-216.14173228346453 -34.7244094488189" RightDirection="-216.14173228346453 -34.7244094488189" />
+							<PathPointType Anchor="-216.14173228346453 34.7244094488189" LeftDirection="-216.14173228346453 34.7244094488189" RightDirection="-216.14173228346453 34.7244094488189" />
+							<PathPointType Anchor="216.1417322834646 34.7244094488189" LeftDirection="216.1417322834646 34.7244094488189" RightDirection="216.1417322834646 34.7244094488189" />
+							<PathPointType Anchor="216.1417322834646 -34.7244094488189" LeftDirection="216.1417322834646 -34.7244094488189" RightDirection="216.1417322834646 -34.7244094488189" />
+						</PathPointArray>
+					</GeometryPathType>
+				</PathGeometry>
+			</Properties>
+			<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="432.2834645669291" TextColumnMaxWidth="0">
+				<Properties>
+					<InsetSpacing type="list">
+						<ListItem type="unit">0</ListItem>
+						<ListItem type="unit">0</ListItem>
+						<ListItem type="unit">0</ListItem>
+						<ListItem type="unit">0</ListItem>
+					</InsetSpacing>
+				</Properties>
+			</TextFramePreference>
+			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+				<Properties>
+					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+				</Properties>
+			</TextWrapPreference>
+			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+				<Properties>
+					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+				</Properties>
+			</ObjectExportOption>
+		</TextFrame>
 	</Spread>
 	<DocumentUser Self="dDocumentUser0" UserName="$ID/Unknown User Name">
 		<Properties>
@@ -857,6 +958,25 @@
 			</CharacterStyleRange>
 		</ParagraphStyleRange>
 	</XmlStory>
+	<Story Self="u164" AppliedTOCStyle="n" UserText="true" TrackChanges="false" StoryTitle="$ID/">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>dssadsa sadasdas sadasdsa sadsad sdasd</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+	<Story Self="u14d" AppliedTOCStyle="n" UserText="true" TrackChanges="false" StoryTitle="$ID/">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>dsasd sdasd</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
 	<Story Self="ufb" AppliedTOCStyle="n" UserText="true" TrackChanges="false" StoryTitle="$ID/">
 		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
 		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
