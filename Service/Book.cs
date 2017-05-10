@@ -7,7 +7,7 @@ using Indd.Service.IndesignServerWrapper;
 
 namespace Indd.Service
 {
-    class Document : Abstract
+    class Book:Abstract
     {
         /// <summary>
         /// Opens a document
@@ -16,11 +16,11 @@ namespace Indd.Service
         /// <param name="version"></param>
         /// <param name="extension"></param>
         /// <returns></returns>
-        public static InDesignServer.Document getDocument(string uuid, string version = "1.0", string extension = "indd", string ticketId="randomId")
+        public static InDesignServer.Book getBook(string uuid, string version = "1.0", string extension = "indd", string ticketId="randomId")
         {
-            dynamic DocumentOpenCommandRequest = new
+            dynamic OpenCommandRequest = new
             {
-                classname = "Document.Open",
+                classname = "Book.Open",
                 uuid = uuid,
                 version = version,
                 ticketId = ticketId,
@@ -28,11 +28,11 @@ namespace Indd.Service
                 documentFolderPath = Indd.Service.Config.Manager.getStoragePath("templates")
             };
 
-            Indd.Service.Commands.Document.Open documentCommand = new Indd.Service.Commands.Document.Open(DocumentOpenCommandRequest);
+            Indd.Service.Commands.Book.Open command = new Indd.Service.Commands.Book.Open(OpenCommandRequest);
 
-            documentCommand.processSequence();
+            command.processSequence();
 
-            return documentCommand.document;
+            return command.book;
         }
     }
 }

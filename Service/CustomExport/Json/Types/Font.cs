@@ -71,19 +71,52 @@ namespace Indd.Service.CustomExport.Json.Types
 
             this.Family = font.FontFamily;
 
-            this.FontStyleName = font.FontStyleName;
+            try
+            {
+                this.FontStyleName = font.FontStyleName;
+            }
+            catch(System.Exception ex)
+            {
+                this.FontStyleName = ex.Message;
+            }
 
-            this.Location = font.Location;
-
+            try
+            {
+                this.FontStyleName = font.FontStyleName;
+            }
+            catch (System.Exception ex)
+            {
+                this.Location = ex.Message;
+            }
+            
             this.PostScriptName = font.PostScriptName;
 
-            this.FullName = font.FullName;
+            try
+            {
+                this.FontStyleName = font.FontStyleName;
+            }
+            catch (System.Exception ex)
+            {
+                this.FullName = ex.Message;
+            }
 
-            this.FullNameNative = font.FullNameNative;
+            try
+            {
+                this.FontStyleName = font.FontStyleName;
+            }
+            catch (System.Exception ex)
+            {
+                this.FullNameNative = ex.Message;
+            }
 
-            this.FontType = font.FontType.ToString(); 
-
-
+            try
+            {
+                this.FontStyleName = font.FontStyleName;
+            }
+            catch (System.Exception ex)
+            {
+                this.FontType = ex.Message;
+            }
         }
     }
 }

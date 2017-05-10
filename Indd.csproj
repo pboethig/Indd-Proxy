@@ -59,11 +59,16 @@
     <Compile Include="Helper\Dynamic\Property.cs" />
     <Compile Include="Helper\IO\Directory.cs" />
     <Compile Include="Helper\IO\ScripingFileSystemObject.cs" />
+    <Compile Include="Service\Abstract.cs" />
     <Compile Include="Service\Commands\Abstract.cs" />
     <Compile Include="Service\Commands\BookContents\Add.cs" />
     <Compile Include="Service\Commands\Book\ExportPDF.cs" />
     <Compile Include="Service\Commands\Book\Open.cs" />
     <Compile Include="Service\Commands\Document\ExportJSON.cs" />
+    <Compile Include="Service\CustomExport\Json\Book.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\BookContent.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\BookContents.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\Book.cs" />
     <Compile Include="Service\CustomExport\Json\Types\Layer.cs" />
     <Compile Include="Service\CustomExport\Json\Types\Link.cs" />
     <Compile Include="Service\CustomExport\Json\Types\Image.cs" />
@@ -79,6 +84,7 @@
     <Compile Include="Service\CustomExport\Json\Types\Color.cs" />
     <Compile Include="Service\CustomExport\Json\Types\Spread.cs" />
     <Compile Include="Service\CustomExport\Json\Types\Page.cs" />
+    <Compile Include="Service\Book.cs" />
     <Compile Include="Service\Document.cs" />
     <Compile Include="Service\Commands\Document\ExportHTMLFX.cs" />
     <Compile Include="Service\Commands\Document\ExportPDF.cs" />
@@ -110,6 +116,7 @@
     <Compile Include="Tests\Functional\Service\Commands\Document\DocumentOpenTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\FactoryTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\TextFrames\SetContents.cs" />
+    <Compile Include="Tests\Functional\Service\CustomExport\Json\BootTest.cs" />
     <Compile Include="Tests\Functional\Service\CustomExport\Json\DocumentTest.cs" />
     <Compile Include="Tests\Functional\Service\DocumentTest.cs" />
     <Compile Include="Tests\Functional\Service\IndesignServer\ApplicationTest.cs" />
