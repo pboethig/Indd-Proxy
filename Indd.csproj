@@ -62,6 +62,7 @@
     <Compile Include="Service\Abstract.cs" />
     <Compile Include="Service\Commands\Abstract.cs" />
     <Compile Include="Service\Commands\BookContents\Add.cs" />
+    <Compile Include="Service\Commands\Book\ExportJSON.cs" />
     <Compile Include="Service\Commands\Book\ExportPDF.cs" />
     <Compile Include="Service\Commands\Book\Open.cs" />
     <Compile Include="Service\Commands\Document\ExportJSON.cs" />
@@ -104,6 +105,7 @@
     <Compile Include="Tests\Functional\Helper\Json\ConvertTest.cs" />
     <Compile Include="Tests\Functional\Log\SyslogTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\BookContents\AddTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Book\ExportJSONTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportJSONTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportHTMLFX.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportPDFTest.cs" />
@@ -146,6 +148,7 @@
     <None Include="Tests\Functional\Fixures\assets\TC9990701-PREVIEW.pdf" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\c2335ce8-7000-4287-8972-f355ed23bd7f.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.CreateCopy.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Book.ExportJSON.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportJSON.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportHTMLFX.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.SaveAndClose.json" />

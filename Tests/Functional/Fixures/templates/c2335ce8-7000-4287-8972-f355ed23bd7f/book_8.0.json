@@ -20,7 +20,7 @@
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
-          "Id": 36,
+          "Id": 47,
           "Name": "1.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\1.0.indd",
           "Label": "",
@@ -1043,7 +1043,7 @@
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
-          "Id": 38,
+          "Id": 49,
           "Name": "2.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\2.0.indd",
           "Label": "",
@@ -1763,7 +1763,7 @@
         "Status": 1852797549,
         "Document": {
           "Type": "Document",
-          "Id": 40,
+          "Id": 51,
           "Name": "4.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\4.0.indd",
           "Label": "",
@@ -2677,7 +2677,7 @@
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
-          "Id": 42,
+          "Id": 53,
           "Name": "3.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\3.0.indd",
           "Label": "",
@@ -3591,7 +3591,7 @@
         "Status": 1852797549,
         "Document": {
           "Type": "Document",
-          "Id": 44,
+          "Id": 55,
           "Name": "7.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\7.0.indd",
           "Label": "",

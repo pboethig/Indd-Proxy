@@ -1,6 +1,6 @@
 {
   "Type": "Document",
-  "Id": 1,
+  "Id": 45,
   "Name": "7.0.indd",
   "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\7.0.indd",
   "Label": "",
@@ -59,7 +59,7 @@
         {
           "Type": "Page",
           "Id": 211,
-          "Name": "1",
+          "Name": "9",
           "Label": "",
           "Index": 1,
           "PageColor": 1346594413,
@@ -100,7 +100,7 @@
                     "Index": 2,
                     "Name": "[Einf. Abs.]",
                     "Label": "",
-                    "AppliedFontFullName": "Minion Pro"
+                    "AppliedFontFullName": null
                   },
                   "AppliedCharacterStyle": {
                     "Type": "CharacterStyle",
@@ -115,14 +115,14 @@
                   "AppliedFont": {
                     "Type": "Font",
                     "Index": 46,
-                    "Location": "C:\\Windows\\Fonts\\gadugi.ttf",
+                    "Location": null,
                     "Name": "Gadugi\tRegular",
                     "Family": "Gadugi",
                     "FontStyleName": "Regular",
                     "PostScriptName": "Gadugi",
-                    "FullName": "Gadugi",
-                    "FullNameNative": "Gadugi",
-                    "FontType": "idOpenTypeTT"
+                    "FullName": null,
+                    "FullNameNative": null,
+                    "FontType": null
                   },
                   "Images": []
                 }

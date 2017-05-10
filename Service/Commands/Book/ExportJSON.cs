@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Indd.Service.Commands.Document {
+namespace Indd.Service.Commands.Book {
 
     /// <summary>
     /// Options to generate proxy
@@ -26,19 +26,19 @@ namespace Indd.Service.Commands.Document {
         {
             try
             {
-                this.openDocument();
+                this.openBook();
 
                 this.buildExportFilePath();
                 
-                Indd.Service.CustomExport.Json.Document jsonBook = new Indd.Service.CustomExport.Json.Document(document);
+                Indd.Service.CustomExport.Json.Book jsonBook = new Indd.Service.CustomExport.Json.Book(book);
                 
                 jsonBook.toJson(this.exportFilePath);
 
-                document.Close();
+                book.Close();
             }
             catch (System.Exception ex)
             {
-                throw new SystemException("Document.Export to JSON failed: " + ex.Message);
+                throw new SystemException("Book.Export to JSON failed: " + ex.Message);
             }
 
             return true;
@@ -50,7 +50,7 @@ namespace Indd.Service.Commands.Document {
         /// <returns>void</returns>
         public void buildExportFilePath()
         {
-            this.exportFilePath = this.commandRequest.exportFolderPath + "\\" + this.uuid + "\\document_"+ this.version+".json";
+            this.exportFilePath = this.commandRequest.exportFolderPath + "\\" + this.uuid + "\\book_"+ this.version+".json";
 
             if (System.IO.File.Exists(this.exportFilePath))
             {

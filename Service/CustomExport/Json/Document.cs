@@ -12,9 +12,9 @@ namespace Indd.Service.CustomExport.Json
         public InDesignServer.Document document;
 
         /// <summary>
-        /// jsondocument
+        /// jsonBook
         /// </summary>
-        public Indd.Service.CustomExport.Json.Types.Document jsonDocument;
+        public Indd.Service.CustomExport.Json.Types.Document jsonBook;
         
         /// <summary>
         /// Stores exceptions during proxy generation
@@ -40,11 +40,11 @@ namespace Indd.Service.CustomExport.Json
         }
         
         /// <summary>
-        /// Sets jsondocument
+        /// Sets jsonBook
         /// </summary>
         public void buildDocumentType()
         {
-            this.jsonDocument = new Indd.Service.CustomExport.Json.Types.Document(document);
+            this.jsonBook = new Indd.Service.CustomExport.Json.Types.Document(document);
         }
         
         /// <summary>
@@ -53,7 +53,7 @@ namespace Indd.Service.CustomExport.Json
         /// <returns></returns>
         public string toJson(string filePath="")
         {
-            string json = Indd.Helper.Json.Convert.toJson(this.jsonDocument);
+            string json = Indd.Helper.Json.Convert.toJson(this.jsonBook);
 
             if (filePath.Length > 0)
             {

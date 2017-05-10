@@ -28,13 +28,13 @@
 
             InDesignServer.Document document = Indd.Service.Document.getDocument(uuid, version);
 
-            Indd.Service.CustomExport.Json.Document jsonDocument = new Indd.Service.CustomExport.Json.Document(document);
+            Indd.Service.CustomExport.Json.Document jsonBook = new Indd.Service.CustomExport.Json.Document(document);
 
-            Assert.IsEmpty(jsonDocument.exportExceptions);
+            Assert.IsEmpty(jsonBook.exportExceptions);
 
             string documentPath = Indd.Service.Document.getDocumentPath(uuid, version);
 
-            string json = jsonDocument.toJson(documentPath + ".json");
+            string json = jsonBook.toJson(documentPath + ".json");
 
             Assert.IsTrue(System.IO.File.Exists(documentPath + ".json"));
 
