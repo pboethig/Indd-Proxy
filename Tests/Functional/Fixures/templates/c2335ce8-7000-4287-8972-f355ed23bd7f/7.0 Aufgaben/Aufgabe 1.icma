@@ -60,6 +60,36 @@
 	<FontFamily Self="dia3" Name="Kozuka Mincho Pr6N">
 		<Font Self="dia3FontnKozuka Mincho Pr6N R" FontFamily="Kozuka Mincho Pr6N" Name="Kozuka Mincho Pr6N R" PostScriptName="KozMinPr6N-Regular" Status="Installed" FontStyleName="R" FontType="OpenTypeCID" WritingScript="1" FullName="Kozuka Mincho Pr6N R" FullNameNative="小塚明朝 Pr6N R" FontStyleNameNative="R" PlatformName="$ID/" Version="Version 6.017;PS 6.004;hotconv 1.0.70;makeotf.lib2.5.5900" TypekitID="$ID/" />
 	</FontFamily>
+	<FontFamily Self="di1e2" Name="Corbel">
+		<Font Self="di1e2FontnCorbel Regular" FontFamily="Corbel" Name="Corbel Regular" PostScriptName="Corbel" Status="Installed" FontStyleName="Regular" FontType="OpenTypeTT" WritingScript="0" FullName="Corbel" FullNameNative="Corbel" FontStyleNameNative="Regular" PlatformName="$ID/" Version="Version 5.61" TypekitID="$ID/" />
+		<Font Self="di1e2FontnCorbel Italic" FontFamily="Corbel" Name="Corbel Italic" PostScriptName="Corbel-Italic" Status="Installed" FontStyleName="Italic" FontType="OpenTypeTT" WritingScript="0" FullName="Corbel Italic" FullNameNative="Corbel Italic" FontStyleNameNative="Italic" PlatformName="$ID/" Version="Version 5.61" TypekitID="$ID/" />
+		<Font Self="di1e2FontnCorbel Bold" FontFamily="Corbel" Name="Corbel Bold" PostScriptName="Corbel-Bold" Status="Installed" FontStyleName="Bold" FontType="OpenTypeTT" WritingScript="0" FullName="Corbel Bold" FullNameNative="Corbel Bold" FontStyleNameNative="Bold" PlatformName="$ID/" Version="Version 5.61" TypekitID="$ID/" />
+		<Font Self="di1e2FontnCorbel Bold Italic" FontFamily="Corbel" Name="Corbel Bold Italic" PostScriptName="Corbel-BoldItalic" Status="Installed" FontStyleName="Bold Italic" FontType="OpenTypeTT" WritingScript="0" FullName="Corbel Bold Italic" FullNameNative="Corbel Bold Italic" FontStyleNameNative="Bold Italic" PlatformName="$ID/" Version="Version 5.61" TypekitID="$ID/" />
+	</FontFamily>
+	<FontFamily Self="di1f1" Name="Franklin Gothic Medium">
+		<Font Self="di1f1FontnFranklin Gothic Medium Regular" FontFamily="Franklin Gothic Medium" Name="Franklin Gothic Medium Regular" PostScriptName="FranklinGothic-Medium" Status="Installed" FontStyleName="Regular" FontType="OpenTypeTT" WritingScript="0" FullName="Franklin Gothic Medium" FullNameNative="Franklin Gothic Medium" FontStyleNameNative="Regular" PlatformName="$ID/" Version="Version 5.01" TypekitID="$ID/" />
+		<Font Self="di1f1FontnFranklin Gothic Medium Italic" FontFamily="Franklin Gothic Medium" Name="Franklin Gothic Medium Italic" PostScriptName="FranklinGothic-MediumItalic" Status="Installed" FontStyleName="Italic" FontType="OpenTypeTT" WritingScript="0" FullName="Franklin Gothic Medium Italic" FullNameNative="Franklin Gothic Medium Italic" FontStyleNameNative="Italic" PlatformName="$ID/" Version="Version 5.00" TypekitID="$ID/" />
+	</FontFamily>
+	<FontFamily Self="di1f2" Name="Arial">
+		<Font Self="di1f2FontnArial Regular" FontFamily="Arial" Name="Arial Regular" PostScriptName="ArialMT" Status="Installed" FontStyleName="Regular" FontType="OpenTypeTT" WritingScript="0" FullName="Arial" FullNameNative="Arial" FontStyleNameNative="Regular" PlatformName="$ID/" Version="Version 6.90" TypekitID="$ID/" />
+		<Font Self="di1f2FontnArial Italic" FontFamily="Arial" Name="Arial Italic" PostScriptName="Arial-ItalicMT" Status="Installed" FontStyleName="Italic" FontType="OpenTypeTT" WritingScript="0" FullName="Arial Italic" FullNameNative="Arial Italic" FontStyleNameNative="Italic" PlatformName="$ID/" Version="Version 6.90" TypekitID="$ID/" />
+		<Font Self="di1f2FontnArial Bold" FontFamily="Arial" Name="Arial Bold" PostScriptName="Arial-BoldMT" Status="Installed" FontStyleName="Bold" FontType="OpenTypeTT" WritingScript="0" FullName="Arial Bold" FullNameNative="Arial Bold" FontStyleNameNative="Bold" PlatformName="$ID/" Version="Version 6.90" TypekitID="$ID/" />
+		<Font Self="di1f2FontnArial Bold Italic" FontFamily="Arial" Name="Arial Bold Italic" PostScriptName="Arial-BoldItalicMT" Status="Installed" FontStyleName="Bold Italic" FontType="OpenTypeTT" WritingScript="0" FullName="Arial Bold Italic" FullNameNative="Arial Bold Italic" FontStyleNameNative="Bold Italic" PlatformName="$ID/" Version="Version 6.90" TypekitID="$ID/" />
+		<Font Self="di1f2FontnArial Black" FontFamily="Arial" Name="Arial Black" PostScriptName="Arial-Black" Status="Installed" FontStyleName="Black" FontType="OpenTypeTT" WritingScript="0" FullName="Arial Black" FullNameNative="Arial Black" FontStyleNameNative="Black" PlatformName="$ID/" Version="Version 5.22" TypekitID="$ID/" />
+	</FontFamily>
+	<FontFamily Self="di1f3" Name="Gadugi">
+		<Font Self="di1f3FontnGadugi Regular" FontFamily="Gadugi" Name="Gadugi Regular" PostScriptName="Gadugi" Status="Installed" FontStyleName="Regular" FontType="OpenTypeTT" WritingScript="0" FullName="Gadugi" FullNameNative="Gadugi" FontStyleNameNative="Regular" PlatformName="$ID/" Version="Version 1.10" TypekitID="$ID/" />
+		<Font Self="di1f3FontnGadugi Bold" FontFamily="Gadugi" Name="Gadugi Bold" PostScriptName="Gadugi-Bold" Status="Installed" FontStyleName="Bold" FontType="OpenTypeTT" WritingScript="0" FullName="Gadugi Bold" FullNameNative="Gadugi Bold" FontStyleNameNative="Bold" PlatformName="$ID/" Version="Version 1.10" TypekitID="$ID/" />
+	</FontFamily>
+	<FontFamily Self="di240" Name="Impact">
+		<Font Self="di240FontnImpact Regular" FontFamily="Impact" Name="Impact Regular" PostScriptName="Impact" Status="Installed" FontStyleName="Regular" FontType="OpenTypeTT" WritingScript="0" FullName="Impact" FullNameNative="Impact" FontStyleNameNative="Regular" PlatformName="$ID/" Version="Version 5.10" TypekitID="$ID/" />
+	</FontFamily>
+	<FontFamily Self="di242" Name="Lucida Console">
+		<Font Self="di242FontnLucida Console Regular" FontFamily="Lucida Console" Name="Lucida Console Regular" PostScriptName="LucidaConsole" Status="Installed" FontStyleName="Regular" FontType="OpenTypeTT" WritingScript="0" FullName="Lucida Console" FullNameNative="Lucida Console" FontStyleNameNative="Regular" PlatformName="$ID/" Version="Version 5.00" TypekitID="$ID/" />
+	</FontFamily>
+	<FontFamily Self="di244" Name="Segoe UI Symbol">
+		<Font Self="di244FontnSegoe UI Symbol Regular" FontFamily="Segoe UI Symbol" Name="Segoe UI Symbol Regular" PostScriptName="SegoeUISymbol" Status="Installed" FontStyleName="Regular" FontType="OpenTypeTT" WritingScript="0" FullName="Segoe UI Symbol" FullNameNative="Segoe UI Symbol" FontStyleNameNative="Regular" PlatformName="$ID/" Version="Version 6.23" TypekitID="$ID/" />
+	</FontFamily>
 	<CompositeFont Self="CompositeFont/$ID/[No composite font]" Name="$ID/[No composite font]">
 		<CompositeFontEntry Self="ua2" Name="$ID/Kanji" FontStyle="$ID/R" RelativeSize="100" HorizontalScale="100" VerticalScale="100" Locked="true" ScaleOption="true" BaselineShift="0">
 			<Properties>
@@ -94,6 +124,34 @@
 	</CompositeFont>
 	<RootCharacterStyleGroup Self="u78">
 		<CharacterStyle Self="CharacterStyle/$ID/[No character style]" Imported="false" SplitDocument="false" EmitCss="true" StyleUniqueId="$ID/" Name="$ID/[No character style]" />
+		<CharacterStyle Self="CharacterStyle/Zeichenformat 1" Imported="false" SplitDocument="false" EmitCss="true" StyleUniqueId="add49814-e650-4ecb-b231-bd06d4423683" KeyboardShortcut="0 0" Name="Zeichenformat 1" FontStyle="Regular">
+			<Properties>
+				<BasedOn type="string">$ID/[No character style]</BasedOn>
+				<PreviewColor type="enumeration">Nothing</PreviewColor>
+				<AppliedFont type="string">Gadugi</AppliedFont>
+			</Properties>
+		</CharacterStyle>
+		<CharacterStyle Self="CharacterStyle/Zeichenformat 2" Imported="false" SplitDocument="false" EmitCss="true" StyleUniqueId="8fec1567-a709-44fe-abfd-59b8a88098c1" KeyboardShortcut="0 0" Name="Zeichenformat 2">
+			<Properties>
+				<BasedOn type="object">CharacterStyle/Zeichenformat 1</BasedOn>
+				<PreviewColor type="enumeration">Nothing</PreviewColor>
+				<AppliedFont type="string">Impact</AppliedFont>
+			</Properties>
+		</CharacterStyle>
+		<CharacterStyle Self="CharacterStyle/Zeichenformat 3" Imported="false" SplitDocument="false" EmitCss="true" StyleUniqueId="33ef6b4f-c7d4-4dc7-a4d5-5cc3605d150d" KeyboardShortcut="0 0" Name="Zeichenformat 3">
+			<Properties>
+				<BasedOn type="object">CharacterStyle/Zeichenformat 2</BasedOn>
+				<PreviewColor type="enumeration">Nothing</PreviewColor>
+				<AppliedFont type="string">Lucida Console</AppliedFont>
+			</Properties>
+		</CharacterStyle>
+		<CharacterStyle Self="CharacterStyle/Zeichenformat 4" Imported="false" SplitDocument="false" EmitCss="true" StyleUniqueId="0cf421ec-efd9-4386-ad4f-24ed31b774ea" KeyboardShortcut="0 0" Name="Zeichenformat 4">
+			<Properties>
+				<BasedOn type="object">CharacterStyle/Zeichenformat 3</BasedOn>
+				<PreviewColor type="enumeration">Nothing</PreviewColor>
+				<AppliedFont type="string">Segoe UI Symbol</AppliedFont>
+			</Properties>
+		</CharacterStyle>
 	</RootCharacterStyleGroup>
 	<NumberingList Self="NumberingList/$ID/[Default]" Name="$ID/[Default]" ContinueNumbersAcrossStories="false" ContinueNumbersAcrossDocuments="false" />
 	<RootParagraphStyleGroup Self="u77">
@@ -144,9 +202,22 @@
 				<PreviewColor type="enumeration">Nothing</PreviewColor>
 			</Properties>
 		</ParagraphStyle>
-		<ParagraphStyle Self="ParagraphStyle/testparagraph" Name="testparagraph" Imported="false" NextStyle="ParagraphStyle/testparagraph" SplitDocument="false" EmitCss="true" StyleUniqueId="f13c7dd6-2e77-4b0c-96fc-c2225557f46e" EmptyNestedStyles="true" EmptyLineStyles="true" EmptyGrepStyles="true" KeyboardShortcut="0 0" PointSize="30" Capitalization="SmallCaps">
+		<ParagraphStyle Self="ParagraphStyle/dritterparastyle" Name="dritterparastyle" Imported="false" NextStyle="ParagraphStyle/dritterparastyle" SplitDocument="false" EmitCss="true" StyleUniqueId="55bb3ef7-8445-49bb-8277-8c70daa7782e" EmptyNestedStyles="true" EmptyLineStyles="true" EmptyGrepStyles="true" KeyboardShortcut="0 0" PointSize="30" Capitalization="SmallCaps">
 			<Properties>
 				<BasedOn type="string">$ID/[No paragraph style]</BasedOn>
+				<PreviewColor type="enumeration">Nothing</PreviewColor>
+			</Properties>
+		</ParagraphStyle>
+		<ParagraphStyle Self="ParagraphStyle/Absatzformat 2" Name="Absatzformat 2" Imported="false" NextStyle="ParagraphStyle/Absatzformat 2" SplitDocument="false" EmitCss="true" StyleUniqueId="3322996e-0f87-49b2-9e6f-8d3bd06d6ec3" EmptyNestedStyles="true" EmptyLineStyles="true" EmptyGrepStyles="true" KeyboardShortcut="0 0" PointSize="10">
+			<Properties>
+				<BasedOn type="object">ParagraphStyle/dritterparastyle</BasedOn>
+				<PreviewColor type="enumeration">Nothing</PreviewColor>
+				<AppliedFont type="string">Corbel</AppliedFont>
+			</Properties>
+		</ParagraphStyle>
+		<ParagraphStyle Self="ParagraphStyle/Absatzformat 1" Name="Absatzformat 1" Imported="false" NextStyle="ParagraphStyle/Absatzformat 1" SplitDocument="false" EmitCss="true" StyleUniqueId="d85f219c-a973-4f60-9f25-9e69bacbb64d" EmptyNestedStyles="true" EmptyLineStyles="true" EmptyGrepStyles="true" KeyboardShortcut="0 0" PointSize="30">
+			<Properties>
+				<BasedOn type="object">ParagraphStyle/dritterparastyle</BasedOn>
 				<PreviewColor type="enumeration">Nothing</PreviewColor>
 			</Properties>
 		</ParagraphStyle>
@@ -418,10 +489,10 @@
 		</Properties>
 	</TextFramePreference>
 	<TextPreference TypographersQuotes="true" HighlightHjViolations="false" HighlightKeeps="false" HighlightSubstitutedGlyphs="false" HighlightCustomSpacing="false" HighlightSubstitutedFonts="true" UseOpticalSize="true" UseParagraphLeading="false" SuperscriptSize="58.3" SuperscriptPosition="33.3" SubscriptSize="58.3" SubscriptPosition="33.3" SmallCap="70" LeadingKeyIncrement="2" BaselineShiftKeyIncrement="2" KerningKeyIncrement="20" ShowInvisibles="false" JustifyTextWraps="false" AbutTextToTextWrap="true" ZOrderTextWrap="false" LinkTextFilesWhenImporting="false" HighlightKinsoku="false" QuoteCharactersRotatedInVertical="true" UseNewVerticalScaling="false" UseCidMojikumi="false" EnableStylePreviewMode="false" SmartTextReflow="true" AddPages="EndOfStory" LimitToMasterTextFrames="true" PreserveFacingPageSpreads="false" DeleteEmptyPages="false" />
-	<TextDefault ParagraphShadingLeftOffset="0" ParagraphShadingRightOffset="0" ParagraphShadingTopOffset="0" ParagraphShadingBottomOffset="0" ParagraphShadingWidth="ColumnWidth" ParagraphShadingTopOrigin="AscentTopOrigin" ParagraphShadingBottomOrigin="DescentBottomOrigin" ParagraphShadingClipToFrame="false" ParagraphShadingSuppressPrinting="false" ParagraphShadingOn="false" ParagraphShadingOverprint="false" ParagraphShadingTint="-1" FontStyle="Regular" PointSize="12" KerningMethod="$ID/Metrics" Tracking="0" Capitalization="Normal" Position="Normal" Underline="false" StrikeThru="false" Ligatures="true" NoBreak="false" HorizontalScale="100" VerticalScale="100" BaselineShift="0" Skew="0" FillTint="-1" StrokeTint="-1" StrokeWeight="1" OverprintStroke="false" OverprintFill="false" OTFFigureStyle="Default" OTFOrdinal="false" OTFFraction="false" OTFDiscretionaryLigature="false" OTFTitling="false" OTFContextualAlternate="true" OTFSwash="false" UnderlineTint="-1" UnderlineGapTint="-1" UnderlineOverprint="false" UnderlineGapOverprint="false" UnderlineOffset="-9999" UnderlineWeight="-9999" StrikeThroughTint="-1" StrikeThroughGapTint="-1" StrikeThroughOverprint="false" StrikeThroughGapOverprint="false" StrikeThroughOffset="-9999" StrikeThroughWeight="-9999" FillColor="Color/Black" StrokeColor="Swatch/None" AppliedLanguage="$ID/de_DE_2006" ParagraphKashidaWidth="2" FirstLineIndent="0" LeftIndent="0" RightIndent="0" SpaceBefore="0" SpaceAfter="0" Justification="LeftAlign" SingleWordJustification="FullyJustified" AutoLeading="120" DropCapLines="0" DropCapCharacters="0" KeepLinesTogether="false" KeepAllLinesTogether="false" KeepWithNext="0" KeepFirstLines="2" KeepLastLines="2" StartParagraph="Anywhere" Composer="HL Composer" MinimumWordSpacing="80" MaximumWordSpacing="133" DesiredWordSpacing="100" MinimumLetterSpacing="0" MaximumLetterSpacing="0" DesiredLetterSpacing="0" MinimumGlyphScaling="100" MaximumGlyphScaling="100" DesiredGlyphScaling="100" RuleAbove="false" RuleAboveOverprint="false" RuleAboveLineWeight="1" RuleAboveTint="-1" RuleAboveOffset="0" RuleAboveLeftIndent="0" RuleAboveRightIndent="0" RuleAboveWidth="ColumnWidth" RuleAboveGapTint="-1" RuleAboveGapOverprint="false" RuleBelow="false" RuleBelowLineWeight="1" RuleBelowTint="-1" RuleBelowOffset="0" RuleBelowLeftIndent="0" RuleBelowRightIndent="0" RuleBelowWidth="ColumnWidth" RuleBelowGapTint="-1" HyphenateCapitalizedWords="true" Hyphenation="true" HyphenateBeforeLast="2" HyphenateAfterFirst="2" HyphenateWordsLongerThan="5" HyphenateLadderLimit="3" HyphenationZone="36" HyphenWeight="5" AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" LastLineIndent="0" HyphenateLastWord="true" OTFSlashedZero="false" OTFHistorical="false" OTFStylisticSets="0" GradientFillLength="-1" GradientFillAngle="0" GradientStrokeLength="-1" GradientStrokeAngle="0" GradientFillStart="0 0" GradientStrokeStart="0 0" KeepWithPrevious="false" SpanColumnType="SingleColumn" SplitColumnInsideGutter="6" SplitColumnOutsideGutter="0" SpanColumnMinSpaceBefore="0" SpanColumnMinSpaceAfter="0" RuleBelowOverprint="false" RuleBelowGapOverprint="false" DropcapDetail="1" HyphenateAcrossColumns="true" KeepRuleAboveInFrame="false" IgnoreEdgeAlignment="false" OTFMark="true" OTFLocale="true" PositionalForm="None" ParagraphDirection="LeftToRightDirection" ParagraphJustification="DefaultJustification" MiterLimit="4" StrokeAlignment="OutsideAlignment" EndJoin="MiterEndJoin" OTFOverlapSwash="false" OTFStylisticAlternate="false" OTFJustificationAlternate="false" OTFStretchedAlternate="false" CharacterDirection="DefaultDirection" KeyboardDirection="DefaultDirection" DigitsType="DefaultDigits" Kashidas="DefaultKashidas" DiacriticPosition="OpentypePositionFromBaseline" XOffsetDiacritic="0" YOffsetDiacritic="0" ParagraphBreakType="Anywhere" PageNumberType="AutoPageNumber" GridAlignFirstLineOnly="false" GridAlignment="None" GridGyoudori="0" AutoTcy="0" AutoTcyIncludeRoman="false" KinsokuType="KinsokuPushInFirst" KinsokuHangType="None" BunriKinshi="true" Rensuuji="true" RotateSingleByteCharacters="false" LeadingModel="LeadingModelAkiBelow" CharacterAlignment="AlignEmCenter" Tsume="0" LeadingAki="-1" TrailingAki="-1" CharacterRotation="0" Jidori="0" ShataiMagnification="0" ShataiDegreeAngle="4500" ShataiAdjustRotation="false" ShataiAdjustTsume="true" Tatechuyoko="false" TatechuyokoXOffset="0" TatechuyokoYOffset="0" KentenTint="-1" KentenStrokeTint="-1" KentenWeight="-1" KentenOverprintFill="Auto" KentenOverprintStroke="Auto" KentenKind="None" KentenPlacement="0" KentenAlignment="AlignKentenCenter" KentenPosition="AboveRight" KentenFontSize="-1" KentenXScale="100" KentenYScale="100" KentenCustomCharacter="" KentenCharacterSet="CharacterInput" RubyTint="-1" RubyWeight="-1" RubyOverprintFill="Auto" RubyOverprintStroke="Auto" RubyStrokeTint="-1" RubyFontSize="-1" RubyOpenTypePro="true" RubyXScale="100" RubyYScale="100" RubyType="PerCharacterRuby" RubyAlignment="RubyJIS" RubyPosition="AboveRight" RubyXOffset="0" RubyYOffset="0" RubyParentSpacing="RubyParent121Aki" RubyAutoAlign="true" RubyOverhang="false" RubyAutoScaling="false" RubyParentScalingPercent="66" RubyParentOverhangAmount="RubyOverhangOneRuby" Warichu="false" WarichuSize="50" WarichuLines="2" WarichuLineSpacing="0" WarichuAlignment="Auto" WarichuCharsAfterBreak="2" WarichuCharsBeforeBreak="2" OTFProportionalMetrics="false" OTFHVKana="false" OTFRomanItalics="false" ScaleAffectsLineHeight="false" CjkGridTracking="false" GlyphForm="None" ParagraphGyoudori="false" RubyAutoTcyDigits="0" RubyAutoTcyIncludeRoman="false" RubyAutoTcyAutoScale="true" TreatIdeographicSpaceAsSpace="true" AllowArbitraryHyphenation="false" BulletsAndNumberingListType="NoList" NumberingExpression="^#.^t" BulletsTextAfter="^t" NumberingLevel="1" NumberingContinue="true" NumberingStartAt="1" NumberingApplyRestartPolicy="true" BulletsAlignment="LeftAlign" NumberingAlignment="LeftAlign">
+	<TextDefault ParagraphShadingLeftOffset="0" ParagraphShadingRightOffset="0" ParagraphShadingTopOffset="0" ParagraphShadingBottomOffset="0" ParagraphShadingWidth="ColumnWidth" ParagraphShadingTopOrigin="AscentTopOrigin" ParagraphShadingBottomOrigin="DescentBottomOrigin" ParagraphShadingClipToFrame="false" ParagraphShadingSuppressPrinting="false" ParagraphShadingOn="false" ParagraphShadingOverprint="false" ParagraphShadingTint="-1" FontStyle="Regular" PointSize="12" KerningMethod="$ID/Metrics" Tracking="0" Capitalization="Normal" Position="Normal" Underline="false" StrikeThru="false" Ligatures="true" NoBreak="false" HorizontalScale="100" VerticalScale="100" BaselineShift="0" Skew="0" FillTint="-1" StrokeTint="-1" StrokeWeight="1" OverprintStroke="false" OverprintFill="false" OTFFigureStyle="Default" OTFOrdinal="false" OTFFraction="false" OTFDiscretionaryLigature="false" OTFTitling="false" OTFContextualAlternate="true" OTFSwash="false" UnderlineTint="-1" UnderlineGapTint="-1" UnderlineOverprint="false" UnderlineGapOverprint="false" UnderlineOffset="-9999" UnderlineWeight="-9999" StrikeThroughTint="-1" StrikeThroughGapTint="-1" StrikeThroughOverprint="false" StrikeThroughGapOverprint="false" StrikeThroughOffset="-9999" StrikeThroughWeight="-9999" FillColor="Color/Black" StrokeColor="Swatch/None" AppliedLanguage="$ID/de_DE_2006" ParagraphKashidaWidth="2" FirstLineIndent="0" LeftIndent="0" RightIndent="0" SpaceBefore="0" SpaceAfter="0" Justification="LeftAlign" SingleWordJustification="FullyJustified" AutoLeading="120" DropCapLines="0" DropCapCharacters="0" KeepLinesTogether="false" KeepAllLinesTogether="false" KeepWithNext="0" KeepFirstLines="2" KeepLastLines="2" StartParagraph="Anywhere" Composer="HL Composer" MinimumWordSpacing="80" MaximumWordSpacing="133" DesiredWordSpacing="100" MinimumLetterSpacing="0" MaximumLetterSpacing="0" DesiredLetterSpacing="0" MinimumGlyphScaling="100" MaximumGlyphScaling="100" DesiredGlyphScaling="100" RuleAbove="false" RuleAboveOverprint="false" RuleAboveLineWeight="1" RuleAboveTint="-1" RuleAboveOffset="0" RuleAboveLeftIndent="0" RuleAboveRightIndent="0" RuleAboveWidth="ColumnWidth" RuleAboveGapTint="-1" RuleAboveGapOverprint="false" RuleBelow="false" RuleBelowLineWeight="1" RuleBelowTint="-1" RuleBelowOffset="0" RuleBelowLeftIndent="0" RuleBelowRightIndent="0" RuleBelowWidth="ColumnWidth" RuleBelowGapTint="-1" HyphenateCapitalizedWords="true" Hyphenation="true" HyphenateBeforeLast="2" HyphenateAfterFirst="2" HyphenateWordsLongerThan="5" HyphenateLadderLimit="3" HyphenationZone="36" HyphenWeight="5" AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" AppliedCharacterStyle="CharacterStyle/Zeichenformat 4" LastLineIndent="0" HyphenateLastWord="true" OTFSlashedZero="false" OTFHistorical="false" OTFStylisticSets="0" GradientFillLength="-1" GradientFillAngle="0" GradientStrokeLength="-1" GradientStrokeAngle="0" GradientFillStart="0 0" GradientStrokeStart="0 0" KeepWithPrevious="false" SpanColumnType="SingleColumn" SplitColumnInsideGutter="6" SplitColumnOutsideGutter="0" SpanColumnMinSpaceBefore="0" SpanColumnMinSpaceAfter="0" RuleBelowOverprint="false" RuleBelowGapOverprint="false" DropcapDetail="1" HyphenateAcrossColumns="true" KeepRuleAboveInFrame="false" IgnoreEdgeAlignment="false" OTFMark="true" OTFLocale="true" PositionalForm="None" ParagraphDirection="LeftToRightDirection" ParagraphJustification="DefaultJustification" MiterLimit="4" StrokeAlignment="OutsideAlignment" EndJoin="MiterEndJoin" OTFOverlapSwash="false" OTFStylisticAlternate="false" OTFJustificationAlternate="false" OTFStretchedAlternate="false" CharacterDirection="DefaultDirection" KeyboardDirection="DefaultDirection" DigitsType="DefaultDigits" Kashidas="DefaultKashidas" DiacriticPosition="OpentypePositionFromBaseline" XOffsetDiacritic="0" YOffsetDiacritic="0" ParagraphBreakType="Anywhere" PageNumberType="AutoPageNumber" GridAlignFirstLineOnly="false" GridAlignment="None" GridGyoudori="0" AutoTcy="0" AutoTcyIncludeRoman="false" KinsokuType="KinsokuPushInFirst" KinsokuHangType="None" BunriKinshi="true" Rensuuji="true" RotateSingleByteCharacters="false" LeadingModel="LeadingModelAkiBelow" CharacterAlignment="AlignEmCenter" Tsume="0" LeadingAki="-1" TrailingAki="-1" CharacterRotation="0" Jidori="0" ShataiMagnification="0" ShataiDegreeAngle="4500" ShataiAdjustRotation="false" ShataiAdjustTsume="true" Tatechuyoko="false" TatechuyokoXOffset="0" TatechuyokoYOffset="0" KentenTint="-1" KentenStrokeTint="-1" KentenWeight="-1" KentenOverprintFill="Auto" KentenOverprintStroke="Auto" KentenKind="None" KentenPlacement="0" KentenAlignment="AlignKentenCenter" KentenPosition="AboveRight" KentenFontSize="-1" KentenXScale="100" KentenYScale="100" KentenCustomCharacter="" KentenCharacterSet="CharacterInput" RubyTint="-1" RubyWeight="-1" RubyOverprintFill="Auto" RubyOverprintStroke="Auto" RubyStrokeTint="-1" RubyFontSize="-1" RubyOpenTypePro="true" RubyXScale="100" RubyYScale="100" RubyType="PerCharacterRuby" RubyAlignment="RubyJIS" RubyPosition="AboveRight" RubyXOffset="0" RubyYOffset="0" RubyParentSpacing="RubyParent121Aki" RubyAutoAlign="true" RubyOverhang="false" RubyAutoScaling="false" RubyParentScalingPercent="66" RubyParentOverhangAmount="RubyOverhangOneRuby" Warichu="false" WarichuSize="50" WarichuLines="2" WarichuLineSpacing="0" WarichuAlignment="Auto" WarichuCharsAfterBreak="2" WarichuCharsBeforeBreak="2" OTFProportionalMetrics="false" OTFHVKana="false" OTFRomanItalics="false" ScaleAffectsLineHeight="false" CjkGridTracking="false" GlyphForm="None" ParagraphGyoudori="false" RubyAutoTcyDigits="0" RubyAutoTcyIncludeRoman="false" RubyAutoTcyAutoScale="true" TreatIdeographicSpaceAsSpace="true" AllowArbitraryHyphenation="false" BulletsAndNumberingListType="NoList" NumberingExpression="^#.^t" BulletsTextAfter="^t" NumberingLevel="1" NumberingContinue="true" NumberingStartAt="1" NumberingApplyRestartPolicy="true" BulletsAlignment="LeftAlign" NumberingAlignment="LeftAlign">
 		<Properties>
 			<ParagraphShadingColor type="object">Color/C=100 M=0 Y=0 K=0</ParagraphShadingColor>
-			<AppliedFont type="string">Minion Pro</AppliedFont>
+			<AppliedFont type="string">Segoe UI Symbol</AppliedFont>
 			<Leading type="enumeration">Auto</Leading>
 			<UnderlineColor type="string">Text Color</UnderlineColor>
 			<UnderlineGapColor type="object">Swatch/None</UnderlineGapColor>
@@ -552,15 +623,15 @@
             xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/">
          <dc:format>application/x-indesign</dc:format>
          <xmp:CreateDate>2017-05-07T19:04:37+02:00</xmp:CreateDate>
-         <xmp:MetadataDate>2017-05-09T00:01:06+02:00</xmp:MetadataDate>
-         <xmp:ModifyDate>2017-05-09T00:01:06+02:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2017-05-10T01:12:32+02:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2017-05-10T01:12:32+02:00</xmp:ModifyDate>
          <xmp:CreatorTool>Adobe InDesign CC 2017 (Windows)</xmp:CreatorTool>
-         <xmpMM:InstanceID>xmp.iid:2193e715-bf68-9643-b730-3035f3cda534</xmpMM:InstanceID>
-         <xmpMM:DocumentID>xmp.did:229e6e20-09e3-804b-9b69-2e46c7679a4a</xmpMM:DocumentID>
+         <xmpMM:InstanceID>xmp.iid:e8577589-ab6b-5044-8824-606945d2bd94</xmpMM:InstanceID>
+         <xmpMM:DocumentID>xmp.did:cccae56d-aa7e-c442-88bc-e355435e77c7</xmpMM:DocumentID>
          <xmpMM:OriginalDocumentID>xmp.did:95ef30bf-ed1b-d846-a1f8-17d19ee81345</xmpMM:OriginalDocumentID>
          <xmpMM:RenditionClass>default</xmpMM:RenditionClass>
          <xmpMM:DerivedFrom rdf:parseType="Resource">
-            <stRef:instanceID>xmp.iid:38e3bac6-c50a-d646-b6d9-a1922e2f6d45</stRef:instanceID>
+            <stRef:instanceID>xmp.iid:cbb43092-b1ea-ac4d-9761-86ec3474387a</stRef:instanceID>
             <stRef:documentID>xmp.did:95ef30bf-ed1b-d846-a1f8-17d19ee81345</stRef:documentID>
             <stRef:originalDocumentID>xmp.did:95ef30bf-ed1b-d846-a1f8-17d19ee81345</stRef:originalDocumentID>
             <stRef:renditionClass>default</stRef:renditionClass>
@@ -740,8 +811,8 @@
 			</GridDataInformation>
 		</Page>
 	</MasterSpread>
-	<Spread Self="uc7" FlattenerOverride="Default" AllowPageShuffle="true" ItemTransform="1 0 0 1 0 0" ShowMasterItems="true" PageCount="1" BindingLocation="0" PageTransitionType="None" PageTransitionDirection="NotApplicable" PageTransitionDuration="Medium">
-		<Page Self="ucc" AppliedAlternateLayout="ud4" LayoutRule="UseMaster" SnapshotBlendingMode="IgnoreLayoutSnapshots" OptionalPage="false" GeometricBounds="0 0 841.8897637781 595.2755905509" ItemTransform="1 0 0 1 0 -420.94488188905" Name="1" OverrideList="" AppliedMaster="ud5" MasterPageTransform="1 0 0 1 0 0" TabOrder="" GridStartingPoint="TopOutside" UseMasterGrid="true">
+	<Spread Self="u1fc" FlattenerOverride="Default" AllowPageShuffle="true" ItemTransform="1 0 0 1 0 0" ShowMasterItems="true" PageCount="1" BindingLocation="0" PageTransitionType="None" PageTransitionDirection="NotApplicable" PageTransitionDuration="Medium">
+		<Page Self="ud3" AppliedAlternateLayout="ud4" LayoutRule="UseMaster" SnapshotBlendingMode="IgnoreLayoutSnapshots" OptionalPage="false" GeometricBounds="0 0 841.8897637781 595.2755905509" ItemTransform="1 0 0 1 0 -420.94488188905" Name="1" OverrideList="" AppliedMaster="ud5" MasterPageTransform="1 0 0 1 0 0" TabOrder="" GridStartingPoint="TopOutside" UseMasterGrid="true">
 			<Properties>
 				<Descriptor type="list">
 					<ListItem type="string"></ListItem>
@@ -760,125 +831,20 @@
 				</Properties>
 			</GridDataInformation>
 		</Page>
-		<TextFrame Self="uf6" ParentStory="ue4" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="uc4" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 277.79527559055117 -269.2913385826772">
+		<TextFrame Self="u235" ParentStory="u223" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u145" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 298.3464566929134 -5.669291338582667">
 			<Properties>
 				<PathGeometry>
 					<GeometryPathType PathOpen="false">
 						<PathPointArray>
-							<PathPointType Anchor="-219.68503937007873 -83.62204724409446" LeftDirection="-219.68503937007873 -83.62204724409446" RightDirection="-219.68503937007873 -83.62204724409446" />
-							<PathPointType Anchor="-219.68503937007873 83.62204724409452" LeftDirection="-219.68503937007873 83.62204724409452" RightDirection="-219.68503937007873 83.62204724409452" />
-							<PathPointType Anchor="219.68503937007875 83.62204724409452" LeftDirection="219.68503937007875 83.62204724409452" RightDirection="219.68503937007875 83.62204724409452" />
-							<PathPointType Anchor="219.68503937007875 -83.62204724409446" LeftDirection="219.68503937007875 -83.62204724409446" RightDirection="219.68503937007875 -83.62204724409446" />
+							<PathPointType Anchor="-251.57480314960634 -371.3385826771654" LeftDirection="-251.57480314960634 -371.3385826771654" RightDirection="-251.57480314960634 -371.3385826771654" />
+							<PathPointType Anchor="-251.57480314960634 371.3385826771654" LeftDirection="-251.57480314960634 371.3385826771654" RightDirection="-251.57480314960634 371.3385826771654" />
+							<PathPointType Anchor="251.57480314960628 371.3385826771654" LeftDirection="251.57480314960628 371.3385826771654" RightDirection="251.57480314960628 371.3385826771654" />
+							<PathPointType Anchor="251.57480314960628 -371.3385826771654" LeftDirection="251.57480314960628 -371.3385826771654" RightDirection="251.57480314960628 -371.3385826771654" />
 						</PathPointArray>
 					</GeometryPathType>
 				</PathGeometry>
 			</Properties>
-			<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="439.3700787401575" TextColumnMaxWidth="0">
-				<Properties>
-					<InsetSpacing type="list">
-						<ListItem type="unit">0</ListItem>
-						<ListItem type="unit">0</ListItem>
-						<ListItem type="unit">0</ListItem>
-						<ListItem type="unit">0</ListItem>
-					</InsetSpacing>
-				</Properties>
-			</TextFramePreference>
-			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
-				<Properties>
-					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
-				</Properties>
-			</TextWrapPreference>
-			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
-				<Properties>
-					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
-					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
-				</Properties>
-			</ObjectExportOption>
-		</TextFrame>
-		<TextFrame Self="u10d" ParentStory="ufb" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="uc4" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 282.0472440944882 52.44094488188976">
-			<Properties>
-				<PathGeometry>
-					<GeometryPathType PathOpen="false">
-						<PathPointArray>
-							<PathPointType Anchor="-223.93700787401573 -114.80314960629921" LeftDirection="-223.93700787401573 -114.80314960629921" RightDirection="-223.93700787401573 -114.80314960629921" />
-							<PathPointType Anchor="-223.93700787401573 114.80314960629921" LeftDirection="-223.93700787401573 114.80314960629921" RightDirection="-223.93700787401573 114.80314960629921" />
-							<PathPointType Anchor="223.93700787401576 114.80314960629921" LeftDirection="223.93700787401576 114.80314960629921" RightDirection="223.93700787401576 114.80314960629921" />
-							<PathPointType Anchor="223.93700787401576 -114.80314960629921" LeftDirection="223.93700787401576 -114.80314960629921" RightDirection="223.93700787401576 -114.80314960629921" />
-						</PathPointArray>
-					</GeometryPathType>
-				</PathGeometry>
-			</Properties>
-			<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="447.8740157480315" TextColumnMaxWidth="0">
-				<Properties>
-					<InsetSpacing type="list">
-						<ListItem type="unit">0</ListItem>
-						<ListItem type="unit">0</ListItem>
-						<ListItem type="unit">0</ListItem>
-						<ListItem type="unit">0</ListItem>
-					</InsetSpacing>
-				</Properties>
-			</TextFramePreference>
-			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
-				<Properties>
-					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
-				</Properties>
-			</TextWrapPreference>
-			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
-				<Properties>
-					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
-					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
-				</Properties>
-			</ObjectExportOption>
-		</TextFrame>
-		<TextFrame Self="u15f" ParentStory="u14d" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u137" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 284.1732283464567 277.7952755909081">
-			<Properties>
-				<PathGeometry>
-					<GeometryPathType PathOpen="false">
-						<PathPointArray>
-							<PathPointType Anchor="-213.30708661417324 -63.77952755869819" LeftDirection="-213.30708661417324 -63.77952755869819" RightDirection="-213.30708661417324 -63.77952755869819" />
-							<PathPointType Anchor="-213.30708661417324 63.77952755869825" LeftDirection="-213.30708661417324 63.77952755869825" RightDirection="-213.30708661417324 63.77952755869825" />
-							<PathPointType Anchor="213.30708661417322 63.77952755869825" LeftDirection="213.30708661417322 63.77952755869825" RightDirection="213.30708661417322 63.77952755869825" />
-							<PathPointType Anchor="213.30708661417322 -63.77952755869819" LeftDirection="213.30708661417322 -63.77952755869819" RightDirection="213.30708661417322 -63.77952755869819" />
-						</PathPointArray>
-					</GeometryPathType>
-				</PathGeometry>
-			</Properties>
-			<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="426.61417322834643" TextColumnMaxWidth="0">
-				<Properties>
-					<InsetSpacing type="list">
-						<ListItem type="unit">0</ListItem>
-						<ListItem type="unit">0</ListItem>
-						<ListItem type="unit">0</ListItem>
-						<ListItem type="unit">0</ListItem>
-					</InsetSpacing>
-				</Properties>
-			</TextFramePreference>
-			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
-				<Properties>
-					<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
-				</Properties>
-			</TextWrapPreference>
-			<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
-				<Properties>
-					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
-					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
-				</Properties>
-			</ObjectExportOption>
-		</TextFrame>
-		<TextFrame Self="u176" ParentStory="u164" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="u13e" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 281.33858267716533 -121.18110236220474">
-			<Properties>
-				<PathGeometry>
-					<GeometryPathType PathOpen="false">
-						<PathPointArray>
-							<PathPointType Anchor="-216.14173228346453 -34.7244094488189" LeftDirection="-216.14173228346453 -34.7244094488189" RightDirection="-216.14173228346453 -34.7244094488189" />
-							<PathPointType Anchor="-216.14173228346453 34.7244094488189" LeftDirection="-216.14173228346453 34.7244094488189" RightDirection="-216.14173228346453 34.7244094488189" />
-							<PathPointType Anchor="216.1417322834646 34.7244094488189" LeftDirection="216.1417322834646 34.7244094488189" RightDirection="216.1417322834646 34.7244094488189" />
-							<PathPointType Anchor="216.1417322834646 -34.7244094488189" LeftDirection="216.1417322834646 -34.7244094488189" RightDirection="216.1417322834646 -34.7244094488189" />
-						</PathPointArray>
-					</GeometryPathType>
-				</PathGeometry>
-			</Properties>
-			<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="432.2834645669291" TextColumnMaxWidth="0">
+			<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="503.1496062992126" TextColumnMaxWidth="0">
 				<Properties>
 					<InsetSpacing type="list">
 						<ListItem type="unit">0</ListItem>
@@ -953,100 +919,40 @@
 	</CrossReferenceFormat>
 	<XmlStory Self="ua9" AppliedTOCStyle="n" UserText="true" TrackChanges="false" StoryTitle="$ID/">
 		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" />
 			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
 				<Content>﻿</Content>
 			</CharacterStyleRange>
 		</ParagraphStyleRange>
 	</XmlStory>
-	<Story Self="u164" AppliedTOCStyle="n" UserText="true" TrackChanges="false" StoryTitle="$ID/">
+	<Story Self="u223" AppliedTOCStyle="n" UserText="true" TrackChanges="false" StoryTitle="$ID/">
 		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
 		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
 		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
-			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
-				<Content>dssadsa sadasdas sadasdsa sadsad sdasd</Content>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Zeichenformat 1">
+				<Content>Adit fuga. Consecta quiae lam, net fugiam nobisim inciti res sin ratus et at ma volluptio dit volupiscia quidestem eos rest quas maximust quas minctem aboria niminct otasit quo bea vendemq</Content>
 			</CharacterStyleRange>
-		</ParagraphStyleRange>
-	</Story>
-	<Story Self="u14d" AppliedTOCStyle="n" UserText="true" TrackChanges="false" StoryTitle="$ID/">
-		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
-		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
-		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Zeichenformat 3">
+				<Content>ue autemposam incipidem quasper ibuscil exceprem soluptia dolorun daercidesto</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Zeichenformat 4">
+				<Content> ipsundant ero idustiae</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Zeichenformat 3">
+				<Content> pro voluptatia volorest maionsequas consequ</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Zeichenformat 1">
+				<Content>o veligen iminvelendi dolup</Content>
+			</CharacterStyleRange>
 			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
-				<Content>dsasd sdasd</Content>
+				<Content>ta tat</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Zeichenformat 2">
+				<Content>ur? Nostia venihit labor rae lisquae veliquat ma exere velique simperi iur, cuptati nveliquunti tem quam sim dolendis iliti officti quaestoreria volorum dolorpore eatio. Temo quis auditiis simo con re dolupta nonet hiliae eum et que vendaep eroreni magnis pre voloriam faccab iumquia veni cullam, omnihitia doluptatur molupta anda dolupta solorem consequi cus asperup tatiat.</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
 				<Br />
 			</CharacterStyleRange>
-		</ParagraphStyleRange>
-	</Story>
-	<Story Self="ufb" AppliedTOCStyle="n" UserText="true" TrackChanges="false" StoryTitle="$ID/">
-		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
-		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
-		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
-			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
-				<Content>Busdae corum vent latius qui iuritiostiis descidundam nia sitaesti atia naturibus voluptae voluptaspel ipsum impor alici blab inctem asperer isciis sequasim quas maxima ditio. Ut estrum harci con ra dolore et magnis</Content>
-			</CharacterStyleRange>
-			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" Position="Superscript">
-				<Footnote>
-					<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/footnote">
-						<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
-							<Content><?ACE 4?>	a footnote</Content>
-						</CharacterStyleRange>
-					</ParagraphStyleRange>
-				</Footnote>
-			</CharacterStyleRange>
-			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
-				<Content> </Content>
-				<Note Collapsed="false" CreationDate="2017-05-07T19:47:00" ModificationDate="2017-05-07T19:47:05" UserName="Unbekannter Benutzername" AppliedDocumentUser="dDocumentUser0">
-					<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/[No paragraph style]">
-						<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
-							<Content>a note</Content>
-						</CharacterStyleRange>
-					</ParagraphStyleRange>
-				</Note>
-				<Content>eum es quo escitem aliquodit eaquae. Itas es vendignatem eos elenihil int quas veles cum inctemo il et ea non etus alitatu ribusam fugit, ea velectaspe ipsam a a venis sunti omniae pa sunt lanimet ullaborias verio et peris et volupta turepudant aut quidunt iamusaperum a volorer natest et, unt erferci denihilique inumetus, iscimol uptatis corescilla es doles autem fugit volorerio. Et esto culluptas dollibus vendantemqui ut optatur?</Content>
-				<Br />
-				<Content>Unt vernam, nam est, et arum re endiati oribus eos anihicias undam aspitas consecus maxim facculpa delit eniment re raesto dis sae nobis ima vitionserum vent omniani ssecum quam doluptatet eatur, abo. Itatus eictum et quiat.</Content>
-				<Br />
-				<Content>Aliquo vitae vero te niatio od erferore sum volessuntio to cus de nimust dendantius mi, temquatia core ne invenienis experi aut aut ad quistore atia quid eum denimus essi te qui officia vellatibus duciisin ni seri tenisita nist, ut</Content>
-				<Note Collapsed="false" CreationDate="2017-05-07T19:47:18" ModificationDate="2017-05-07T19:47:21" UserName="Unbekannter Benutzername" AppliedDocumentUser="dDocumentUser0">
-					<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/[No paragraph style]">
-						<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
-							<Content>mnbmnbnmb</Content>
-						</CharacterStyleRange>
-					</ParagraphStyleRange>
-				</Note>
-				<Content>at es arit et voluptatis volenis quatinc tusdaerciati comnis nonet demporae et porerrume voloremquam volectate sitatemposa aborem atquiati occaestius, veris quiae providel eumqui coreict ectiur autest officia dolupti optas sandae. </Content>
-			</CharacterStyleRange>
-		</ParagraphStyleRange>
-		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
-			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" />
-		</ParagraphStyleRange>
-	</Story>
-	<Story Self="ue4" AppliedTOCStyle="n" UserText="true" TrackChanges="false" StoryTitle="$ID/">
-		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
-		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
-		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
-			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
-				<Content>Uptiam facculpa quam velia venihic tet autet pre, quia sint molla qui si dolorio. Itaturio mil es dolupta doloremporem et veliquid quam dus dolupta spienet volorem postion esent, officilit officium voloriam fugit facium re re volore et optatem. Obit vendesti cor alit eum voluptinti tetur sumqui occuptas custo eiciendae la vellorehenim qui veles consequ odiciatiis que veles voluptatur?</Content>
-				<Br />
-				<Content>Exerroritia non cum inventur asperum voluptat ipissus cienihitiis rem. Unditiam, solorio nsent, simil inihit de nus necumenimus es dolestia commodis estis dolupta spernam, cusande rrovit lab inim re magnihi taecesti temperum consect urionest, in ra conserf ererrunt alitatio. Ovitios unt.</Content>
-				<Br />
-				<Content>Tasita ditate sim hitas im rem volum arit eum</Content>
-			</CharacterStyleRange>
-			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" Position="Superscript">
-				<Footnote>
-					<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
-						<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
-							<Content><?ACE 4?>	mnbmnbmnb ,mnm,nmn</Content>
-						</CharacterStyleRange>
-					</ParagraphStyleRange>
-				</Footnote>
-			</CharacterStyleRange>
-			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
-				<Content> et pratempost, none doluptas exceprat volo quunt omniature, sam remporionet occabor ehendit exeristrum laboristet occuptas enimu</Content>
-			</CharacterStyleRange>
-		</ParagraphStyleRange>
-		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
-			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" />
 		</ParagraphStyleRange>
 	</Story>
 	<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Symbol" Name="$ID/kIndexGroup_Symbol" Include="true" Priority="0" HeaderType="Nothing" />

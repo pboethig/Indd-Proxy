@@ -13,6 +13,17 @@ namespace Indd.Service.CustomExport.Json.Types
         public string Type = "Font";
 
         /// <summary>
+        /// Index
+        /// </summary>
+        public int Index;
+
+        /// <summary>
+        /// Location
+        /// </summary>
+        public string Location;
+
+
+        /// <summary>
         /// Name
         /// </summary>
         public string Name;
@@ -26,16 +37,6 @@ namespace Indd.Service.CustomExport.Json.Types
         /// FontStyleName
         /// </summary>
         public string FontStyleName;
-
-        /// <summary>
-        /// Index
-        /// </summary>
-        public int Index;
-
-        /// <summary>
-        /// Location
-        /// </summary>
-        public string Location;
 
         /// <summary>
         /// PostScriptName
@@ -81,6 +82,7 @@ namespace Indd.Service.CustomExport.Json.Types
             this.FullNameNative = font.FullNameNative;
 
             this.FontType = font.FontType.ToString(); 
+
 
         }
     }

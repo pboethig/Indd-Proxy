@@ -21,6 +21,11 @@ namespace Indd.Service.CustomExport.Json.Types
         public int Id;
 
         /// <summary>
+        /// Index
+        /// </summary>
+        public int Index;
+
+        /// <summary>
         /// Name
         /// </summary>
         public string Name;
@@ -31,15 +36,11 @@ namespace Indd.Service.CustomExport.Json.Types
         public string Label;
         
         /// <summary>
-        /// Index
-        /// </summary>
-        public int Index;
-
-        /// <summary>
         /// Font
         /// </summary>
-        public Font AppliedFont;
+        public string AppliedFontFullName;
 
+        
         /// <summary>
         /// Note
         /// </summary>
@@ -53,8 +54,8 @@ namespace Indd.Service.CustomExport.Json.Types
             this.Label = paragraphStyle.Label;
 
             this.Id = paragraphStyle.Id;
-
-            this.AppliedFont = new Font(paragraphStyle.AppliedFont);
+            
+            this.AppliedFontFullName = new Font(paragraphStyle.AppliedFont).FullName;
         }
     }
 }

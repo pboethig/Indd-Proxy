@@ -46,22 +46,12 @@ namespace Indd.Service.CustomExport.Json.Types
         /// GeometricBounds
         /// </summary>
         public dynamic GeometricBounds;
-
-        /// <summary>
-        /// Contents
-        /// </summary>
-        public string Contents;
         
         /// <summary>
         /// Notes
         /// </summary>
         private List<Note> Notes = new List<Note>();
-
-        /// <summary>
-        /// Links
-        /// </summary>
-        public List<Image> Images = new List<Image>();
-
+        
         /// <summary>
         /// List of Paragraphs
         /// </summary>
@@ -81,19 +71,15 @@ namespace Indd.Service.CustomExport.Json.Types
             this.Label = textFrame.Label;
 
             this.Id = textFrame.Id;
-
-            this.Contents = textFrame.Contents;
-
+            
             this.GeometricBounds = textFrame.GeometricBounds;
 
             this.Visible = textFrame.Visible;
             
             this.ItemLayer = textFrame.ItemLayer.Id;
             
-            this.setGraphics(textFrame);
-
             this.setNotes(textFrame);
-
+            
             this.setParagraphs(textFrame);
         }
 
@@ -108,15 +94,7 @@ namespace Indd.Service.CustomExport.Json.Types
                 this.Paragraphs.Add(new Paragraph(paragraph));
             }
         }
-
-        void setGraphics(InDesignServer.TextFrame textFrame)
-        {
-            foreach (InDesignServer.Image image in textFrame.AllGraphics)
-            {
-                this.Images.Add(new Image(image));
-            }
-        }
-
+        
         /// <summary>
         /// Add Notes
         /// </summary>

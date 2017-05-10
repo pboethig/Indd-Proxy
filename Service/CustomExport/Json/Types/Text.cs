@@ -5,12 +5,12 @@ namespace Indd.Service.CustomExport.Json.Types
 {
     using System.Collections.Generic;
 
-    class Paragraph
+    class Text
     {
         /// <summary>
         /// Rectangle
         /// </summary>
-        public string Type = "Paragraph";
+        public string Type = "Text";
 
         /// <summary>
         /// Contents
@@ -51,34 +51,23 @@ namespace Indd.Service.CustomExport.Json.Types
         /// Note
         /// </summary>
         /// <param name="note"></param>
-        public Paragraph(InDesignServer.Paragraph paragraph)
+        public Text(InDesignServer.Text text)
         {
-            this.FontStyle = paragraph.FontStyle;
+            this.FontStyle = text.FontStyle;
 
-            this.Index = paragraph.Index;
+            this.Index = text.Index;
 
-            this.AppliedParagraphStyle = new ParagraphStyle(paragraph.AppliedParagraphStyle);
+            this.AppliedParagraphStyle = new ParagraphStyle(text.AppliedParagraphStyle);
 
-            this.Contents = paragraph.Contents;
+            this.Contents = text.Contents;
 
-            this.AppliedFont = new Font(paragraph.AppliedFont);
-
+            this.AppliedFont = new Font(text.AppliedFont);
             
+            this.AppliedCharacterStyle = new CharacterStyle(text.AppliedCharacterStyle);
+            
+        }
+
         
-            this.AppliedCharacterStyle = new CharacterStyle(paragraph.AppliedCharacterStyle);
-            
-            this.setGraphics(paragraph);
-
-        }
-
-        void setGraphics(InDesignServer.Paragraph textFrame)
-        {
-            foreach (InDesignServer.Image image in textFrame.AllGraphics)
-            {
-                this.Images.Add(new Image(image));
-            }
-        }
-
 
     }
 }

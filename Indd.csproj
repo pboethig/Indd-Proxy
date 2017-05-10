@@ -68,7 +68,9 @@
     <Compile Include="Service\CustomExport\Json\Types\Link.cs" />
     <Compile Include="Service\CustomExport\Json\Types\Image.cs" />
     <Compile Include="Service\CustomExport\Json\Types\Font.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\Text.cs" />
     <Compile Include="Service\CustomExport\Json\Types\Paragraph.cs" />
+    <Compile Include="Service\CustomExport\Json\Types\CharacterStyle.cs" />
     <Compile Include="Service\CustomExport\Json\Types\ParagraphStyle.cs" />
     <Compile Include="Service\CustomExport\Json\Types\Note.cs" />
     <Compile Include="Service\CustomExport\Json\Types\Rectangle.cs" />
