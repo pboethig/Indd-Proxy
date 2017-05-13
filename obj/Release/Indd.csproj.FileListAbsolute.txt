@@ -1,0 +1,16 @@
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\jobqueues.json
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\storage.json
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\Indd-proyx.exe.config
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\Indd-proyx.exe
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\Indd-proyx.pdb
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\CommandLine.dll
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\Newtonsoft.Json.dll
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\nunit.framework.dll
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\CommandLine.xml
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\Newtonsoft.Json.xml
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\nunit.framework.xml
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Release\Indd.csprojResolveAssemblyReference.cache
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Release\Interop.InDesignServer.dll
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Release\Indd.csproj.ResolveComReference.cache
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Release\Indd-proyx.exe
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Release\Indd-proyx.pdb

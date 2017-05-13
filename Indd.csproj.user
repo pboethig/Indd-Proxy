@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartArguments>--filepath "%24root\\Tests\\Functional\\Fixures\\jobQueue\\In\\c2335ce8-7000-4287-8972-f355ed23bd7f.json"</StartArguments>
+    <StartArguments>--watchFolder "%24root\\Tests\\Functional\\Fixures\\jobQueue\\In"</StartArguments>
   </PropertyGroup>
 </Project>

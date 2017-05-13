@@ -1,0 +1,5 @@
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\FilesystemWhatcher\bin\Debug\FilesystemWhatcher.exe.config
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\FilesystemWhatcher\bin\Debug\FilesystemWhatcher.exe
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\FilesystemWhatcher\bin\Debug\FilesystemWhatcher.pdb
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\FilesystemWhatcher\obj\Debug\FilesystemWhatcher.exe
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\FilesystemWhatcher\obj\Debug\FilesystemWhatcher.pdb

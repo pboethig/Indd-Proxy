@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 
 using Indd.Service.Commands;
-using CliRequest = Indd.Cli.Request.CommandList;
+using CommandListCliRequest = Indd.Cli.Request.CommandList;
+
+
 using ResponseType=Indd.Service.Commands.Response;
+using Indd.Service.Filesystem;
 /// <summary>
 /// Handles Incomming cli requests
 /// </summary>
@@ -19,9 +22,18 @@ namespace Indd
         {
             Factory commandFactory = new Factory();
 
-            var result = CliRequest.validate(args);
+            dynamic whatchFolderResult = CommandListCliRequest.validateWatchFolder(args);
 
-            dynamic ticket = commandFactory.convertJsonTicket(result.Value.InputFile);
+            if (whatchFolderResult != null)
+            {
+                Watcher watcher = new Watcher(whatchFolderResult.Value.WatchFolder);
+
+                return;
+            }
+
+            var commandResult = CommandListCliRequest.validate(args);
+
+            dynamic ticket = commandFactory.convertJsonTicket(commandResult.Value.InputFile);
 
             commandFactory.processTicket(ticket);
         }

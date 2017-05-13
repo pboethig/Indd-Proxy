@@ -1,0 +1,316 @@
+{
+  "Type": "Document",
+  "Id": 11,
+  "Name": "7.0.indd",
+  "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\7.0.indd",
+  "Label": "",
+  "Index": 1,
+  "Visible": false,
+  "HorizontalMeasurementUnits": "idMillimeters",
+  "VerticalMeasurementUnits": "idMillimeters",
+  "PointsPerInch": 72.0,
+  "TextSizeMeasurementUnits": "idPoints",
+  "TypographicMeasurementUnits": "idPoints",
+  "Layers": [
+    {
+      "Type": "Layer",
+      "Id": 325,
+      "Name": "Ebene 4",
+      "Label": "",
+      "Index": 1,
+      "Visible": true
+    },
+    {
+      "Type": "Layer",
+      "Id": 318,
+      "Name": "Ebene 3",
+      "Label": "",
+      "Index": 2,
+      "Visible": true
+    },
+    {
+      "Type": "Layer",
+      "Id": 311,
+      "Name": "Ebene 2",
+      "Label": "",
+      "Index": 3,
+      "Visible": true
+    },
+    {
+      "Type": "Layer",
+      "Id": 196,
+      "Name": "Ebene 1",
+      "Label": "",
+      "Index": 4,
+      "Visible": true
+    }
+  ],
+  "Spreads": [
+    {
+      "Type": "Spread",
+      "Id": 508,
+      "Name": "",
+      "Label": "",
+      "Index": 1,
+      "PageTransitionDirection": "idNotApplicable",
+      "PageTransitionDuration": "idMedium",
+      "PageTransitionType": "idNone",
+      "Pages": [
+        {
+          "Type": "Page",
+          "Id": 211,
+          "Name": "9",
+          "Label": "",
+          "Index": 1,
+          "PageColor": 1346594413,
+          "Bounds": [
+            0.0,
+            0.0,
+            296.99999999949637,
+            209.99999999990081
+          ],
+          "DocumentOffset": 1,
+          "OptionalPage": false,
+          "Side": 1919382632,
+          "Rectangles": [],
+          "TextFrames": [
+            {
+              "Type": "TextFrame",
+              "Id": 565,
+              "Name": "",
+              "Label": "",
+              "Index": 1,
+              "Visible": true,
+              "ItemLayer": 325,
+              "GeometricBounds": [
+                15.499999999748196,
+                16.499999999999996,
+                277.49999999974824,
+                194.0
+              ],
+              "Paragraphs": [
+                {
+                  "Type": "Paragraph",
+                  "Contents": "Adit fuga. Consecta quiae lam, net fugiam nobisim inciti res sin ratus et at ma volluptio dit volupiscia quidestem eos rest quas maximust quas minctem aboria niminct otasit quo bea vendemque autemposam incipidem quasper ibuscil exceprem soluptia dolorun daercidesto ipsundant ero idustiae pro voluptatia volorest maionsequas consequo veligen iminvelendi dolupta tatur? Nostia venihit labor rae lisquae veliquat ma exere velique simperi iur, cuptati nveliquunti tem quam sim dolendis iliti officti quaestoreria volorum dolorpore eatio. Temo quis auditiis simo con re dolupta nonet hiliae eum et que vendaep eroreni magnis pre voloriam faccab iumquia veni cullam, omnihitia doluptatur molupta anda dolupta solorem consequi cus asperup tatiat.\r",
+                  "FontStyle": "Regular",
+                  "Index": 1,
+                  "AppliedParagraphStyle": {
+                    "Type": "ParagraphStyle",
+                    "Id": 121,
+                    "Index": 2,
+                    "Name": "[Einf. Abs.]",
+                    "Label": "",
+                    "AppliedFontFullName": null
+                  },
+                  "AppliedCharacterStyle": {
+                    "Type": "CharacterStyle",
+                    "Id": 571,
+                    "Name": "Zeichenformat 1",
+                    "Label": "",
+                    "Index": 2,
+                    "AppliedFont": "Gadugi",
+                    "FontStyle": "Regular",
+                    "Position": 1851876449
+                  },
+                  "AppliedFont": {
+                    "Type": "Font",
+                    "Index": 46,
+                    "Location": null,
+                    "Name": "Gadugi\tRegular",
+                    "Family": "Gadugi",
+                    "FontStyleName": "Regular",
+                    "PostScriptName": "Gadugi",
+                    "FullName": null,
+                    "FullNameNative": null,
+                    "FontType": null
+                  },
+                  "Images": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Colors": [
+    {
+      "Type": "Color",
+      "Id": 11,
+      "Name": "Black",
+      "Label": "",
+      "Index": 1,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 18,
+      "Name": "C=0 M=0 Y=100 K=0",
+      "Label": "",
+      "Index": 2,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 19,
+      "Name": "C=0 M=100 Y=0 K=0",
+      "Label": "",
+      "Index": 3,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 20,
+      "Name": "C=100 M=0 Y=0 K=0",
+      "Label": "",
+      "Index": 4,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 21,
+      "Name": "C=100 M=90 Y=10 K=0",
+      "Label": "",
+      "Index": 5,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 22,
+      "Name": "C=15 M=100 Y=100 K=0",
+      "Label": "",
+      "Index": 6,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 23,
+      "Name": "C=75 M=5 Y=100 K=0",
+      "Label": "",
+      "Index": 7,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 12,
+      "Name": "Cyan",
+      "Label": "",
+      "Index": 8,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 13,
+      "Name": "Magenta",
+      "Label": "",
+      "Index": 9,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 15,
+      "Name": "Paper",
+      "Label": "",
+      "Index": 10,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 16,
+      "Name": "Registration",
+      "Label": "",
+      "Index": 11,
+      "Model": "idRegistration",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 17,
+      "Name": "Yellow",
+      "Label": "",
+      "Index": 12,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 140,
+      "Name": "",
+      "Label": "",
+      "Index": 13,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    },
+    {
+      "Type": "Color",
+      "Id": 142,
+      "Name": "",
+      "Label": "",
+      "Index": 14,
+      "Model": "idProcess",
+      "Space": "idCMYK"
+    }
+  ],
+  "CharacterStyles": [
+    {
+      "Type": "CharacterStyle",
+      "Id": 117,
+      "Name": "[Ohne]",
+      "Label": "",
+      "Index": 1,
+      "AppliedFont": "",
+      "FontStyle": 1851876449,
+      "Position": 1851876449
+    },
+    {
+      "Type": "CharacterStyle",
+      "Id": 571,
+      "Name": "Zeichenformat 1",
+      "Label": "",
+      "Index": 2,
+      "AppliedFont": "Gadugi",
+      "FontStyle": "Regular",
+      "Position": 1851876449
+    },
+    {
+      "Type": "CharacterStyle",
+      "Id": 575,
+      "Name": "Zeichenformat 2",
+      "Label": "",
+      "Index": 3,
+      "AppliedFont": "Impact",
+      "FontStyle": "Regular",
+      "Position": 1851876449
+    },
+    {
+      "Type": "CharacterStyle",
+      "Id": 577,
+      "Name": "Zeichenformat 3",
+      "Label": "",
+      "Index": 4,
+      "AppliedFont": "Lucida Console",
+      "FontStyle": "Regular",
+      "Position": 1851876449
+    },
+    {
+      "Type": "CharacterStyle",
+      "Id": 579,
+      "Name": "Zeichenformat 4",
+      "Label": "",
+      "Index": 5,
+      "AppliedFont": "Segoe UI Symbol",
+      "FontStyle": "Regular",
+      "Position": 1851876449
+    }
+  ]
+}

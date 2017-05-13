@@ -53,7 +53,14 @@ namespace Indd.Service.Config
         /// <returns>string</returns>
         public static string getRootDirectory()
         {
-            return System.IO.Path.GetDirectoryName(Path.Combine(System.Reflection.Assembly.GetExecutingAssembly().Location)).Replace("\\bin\\Debug", "");
+            string path = System.IO.Path.GetDirectoryName(Path.Combine(System.Reflection.Assembly.GetExecutingAssembly().Location));
+
+            if (!System.IO.Directory.Exists(path))
+            {
+                throw new System.Exception("Rootdirectory: " + path + " not found");
+            }
+
+            return path.Replace("\\bin\\Debug", "");
         }
     }
 }

@@ -99,6 +99,7 @@
     <Compile Include="Service\Commands\Document\Open.cs" />
     <Compile Include="Service\Commands\Response.cs" />
     <Compile Include="Service\CustomExport\Json\Document.cs" />
+    <Compile Include="Service\Filesystem\Watcher.cs" />
     <Compile Include="Service\InDesignServerWrapper\ApplicationManager.cs" />
     <Compile Include="Service\Log\Syslog.cs" />
     <Compile Include="Tests\Functional\Cli\CommandLineRequestTest.cs" />
@@ -121,6 +122,7 @@
     <Compile Include="Tests\Functional\Service\CustomExport\Json\BootTest.cs" />
     <Compile Include="Tests\Functional\Service\CustomExport\Json\DocumentTest.cs" />
     <Compile Include="Tests\Functional\Service\DocumentTest.cs" />
+    <Compile Include="Tests\Functional\Service\Filesystem\WatcherTest.cs" />
     <Compile Include="Tests\Functional\Service\IndesignServer\ApplicationTest.cs" />
     <Compile Include="Tests\Functional\TestAbstract.cs" />
     <None Include="Cli\.gitignore" />
@@ -214,6 +216,9 @@
     <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG02.jpg" />
     <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG03.jpg" />
     <Content Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\TC9990701-IMG04.jpg" />
+    <Content Include="Tools\nssm.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

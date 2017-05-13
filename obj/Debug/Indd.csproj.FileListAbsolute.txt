@@ -14,3 +14,4 @@ C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Intero
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Indd.csproj.ResolveComReference.cache
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Indd-proyx.exe
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Indd-proyx.pdb
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Tools\nssm.exe

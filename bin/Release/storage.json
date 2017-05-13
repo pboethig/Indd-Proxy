@@ -1,0 +1,6 @@
+﻿{
+  "paths": {
+    "root": "$root",
+    "templates": "$root\\Tests\\Functional\\Fixures\\templates"
+  }
+}

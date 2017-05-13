@@ -1,0 +1,5 @@
+﻿{
+  "In": "$root\\Tests\\Functional\\Fixures\\indd\\JobQueues\\In",
+  "Out": "$root\\Tests\\Functional\\Fixures\\indd\\JobQueues\\Out",
+  "Error": "$root\\Tests\\Functional\\Fixures\\indd\\JobQueues\\Error"
+}
