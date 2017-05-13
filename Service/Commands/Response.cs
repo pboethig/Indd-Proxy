@@ -64,7 +64,7 @@ namespace Indd.Service.Commands
 
                 foreach (dynamic additionalDataItem in ticket.response.additionalData)
                 {
-                    if (additionalDataItem.classname == command.classname)
+                    if ((string)additionalDataItem.classname == (string)command.classname)
                     {
                         this.addAdditionalDataItem(additionalDataItem, command);
                     }
@@ -84,11 +84,11 @@ namespace Indd.Service.Commands
             try
             {
                 string propertyName = (string)additionalDataItem.property;
-                
-                dynamic value = Indd.Helper.Dynamic.Property.getValue(command, propertyName);
 
                 objectPath = additionalDataItem.classname + "." + propertyName;
 
+                dynamic value = Indd.Helper.Dynamic.Property.getValue(command, propertyName);
+                
                 KeyValuePair<string, dynamic> propertyValue = new KeyValuePair<string, dynamic>(objectPath, value);
 
                 this.additionalData.Add(propertyValue);
@@ -148,7 +148,6 @@ namespace Indd.Service.Commands
         /// <returns></returns>
         public List<string> send()
         {
-
             WebClient client = new WebClient();
 
             List<string> responses = new List<string>();

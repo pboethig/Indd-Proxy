@@ -31,7 +31,6 @@ namespace Indd.Service.Commands.Book {
                 this.buildExportFilePath();
 
                this.book.Export(InDesignServer.idExportFormat.idPDFType, this.exportFilePath);
-                
             }
             catch (System.Exception ex)
             {
@@ -47,7 +46,6 @@ namespace Indd.Service.Commands.Book {
         /// <returns></returns>
         public void buildExportFilePath()
         {
-
             string folderPath = (string)this.commandRequest.exportFolderPath + "\\" + this.uuid;
 
             if (!System.IO.Directory.Exists(folderPath))

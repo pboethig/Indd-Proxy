@@ -19,6 +19,11 @@ namespace Indd.Service.Commands.Book {
         public string exportFilePath { get; set; }
 
         /// <summary>
+        /// Json representation of book
+        /// </summary>
+        public string json { get; set; }
+
+        /// <summary>
         /// Open a document, if its not allready open
         /// </summary>
         /// <returns></returns>
@@ -32,7 +37,7 @@ namespace Indd.Service.Commands.Book {
                 
                 Indd.Service.CustomExport.Json.Book jsonBook = new Indd.Service.CustomExport.Json.Book(book);
                 
-                jsonBook.toJson(this.exportFilePath);
+                this.json = jsonBook.toJson(this.exportFilePath);
 
                 book.Close();
             }

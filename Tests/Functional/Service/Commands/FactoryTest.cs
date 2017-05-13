@@ -114,10 +114,8 @@
         {
             ticket = this.getTicket("c2335ce8-7000-4287-8972-f355ed23bd7f");
 
-            response = commandFactory.processTicket(ticket);
-
-            string jsonString = response.toJson();
-
+            response = commandFactory.processTicket(ticket, false);
+            
             List<string> responses = response.send();
 
             Assert.AreEqual(2, responses.Count);

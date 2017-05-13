@@ -74,7 +74,7 @@ namespace Indd.Service.Commands
         /// </summary>
         /// <param name="commandRequests"></param>
         /// <returns>Response</returns>
-        public Response processTicket(dynamic ticket)
+        public Response processTicket(dynamic ticket, bool sendResponse = true)
         {
             List<ICommand> commands = buildCommandObjectList(ticket);
 
@@ -89,7 +89,12 @@ namespace Indd.Service.Commands
             }
 
             Response response = new Response(ticket, ticketExceptions, commands);
-            
+
+            if (sendResponse)
+            {
+                response.send();
+            }
+
             return response;
         }
 

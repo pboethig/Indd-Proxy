@@ -19,6 +19,11 @@ namespace Indd.Service.Commands.Document {
         public string exportFilePath { get; set; }
 
         /// <summary>
+        /// Contains the exported filepath
+        /// </summary>
+        public string exportWebResourcesPath { get; set; }
+
+        /// <summary>
         /// Open a document, if its not allready open
         /// </summary>
         /// <returns></returns>
@@ -47,6 +52,8 @@ namespace Indd.Service.Commands.Document {
         public void buildExportFilePath()
         {
             this.exportFilePath = this.commandRequest.exportFolderPath + "\\" + this.uuid + "\\document_"+ this.version+".html";
+
+            this.exportWebResourcesPath = this.commandRequest.exportFolderPath + "\\" + this.uuid + "\\document_" + this.version + "-web-resources";
 
             if (System.IO.File.Exists(this.exportFilePath))
             {

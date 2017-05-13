@@ -1,5 +1,6 @@
 ﻿
 using Indd.Service.Commands;
+using System.Collections.Generic;
 
 namespace Indd.Tests.Functional
 {
