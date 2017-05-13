@@ -36,6 +36,9 @@ namespace Indd.Service.Filesystem
         static void watcher_Created(object sender, FileSystemEventArgs e)
         {
             Console.WriteLine(e.FullPath + " file has been created.");
+
+
+
         }
     }
 }
