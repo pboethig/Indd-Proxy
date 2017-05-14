@@ -1,8 +1,8 @@
 ﻿{
   "paths": {
-      "in": "$root\\Tests\\Functional\\Fixures\\JobQueue\\In",
-      "out": "$root\\Tests\\Functional\\Fixures\\JobQueue\\Out",
-      "error": "$root\\Tests\\Functional\\Fixures\\JobQueue\\Error",
-      "process": "$root\\Tests\\Functional\\Fixures\\JobQueue\\Process"
-    }
+    "in": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\jobQueue\\In",
+    "out": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\jobQueue\\Out",
+    "error": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\jobQueue\\Error",
+    "process": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\jobQueue\\Process"
+  }
   }

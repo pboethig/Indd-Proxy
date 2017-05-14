@@ -6,7 +6,7 @@
     "status": "open",
     "errors": [],
     "additionalData": [],
-    "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ]
+    "urls": [ "http://localhost/index.html", "http://localhost/index.html" ]
   },
   "commands": [
     {

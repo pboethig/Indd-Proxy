@@ -87,16 +87,15 @@ namespace Indd.Service.Filesystem
         {
             Console.WriteLine(e.FullPath + " file has been created.");
 
+            string targetPath = processQueue + "\\" + e.Name;
+
             try
             {
-                string targetPath = processQueue + "\\" + e.Name;
-                
                 processTicket(targetPath, e.Name, e.FullPath);
-               
             }
             catch (System.Exception exception)
             {
-                Syslog.log("Watcher-Created Event fails: " + exception.Message);                
+                Syslog.log("Watcher-Created Event fails: " + exception.Message + " targetPath:" + targetPath);                
             }
         }
 
@@ -142,7 +141,11 @@ namespace Indd.Service.Filesystem
             {
                 System.IO.File.Move(targetPath, errorQueue + "\\" + fileName);
 
-                Syslog.log("Watcher-Created Ticket error: " + commandFactory.jsonTicket);
+                string message = "Watcher-Created Ticket error: " + commandFactory.jsonTicket + " Inner Exception: " + ex.Message;
+
+                Syslog.log(message);
+
+                throw new System.Exception(message);
             }
         }
     }

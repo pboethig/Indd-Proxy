@@ -1,6 +1,6 @@
 ﻿{
   "paths": {
-    "root": "$root",
+    "root": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy",
     "templates": "$root\\Tests\\Functional\\Fixures\\templates"
   }
 }

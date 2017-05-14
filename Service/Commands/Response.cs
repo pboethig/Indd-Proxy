@@ -30,6 +30,11 @@ namespace Indd.Service.Commands
         public List<KeyValuePair<string,dynamic>> additionalData = new List<KeyValuePair<string,dynamic>>();
 
         /// <summary>
+        /// Sending exceptions
+        /// </summary>
+        public List<System.Exception> sendRespondsExceptions = new List<System.Exception>();
+
+        /// <summary>
         /// Urls to notifiy
         /// </summary>
         public dynamic urls;
@@ -152,15 +157,24 @@ namespace Indd.Service.Commands
 
             List<string> responses = new List<string>();
 
-            foreach (string url in urls)
+            try
             {
-                client.Headers[HttpRequestHeader.ContentType] = "application/json";
+                foreach (string url in urls)
+                {
+                    client.Headers[HttpRequestHeader.ContentType] = "application/json";
 
-                string response = client.UploadString(url, "POST", this.toJson());
+                    string response = client.UploadString(url, "POST", this.toJson());
 
-                responses.Add(response);
+                    responses.Add(response);
+                }
             }
-            
+            catch (System.Exception ex)
+            {
+                Indd.Service.Log.Syslog.log("Sending response failed: " + ex.Message, System.Diagnostics.EventLogEntryType.Warning);
+
+                this.sendRespondsExceptions.Add(ex);
+            }
+
             return responses;
         }
 

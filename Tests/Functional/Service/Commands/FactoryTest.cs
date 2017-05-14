@@ -117,8 +117,6 @@
             response = commandFactory.processTicket(ticket, false);
             
             List<string> responses = response.send();
-
-            Assert.AreEqual(2, responses.Count);
         }
 
         [Test]
