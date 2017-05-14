@@ -41,6 +41,20 @@
         }
 
         [Test]
+        public void StorageConfigManager_getJobQueuePath()
+        {
+            string jobQueuePath = ConfigManager.getJobQueuePath("in");
+
+            Assert.IsTrue(System.IO.Directory.Exists(jobQueuePath));
+        }
+
+        [Test]
+        public void StorageConfigManager_getWrongJobQueuePath()
+        {
+            Assert.Throws<Indd.Exception.StoragePathNotFoundException>(() => ConfigManager.getJobQueuePath("asenselesspath"));
+        }
+
+        [Test]
         public void StorageManager_getWrongStoragePath()
         {
             Assert.Throws<Indd.Exception.StoragePathNotFoundException>(() => ConfigManager.getStoragePath("asenselesspath"));

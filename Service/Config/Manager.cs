@@ -31,6 +31,27 @@ namespace Indd.Service.Config
             throw new Indd.Exception.StoragePathNotFoundException("no storagePath configured for: " + path);
         }
 
+
+        /// <summary>
+        /// Returns storageConfiguration
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns>XDocument</returns>
+        public static dynamic getJobQueuePath(string path)
+        {
+            dynamic config = load("jobqueues");
+
+            dynamic paths = config.paths;
+
+            foreach (Newtonsoft.Json.Linq.JProperty item in paths)
+            {
+                if (item.Name == path)
+                    return item.Value.ToString();
+            }
+
+            throw new Indd.Exception.StoragePathNotFoundException("no jobqueuePath configured for: " + path);
+        }
+
         /// <summary>
         /// Loads a given configFile
         /// </summary>

@@ -1,6 +1,7 @@
 ﻿
 using Indd.Service.Commands;
 using System.Collections.Generic;
+using ConfigManager = Indd.Service.Config.Manager;
 
 namespace Indd.Tests.Functional
 {
@@ -28,7 +29,10 @@ namespace Indd.Tests.Functional
         /// <returns></returns>
         public string getJobInQueue()
         {
-            return root + "\\Tests\\Functional\\Fixures\\jobQueue\\In";
+            //return root + "\\Tests\\Functional\\Fixures\\jobQueue\\In";
+            string jobQueuePath = ConfigManager.getJobQueuePath("in");
+
+            return jobQueuePath;
         }
 
         /// <summary>$

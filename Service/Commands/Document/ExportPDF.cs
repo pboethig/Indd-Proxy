@@ -46,7 +46,13 @@ namespace Indd.Service.Commands.Document {
         /// <returns></returns>
         public void buildExportFilePath()
         {
-            this.exportFilePath = this.commandRequest.exportFolderPath + "\\" + this.uuid + "\\document_"+ this.version+".pdf";
+
+            if (!System.IO.Directory.Exists((string)this.commandRequest.exportFolderPath))
+            {
+                System.IO.Directory.CreateDirectory((string)this.commandRequest.exportFolderPath); 
+            }
+
+            this.exportFilePath = (string)this.commandRequest.exportFolderPath + "\\" + this.uuid + "\\document_"+ this.version+".pdf";
 
             if (System.IO.File.Exists(this.exportFilePath))
             {
@@ -70,7 +76,7 @@ namespace Indd.Service.Commands.Document {
 
             if (!System.IO.Directory.Exists((string)this.commandRequest.exportFolderPath))
             {
-                System.IO.Directory.CreateDirectory(this.commandRequest.exportFolderPath);
+                System.IO.Directory.CreateDirectory((string)this.commandRequest.exportFolderPath);
             }
 
             return true;

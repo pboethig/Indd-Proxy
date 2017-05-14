@@ -1,0 +1,30 @@
+[{
+  "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+  "status": "error",
+  "errors": [
+    "JobticketException: Document.SaveAndClose throws an Error. \nInner Exception:document: fail the ticket with an invalid path\\c2335ce8-7000-4287-8972-f355ed23bd7f\\4.0.indd not found \nTicketId: 213123-12312-3123-asdd-asdasdasdasd \nDocumentFolderPath: fail the ticket with an invalid path \nPayload:\n {\r\n  \"classname\": \"Document.SaveAndClose\",\r\n  \"uuid\": \"c2335ce8-7000-4287-8972-f355ed23bd7f\",\r\n  \"extension\": \"indd\",\r\n  \"version\": \"4.0\",\r\n  \"ticketId\": \"213123-12312-3123-asdd-asdasdasdasd\",\r\n  \"documentFolderPath\": \"fail the ticket with an invalid path\"\r\n}"
+  ],
+  "additionalData": [],
+  "urls": [
+    "http://www.test-cors.org/",
+    "http://www.test-cors.org/"
+  ]
+},{
+  "id": "213123-12312-3123-asdd-asdasdasdasd",
+  "documentFolderPath": "fail the ticket with an invalid path",
+  "response": {
+    "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+    "status": "open",
+    "errors": [],
+    "additionalData": [],
+    "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ]
+  },
+  "commands": [
+    {
+      "classname": "Document.SaveAndClose",
+      "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
+      "version": "4.0"
+    }
+  ]
+}]

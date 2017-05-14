@@ -1,7 +1,7 @@
 ﻿using System;
 using Indd.Contracts;
 using System.Collections.Generic;
-
+using Indd.Service.Log;
 /// <summary>
 /// Handles Commands
 /// </summary>
@@ -22,7 +22,12 @@ namespace Indd.Service.Commands
         /// Contains all exceptions on a command during execiution
         /// </summary>
         public List<List<System.Exception>> ticketExceptions = new List<List<System.Exception>>();
-        
+
+        /// <summary>
+        /// JsonTicket
+        /// </summary>
+        public string jsonTicket;
+
         /// <summary>
         /// Builds commandList from commandline parameter
         /// </summary>
@@ -110,13 +115,13 @@ namespace Indd.Service.Commands
                 throw new System.Exception("Ticket not found under: " + filePath);
             }
 
-            string json = System.IO.File.ReadAllText(filePath);
+           jsonTicket = System.IO.File.ReadAllText(filePath);
 
             string directory = Indd.Service.Config.Manager.getStoragePath("root");
             
-            json = json.Replace("$root", directory.Replace("\\", "\\\\"));
+            jsonTicket = jsonTicket.Replace("$root", directory.Replace("\\", "\\\\"));
 
-            dynamic ticket = Indd.Helper.Json.Convert.deserializeObject(json);
+            dynamic ticket = Indd.Helper.Json.Convert.deserializeObject(jsonTicket);
 
             return ticket;
         }
@@ -132,5 +137,49 @@ namespace Indd.Service.Commands
             return this.getJsonTicket(filePath) ;
         }
 
+        /// <summary>
+        /// Writes Response and ticket to outfolder
+        /// </summary>
+        /// <param name="commandFactory"></param>
+        /// <param name="response"></param>
+        /// <param name="processPath"></param>
+        /// <param name="outPath"></param>
+        public void writeOutFile(Factory commandFactory, Response response, string processPath, string outPath)
+        {
+            string outFile = "[" + response.toJson() + "," + commandFactory.jsonTicket + "]";
+
+            if (System.IO.File.Exists(outPath))
+            {
+                System.IO.File.Delete(outPath);
+            }
+
+            System.IO.File.WriteAllText(outPath, outFile);
+
+            System.IO.File.Delete(processPath);
+
+            Syslog.log("Watcher-Created Ticket processed: " + commandFactory.jsonTicket, System.Diagnostics.EventLogEntryType.SuccessAudit);
+        }
+
+        /// Writes Response and ticket to outfolder
+        /// </summary>
+        /// <param name="commandFactory"></param>
+        /// <param name="response"></param>
+        /// <param name="processPath"></param>
+        /// <param name="outPath"></param>
+        public void writeErrorFile(Factory commandFactory, Response response, string processPath, string errorPath)
+        {
+            string outFile = "[" + response.toJson() + "," + commandFactory.jsonTicket + "]";
+
+            if (System.IO.File.Exists(errorPath))
+            {
+                System.IO.File.Delete(errorPath);
+            }
+
+            System.IO.File.WriteAllText(errorPath, outFile);
+
+            System.IO.File.Delete(processPath);
+
+            Syslog.log("Watcher-Created Ticket  has errors: " + commandFactory.jsonTicket, System.Diagnostics.EventLogEntryType.SuccessAudit);
+        }
     }
 }

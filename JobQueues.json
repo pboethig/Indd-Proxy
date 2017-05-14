@@ -1,5 +1,8 @@
 ﻿{
-  "In": "$root\\Tests\\Functional\\Fixures\\indd\\JobQueues\\In",
-  "Out": "$root\\Tests\\Functional\\Fixures\\indd\\JobQueues\\Out",
-  "Error": "$root\\Tests\\Functional\\Fixures\\indd\\JobQueues\\Error"
-}
+  "paths": {
+      "in": "$root\\Tests\\Functional\\Fixures\\JobQueue\\In",
+      "out": "$root\\Tests\\Functional\\Fixures\\JobQueue\\Out",
+      "error": "$root\\Tests\\Functional\\Fixures\\JobQueue\\Error",
+      "process": "$root\\Tests\\Functional\\Fixures\\JobQueue\\Process"
+    }
+  }
