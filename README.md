@@ -1,3 +1,4 @@
+
 # Indd-Proxy
 ## C# console app to handle InDesign documents with Indesign Server
 
@@ -9,6 +10,7 @@ Here comes Indd-Proxy into the game. It takes json payloads with commands for th
 - Visual Studio 2017 64 Bit
 - .Net Framework >=4.5.x
 - Installed Adobe Indesign Server (cc2017).
+- Nunit installed in Visual Studio
 
 ### Install
 - Open Project "Indd.sln" in Visual Studio
