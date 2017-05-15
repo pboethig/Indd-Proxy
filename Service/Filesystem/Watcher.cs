@@ -49,18 +49,31 @@ namespace Indd.Service.Filesystem
                 NotifyFilters.Size |
                 NotifyFilters.Security;
 
+                watcher.InternalBufferSize = 2621440;
                 watcher.Path = path;
                 watcher.Created += new FileSystemEventHandler(watcher_Created);
-                watcher.Deleted += new FileSystemEventHandler(watcher_Deleted);
                 watcher.Changed += new FileSystemEventHandler(watcher_Changed);
-                watcher.Renamed += new RenamedEventHandler(watcher_Renamed);
                 watcher.EnableRaisingEvents = true;
+                watcher.Error += new ErrorEventHandler(WatcherError);
+
 
                 Console.ReadKey(); ;
 
             }
         }
-        
+
+        // The error event handler
+        private static void WatcherError(object source, ErrorEventArgs e)
+        {
+            System.Exception watchException = e.GetException();
+            // We need to create new version of the object because the
+            // old one is now corrupted
+            // This will throw an error at the
+            // watcher.NotifyFilter line if it can't get the path.
+            Console.WriteLine(watchException.Message);
+
+        }
+
         /// <summary>
         /// Inits queues
         /// </summary>
@@ -75,11 +88,11 @@ namespace Indd.Service.Filesystem
 
         static void watcher_Renamed(object sender, RenamedEventArgs e)
         {
-            observ(e);
+            //observ(e);
         }
         static void watcher_Changed(object sender, FileSystemEventArgs e)
         {
-            observ(e);
+            //observ(e);
         }
         static void watcher_Deleted(object sender, FileSystemEventArgs e)
         {
@@ -104,9 +117,9 @@ namespace Indd.Service.Filesystem
             {
                 processTicket(targetPath, e.Name, e.FullPath);
             }
-            catch
+            catch(System.Exception ex)
             {
-                  
+                Console.WriteLine(ex.Message) ;
             }
         }
 
