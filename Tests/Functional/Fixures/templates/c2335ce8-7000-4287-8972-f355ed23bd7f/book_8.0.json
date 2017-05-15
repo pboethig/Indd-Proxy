@@ -16,18 +16,18 @@
         "Label": "",
         "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\1.0.indd",
         "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f",
-        "Size": 1650688,
+        "Size": 2310144,
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
-          "Id": 13,
+          "Id": 101,
           "Name": "1.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\1.0.indd",
           "Label": "",
           "Index": 1,
           "Visible": false,
-          "HorizontalMeasurementUnits": "idMillimeters",
-          "VerticalMeasurementUnits": "idMillimeters",
+          "HorizontalMeasurementUnits": "idInches",
+          "VerticalMeasurementUnits": "idInches",
           "PointsPerInch": 72.0,
           "TextSizeMeasurementUnits": "idPoints",
           "TypographicMeasurementUnits": "idPoints",
@@ -62,8 +62,8 @@
                   "Bounds": [
                     0.0,
                     0.0,
-                    279.4,
-                    215.89999999999998
+                    11.0,
+                    8.5
                   ],
                   "DocumentOffset": 1,
                   "OptionalPage": false,
@@ -71,22 +71,22 @@
                   "Rectangles": [
                     {
                       "Type": "Rectangle",
-                      "Id": 3223,
+                      "Id": 3022,
                       "Name": "",
                       "Label": "",
                       "Index": 1,
                       "Visible": true,
                       "ItemLayer": 107,
                       "GeometricBounds": [
-                        234.3643888888889,
-                        16.686388888888892,
-                        260.93561111111114,
-                        91.898611111111109
+                        8.526944444444446,
+                        1.3819444444444444,
+                        10.293055555555556,
+                        6.9930555555555571
                       ],
                       "Images": [
                         {
                           "Type": "Image",
-                          "Id": 4719,
+                          "Id": 3866,
                           "Name": "",
                           "Label": "",
                           "Index": 1,
@@ -94,10 +94,46 @@
                           "Visible": true,
                           "Link": {
                             "Type": "Link",
-                            "Id": 3388,
-                            "Name": "8778687-78676876-54354-786786ghfhgf.jpg",
+                            "Id": 3054,
+                            "Name": "5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
                             "Label": "",
                             "Index": 3,
+                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
+                            "AssetURL": "",
+                            "AssetID": ""
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "Type": "Rectangle",
+                      "Id": 3021,
+                      "Name": "",
+                      "Label": "",
+                      "Index": 2,
+                      "Visible": true,
+                      "ItemLayer": 107,
+                      "GeometricBounds": [
+                        5.2869444444444449,
+                        1.3819444444444444,
+                        7.6130555555555555,
+                        6.9930555555555562
+                      ],
+                      "Images": [
+                        {
+                          "Type": "Image",
+                          "Id": 3869,
+                          "Name": "",
+                          "Label": "",
+                          "Index": 1,
+                          "ItemLayer": 107,
+                          "Visible": true,
+                          "Link": {
+                            "Type": "Link",
+                            "Id": 3045,
+                            "Name": "8778687-78676876-54354-786786ghfhgf.jpg",
+                            "Label": "",
+                            "Index": 2,
                             "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\assets\\8778687-78676876-54354-786786ghfhgf.jpg",
                             "AssetURL": "",
                             "AssetID": ""
@@ -107,75 +143,19 @@
                     },
                     {
                       "Type": "Rectangle",
-                      "Id": 3222,
-                      "Name": "",
-                      "Label": "",
-                      "Index": 2,
-                      "Visible": true,
-                      "ItemLayer": 107,
-                      "GeometricBounds": [
-                        119.55638888888888,
-                        79.424388888888885,
-                        206.07161111111111,
-                        187.52961111111111
-                      ],
-                      "Images": [
-                        {
-                          "Type": "Image",
-                          "Id": 4714,
-                          "Name": "",
-                          "Label": "",
-                          "Index": 1,
-                          "ItemLayer": 107,
-                          "Visible": true,
-                          "Link": {
-                            "Type": "Link",
-                            "Id": 3380,
-                            "Name": "5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
-                            "Label": "",
-                            "Index": 2,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\assets\\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
-                            "AssetURL": "",
-                            "AssetID": ""
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "Type": "Rectangle",
-                      "Id": 3221,
+                      "Id": 3020,
                       "Name": "",
                       "Label": "",
                       "Index": 3,
                       "Visible": true,
                       "ItemLayer": 107,
                       "GeometricBounds": [
-                        27.100388888888883,
-                        16.686388888888892,
-                        88.2156111111111,
-                        141.80961111111108
+                        2.0669444444444443,
+                        1.3819444444444444,
+                        4.633055555555555,
+                        6.9930555555555554
                       ],
-                      "Images": [
-                        {
-                          "Type": "Image",
-                          "Id": 4708,
-                          "Name": "",
-                          "Label": "",
-                          "Index": 1,
-                          "ItemLayer": 107,
-                          "Visible": true,
-                          "Link": {
-                            "Type": "Link",
-                            "Id": 3229,
-                            "Name": "8778687-78676876-54354-786786ghfhgf.jpg",
-                            "Label": "",
-                            "Index": 1,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\8778687-78676876-54354-786786ghfhgf.jpg",
-                            "AssetURL": "",
-                            "AssetID": ""
-                          }
-                        }
-                      ]
+                      "Images": []
                     }
                   ],
                   "TextFrames": []
@@ -184,7 +164,7 @@
             },
             {
               "Type": "Spread",
-              "Id": 3829,
+              "Id": 3681,
               "Name": "",
               "Label": "",
               "Index": 2,
@@ -194,7 +174,7 @@
               "Pages": [
                 {
                   "Type": "Page",
-                  "Id": 3834,
+                  "Id": 3686,
                   "Name": "2",
                   "Label": "",
                   "Index": 1,
@@ -202,32 +182,121 @@
                   "Bounds": [
                     0.0,
                     0.0,
-                    279.4,
-                    215.89999999999998
+                    11.0,
+                    8.5
                   ],
                   "DocumentOffset": 2,
                   "OptionalPage": false,
                   "Side": 1970496888,
-                  "Rectangles": [],
-                  "TextFrames": [
+                  "Rectangles": [
                     {
-                      "Type": "TextFrame",
-                      "Id": 3854,
+                      "Type": "Rectangle",
+                      "Id": 4009,
                       "Name": "",
                       "Label": "",
                       "Index": 1,
                       "Visible": true,
                       "ItemLayer": 107,
                       "GeometricBounds": [
-                        31.75,
-                        11.93799999999999,
-                        91.439999999999927,
-                        189.23000000000002
+                        6.5269444444444451,
+                        0.2169444444444445,
+                        10.413055555555559,
+                        7.8830555555555542
+                      ],
+                      "Images": [
+                        {
+                          "Type": "Image",
+                          "Id": 4011,
+                          "Name": "",
+                          "Label": "",
+                          "Index": 1,
+                          "ItemLayer": 107,
+                          "Visible": true,
+                          "Link": {
+                            "Type": "Link",
+                            "Id": 4015,
+                            "Name": "TC9990701-IMG03.jpg",
+                            "Label": "",
+                            "Index": 6,
+                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\TC9990701-IMG03.jpg",
+                            "AssetURL": "",
+                            "AssetID": ""
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "Type": "Rectangle",
+                      "Id": 3883,
+                      "Name": "",
+                      "Label": "",
+                      "Index": 2,
+                      "Visible": true,
+                      "ItemLayer": 107,
+                      "GeometricBounds": [
+                        0.50694444444444442,
+                        2.0969444444444445,
+                        2.0330555555555572,
+                        8.3830555555555542
+                      ],
+                      "Images": [
+                        {
+                          "Type": "Image",
+                          "Id": 3885,
+                          "Name": "",
+                          "Label": "",
+                          "Index": 1,
+                          "ItemLayer": 107,
+                          "Visible": true,
+                          "Link": {
+                            "Type": "Link",
+                            "Id": 3889,
+                            "Name": "TC9990701-IMG02.jpg",
+                            "Label": "",
+                            "Index": 5,
+                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\TC9990701-IMG02.jpg",
+                            "AssetURL": "",
+                            "AssetID": ""
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "Type": "Rectangle",
+                      "Id": 3878,
+                      "Name": "",
+                      "Label": "",
+                      "Index": 3,
+                      "Visible": true,
+                      "ItemLayer": 107,
+                      "GeometricBounds": [
+                        0.50694444444444442,
+                        0.2169444444444445,
+                        2.0330555555555572,
+                        1.9230555555555553
+                      ],
+                      "Images": []
+                    }
+                  ],
+                  "TextFrames": [
+                    {
+                      "Type": "TextFrame",
+                      "Id": 3963,
+                      "Name": "",
+                      "Label": "",
+                      "Index": 1,
+                      "Visible": true,
+                      "ItemLayer": 107,
+                      "GeometricBounds": [
+                        3.42,
+                        3.77,
+                        6.0400000000000018,
+                        8.0300000000000011
                       ],
                       "Paragraphs": [
                         {
                           "Type": "Paragraph",
-                          "Contents": "l..m,m,n,m \r",
+                          "Contents": "Lantur, torae optae pero te re rest ant.\r",
                           "FontStyle": "Roman",
                           "Index": 1,
                           "AppliedParagraphStyle": {
@@ -264,9 +333,9 @@
                         },
                         {
                           "Type": "Paragraph",
-                          "Contents": "äRa soluptatia diam, aut aut laboria nam elic te est, si que si vendiatusdae laturep erore, quam hario venimil id undi di blabo. Et quo vid ut renis earum rae. Nest quiasperum voluptiaeria nistore pudanis duciument.\r",
+                          "Contents": "Doloritatem doluptas alicaes eruntur? Quiati quas maiosam eatur? Quid earum exerum quides et eicidig nimusapid mo offic tet est, sum coria volora consequatius dolora dolectem verum volorument as paribus.\r",
                           "FontStyle": "Roman",
-                          "Index": 13,
+                          "Index": 42,
                           "AppliedParagraphStyle": {
                             "Type": "ParagraphStyle",
                             "Id": 53,
@@ -301,9 +370,9 @@
                         },
                         {
                           "Type": "Paragraph",
-                          "Contents": "Libusapidi dolupta doluptibus aut acias aut re nulparunto int eaquaspeliat volesto tempore ad ende nimagnam doluptae ducipsunt undant volupiet et od ullo volupta musapiscia con ped moditate quibus ipitam, aut magnam quat quoditiam ex etum sim ute volores repre cus ut occum, apeleni hillandiatem ium aut velesse rest, ommodis sed que ipsum, conserf eribus.\r",
+                          "Contents": "Dae reperum volorem lit eum necae offic te nonem ipit optur sequas et volut quo cum di core seque pos sunt ut ut qui nonsequiatem ium apidem fuga. Us, et voluptatem que est, ulpa cus doluptatibus dempos nos doluptat.\r",
                           "FontStyle": "Roman",
-                          "Index": 229,
+                          "Index": 246,
                           "AppliedParagraphStyle": {
                             "Type": "ParagraphStyle",
                             "Id": 53,
@@ -338,9 +407,9 @@
                         },
                         {
                           "Type": "Paragraph",
-                          "Contents": "Occatior rerum, simenim cus, ant, seritaspicit alit velendunt ommos eiunt venis dus repernatem estorum et laut quissus, ipientis il ipsum fuga. Et accusan tempos rersper ferfera tusandu cientiorum hariber sperias porem et ex et ut doluptam est, cusdaep ratureptatur susciet ventian temolor uptatiusa nonsecae dis dolupta tionsequid quia velicturio quosa des quid que ventusa conet quaecusciis",
+                          "Contents": "Et ipsunt autem quae pos aut ut la volupta taerum quia imporitibus et es sit lis doluptatem nonsequiam quat landae comnihic temporrum que prem il incieni debit de optaten daesequidit, velia simpores rehenduntem essinim invelissi",
                           "FontStyle": "Roman",
-                          "Index": 586,
+                          "Index": 463,
                           "AppliedParagraphStyle": {
                             "Type": "ParagraphStyle",
                             "Id": 53,
@@ -374,57 +443,25 @@
                           "Images": []
                         }
                       ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "Type": "Spread",
-              "Id": 3823,
-              "Name": "",
-              "Label": "",
-              "Index": 3,
-              "PageTransitionDirection": "idNotApplicable",
-              "PageTransitionDuration": "idMedium",
-              "PageTransitionType": "idNone",
-              "Pages": [
-                {
-                  "Type": "Page",
-                  "Id": 3828,
-                  "Name": "3",
-                  "Label": "",
-                  "Index": 1,
-                  "PageColor": 1346594413,
-                  "Bounds": [
-                    0.0,
-                    0.0,
-                    279.4,
-                    215.89999999999998
-                  ],
-                  "DocumentOffset": 3,
-                  "OptionalPage": false,
-                  "Side": 1970496888,
-                  "Rectangles": [],
-                  "TextFrames": [
+                    },
                     {
                       "Type": "TextFrame",
-                      "Id": 3878,
+                      "Id": 3937,
                       "Name": "",
                       "Label": "",
-                      "Index": 1,
+                      "Index": 2,
                       "Visible": true,
                       "ItemLayer": 107,
                       "GeometricBounds": [
-                        15.875,
-                        9.9059999999999935,
-                        83.311999999999955,
-                        182.626
+                        3.42,
+                        0.21000000000000008,
+                        6.0400000000000018,
+                        3.67
                       ],
                       "Paragraphs": [
                         {
                           "Type": "Paragraph",
-                          "Contents": "Invelignimpos maio magnit, sita consequi que enimodio im int duntem fuga. Am, con et duciunt as maximus ex ex ellenit latiasi moloratem faccus eos nonsecum evene maximod ut doloriberit voluptas asimpedipis volorep udignih icipsam aut eos eiuntibus doluptiam eos earitiore pelique voloreperum laceptatque maiostion ne pelliquas nos essitasimin et, sunt velicienis ende verum et, simet platisc imilita vel mos aut que am, a vendist ionseritem quae dem as in re pratem expel mi, cum, sum iuntiaero blacest ma consequist laut fugiatur abore prae. As quam que volut magnimod que sam rate modic testia sum nist mil il ma volum alitaquosam, eveligenis net que cus sam, int vendit eos iliamusandus con plit acium di blam experrum ut odis que veleceaqui dis cullori tionsequi ullat voluptat del il ium aut assimus excerchit mos volorem oloria de aut receri autati ullabor esentore et et, quas etur? Quiamenisita nihille cerovit voluptae vel minvent inctume qui doluptatur aped magniat atustiorio. Comnimenda si odi resequae ius eat aut omnis sum quo beritatis secaectenis maionse quuntur, ide estora volo beatiossi imod quae quas ex et ulpa cuptiur maximporum ipsapictatur rerfero cus doluptatur modi nos moluptiate nullessum net dus ipsus.",
+                          "Contents": "Gia idunt. Fuga. Incienienis et dollut occum con et ea cum que eatem ra qui nobis que commolo reperis cus assi audictet antemporiam derum etur accus ent eum conet laborestium reriae adi ut fugia saessit, volor raerspereium et a cumet qui voluptur? Qui sunt min por ma iliquisqui quis dit et voluptatibus accus.\r",
                           "FontStyle": "Roman",
                           "Index": 1,
                           "AppliedParagraphStyle": {
@@ -453,6 +490,97 @@
                             "Family": "Times",
                             "FontStyleName": "Roman",
                             "PostScriptName": "Times-Roman",
+                            "FullName": null,
+                            "FullNameNative": null,
+                            "FontType": null
+                          },
+                          "Images": []
+                        },
+                        {
+                          "Type": "Paragraph",
+                          "Contents": "Daecati venist faccatq uisquiam et volupta quo doloritatur rescidelenis volor aut aut lations edigendam rercien dandendem quiatetur modit quibus que autem ipieturerrum re consequ asperum sit expedit venditat inciis velesti dolor simi, ommolupta doluptiis volorpo ribusandis nis mi,",
+                          "FontStyle": "Roman",
+                          "Index": 312,
+                          "AppliedParagraphStyle": {
+                            "Type": "ParagraphStyle",
+                            "Id": 53,
+                            "Index": 1,
+                            "Name": "[Kein Absatzformat]",
+                            "Label": "",
+                            "AppliedFontFullName": "Die angeforderte Skripteigenschaft ist nicht für die Schriftart verfügbar."
+                          },
+                          "AppliedCharacterStyle": {
+                            "Type": "CharacterStyle",
+                            "Id": 54,
+                            "Name": "[Ohne]",
+                            "Label": "",
+                            "Index": 1,
+                            "AppliedFont": "",
+                            "FontStyle": 1851876449,
+                            "Position": 1851876449
+                          },
+                          "AppliedFont": {
+                            "Type": "Font",
+                            "Index": 0,
+                            "Location": null,
+                            "Name": "Times\tRoman",
+                            "Family": "Times",
+                            "FontStyleName": "Roman",
+                            "PostScriptName": "Times-Roman",
+                            "FullName": null,
+                            "FullNameNative": null,
+                            "FontType": null
+                          },
+                          "Images": []
+                        }
+                      ]
+                    },
+                    {
+                      "Type": "TextFrame",
+                      "Id": 3911,
+                      "Name": "",
+                      "Label": "",
+                      "Index": 3,
+                      "Visible": true,
+                      "ItemLayer": 107,
+                      "GeometricBounds": [
+                        2.58,
+                        0.21000000000000008,
+                        3.1200000000000014,
+                        8.25
+                      ],
+                      "Paragraphs": [
+                        {
+                          "Type": "Paragraph",
+                          "Contents": "This is a huge headline",
+                          "FontStyle": "Black",
+                          "Index": 1,
+                          "AppliedParagraphStyle": {
+                            "Type": "ParagraphStyle",
+                            "Id": 53,
+                            "Index": 1,
+                            "Name": "[Kein Absatzformat]",
+                            "Label": "",
+                            "AppliedFontFullName": "Die angeforderte Skripteigenschaft ist nicht für die Schriftart verfügbar."
+                          },
+                          "AppliedCharacterStyle": {
+                            "Type": "CharacterStyle",
+                            "Id": 54,
+                            "Name": "[Ohne]",
+                            "Label": "",
+                            "Index": 1,
+                            "AppliedFont": "",
+                            "FontStyle": 1851876449,
+                            "Position": 1851876449
+                          },
+                          "AppliedFont": {
+                            "Type": "Font",
+                            "Index": 5,
+                            "Location": null,
+                            "Name": "Arial\tBlack",
+                            "Family": "Arial",
+                            "FontStyleName": "Black",
+                            "PostScriptName": "Arial-Black",
                             "FullName": null,
                             "FullNameNative": null,
                             "FontType": null
@@ -1043,7 +1171,7 @@
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
-          "Id": 15,
+          "Id": 103,
           "Name": "2.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\2.0.indd",
           "Label": "",
@@ -1078,7 +1206,7 @@
                 {
                   "Type": "Page",
                   "Id": 294,
-                  "Name": "4",
+                  "Name": "3",
                   "Label": "",
                   "Index": 1,
                   "PageColor": 1346594413,
@@ -1763,7 +1891,7 @@
         "Status": 1852797549,
         "Document": {
           "Type": "Document",
-          "Id": 17,
+          "Id": 105,
           "Name": "4.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\4.0.indd",
           "Label": "",
@@ -2677,7 +2805,7 @@
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
-          "Id": 19,
+          "Id": 107,
           "Name": "3.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\3.0.indd",
           "Label": "",
@@ -2712,7 +2840,7 @@
                 {
                   "Type": "Page",
                   "Id": 294,
-                  "Name": "5",
+                  "Name": "4",
                   "Label": "",
                   "Index": 1,
                   "PageColor": 1346594413,
@@ -2832,7 +2960,7 @@
                 {
                   "Type": "Page",
                   "Id": 3686,
-                  "Name": "6",
+                  "Name": "5",
                   "Label": "",
                   "Index": 1,
                   "PageColor": 1346594413,
@@ -3587,11 +3715,11 @@
         "Label": "",
         "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\7.0.indd",
         "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f",
-        "Size": 1789952,
-        "Status": 1852797549,
+        "Size": 1007616,
+        "Status": 1148150596,
         "Document": {
           "Type": "Document",
-          "Id": 21,
+          "Id": 109,
           "Name": "7.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\7.0.indd",
           "Label": "",

@@ -1,11 +1,11 @@
-{
+﻿{
   "id": "213123-12312-3123-asdd-asdasdasdasd",
   "documentFolderPath": "$root\\Tests\\Functional\\Fixures\\templates",
   "response": {
     "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
     "status": "open",
     "errors": [],
-    "urls": [ "http://localhost/index.html", "http://localhost/index.html" ],
+    "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ],
     "additionalData": [
       {
         "classname": "Document.CreateCopy",

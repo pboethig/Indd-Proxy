@@ -25,9 +25,21 @@ namespace Indd.Service.Commands.Document {
         {
             try
             {
-                
-                
-                this.document = this.application.Open(this.documentPath);
+
+                foreach (InDesignServer.Document _document in this.application.Documents)
+                {
+                    if (_document.FullName == this.documentPath)
+                    {
+                        this.document = _document;
+
+                        return true;
+                    }
+                }
+
+                ///autosave document after opened it as copy
+                this.document = this.application.Open(this.documentPath, InDesignServer.idOpenOptions.idOpenCopy);
+
+                this.document.Save(this.documentPath, false, "autosave copy", true);
 
                 return true;
             }

@@ -1,0 +1,49 @@
+[{
+  "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+  "status": "ready",
+  "errors": [],
+  "additionalData": [
+    {
+      "Key": "Document.CreateCopy.targetUuid",
+      "Value": "07354b50-3883-434a-97fc-bebaea815778"
+    },
+    {
+      "Key": "Document.CreateCopy.targetFolderPath",
+      "Value": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\Templates\\07354b50-3883-434a-97fc-bebaea815778"
+    }
+  ],
+  "sendRespondsExceptions": [],
+  "urls": [
+    "http://localhost/index.html",
+    "http://localhost/index.html"
+  ]
+},{
+  "id": "213123-12312-3123-asdd-asdasdasdasd",
+  "documentFolderPath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates",
+  "response": {
+    "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+    "status": "open",
+    "errors": [],
+    "urls": [ "http://localhost/index.html", "http://localhost/index.html" ],
+    "additionalData": [
+      {
+        "classname": "Document.CreateCopy",
+        "property": "targetUuid"
+      },
+      {
+        "classname": "Document.CreateCopy",
+        "property": "targetFolderPath"
+      }
+    ]
+  },
+  "commands": [
+    {
+      "classname": "Document.CreateCopy",
+      "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
+      "version": "1.0",
+      "serverless": "true",
+      "targetFolderPath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\Templates"
+    }
+  ]
+}]

@@ -9,7 +9,7 @@
         [SetUp]
         public void Setup()
         {
-            CommandResponse response = commandFactory.processTicket(getTicket("Document.SaveAndClose"));
+            
         }
         
         [TearDown]

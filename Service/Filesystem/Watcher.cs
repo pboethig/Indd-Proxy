@@ -41,12 +41,23 @@ namespace Indd.Service.Filesystem
             { 
                 FileSystemWatcher watcher = new FileSystemWatcher();
 
+                watcher.NotifyFilter = NotifyFilters.Attributes |
+                NotifyFilters.CreationTime |
+                NotifyFilters.FileName |
+                NotifyFilters.LastAccess |
+                NotifyFilters.LastWrite |
+                NotifyFilters.Size |
+                NotifyFilters.Security;
+
                 watcher.Path = path;
-                watcher.EnableRaisingEvents = true;
                 watcher.Created += new FileSystemEventHandler(watcher_Created);
                 watcher.Deleted += new FileSystemEventHandler(watcher_Deleted);
                 watcher.Changed += new FileSystemEventHandler(watcher_Changed);
                 watcher.Renamed += new RenamedEventHandler(watcher_Renamed);
+                watcher.EnableRaisingEvents = true;
+
+                Console.ReadKey(); ;
+
             }
         }
         
@@ -64,15 +75,15 @@ namespace Indd.Service.Filesystem
 
         static void watcher_Renamed(object sender, RenamedEventArgs e)
         {
-            //Console.WriteLine(e.OldName + " is now: " + e.Name);
+            observ(e);
         }
         static void watcher_Changed(object sender, FileSystemEventArgs e)
         {
-            //Console.WriteLine(e.Name + " has changed");
+            observ(e);
         }
         static void watcher_Deleted(object sender, FileSystemEventArgs e)
         {
-            //Console.WriteLine(e.Name + " file has been deleted");
+           // observ(e);
         }
 
         /// <summary>
@@ -82,15 +93,20 @@ namespace Indd.Service.Filesystem
         /// <param name="e"></param>
         static void watcher_Created(object sender, FileSystemEventArgs e)
         {
+            observ(e);
+        }
+
+           static void observ(FileSystemEventArgs e) {
+
             string targetPath = processQueue + "\\" + e.Name;
 
             try
             {
                 processTicket(targetPath, e.Name, e.FullPath);
             }
-            catch (System.Exception exception)
+            catch
             {
-                
+                  
             }
         }
 

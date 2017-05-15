@@ -29,12 +29,12 @@ namespace Indd.Service.Commands.Document {
 
                 foreach (InDesignServer.Document _document in this.application.Documents)
                 {
+                    _document.Save(this.documentPath, false, "saved", true);
+                    
                     if (_document.FullName == this.documentPath)
                     {
                         this.document = _document;
-
-                        _document.Save(this.documentPath, false, "saved", true);
-
+                        
                         _document.Close();
                     }
                 }

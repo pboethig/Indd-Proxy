@@ -13,7 +13,7 @@ namespace Indd.Service.Commands.Graphics {
         /// <param name="commandRequests"></param>
         public SetLinks(dynamic commandRequest) : base ((object)commandRequest){}
 
-        /// <summary>
+        /// <summary>C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Service\Commands\Graphics\SetLinks.cs
         /// Open a document, if its not allready open
         /// </summary>
         /// <returns></returns>

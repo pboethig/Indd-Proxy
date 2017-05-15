@@ -10,7 +10,7 @@
       "Data": null,
       "InnerException": null,
       "HelpURL": null,
-      "StackTraceString": "   bei System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)\r\n   bei System.Net.WebClient.UploadString(Uri address, String method, String data)\r\n   bei System.Net.WebClient.UploadString(String address, String method, String data)\r\n   bei Indd.Service.Commands.Response.send()",
+      "StackTraceString": "   bei System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)\r\n   bei System.Net.WebClient.UploadString(Uri address, String method, String data)\r\n   bei System.Net.WebClient.UploadString(String address, String method, String data)\r\n   bei Indd.Service.Commands.Response.send() in C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Service\\Commands\\Response.cs:Zeile 166.",
       "RemoteStackTraceString": null,
       "RemoteStackIndex": 0,
       "ExceptionMethod": "8\nUploadDataInternal\nSystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\nSystem.Net.WebClient\nByte[] UploadDataInternal(System.Uri, System.String, Byte[], System.Net.WebRequest ByRef)",

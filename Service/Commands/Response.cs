@@ -163,9 +163,9 @@ namespace Indd.Service.Commands
                 {
                     client.Headers[HttpRequestHeader.ContentType] = "application/json";
 
-                    string response = client.UploadString(url, "POST", this.toJson());
+                    //string response = client.UploadString(url, "POST", this.toJson());
 
-                    responses.Add(response);
+                    //responses.Add(response);
                 }
             }
             catch (System.Exception ex)

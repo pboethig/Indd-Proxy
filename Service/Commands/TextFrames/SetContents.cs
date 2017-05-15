@@ -46,6 +46,8 @@ namespace Indd.Service.Commands.TextFrames
                 throw new SystemException("TextFrames.SetContents: " + ex.Message);
             }
 
+            //this.document.Save(this.documentPath, false, "saved after set contents", true);
+
             return true;
         }
         

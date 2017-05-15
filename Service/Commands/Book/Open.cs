@@ -38,7 +38,7 @@ namespace Indd.Service.Commands.Book {
                     }
                 }
                 
-                this.book = this.application.Open(this.documentPath);
+                this.book = this.application.Open(this.documentPath, InDesignServer.idOpenOptions.idOpenCopy);
 
                 return true;
             }
