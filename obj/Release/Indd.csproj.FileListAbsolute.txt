@@ -15,3 +15,7 @@ C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Release\Indd
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Release\Indd-proyx.exe
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Release\Indd-proyx.pdb
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\Tools\nssm.exe
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\Indd-proyx.exe.manifest
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Release\Indd-proyx.application
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Release\Indd-proyx.exe.manifest
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Release\Indd-proyx.application

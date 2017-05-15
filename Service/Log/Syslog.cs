@@ -7,7 +7,7 @@ namespace Indd.Service.Log
     /// <summary>
     /// Syslogwrapper
     /// </summary>
-    class Syslog
+    public class Syslog
     {
         /// <summary>
         /// Logs in syslog

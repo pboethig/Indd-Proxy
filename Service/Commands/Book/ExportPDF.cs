@@ -5,7 +5,7 @@ namespace Indd.Service.Commands.Book {
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class ExportPDF : Abstract,  Contracts.ICommand
+    public class ExportPDF : Abstract,  Contracts.ICommand
     {
         /// <summary>
         /// Saves dynamic command 

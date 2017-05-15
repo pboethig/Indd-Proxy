@@ -5,7 +5,7 @@ namespace Indd.Service.Commands.Document {
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class ExportHTMLFX : Abstract,  Contracts.ICommand
+    public class ExportHTMLFX : Abstract,  Contracts.ICommand
     {
         /// <summary>
         /// Saves dynamic command 

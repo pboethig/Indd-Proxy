@@ -5,7 +5,7 @@ namespace Indd.Service.Commands.Graphics {
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class SetLinks : Indd.Service.Commands.Images.Base,  Contracts.ICommand
+    public class SetLinks : Indd.Service.Commands.Images.Base,  Contracts.ICommand
     {
         /// <summary>
         /// Saves dynamic command 

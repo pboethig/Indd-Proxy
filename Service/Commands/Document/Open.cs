@@ -9,7 +9,7 @@ namespace Indd.Service.Commands.Document {
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class Open : Abstract,  Contracts.ICommand
+    public class Open : Abstract,  Contracts.ICommand
     {
         /// <summary>
         /// Saves dynamic command 

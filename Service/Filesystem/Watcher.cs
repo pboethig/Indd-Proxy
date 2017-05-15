@@ -7,7 +7,7 @@ using CommandResponse = Indd.Service.Commands.Response;
 
 namespace Indd.Service.Filesystem
 {
-    class Watcher
+    public class Watcher
     {
         /// <summary>
         /// InQueue
@@ -47,9 +47,6 @@ namespace Indd.Service.Filesystem
                 watcher.Deleted += new FileSystemEventHandler(watcher_Deleted);
                 watcher.Changed += new FileSystemEventHandler(watcher_Changed);
                 watcher.Renamed += new RenamedEventHandler(watcher_Renamed);
-                Console.WriteLine("FileSystemWatcher ready and listening to changes in :" + path);
-                Console.WriteLine("Press any key to stop listener");
-                Console.ReadKey();
             }
         }
         
@@ -85,8 +82,6 @@ namespace Indd.Service.Filesystem
         /// <param name="e"></param>
         static void watcher_Created(object sender, FileSystemEventArgs e)
         {
-            Console.WriteLine(e.FullPath + " file has been created.");
-
             string targetPath = processQueue + "\\" + e.Name;
 
             try
@@ -95,7 +90,7 @@ namespace Indd.Service.Filesystem
             }
             catch (System.Exception exception)
             {
-                Syslog.log("Watcher-Created Event fails: " + exception.Message + " targetPath:" + targetPath);                
+                
             }
         }
 

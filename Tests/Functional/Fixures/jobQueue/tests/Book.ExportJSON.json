@@ -1,0 +1,25 @@
+{
+  "id": "213123-12312-3123-asdd-asdasdasdasd",
+  "documentFolderPath": "$root\\Tests\\Functional\\Fixures\\templates",
+  "response": {
+    "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+    "status": "open",
+    "errors": [],
+    "urls": [ "http://localhost/index.html", "http://localhost/index.html" ],
+    "additionalData": [
+      {
+        "classname": "Book.ExportJSON",
+        "property": "json"
+      }
+    ]
+  },
+  "commands": [
+    {
+      "classname": "Book.ExportJSON",
+      "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indb",
+      "version": "8.0",
+      "exportFolderPath": "$root\\Tests\\Functional\\Fixures\\templates"
+    }
+  ]
+}

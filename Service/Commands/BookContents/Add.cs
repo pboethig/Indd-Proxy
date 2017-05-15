@@ -6,7 +6,7 @@ namespace Indd.Service.Commands.BookContents {
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class Add : Abstract,  Contracts.ICommand
+    public class Add : Abstract,  Contracts.ICommand
     {
         /// <summary>
         /// Saves dynamic command 

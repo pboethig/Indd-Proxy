@@ -5,7 +5,7 @@ namespace Indd.Service.Commands.TextFrames
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class SetContents : Indd.Service.Commands.Images.Base, Contracts.ICommand
+    public class SetContents : Indd.Service.Commands.Images.Base, Contracts.ICommand
     {
         /// <summary>
         /// Ids of used frame

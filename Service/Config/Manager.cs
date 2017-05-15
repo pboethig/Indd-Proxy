@@ -8,7 +8,7 @@ namespace Indd.Service.Config
     /// <summary>
     /// Handles User config files 
     /// </summary>
-    class Manager
+    public class Manager
     {
 
         /// <summary>

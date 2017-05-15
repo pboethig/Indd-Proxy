@@ -5,7 +5,7 @@ namespace Indd.Service.Commands.Document {
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class SaveAndClose : Abstract,  Contracts.ICommand
+    public class SaveAndClose : Abstract,  Contracts.ICommand
     {
         /// <summary>
         /// Saves dynamic command 

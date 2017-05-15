@@ -1,0 +1,57 @@
+[{
+  "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+  "status": "error",
+  "errors": [
+    "JobticketException: Book.ExportPDF throws an Error. \nInner Exception:Book.Export failed: Ausnahmefehler des Servers. (Ausnahme von HRESULT: 0x80010105 (RPC_E_SERVERFAULT)) \nTicketId: 213123-12312-3123-asdd-asdasdasdasd \nDocumentFolderPath: C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates \nPayload:\n {\r\n  \"classname\": \"Book.ExportPDF\",\r\n  \"uuid\": \"c2335ce8-7000-4287-8972-f355ed23bd7f\",\r\n  \"extension\": \"indb\",\r\n  \"version\": \"5.0 - Kopie\",\r\n  \"exportFolderPath\": \"C:\\\\Users\\\\win10\\\\Documents\\\\Visual Studio 2017\\\\Projects\\\\Indd-Proxy\\\\Tests\\\\Functional\\\\Fixures\\\\exports\",\r\n  \"ticketId\": \"213123-12312-3123-asdd-asdasdasdasd\",\r\n  \"documentFolderPath\": \"C:\\\\Users\\\\win10\\\\Documents\\\\Visual Studio 2017\\\\Projects\\\\Indd-Proxy\\\\Tests\\\\Functional\\\\Fixures\\\\templates\"\r\n}"
+  ],
+  "additionalData": [
+    {
+      "Key": "Book.ExportPDF.exportFilePath",
+      "Value": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\book_5.0 - Kopie.pdf"
+    }
+  ],
+  "sendRespondsExceptions": [
+    {
+      "ClassName": "System.Net.WebException",
+      "Message": "Der Remoteserver hat einen Fehler zurückgegeben: (405) Unzulässige Methode.",
+      "Data": null,
+      "InnerException": null,
+      "HelpURL": null,
+      "StackTraceString": "   bei System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)\r\n   bei System.Net.WebClient.UploadString(Uri address, String method, String data)\r\n   bei System.Net.WebClient.UploadString(String address, String method, String data)\r\n   bei Indd.Service.Commands.Response.send()",
+      "RemoteStackTraceString": null,
+      "RemoteStackIndex": 0,
+      "ExceptionMethod": "8\nUploadDataInternal\nSystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\nSystem.Net.WebClient\nByte[] UploadDataInternal(System.Uri, System.String, Byte[], System.Net.WebRequest ByRef)",
+      "HResult": -2146233079,
+      "Source": "System",
+      "WatsonBuckets": null
+    }
+  ],
+  "urls": [
+    "http://localhost/index.html",
+    "http://localhost/index.html"
+  ]
+},{
+  "id": "213123-12312-3123-asdd-asdasdasdasd",
+  "documentFolderPath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates",
+  "response": {
+    "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+    "status": "open",
+    "errors": [],
+    "urls": [ "http://localhost/index.html", "http://localhost/index.html" ],
+    "additionalData": [
+      {
+        "classname": "Book.ExportPDF",
+        "property": "exportFilePath"
+      }
+    ]
+  },
+  "commands": [
+    {
+      "classname": "Book.ExportPDF",
+      "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indb",
+      "version": "5.0 - Kopie",
+      "exportFolderPath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports"
+    }
+  ]
+}]

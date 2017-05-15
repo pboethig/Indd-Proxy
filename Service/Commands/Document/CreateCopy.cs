@@ -6,7 +6,7 @@ namespace Indd.Service.Commands.Document {
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class CreateCopy : Abstract,  Contracts.ICommand
+    public class CreateCopy : Abstract,  Contracts.ICommand
     {
         /// <summary>
         /// Path of sourceFolder

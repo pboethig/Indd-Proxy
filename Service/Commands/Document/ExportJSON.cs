@@ -5,7 +5,7 @@ namespace Indd.Service.Commands.Document {
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class ExportJSON : Abstract,  Contracts.ICommand
+    public class ExportJSON : Abstract,  Contracts.ICommand
     {
         /// <summary>
         /// Saves dynamic command 

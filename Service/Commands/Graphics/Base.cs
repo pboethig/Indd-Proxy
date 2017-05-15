@@ -3,7 +3,7 @@ using InDesignServer;
 
 namespace Indd.Service.Commands.Images
 {
-    class Base : Indd.Service.Commands.Abstract
+    public class Base : Indd.Service.Commands.Abstract
     {
 
         /// <summary>

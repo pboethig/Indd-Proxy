@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indd", "Indd.csproj", "{E2991B21-BA85-4CBD-BE07-C393B857FB02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSWindowsService", "CSWindowsService\CSWindowsService.csproj", "{1D9C418F-1130-403B-B707-B62949C0B8B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E2991B21-BA85-4CBD-BE07-C393B857FB02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2991B21-BA85-4CBD-BE07-C393B857FB02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2991B21-BA85-4CBD-BE07-C393B857FB02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D9C418F-1130-403B-B707-B62949C0B8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9C418F-1130-403B-B707-B62949C0B8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9C418F-1130-403B-B707-B62949C0B8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9C418F-1130-403B-B707-B62949C0B8B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

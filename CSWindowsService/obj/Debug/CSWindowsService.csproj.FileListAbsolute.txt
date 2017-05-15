@@ -1,0 +1,20 @@
+C:\Users\win10\Downloads\C#\Debug\CSWindowsService.exe
+C:\Users\win10\Downloads\C#\Debug\CSWindowsService.pdb
+C:\Users\win10\Downloads\C#\CSWindowsService\obj\Debug\CSWindowsService.csprojResolveAssemblyReference.cache
+C:\Users\win10\Downloads\C#\CSWindowsService\obj\Debug\CSWindowsService.SampleService.resources
+C:\Users\win10\Downloads\C#\CSWindowsService\obj\Debug\CSWindowsService.ProjectInstaller.resources
+C:\Users\win10\Downloads\C#\CSWindowsService\obj\Debug\CSWindowsService.csproj.GenerateResource.Cache
+C:\Users\win10\Downloads\C#\CSWindowsService\obj\Debug\CSWindowsService.exe
+C:\Users\win10\Downloads\C#\CSWindowsService\obj\Debug\CSWindowsService.pdb
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Debug\Tools\nssm.exe
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Debug\jobqueues.json
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Debug\storage.json
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Debug\CSWindowsService.exe.config
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Debug\CSWindowsService.exe
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Debug\CSWindowsService.pdb
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\CSWindowsService\obj\Debug\CSWindowsService.csprojResolveAssemblyReference.cache
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\CSWindowsService\obj\Debug\CSWindowsService.SampleService.resources
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\CSWindowsService\obj\Debug\CSWindowsService.ProjectInstaller.resources
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\CSWindowsService\obj\Debug\CSWindowsService.csproj.GenerateResource.Cache
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\CSWindowsService\obj\Debug\CSWindowsService.exe
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\CSWindowsService\obj\Debug\CSWindowsService.pdb

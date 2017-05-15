@@ -12,7 +12,7 @@ namespace Indd.Service.Commands.Graphics {
     /// <summary>
     /// Options to generate proxy
     /// </summary>
-    class RelinkAll : Indd.Service.Commands.Images.Base,   Contracts.ICommand
+    public class RelinkAll : Indd.Service.Commands.Images.Base,   Contracts.ICommand
     {
         /// <summary>
         /// BasePath of linked assets
