@@ -1,0 +1,42 @@
+[{
+  "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+  "status": "error",
+  "errors": [
+    "JobticketException: BookContents.Add throws an Error. \nInner Exception:Document.Export failed: Ausnahmefehler des Servers. (Ausnahme von HRESULT: 0x80010105 (RPC_E_SERVERFAULT)) \nTicketId: 213123-12312-3123-asdd-asdasdasdasd \nDocumentFolderPath: C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates \nPayload:\n {\r\n  \"classname\": \"BookContents.Add\",\r\n  \"uuid\": \"c2335ce8-7000-4287-8972-f355ed23bd7f\",\r\n  \"extension\": \"indb\",\r\n  \"version\": \"5.0 - Kopie\",\r\n  \"documentUuids\": [\r\n    {\r\n      \"uuid\": \"c2335ce8-7000-4287-8972-f355ed23bd7f\",\r\n      \"extension\": \"indd\",\r\n      \"version\": \"2.0\"\r\n    },\r\n    {\r\n      \"uuid\": \"c2335ce8-7000-4287-8972-f355ed23bd7f\",\r\n      \"extension\": \"indd\",\r\n      \"version\": \"3.0\"\r\n    }\r\n  ],\r\n  \"ticketId\": \"213123-12312-3123-asdd-asdasdasdasd\",\r\n  \"documentFolderPath\": \"C:\\\\Users\\\\win10\\\\Documents\\\\Visual Studio 2017\\\\Projects\\\\Indd-Proxy\\\\Tests\\\\Functional\\\\Fixures\\\\templates\"\r\n}"
+  ],
+  "additionalData": [],
+  "sendRespondsExceptions": [],
+  "urls": [
+    "http://www.test-cors.org/",
+    "http://www.test-cors.org/"
+  ]
+}, {
+  "id": "213123-12312-3123-asdd-asdasdasdasd",
+  "documentFolderPath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates",
+  "response": {
+    "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+    "status": "open",
+    "errors": [],
+    "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ]
+  },
+  "commands": [
+    {
+      "classname": "BookContents.Add",
+      "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indb",
+      "version": "5.0 - Kopie",
+      "documentUuids": [
+        {
+          "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+          "extension": "indd",
+          "version": "2.0"
+        },
+        {
+          "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+          "extension": "indd",
+          "version": "3.0"
+        }
+      ]
+    }
+  ]
+}]

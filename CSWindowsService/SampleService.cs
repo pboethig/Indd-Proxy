@@ -29,12 +29,15 @@ namespace CSWindowsService
 {
     public partial class SampleService : ServiceBase
     {
+        /// <summary>
+        /// Watcher
+        /// </summary>
+        private Indd.Service.Filesystem.Watcher watcher;
+
         public SampleService()
         {
             InitializeComponent();
 
-            this.stopping = false;
-            this.stoppedEvent = new ManualResetEvent(false);
         }
 
 
@@ -62,34 +65,40 @@ namespace CSWindowsService
         /// </remarks>
         protected override void OnStart(string[] args)
         {
-            // Log a service start message to the Application log.
-            this.eventLog1.WriteEntry("CSWindowsService in OnStart.");
+            try
+            {
+                Indd.Service.Config.Factory configFactory = new Indd.Service.Config.Factory();
 
-            // Queue the main service function for execution in a worker thread.
-            ThreadPool.QueueUserWorkItem(new WaitCallback(ServiceWorkerThread));
-        }
+                string jobIn = configFactory.getJobQueuePath("in");
 
+                watcher = new Indd.Service.Filesystem.Watcher(jobIn);
 
-        /// <summary>
-        /// The method performs the main function of the service. It runs on 
-        /// a thread pool worker thread.
-        /// </summary>
-        /// <param name="state"></param>
-        private void ServiceWorkerThread(object state)
-        {
+                // Process the list of files found in the directory. 
+                string[] fileEntries = System.IO.Directory.GetFiles((string)jobIn);
+
+                string path = "";
+
                 try
                 {
-                    Indd.Service.Filesystem.Watcher watcher = new Indd.Service.Filesystem.Watcher("C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\jobQueue\\In");
+                    foreach (string fileName in fileEntries)
+                    {
+                        path = fileName;
+
+                        System.IO.File.SetCreationTime(fileName, System.DateTime.Now);
+                    }
                 }
                 catch (System.Exception ex)
                 {
-                    Syslog.log(ex.Message);
+                    Syslog.log("Filesystem-Watcher : Error on setting filetime: " + System.DateTime.Now.ToString() +  " Path:" + path + " Exeption:" + ex.Message);
                 }
-            
-            // Signal the stopped event.
-            
-        }
 
+                Syslog.log("Filesystem-Watcher started now. Watch: " + jobIn, System.Diagnostics.EventLogEntryType.SuccessAudit);
+            }
+            catch (System.Exception ex)
+            {
+                Syslog.log(ex.Message);
+            }
+        }
 
         /// <summary>
         /// The function is executed when a Stop command is sent to the 
@@ -100,18 +109,17 @@ namespace CSWindowsService
         /// </summary>
         protected override void OnStop()
         {
-            // Log a service stop message to the Application log.
-            this.eventLog1.WriteEntry("CSWindowsService in OnStop.");
+            try
+            {
+                watcher.watcher.EnableRaisingEvents = false;
 
-            // Indicate that the service is stopping and wait for the finish 
-            // of the main service function (ServiceWorkerThread).
-            this.stopping = true;
-            this.stoppedEvent.WaitOne();
+                Syslog.log("Stopped Indd Service", System.Diagnostics.EventLogEntryType.SuccessAudit);
+            }
+            catch(System.Exception ex)
+            {
+                Syslog.log(ex.Message);
+            }
         }
-
-
-        private bool stopping;
-        private ManualResetEvent stoppedEvent;
 
         private void eventLog1_EntryWritten(object sender, System.Diagnostics.EntryWrittenEventArgs e)
         {

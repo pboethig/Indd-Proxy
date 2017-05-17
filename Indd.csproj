@@ -97,6 +97,7 @@
     <Compile Include="Service\Commands\Book\ExportPDF.cs" />
     <Compile Include="Service\Commands\Book\Open.cs" />
     <Compile Include="Service\Commands\Document\ExportJSON.cs" />
+    <Compile Include="Service\Config\Factory.cs" />
     <Compile Include="Service\CustomExport\Json\Book.cs" />
     <Compile Include="Service\CustomExport\Json\Types\BookContent.cs" />
     <Compile Include="Service\CustomExport\Json\Types\BookContents.cs" />

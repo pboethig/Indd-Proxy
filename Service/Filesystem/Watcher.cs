@@ -30,6 +30,12 @@ namespace Indd.Service.Filesystem
         public static string errorQueue;
 
         /// <summary>
+        /// watcher
+        /// </summary>
+        public FileSystemWatcher watcher;
+
+
+        /// <summary>
         /// Watcher
         /// </summary>
         /// <param name="path"></param>
@@ -39,7 +45,7 @@ namespace Indd.Service.Filesystem
 
             if (attachListener)
             { 
-                FileSystemWatcher watcher = new FileSystemWatcher();
+                this.watcher = new FileSystemWatcher();
 
                 watcher.NotifyFilter = NotifyFilters.Attributes |
                 NotifyFilters.CreationTime |
@@ -55,10 +61,7 @@ namespace Indd.Service.Filesystem
                 watcher.Changed += new FileSystemEventHandler(watcher_Changed);
                 watcher.EnableRaisingEvents = true;
                 watcher.Error += new ErrorEventHandler(WatcherError);
-
-
-                Console.ReadKey(); ;
-
+                
             }
         }
 
@@ -92,7 +95,7 @@ namespace Indd.Service.Filesystem
         }
         static void watcher_Changed(object sender, FileSystemEventArgs e)
         {
-            //observ(e);
+            observ(e);
         }
         static void watcher_Deleted(object sender, FileSystemEventArgs e)
         {
