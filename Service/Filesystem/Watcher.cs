@@ -33,8 +33,7 @@ namespace Indd.Service.Filesystem
         /// watcher
         /// </summary>
         public FileSystemWatcher watcher;
-
-
+        
         /// <summary>
         /// Watcher
         /// </summary>
@@ -74,7 +73,6 @@ namespace Indd.Service.Filesystem
             // This will throw an error at the
             // watcher.NotifyFilter line if it can't get the path.
             Console.WriteLine(watchException.Message);
-
         }
 
         /// <summary>
@@ -112,19 +110,19 @@ namespace Indd.Service.Filesystem
             observ(e);
         }
 
-           static void observ(FileSystemEventArgs e) {
+        static void observ(FileSystemEventArgs e) {
 
-            string targetPath = processQueue + "\\" + e.Name;
+        string targetPath = processQueue + "\\" + e.Name;
 
-            try
-            {
-                processTicket(targetPath, e.Name, e.FullPath);
-            }
-            catch(System.Exception ex)
-            {
-                Console.WriteLine(ex.Message) ;
-            }
+        try
+        {
+            processTicket(targetPath, e.Name, e.FullPath);
         }
+        catch(System.Exception ex)
+        {
+            Console.WriteLine(ex.Message) ;
+        }
+     }
 
         /// <summary>
         /// Process ticket

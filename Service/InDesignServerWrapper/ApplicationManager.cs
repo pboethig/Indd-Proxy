@@ -7,7 +7,7 @@ namespace Indd.Service.IndesignServerWrapper
     /// <summary>
     /// Contains application methods
     /// </summary>
-    class ApplicationMananger
+    public class ApplicationMananger
     {
         /// <summary>
         ///  Creates Instance of IndesignServer application

@@ -19,7 +19,6 @@
 
 #region Using directives
 using System.ServiceProcess;
-using System.Threading;
 using Indd.Service.Log;
 
 #endregion
@@ -33,6 +32,8 @@ namespace CSWindowsService
         /// Watcher
         /// </summary>
         private Indd.Service.Filesystem.Watcher watcher;
+
+        Indd.Service.IndesignServerWrapper.ApplicationMananger ApplicationManager = new Indd.Service.IndesignServerWrapper.ApplicationMananger();
 
         public SampleService()
         {
@@ -67,6 +68,8 @@ namespace CSWindowsService
         {
             try
             {
+                ApplicationManager.createInstance();
+
                 Indd.Service.Config.Factory configFactory = new Indd.Service.Config.Factory();
 
                 string jobIn = configFactory.getJobQueuePath("in");
@@ -112,8 +115,10 @@ namespace CSWindowsService
             try
             {
                 watcher.watcher.EnableRaisingEvents = false;
-
+                
                 Syslog.log("Stopped Indd Service", System.Diagnostics.EventLogEntryType.SuccessAudit);
+                
+                ApplicationManager.createInstance().Quit();
             }
             catch(System.Exception ex)
             {

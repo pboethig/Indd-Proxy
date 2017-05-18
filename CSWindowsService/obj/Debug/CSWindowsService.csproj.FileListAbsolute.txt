@@ -18,3 +18,5 @@ C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\CSWindowsService
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\CSWindowsService\obj\Debug\CSWindowsService.csproj.GenerateResource.Cache
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\CSWindowsService\obj\Debug\CSWindowsService.exe
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\CSWindowsService\obj\Debug\CSWindowsService.pdb
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\CSWindowsService\obj\Debug\Interop.InDesignServer.dll
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\CSWindowsService\obj\Debug\CSWindowsService.csproj.ResolveComReference.cache
