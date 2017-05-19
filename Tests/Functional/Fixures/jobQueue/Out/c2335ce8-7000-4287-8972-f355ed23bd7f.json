@@ -5,11 +5,11 @@
   "additionalData": [
     {
       "Key": "Document.CreateCopy.targetUuid",
-      "Value": "861bb52a-80fb-4778-9bd3-54b8103250d6"
+      "Value": "37c95c89-4f35-4305-b362-dec3a92b0d5c"
     },
     {
       "Key": "Document.CreateCopy.targetFolderPath",
-      "Value": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\Templates\\861bb52a-80fb-4778-9bd3-54b8103250d6"
+      "Value": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\Templates\\37c95c89-4f35-4305-b362-dec3a92b0d5c"
     }
   ],
   "sendRespondsExceptions": [],

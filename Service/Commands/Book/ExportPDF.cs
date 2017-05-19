@@ -30,7 +30,8 @@ namespace Indd.Service.Commands.Book {
 
                 this.buildExportFilePath();
 
-               this.book.Export(InDesignServer.idExportFormat.idPDFType, this.exportFilePath);
+                this.book.Export(InDesignServer.idExportFormat.idPDFType, this.exportFilePath);
+
             }
             catch (System.Exception ex)
             {

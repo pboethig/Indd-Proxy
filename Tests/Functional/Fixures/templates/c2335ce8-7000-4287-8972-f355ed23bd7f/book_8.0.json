@@ -3,7 +3,7 @@
   "Name": "8.0.indb",
   "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\8.0.indb",
   "Label": "",
-  "Index": 2,
+  "Index": 3,
   "Modified": false,
   "Saved": true,
   "BookContents": {
@@ -16,11 +16,11 @@
         "Label": "",
         "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\1.0.indd",
         "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f",
-        "Size": 2342912,
+        "Size": 2375680,
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
-          "Id": 2,
+          "Id": 24,
           "Name": "1.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\1.0.indd",
           "Label": "",
@@ -1171,7 +1171,7 @@
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
-          "Id": 4,
+          "Id": 26,
           "Name": "2.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\2.0.indd",
           "Label": "",
@@ -1891,7 +1891,7 @@
         "Status": 1852797549,
         "Document": {
           "Type": "Document",
-          "Id": 6,
+          "Id": 28,
           "Name": "4.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\4.0.indd",
           "Label": "",
@@ -2125,7 +2125,7 @@
                       "ItemLayer": 107,
                       "GeometricBounds": [
                         3.7000000000000011,
-                        1.8299999999999998,
+                        1.8299999999999999,
                         6.0400000000000018,
                         5.81
                       ],
@@ -2805,7 +2805,7 @@
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
-          "Id": 8,
+          "Id": 30,
           "Name": "3.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\3.0.indd",
           "Label": "",
@@ -3039,7 +3039,7 @@
                       "ItemLayer": 107,
                       "GeometricBounds": [
                         3.7000000000000011,
-                        1.8299999999999998,
+                        1.8299999999999999,
                         6.0400000000000018,
                         5.81
                       ],
@@ -3715,11 +3715,11 @@
         "Label": "",
         "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\7.0.indd",
         "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f",
-        "Size": 1306624,
+        "Size": 1359872,
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
-          "Id": 10,
+          "Id": 32,
           "Name": "7.0.indd",
           "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\7.0.indd",
           "Label": "",

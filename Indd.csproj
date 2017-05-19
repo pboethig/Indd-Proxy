@@ -96,6 +96,8 @@
     <Compile Include="Service\Commands\Book\ExportJSON.cs" />
     <Compile Include="Service\Commands\Book\ExportPDF.cs" />
     <Compile Include="Service\Commands\Book\Open.cs" />
+    <Compile Include="Service\Commands\Document\ExportXML.cs" />
+    <Compile Include="Service\Commands\Document\ExportIDML.cs" />
     <Compile Include="Service\Commands\Document\ExportJSON.cs" />
     <Compile Include="Service\Config\Factory.cs" />
     <Compile Include="Service\CustomExport\Json\Book.cs" />
@@ -139,8 +141,10 @@
     <Compile Include="Tests\Functional\Log\SyslogTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\BookContents\AddTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Book\ExportJSONTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Document\ExportXMLTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportJSONTest.cs" />
-    <Compile Include="Tests\Functional\Service\Commands\Document\ExportHTMLFX.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Document\ExportHTMLFXTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Document\ExportIDMLTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportPDFTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Book\BookOpenTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Book\ExportPDFTest.cs" />
@@ -186,6 +190,7 @@
     <None Include="Tests\Functional\Fixures\jobQueue\In\Book.ExportJSON.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportJSON.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportHTMLFX.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportIDML.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.SaveAndClose.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Graphics.SetLinks.V1.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\TextFrames.SetContents.json" />
