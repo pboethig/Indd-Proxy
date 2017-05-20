@@ -49,7 +49,11 @@ namespace Indd.Service.Config
                     return item.Value.ToString();
             }
 
-            throw new Indd.Exception.StoragePathNotFoundException("no jobqueuePath configured for: " + path);
+            string message = "no jobqueuePath configured for: " + path;
+
+            Indd.Service.Log.Syslog.log(message);
+
+            throw new System.Exception(message);
         }
 
         /// <summary>

@@ -1,0 +1,29 @@
+[{
+  "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+  "status": "ready",
+  "errors": [],
+  "additionalData": [],
+  "sendRespondsExceptions": [],
+  "urls": [
+    "http://www.test-cors.org/",
+    "http://www.test-cors.org/"
+  ]
+},{
+  "id": "213123-12312-3123-asdd-asdasdasdasd",
+  "documentFolderPath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates",
+  "response": {
+    "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+    "status": "open",
+    "errors": [],
+    "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ]
+  },
+  "commands": [
+    {
+      "classname": "Graphics.RelinkAll",
+      "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
+      "version": "Graphics.RelinkAll",
+      "basePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f"
+    }
+  ]
+}]

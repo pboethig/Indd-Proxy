@@ -25,7 +25,6 @@ namespace Indd.Service.Commands.Document {
         {
             try
             {
-
                 foreach (InDesignServer.Document _document in this.application.Documents)
                 {
                     if (_document.FullName == this.documentPath)
@@ -35,15 +34,10 @@ namespace Indd.Service.Commands.Document {
                         this.document.Save(this.documentPath, false, "autosave copy", true);
 
                         this.document.Close();
-
-                        //return true;
                     }
                 }
 
-                ///autosave document after opened it as copy
                 this.document = this.application.Open(this.documentPath);
-
-                //this.document.Save(this.documentPath, false, "autosave copy", true);
 
                 return true;
             }

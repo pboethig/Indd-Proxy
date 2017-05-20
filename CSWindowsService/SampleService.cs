@@ -20,9 +20,9 @@
 #region Using directives
 using System.ServiceProcess;
 using Indd.Service.Log;
+using System.Collections.Generic;
 
 #endregion
-
 
 namespace CSWindowsService
 {
@@ -33,7 +33,9 @@ namespace CSWindowsService
         /// </summary>
         private Indd.Service.Filesystem.Watcher watcher;
 
-        Indd.Service.IndesignServerWrapper.ApplicationMananger ApplicationManager = new Indd.Service.IndesignServerWrapper.ApplicationMananger();
+       private  List<Indd.Service.Filesystem.Watcher> watcherList = new List<Indd.Service.Filesystem.Watcher>();
+        
+       Indd.Service.IndesignServerWrapper.ApplicationMananger ApplicationManager = new Indd.Service.IndesignServerWrapper.ApplicationMananger();
 
         public SampleService()
         {
@@ -74,26 +76,22 @@ namespace CSWindowsService
 
                 string jobIn = configFactory.getJobQueuePath("in");
 
+                string jobIn2 = configFactory.getJobQueuePath("in2");
+
                 watcher = new Indd.Service.Filesystem.Watcher(jobIn);
 
+                watcher = new Indd.Service.Filesystem.Watcher(jobIn2);
+
+                watcherList.Add(watcher);
+                
                 // Process the list of files found in the directory. 
                 string[] fileEntries = System.IO.Directory.GetFiles((string)jobIn);
 
-                string path = "";
+                string[] fileEntries2 = System.IO.Directory.GetFiles((string)jobIn2);
 
-                try
-                {
-                    foreach (string fileName in fileEntries)
-                    {
-                        path = fileName;
+                this.touchFiles(fileEntries);
 
-                        System.IO.File.SetCreationTime(fileName, System.DateTime.Now);
-                    }
-                }
-                catch (System.Exception ex)
-                {
-                    Syslog.log("Filesystem-Watcher : Error on setting filetime: " + System.DateTime.Now.ToString() +  " Path:" + path + " Exeption:" + ex.Message);
-                }
+                this.touchFiles(fileEntries2);
 
                 Syslog.log("Filesystem-Watcher started now. Watch: " + jobIn, System.Diagnostics.EventLogEntryType.SuccessAudit);
             }
@@ -101,6 +99,30 @@ namespace CSWindowsService
             {
                 Syslog.log(ex.Message);
             }
+        }
+        
+        /// <summary>
+        /// Touches files
+        /// </summary>
+        /// <param name="fileEntries"></param>
+        void touchFiles(string[] fileEntries)
+        {
+            string path = "";
+            
+            try
+            {
+                foreach (string fileName in fileEntries)
+                {
+                    path = fileName;
+
+                    System.IO.File.SetCreationTime(fileName, System.DateTime.Now);
+                }
+            }
+            catch (System.Exception ex)
+            {
+                Syslog.log("Filesystem-Watcher : Error on setting filetime: " + System.DateTime.Now.ToString() + " Path:" + path + " Exeption:" + ex.Message);
+            }
+
         }
 
         /// <summary>
@@ -114,8 +136,13 @@ namespace CSWindowsService
         {
             try
             {
-                watcher.watcher.EnableRaisingEvents = false;
                 
+                foreach(Indd.Service.Filesystem.Watcher watcher in this.watcherList)
+                {
+                    watcher.watcher.EnableRaisingEvents = false;
+                }
+
+
                 Syslog.log("Stopped Indd Service", System.Diagnostics.EventLogEntryType.SuccessAudit);
                 
                 ApplicationManager.createInstance().Quit();
