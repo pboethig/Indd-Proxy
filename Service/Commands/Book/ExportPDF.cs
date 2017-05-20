@@ -38,6 +38,8 @@ namespace Indd.Service.Commands.Book {
                 throw new SystemException("Book.Export failed: " + ex.Message);
             }
 
+            this.book.Close();
+
             return true;
         }
 

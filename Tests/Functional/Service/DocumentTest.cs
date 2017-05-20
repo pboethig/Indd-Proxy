@@ -24,9 +24,9 @@
         {
             string uuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
 
-            InDesignServer.Document document = Indd.Service.Document.getDocument(uuid);
+            InDesignServer.Document document = Indd.Service.Document.getDocument(uuid, "Document.ExportIDML");
             
-            Assert.AreEqual(document.Name,  "1.0.indd");
+            Assert.AreEqual(document.Name, "Document.ExportIDML.indd");
         }
     }
 }

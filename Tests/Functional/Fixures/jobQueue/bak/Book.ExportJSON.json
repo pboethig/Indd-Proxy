@@ -18,7 +18,7 @@
       "classname": "Book.ExportJSON",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
       "extension": "indb",
-      "version": "8.0",
+      "version": "Book.ExportJSON",
       "exportFolderPath": "$root\\Tests\\Functional\\Fixures\\templates"
     }
   ]

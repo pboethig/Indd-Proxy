@@ -60,7 +60,6 @@ namespace Indd.Service.Filesystem
                 watcher.Changed += new FileSystemEventHandler(watcher_Changed);
                 watcher.EnableRaisingEvents = true;
                 watcher.Error += new ErrorEventHandler(WatcherError);
-                
             }
         }
 
@@ -68,10 +67,7 @@ namespace Indd.Service.Filesystem
         private static void WatcherError(object source, ErrorEventArgs e)
         {
             System.Exception watchException = e.GetException();
-            // We need to create new version of the object because the
-            // old one is now corrupted
-            // This will throw an error at the
-            // watcher.NotifyFilter line if it can't get the path.
+
             Console.WriteLine(watchException.Message);
         }
 

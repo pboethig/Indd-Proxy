@@ -31,6 +31,8 @@ namespace Indd.Service.Commands.Document {
                 this.buildExportFilePath();
 
                 this.document.Export(InDesignServer.idExportFormat.idPDFType, this.exportFilePath);
+
+                this.document.Close();
             }
             catch (System.Exception ex)
             {

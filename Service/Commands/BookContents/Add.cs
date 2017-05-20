@@ -53,11 +53,13 @@ namespace Indd.Service.Commands.BookContents {
                 }
 
                 this.book.Save(this.documentPath);
+
+                this.book.Close();
                 
             }
             catch (System.Exception ex)
             {
-                throw new SystemException("Document.Export failed: " + ex.Message);
+                throw new SystemException("BookContents.Add failed: " + ex.Message);
             }
 
 

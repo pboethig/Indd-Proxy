@@ -82,11 +82,19 @@ namespace Indd.Service.CustomExport.Json.Types
         {
             InDesignServer.Application application = (new ApplicationMananger()).createInstance();
 
-            InDesignServer.Document document = application.Open(this.FullName);
+            try
+            {
+                InDesignServer.Document document = application.Open(this.FullName);
 
-            this.Document = new Document(application.Open(this.FullName));
+                this.Document = new Document(application.Open(this.FullName));
 
-            document.Close();
+                document.Close();
+            }
+            catch (System.Exception ex)
+            {
+                throw new System.Exception("Indd.Service.CustomExport.Json.Types.setDocument failed for document: " + this.FullName);
+            }
+            
         }
     }
 }

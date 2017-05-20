@@ -18,7 +18,7 @@
       "classname": "Document.ExportPDF",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
       "extension": "indd",
-      "version": "1.0",
+      "version": "Document.ExportPDF",
       "exportFolderPath": "$root\\Tests\\Functional\\Fixures\\exports"
     }
   ]

@@ -26,7 +26,7 @@ namespace Indd.Service.Commands.Images
 
             string documentName = document.Name;
 
-            int targetObjectId;
+            int targetObjectId = 0;
 
             foreach (dynamic graphic in document.AllGraphics)
             {
@@ -49,6 +49,8 @@ namespace Indd.Service.Commands.Images
                     return true;
                 }
             }
+
+            throw new System.Exception("target frameId: " + targetObjectId.ToString() + "not found");
 
             return false;
         }

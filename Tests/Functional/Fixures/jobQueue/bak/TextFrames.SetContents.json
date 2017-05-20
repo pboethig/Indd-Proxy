@@ -12,14 +12,14 @@
       "classname": "TextFrames.SetContents",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
       "extension": "indd",
-      "version": "1.0",
+      "version": "TextFrames.SetContents",
       "frameIdToContentsMap": [
         {
-          "frameId": "7256",
+          "frameId": "3974",
           "contents": "Here is a text"
         },
         {
-          "frameId": "7233",
+          "frameId": "3951",
           "contents": "and here is another"
         }
       ]

@@ -34,7 +34,6 @@
 
             foreach (KeyValuePair<string, object> additionalDataItem in response.additionalData)
             {
-            
                 Assert.AreEqual(additionalDataItem.Key, "Book.ExportPDF.exportFilePath");
 
                 Assert.IsNotEmpty(additionalDataItem.Value.ToString());

@@ -30,15 +30,26 @@ namespace Indd.Service.Commands.TextFrames
 
                 this.frameIdToContentsMap = this.commandRequest.frameIdToContentsMap;
 
-                foreach (InDesignServer.TextFrame frame in this.document.TextFrames)
+                bool found = false;
+
+                string documentName = this.document.FullName;
+
+                int count = this.document.TextFrames.Count;
+
+                foreach (dynamic item in this.frameIdToContentsMap)
                 {
-                    foreach (dynamic item in this.frameIdToContentsMap)
+                    foreach (InDesignServer.TextFrame frame in this.document.TextFrames)
                     {
                         if (frame.Id == (int)item.frameId)
                         {
                             frame.Contents =(string) item.contents;
+
+                            found = true;
                         }
                     }
+
+                    if (found == false) throw new System.Exception("frame: " + item.frameId + " does not exist ");
+
                 }
             }
             catch (System.Exception ex)
@@ -46,7 +57,7 @@ namespace Indd.Service.Commands.TextFrames
                 throw new SystemException("TextFrames.SetContents: " + ex.Message);
             }
 
-            //this.document.Save(this.documentPath, false, "saved after set contents", true);
+            this.document.Save(this.documentPath, false, "saved after set contents", true);
 
             return true;
         }

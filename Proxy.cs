@@ -1,6 +1,6 @@
 ﻿using Indd.Contracts;
 using System.Collections.Generic;
-
+using System;
 using Indd.Service.Commands;
 using CommandListCliRequest = Indd.Cli.Request.CommandList;
 
@@ -27,7 +27,7 @@ namespace Indd
             if (whatchFolderResult != null)
             {
                 Watcher watcher = new Watcher(whatchFolderResult.Value.WatchFolder);
-
+                
                 return;
             }
 

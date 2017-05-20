@@ -59,10 +59,15 @@ namespace Indd.Service.CustomExport.Json.Types
             this.Modified = book.Modified;
 
             this.Saved = book.Saved;
-        
-            this.BookContents = new BookContents(book.BookContents); 
-        }
-      
 
+            try
+            {
+                this.BookContents = new BookContents(book.BookContents);
+            }
+            catch (System.Exception ex)
+            {
+                throw new System.Exception("Indd.Service.CustomExport.Book failed on book: " + book.FullName + " with inner exception: " + ex.Message);
+            }
+        }
     }
 }

@@ -38,6 +38,8 @@ namespace Indd.Service.Commands.Graphics {
                 this.basePath =this.commandRequest.basePath;
                 
                 this.relink(this.document, (string)this.commandRequest.basePath);
+
+                this.document.Close();
             }
             catch (System.Exception ex)
             {

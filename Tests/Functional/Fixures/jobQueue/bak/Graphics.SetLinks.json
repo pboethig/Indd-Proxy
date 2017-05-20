@@ -12,16 +12,16 @@
       "classname": "Graphics.SetLinks",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
       "extension": "indd",
-      "version": "1.0",
+      "version": "Graphics.SetLinks",
       "objectToImageLinkMap": [
         {
-          "objectId": "3222",
+          "objectId": "612",
           "imageId": "5e513f64-2dee-4e21-9871-53af41d6bf7b",
           "type": "jpg",
           "basePath": "$root\\Tests\\Functional\\Fixures\\assets"
         },
         {
-          "objectId": "3223",
+          "objectId": "611",
           "imageId": "8778687-78676876-54354-786786ghfhgf",
           "type": "jpg",
           "basePath": "$root\\Tests\\Functional\\Fixures\\assets"

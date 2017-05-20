@@ -10,7 +10,7 @@
         public void Setup()
         {
 
-            ticket = this.getTicket("c2335ce8-7000-4287-8972-f355ed23bd7f");
+            ticket = this.getTicket("Document.ExportPDF");
         }
 
         [TearDown]

@@ -24,7 +24,7 @@
         {
             string uuid = "c2335ce8-7000-4287-8972-f355ed23bd7f";
 
-            string version = "8.0";
+            string version = "Book.ExportJSON";
 
             string extension = "indb";
 

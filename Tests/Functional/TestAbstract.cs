@@ -30,7 +30,7 @@ namespace Indd.Tests.Functional
         public string getJobInQueue()
         {
             //return root + "\\Tests\\Functional\\Fixures\\jobQueue\\In";
-            string jobQueuePath = ConfigManager.getJobQueuePath("in");
+            string jobQueuePath = ConfigManager.getJobQueuePath("bak");
 
             return jobQueuePath;
         }

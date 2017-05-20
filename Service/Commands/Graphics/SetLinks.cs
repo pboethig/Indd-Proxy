@@ -50,6 +50,8 @@ namespace Indd.Service.Commands.Graphics {
                 throw new SystemException("Images.SetLinks: " + ex.Message);
             }
 
+            this.document.Close();
+
             return true;
         }
         

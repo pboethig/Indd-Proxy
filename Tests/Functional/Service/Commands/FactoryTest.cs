@@ -17,7 +17,7 @@
         [SetUp]
         public void Setup()
         {
-            ticket = this.getTicket("c2335ce8-7000-4287-8972-f355ed23bd7f");
+            ticket = this.getTicket("Document.Open");
         }
 
         [TearDown]
@@ -37,7 +37,6 @@
             {
 
             }
-            
         }
 
         /// <summary>
@@ -58,7 +57,7 @@
 
             Assert.IsNotEmpty(response.ticketId);
 
-            Assert.AreEqual(0, response.errors.Count);
+            Assert.IsEmpty(response.errors);
 
             Assert.AreEqual("ready", response.status);
 
@@ -73,16 +72,13 @@
             
             Assert.AreEqual("error", response.status);
 
-            Assert.AreEqual(1, response.errors.Count);
-
             Assert.AreEqual(commandFactory.ticketExceptions.Count, response.errors.Count);
         }
 
         [Test]
         public void CommandFactory_buildJsonResponse()
         {
-
-            ticket = this.getTicket("c2335ce8-7000-4287-8972-f355ed23bd7f");
+            ticket = this.getTicket("Document.Open");
 
             response = commandFactory.processTicket(ticket);
            
@@ -94,13 +90,13 @@
         [Test]
         public void CommandFactory_BuildAdditionalData()
         {
-            ticket = this.getTicket("c2335ce8-7000-4287-8972-f355ed23bd7f");
+            ticket = this.getTicket("Document.ExportIDML");
 
             response = commandFactory.processTicket(ticket);
 
             Assert.IsNotEmpty(response.additionalData);
 
-            Assert.AreEqual(2, response.additionalData.Count);
+            Assert.AreEqual(1, response.additionalData.Count);
 
             string jsonString = response.toJson();
 
@@ -112,7 +108,7 @@
         [Test]
         public void CommandFactory_sendResponse()
         {
-            ticket = this.getTicket("c2335ce8-7000-4287-8972-f355ed23bd7f");
+            ticket = this.getTicket("Document.Open");
 
             response = commandFactory.processTicket(ticket, false);
             
@@ -122,7 +118,7 @@
         [Test]
         public void CommandFactory_convertJsonTicket()
         {
-            string filePath = this.getJobInQueue() + "\\" + "c2335ce8-7000-4287-8972-f355ed23bd7f.json";
+            string filePath = this.getJobInQueue() + "\\" + "Document.Open.json";
 
             Factory factory = new Factory();
 

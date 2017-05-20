@@ -5,11 +5,11 @@
   "additionalData": [
     {
       "Key": "Document.ExportHTMLFX.exportFilePath",
-      "Value": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\document_6.0.html"
+      "Value": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\document_Document.ExportHTMLFX.html"
     },
     {
       "Key": "Document.ExportHTMLFX.exportWebResourcesPath",
-      "Value": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\document_6.0-web-resources"
+      "Value": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\document_Document.ExportHTMLFX-web-resources"
     }
   ],
   "sendRespondsExceptions": [],
@@ -41,7 +41,7 @@
       "classname": "Document.ExportHTMLFX",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
       "extension": "indd",
-      "version": "6.0",
+      "version": "Document.ExportHTMLFX",
       "exportFolderPath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports"
     }
   ]

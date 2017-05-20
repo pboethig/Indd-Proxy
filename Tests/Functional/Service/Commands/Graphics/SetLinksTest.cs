@@ -12,6 +12,16 @@
         }
 
         [Test]
+        public void Commands_Graphics_SetLinks()
+        {
+            ticket = base.getTicket("Graphics.SetLinks");
+
+            CommandResponse response = commandFactory.processTicket(ticket);
+
+            Assert.IsEmpty(response.errors);
+        }
+
+        [Test]
         public void Commands_Graphics_SetLinksV1()
         {
             ticket = base.getTicket("Graphics.SetLinks.V1");

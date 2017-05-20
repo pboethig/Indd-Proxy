@@ -33,8 +33,6 @@
 
             foreach (KeyValuePair<string, object> additionalDataItem in response.additionalData)
             {
-                
-
                 Assert.AreEqual(additionalDataItem.Key, "Book.ExportJSON.json");
 
                 Assert.AreEqual(additionalDataItem.Key, "Book.ExportJSON.json");

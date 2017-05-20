@@ -2,7 +2,7 @@
   "ticketId": "213123-12312-3123-asdd-asdasdasdasdsssssssss",
   "status": "error",
   "errors": [
-    "JobticketException: Document.Open throws an Error. \nInner Exception:document: C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7fssssss\\1.0.indd not found \nTicketId: 213123-12312-3123-asdd-asdasdasdasd \nDocumentFolderPath: C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates \nPayload:\n {\r\n  \"classname\": \"Document.Open\",\r\n  \"uuid\": \"c2335ce8-7000-4287-8972-f355ed23bd7fssssss\",\r\n  \"extension\": \"indd\",\r\n  \"version\": \"1.0\",\r\n  \"ticketId\": \"213123-12312-3123-asdd-asdasdasdasd\",\r\n  \"documentFolderPath\": \"C:\\\\Users\\\\win10\\\\Documents\\\\Visual Studio 2017\\\\Projects\\\\Indd-Proxy\\\\Tests\\\\Functional\\\\Fixures\\\\templates\"\r\n}"
+    "JobticketException: Document.Open throws an Error. \nInner Exception:document: C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7fssssss\\failingTesticket.indd not found \nTicketId: 213123-12312-3123-asdd-asdasdasdasd \nDocumentFolderPath: C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates \nPayload:\n {\r\n  \"classname\": \"Document.Open\",\r\n  \"uuid\": \"c2335ce8-7000-4287-8972-f355ed23bd7fssssss\",\r\n  \"extension\": \"indd\",\r\n  \"version\": \"failingTesticket\",\r\n  \"ticketId\": \"213123-12312-3123-asdd-asdasdasdasd\",\r\n  \"documentFolderPath\": \"C:\\\\Users\\\\win10\\\\Documents\\\\Visual Studio 2017\\\\Projects\\\\Indd-Proxy\\\\Tests\\\\Functional\\\\Fixures\\\\templates\"\r\n}"
   ],
   "additionalData": [],
   "sendRespondsExceptions": [],
@@ -24,7 +24,7 @@
       "classname": "Document.Open",
       "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7fssssss",
       "extension": "indd",
-      "version": "1.0"
+      "version": "failingTesticket"
     }
   ]
 }]

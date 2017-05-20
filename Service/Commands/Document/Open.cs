@@ -32,14 +32,18 @@ namespace Indd.Service.Commands.Document {
                     {
                         this.document = _document;
 
-                        return true;
+                        this.document.Save(this.documentPath, false, "autosave copy", true);
+
+                        this.document.Close();
+
+                        //return true;
                     }
                 }
 
                 ///autosave document after opened it as copy
-                this.document = this.application.Open(this.documentPath, InDesignServer.idOpenOptions.idOpenCopy);
+                this.document = this.application.Open(this.documentPath);
 
-                this.document.Save(this.documentPath, false, "autosave copy", true);
+                //this.document.Save(this.documentPath, false, "autosave copy", true);
 
                 return true;
             }
