@@ -1,0 +1,115 @@
+[{
+  "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+  "status": "ready",
+  "errors": [],
+  "additionalData": [
+    {
+      "Key": "Document.ExportJPG.pageThumbnailPaths",
+      "Value": [
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_9.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_10.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_11.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_12.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_13.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_14.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_15.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_16.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_17.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_18.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_19.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_20.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_21.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_22.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_23.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_24.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_25.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_26.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_27.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_28.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_29.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_30.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_31.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_32.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_33.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_34.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_35.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_36.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_37.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_38.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_39.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_40.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_41.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_42.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_43.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_44.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_45.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_46.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_47.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_48.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_49.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_50.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_51.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_52.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_53.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_54.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_55.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_56.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_57.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_58.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_59.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_60.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_61.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_62.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_63.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_64.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_65.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_66.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_67.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_68.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_69.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_70.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_71.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_72.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_73.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_74.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_75.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_76.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_77.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_78.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_79.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_80.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_81.jpg",
+        "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.ExportJPG_82.jpg"
+      ]
+    }
+  ],
+  "sendRespondsExceptions": [],
+  "urls": [
+    "http://www.test-cors.org/",
+    "http://www.test-cors.org/"
+  ]
+},{
+  "id": "213123-12312-3123-asdd-asdasdasdasd",
+  "documentFolderPath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates",
+  "response": {
+    "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+    "status": "open",
+    "errors": [],
+    "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ],
+    "additionalData": [
+      {
+        "classname": "Document.ExportJPG",
+        "property": "pageThumbnailPaths"
+      }
+    ]
+  },
+  "commands": [
+    {
+      "classname": "Document.ExportJPG",
+      "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
+      "version": "Document.ExportJPG",
+      "exportFolderPath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\exports"
+    }
+  ]
+}]

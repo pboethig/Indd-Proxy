@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Indd-proyx.exe" size="115168">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Indd-proyx.exe" size="122336">
       <assemblyIdentity name="Indd-proyx" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pEMOhrB/ODRQDidylG5Gb60utKGO+uykGWHqemdvJV4=</dsig:DigestValue>
+        <dsig:DigestValue>DVd5q9w+JO6q0TA+w7+Bv//VL4kMSkj+wKyXrdTE61E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

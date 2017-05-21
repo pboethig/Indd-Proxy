@@ -17,7 +17,7 @@
         [SetUp]
         public void Setup()
         {
-            ticket = this.getTicket("Document.Open");
+            ticket = this.getTicket("Document.ExportXML");
         }
 
         [TearDown]
@@ -78,7 +78,7 @@
         [Test]
         public void CommandFactory_buildJsonResponse()
         {
-            ticket = this.getTicket("Document.Open");
+            ticket = this.getTicket("Document.ExportXML");
 
             response = commandFactory.processTicket(ticket);
            
@@ -108,7 +108,7 @@
         [Test]
         public void CommandFactory_sendResponse()
         {
-            ticket = this.getTicket("Document.Open");
+            ticket = this.getTicket("Document.ExportXML");
 
             response = commandFactory.processTicket(ticket, false);
             
@@ -118,7 +118,7 @@
         [Test]
         public void CommandFactory_convertJsonTicket()
         {
-            string filePath = this.getJobInQueue() + "\\" + "Document.Open.json";
+            string filePath = this.getJobInQueue() + "\\" + "Document.ExportXML.json";
 
             Factory factory = new Factory();
 

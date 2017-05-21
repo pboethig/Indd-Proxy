@@ -51,13 +51,13 @@
         [Test]
         public void StorageConfigManager_getWrongJobQueuePath()
         {
-            Assert.Throws<Indd.Exception.StoragePathNotFoundException>(() => ConfigManager.getJobQueuePath("asenselesspath"));
+            Assert.Throws<System.Exception>(() => ConfigManager.getJobQueuePath("asenselesspath"));
         }
 
         [Test]
         public void StorageManager_getWrongStoragePath()
         {
-            Assert.Throws<Indd.Exception.StoragePathNotFoundException>(() => ConfigManager.getStoragePath("asenselesspath"));
+            Assert.Throws<System.Exception>(() => ConfigManager.getStoragePath("asenselesspath"));
         }
     }
 }
