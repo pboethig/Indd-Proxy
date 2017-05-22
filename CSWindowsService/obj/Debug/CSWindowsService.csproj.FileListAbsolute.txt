@@ -9,6 +9,7 @@ C:\Users\win10\Downloads\C#\CSWindowsService\obj\Debug\CSWindowsService.pdb
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Debug\Tools\nssm.exe
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Debug\jobqueues.json
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Debug\storage.json
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Debug\storage_share.json
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Debug\CSWindowsService.exe.config
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Debug\CSWindowsService.exe
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\Debug\CSWindowsService.pdb

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indd", "Indd.csproj", "{E29
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSWindowsService", "CSWindowsService\CSWindowsService.csproj", "{1D9C418F-1130-403B-B707-B62949C0B8B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQConsumerService", "RabbitMQConsumerService\RabbitMQConsumerService.csproj", "{6CBA2E6F-79D6-456D-A9ED-3191FB2E38DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1D9C418F-1130-403B-B707-B62949C0B8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D9C418F-1130-403B-B707-B62949C0B8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D9C418F-1130-403B-B707-B62949C0B8B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CBA2E6F-79D6-456D-A9ED-3191FB2E38DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBA2E6F-79D6-456D-A9ED-3191FB2E38DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBA2E6F-79D6-456D-A9ED-3191FB2E38DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBA2E6F-79D6-456D-A9ED-3191FB2E38DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

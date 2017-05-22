@@ -1,0 +1,51 @@
+[{
+  "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+  "status": "error",
+  "errors": [
+    "JobticketException: Document.CreateCopy throws an Error. \nInner Exception:document: \\\\vmware-host\\Shared Folders\\indd\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Document.CreateCopy.indd not found \nTicketId: 213123-12312-3123-asdd-asdasdasdasd \nDocumentFolderPath: \\\\vmware-host\\Shared Folders\\indd\\Tests\\Functional\\Fixures\\templates \nPayload:\n {\r\n  \"classname\": \"Document.CreateCopy\",\r\n  \"uuid\": \"c2335ce8-7000-4287-8972-f355ed23bd7f\",\r\n  \"extension\": \"indd\",\r\n  \"version\": \"Document.CreateCopy\",\r\n  \"serverless\": \"true\",\r\n  \"targetFolderPath\": \"\\\\\\\\vmware-host\\\\Shared Folders\\\\indd\\\\Tests\\\\Functional\\\\Fixures\\\\Templates\",\r\n  \"ticketId\": \"213123-12312-3123-asdd-asdasdasdasd\",\r\n  \"documentFolderPath\": \"\\\\\\\\vmware-host\\\\Shared Folders\\\\indd\\\\Tests\\\\Functional\\\\Fixures\\\\templates\"\r\n}"
+  ],
+  "additionalData": [
+    {
+      "Key": "Document.CreateCopy.targetUuid",
+      "Value": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "Key": "Document.CreateCopy.targetFolderPath",
+      "Value": null
+    }
+  ],
+  "sendRespondsExceptions": [],
+  "urls": [
+    "http://www.test-cors.org/",
+    "http://www.test-cors.org/"
+  ]
+},{
+  "id": "213123-12312-3123-asdd-asdasdasdasd",
+  "documentFolderPath": "\\\\vmware-host\\Shared Folders\\indd\\Tests\\Functional\\Fixures\\templates",
+  "response": {
+    "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+    "status": "open",
+    "errors": [],
+    "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ],
+    "additionalData": [
+      {
+        "classname": "Document.CreateCopy",
+        "property": "targetUuid"
+      },
+      {
+        "classname": "Document.CreateCopy",
+        "property": "targetFolderPath"
+      }
+    ]
+  },
+  "commands": [
+    {
+      "classname": "Document.CreateCopy",
+      "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
+      "version": "Document.CreateCopy",
+      "serverless": "true",
+      "targetFolderPath": "\\\\vmware-host\\Shared Folders\\indd\\Tests\\Functional\\Fixures\\Templates"
+    }
+  ]
+}]

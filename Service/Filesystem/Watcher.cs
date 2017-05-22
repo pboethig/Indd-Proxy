@@ -68,7 +68,7 @@ namespace Indd.Service.Filesystem
         {
             System.Exception watchException = e.GetException();
 
-            Console.WriteLine(watchException.Message);
+            Indd.Service.Log.Syslog.log("Watcher Error"+watchException.Message);
         }
 
         /// <summary>
@@ -116,7 +116,7 @@ namespace Indd.Service.Filesystem
         }
         catch(System.Exception ex)
         {
-            Console.WriteLine(ex.Message) ;
+                Indd.Service.Log.Syslog.log("Watcher Error" + ex.Message);
         }
      }
 

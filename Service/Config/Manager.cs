@@ -56,6 +56,29 @@ namespace Indd.Service.Config
             throw new System.Exception(message);
         }
 
+
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns>XDocument</returns>
+        public static dynamic getMessageQueueParameter(string parameter)
+        {
+            dynamic config = load("jobqueues");
+
+            dynamic messageQueue = config.messageQueue;
+
+            foreach (Newtonsoft.Json.Linq.JProperty item in messageQueue)
+            {
+                if (item.Name == parameter)
+                    return item.Value.ToString();
+            }
+
+            string message = "no parameter configured for: " + parameter;
+
+            Indd.Service.Log.Syslog.log(message);
+
+            throw new System.Exception(message);
+        }
+
         /// <summary>
         /// Loads a given configFile
         /// </summary>

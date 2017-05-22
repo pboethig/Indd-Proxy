@@ -138,6 +138,19 @@ namespace Indd.Service.Commands
         }
 
         /// <summary>
+        /// Loads a given configFile
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns>XDocument</returns>
+        public dynamic prepare(string jsonTicket)
+        {
+            jsonTicket = jsonTicket.Replace("$root", Indd.Service.Config.Factory.getRootDirectory().Replace("\\", "\\\\"));
+
+            return Indd.Helper.Json.Convert.deserializeObject(jsonTicket);
+        }
+
+
+        /// <summary>
         /// Writes Response and ticket to outfolder
         /// </summary>
         /// <param name="commandFactory"></param>

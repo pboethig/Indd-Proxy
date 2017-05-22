@@ -68,6 +68,8 @@ namespace Indd.Service.Config
             return Indd.Helper.Json.Convert.deserializeObject(fileContent);
         }
 
+       
+
         /// <summary>
         /// Returns app root directory
         /// </summary>

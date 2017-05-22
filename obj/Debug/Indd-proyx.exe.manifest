@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Indd-proyx.exe" size="122336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Indd-proyx.exe" size="124896">
       <assemblyIdentity name="Indd-proyx" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>DVd5q9w+JO6q0TA+w7+Bv//VL4kMSkj+wKyXrdTE61E=</dsig:DigestValue>
+        <dsig:DigestValue>qrJeTlQhojT1eX2VD2eChd3G/kt9wyzq8e9TBVUsGRU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,6 +86,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>AXBExhN/9Npc1nLPYz2kK9tsBVjLRz5x2fdbWR8ANCA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RabbitMQ.Client.dll" size="248320">
+      <assemblyIdentity name="RabbitMQ.Client" version="4.0.0.0" publicKeyToken="89E7D7C5FEBA84CE" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Fo36k/z64pDvPPrgKQHpUfDPEO4HmDFJl4VcZbR8Txs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

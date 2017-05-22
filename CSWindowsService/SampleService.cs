@@ -77,8 +77,14 @@ namespace CSWindowsService
                 string jobIn = configFactory.getJobQueuePath("in");
 
                 string jobIn2 = configFactory.getJobQueuePath("in2");
-
+                
+                jobIn = @""+ jobIn;
+                
+                jobIn2 = @""+jobIn2;
+                
                 watcher = new Indd.Service.Filesystem.Watcher(jobIn);
+
+                watcherList.Add(watcher);
 
                 watcher = new Indd.Service.Filesystem.Watcher(jobIn2);
 
@@ -93,7 +99,9 @@ namespace CSWindowsService
 
                 this.touchFiles(fileEntries2);
 
-                Syslog.log("Filesystem-Watcher started now. Watch: " + jobIn, System.Diagnostics.EventLogEntryType.SuccessAudit);
+                Syslog.log("Filesystem-Watcher1 started now. Watch: " + jobIn, System.Diagnostics.EventLogEntryType.SuccessAudit);
+
+                Syslog.log("Filesystem-Watcher2 started now. Watch: " + jobIn2, System.Diagnostics.EventLogEntryType.SuccessAudit);
             }
             catch (System.Exception ex)
             {

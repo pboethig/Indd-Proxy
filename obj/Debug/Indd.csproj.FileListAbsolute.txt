@@ -1,6 +1,7 @@
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Tools\nssm.exe
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\jobqueues.json
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\storage.json
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\storage_share.json
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Indd-proyx.exe.config
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Indd-proyx.exe.manifest
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Indd-proyx.application
@@ -9,9 +10,11 @@ C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Indd-p
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\CommandLine.dll
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Newtonsoft.Json.dll
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\nunit.framework.dll
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\RabbitMQ.Client.dll
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\CommandLine.xml
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\Newtonsoft.Json.xml
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\nunit.framework.xml
+C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\RabbitMQ.Client.xml
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Interop.InDesignServer.dll
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Indd.csproj.ResolveComReference.cache
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\obj\Debug\Indd-proyx.exe.manifest
