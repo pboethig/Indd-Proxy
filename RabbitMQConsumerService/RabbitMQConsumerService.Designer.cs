@@ -34,12 +34,12 @@
             // eventLog1
             // 
             this.eventLog1.Log = "Application";
-            this.eventLog1.Source = "CSWindowsService";
+            this.eventLog1.Source = "RabbitMQConsumerService";
             this.eventLog1.EntryWritten += new System.Diagnostics.EntryWrittenEventHandler(this.eventLog1_EntryWritten);
             // 
             // SampleService
             // 
-            this.ServiceName = "CSWindowsService";
+            this.ServiceName = "RabbitMQConsumerService";
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
 
         }

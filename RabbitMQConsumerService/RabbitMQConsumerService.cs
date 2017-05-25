@@ -79,6 +79,7 @@ namespace RabbitMQConsumerService
         /// </summary>
         protected override void OnStop()
         {
+            
 
         }
 

@@ -27,7 +27,7 @@ namespace Indd.Tests.Functional.Service.RabbitMQ
         {
             Consumer consumer = new Consumer();
             
-            Assert.IsNotNull(consumer);
+            //Assert.IsNotNull(consumer);
         }
         
     }

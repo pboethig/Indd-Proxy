@@ -1,0 +1,28 @@
+﻿{
+  "id": "213123-12312-3123-asdd-asdasdasdasd",
+  "documentFolderPath": "$root\\Tests\\Functional\\Fixures\\templates",
+  "response": {
+    "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
+    "status": "open",
+    "errors": [],
+    "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ]
+  },
+  "commands": [
+    {
+      "classname": "TextFrames.SetContents",
+      "uuid": "c2335ce8-7000-4287-8972-f355ed23bd7f",
+      "extension": "indd",
+      "version": "TextFrames.SetContents",
+      "frameIdToContentsMap": [
+        {
+          "frameId": "3974",
+          "contents": "Here is a text"
+        },
+        {
+          "frameId": "3951",
+          "contents": "and here is another"
+        }
+      ]
+    }
+  ]
+}

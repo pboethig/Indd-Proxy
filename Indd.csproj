@@ -214,20 +214,27 @@
     <None Include="Tests\Functional\Fixures\jobQueue\bak\Graphics.SetLinks.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\bak\Graphics.SetLinks.V1.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\bak\TextFrames.SetContents.json" />
-    <None Include="Tests\Functional\Fixures\jobQueue\In\c2335ce8-7000-4287-8972-f355ed23bd7f.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.CreateCopy.json" />
-    <None Include="Tests\Functional\Fixures\jobQueue\In\Book.ExportJSON.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Book.ExportJSON.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportJPG.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportJPGSinglePage.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportJSON.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportHTMLFX.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportIDML.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportXML.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.SaveAndClose.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Graphics.SetLinks.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Graphics.SetLinks.V1.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\TextFrames.SetContents.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Graphics.RelinkAll.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.Open.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Document.ExportPDF.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\Book.Open.json" />
-    <None Include="Tests\Functional\Fixures\jobQueue\In\Book.Contents.Add.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\In\Book.Contents.Add.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Tests\Functional\Fixures\jobQueue\In\Book.ExportPDF.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\In\failingTicket.json" />
     <None Include="Tests\Functional\Fixures\templates\c2335ce8-7000-4287-8972-f355ed23bd7f\1.0.indb" />

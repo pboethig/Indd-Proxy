@@ -12,7 +12,6 @@ using Indd.Service.Filesystem;
 /// </summary>
 namespace Indd
 {
-
     /// <summary>
     /// Implements main function
     /// </summary>
