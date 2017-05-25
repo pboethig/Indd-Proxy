@@ -8,7 +8,7 @@
     "process": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\jobQueue\\Process"
   },
   "messageQueue": {
-    "host": "172.20.0.8",
+    "host": "172.20.0.5",
     "port": "5672",
     "username": "guest",
     "password": "guest"

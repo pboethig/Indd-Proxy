@@ -77,7 +77,14 @@ namespace Indd.Service.Commands.Document {
                 System.IO.Directory.CreateDirectory((string)this.commandRequest.exportFolderPath); 
             }
 
-            this.exportFilePath = (string)this.commandRequest.exportFolderPath + "\\" + this.uuid + "\\"+ this.version+"_"+fileName+".jpg";
+            string uuidFolder =@""+ (string)this.commandRequest.exportFolderPath + "\\" + this.uuid;
+
+            if (!System.IO.Directory.Exists(uuidFolder))
+            {
+                System.IO.Directory.CreateDirectory(uuidFolder);
+            }
+            
+            this.exportFilePath = uuidFolder + "\\"+ this.version+"_"+fileName+".jpg";
 
             if (System.IO.File.Exists(this.exportFilePath))
             {
