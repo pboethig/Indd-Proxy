@@ -20,6 +20,11 @@ namespace Indd.Service.Commands
         public string status;
 
         /// <summary>
+        /// ClientEvent
+        /// </summary>
+        public string clientEvent;
+
+        /// <summary>
         /// Array of errormessages
         /// </summary>
         public List <string> errors = new List<string>();
@@ -50,11 +55,12 @@ namespace Indd.Service.Commands
         /// <param name="ticket"></param>
         public Response(dynamic ticket, List<List<System.Exception>> ticketExceptions, List<ICommand> commands)
         {
-
             this.ticket = ticket;
 
             this.ticketId = ticket.response.ticketId;
-            
+
+            this.clientEvent = ticket.response.clientEvent;
+
             this.status = "ready";
 
             this.handleAdditionalData(ticket, commands);
