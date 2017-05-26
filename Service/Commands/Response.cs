@@ -40,11 +40,19 @@ namespace Indd.Service.Commands
         public dynamic urls;
 
         /// <summary>
+        /// Ticket
+        /// </summary>
+        public dynamic ticket;
+
+        /// <summary>
         /// Saves RequestData
         /// </summary>
         /// <param name="ticket"></param>
         public Response(dynamic ticket, List<List<System.Exception>> ticketExceptions, List<ICommand> commands)
         {
+
+            this.ticket = ticket;
+
             this.ticketId = ticket.response.ticketId;
             
             this.status = "ready";
@@ -157,20 +165,28 @@ namespace Indd.Service.Commands
 
             List<string> responses = new List<string>();
 
+            string currentUrl = "";
+
             try
             {
                 foreach (string url in urls)
                 {
-                    client.Headers[HttpRequestHeader.ContentType] = "application/json";
+                    string json = this.toJson();
 
-                    //string response = client.UploadString(url, "POST", this.toJson());
+                    currentUrl = url;
+                    
+                    client.Headers.Add(HttpRequestHeader.ContentType, "application/json");
 
-                    //responses.Add(response);
+                    string response = client.UploadString(url, "POST", json);
+                    
+                    responses.Add(response);
+
+                    Indd.Service.Log.Syslog.log("Sending response success: Response:\n"+response+" \nPayload:  " + json, System.Diagnostics.EventLogEntryType.SuccessAudit);
                 }
             }
             catch (System.Exception ex)
             {
-                Indd.Service.Log.Syslog.log("Sending response failed: " + ex.Message, System.Diagnostics.EventLogEntryType.Warning);
+                Indd.Service.Log.Syslog.log("Sending response failed: " + ex.Message + "\ncurrentUrl: " + currentUrl +  "\nTicketData: " + this.ticket );
 
                 this.sendRespondsExceptions.Add(ex);
             }
