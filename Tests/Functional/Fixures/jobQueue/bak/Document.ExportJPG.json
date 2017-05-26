@@ -5,7 +5,7 @@
     "ticketId": "213123-12312-3123-asdd-asdasdasdasd",
     "status": "open",
     "errors": [],
-    "urls": [ "http://www.test-cors.org/", "http://www.test-cors.org/" ],
+    "urls": [ "http://172.17.0.1:8089/webhooks/indesignserver", "http://172.17.0.1:8089/webhooks/indesignserver" ],
     "additionalData": [
       {
         "classname": "Document.ExportJPG",
