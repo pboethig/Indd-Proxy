@@ -19,11 +19,11 @@ namespace Indd.Service.IndesignServerWrapper
 
             try
             {
-                return (Application)Activator.CreateInstance(type, true); 
+                return (Application)Activator.CreateInstance(type); 
             }
             catch (System.Exception ex)
             {
-                Syslog.log("could not get IndesignServer instance: " + ex.Message);
+                Syslog.log("Indd-Applicationmanager:  could not get IndesignServer instance: " + ex.Message);
 
                 Environment.Exit(0);
             }

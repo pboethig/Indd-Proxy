@@ -35,9 +35,12 @@ namespace Indd.Service.RabbitMQ
                 var body = ea.Body;
                 var message = Encoding.UTF8.GetString(body);
                 processQueue(message);
+                channel.BasicAck(ea.DeliveryTag, false);
             };
 
-            channel.BasicConsume(queue: "JobIn1", noAck: true, consumer: consumer);
+            channel.BasicConsume(queue: "JobIn1", noAck: false, consumer: consumer);
+
+            
         }
 
         void processQueue(string message)
