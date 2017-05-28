@@ -37,8 +37,6 @@
                 foreach (string filePath in additionalDataItem.Value)
                 {
                     Assert.IsTrue(System.IO.File.Exists(filePath));
-
-                    System.IO.File.Delete(filePath);
                 }
             }
         }

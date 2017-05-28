@@ -6,7 +6,7 @@
     "status": "open",
     "errors": [],
     "urls": [ "http://172.17.0.1:8089/webhooks/indesignserver", "http://172.17.0.1:8089/webhooks/indesignserver" ],
-    "clientEvent": "Mittax\\MediaConverterBundle\\Event\\Converter\\InDesign\\LowresCreated",
+    "clientEvent": "indesignserver.lowres.created",
     "additionalData": [
       {
         "classname": "Document.ExportJPG",

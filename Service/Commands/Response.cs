@@ -173,11 +173,15 @@ namespace Indd.Service.Commands
 
             string currentUrl = "";
 
+            string json = "";
+
+            string responseText = "";
+
             try
             {
                 foreach (string url in urls)
                 {
-                    string json = this.toJson();
+                    json = this.toJson();
 
                     currentUrl = url;
                     
@@ -190,9 +194,20 @@ namespace Indd.Service.Commands
                     Indd.Service.Log.Syslog.log("Sending response success: Response:\n"+response+" \nPayload:  " + json, System.Diagnostics.EventLogEntryType.SuccessAudit);
                 }
             }
-            catch (System.Exception ex)
+            catch (WebException ex)
             {
-                Indd.Service.Log.Syslog.log("Sending response failed: " + ex.Message + "\ncurrentUrl: " + currentUrl +  "\nTicketData: " + this.ticket );
+                var responseStream = ex.Response?.GetResponseStream();
+
+                if (responseStream != null)
+                {
+                    using (var reader = new System.IO.StreamReader(responseStream))
+                    {
+                        responseText = "\nErrorMessage: " + reader.ReadToEnd();
+                    }
+                }
+
+
+                Indd.Service.Log.Syslog.log("Sending response failed: " + ex.Message + responseText +  "\ncurrentUrl: " + currentUrl +  "\n original payload:\n" + json);
 
                 this.sendRespondsExceptions.Add(ex);
             }
