@@ -1,7 +1,7 @@
 {
   "Type": "Book",
   "Name": "Book.ExportJSON.indb",
-  "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Book.ExportJSON.indb",
+  "FullName": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\Book.ExportJSON.indb",
   "Label": "",
   "Index": 1,
   "Modified": false,
@@ -14,15 +14,15 @@
         "Id": 50,
         "Index": 1,
         "Label": "",
-        "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\2.0.indd",
-        "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent",
+        "FullName": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\2.0.indd",
+        "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent",
         "Size": 1843200,
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
           "Id": 2,
           "Name": "2.0.indd",
-          "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\2.0.indd",
+          "FullName": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\2.0.indd",
           "Label": "",
           "Index": 1,
           "Visible": false,
@@ -98,7 +98,7 @@
                             "Name": "5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
                             "Label": "",
                             "Index": 3,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
                             "AssetURL": "",
                             "AssetID": ""
                           }
@@ -134,7 +134,7 @@
                             "Name": "8778687-78676876-54354-786786ghfhgf.jpg",
                             "Label": "",
                             "Index": 2,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\assets\\8778687-78676876-54354-786786ghfhgf.jpg",
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\8778687-78676876-54354-786786ghfhgf.jpg",
                             "AssetURL": "",
                             "AssetID": ""
                           }
@@ -734,15 +734,15 @@
         "Id": 55,
         "Index": 2,
         "Label": "",
-        "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\3.0.indd",
-        "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent",
+        "FullName": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\3.0.indd",
+        "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent",
         "Size": 2695168,
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
           "Id": 4,
           "Name": "3.0.indd",
-          "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\3.0.indd",
+          "FullName": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\3.0.indd",
           "Label": "",
           "Index": 1,
           "Visible": false,
@@ -818,7 +818,7 @@
                             "Name": "5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
                             "Label": "",
                             "Index": 3,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
                             "AssetURL": "",
                             "AssetID": ""
                           }
@@ -854,7 +854,7 @@
                             "Name": "8778687-78676876-54354-786786ghfhgf.jpg",
                             "Label": "",
                             "Index": 2,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\8778687-78676876-54354-786786ghfhgf.jpg",
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\8778687-78676876-54354-786786ghfhgf.jpg",
                             "AssetURL": "",
                             "AssetID": ""
                           }
@@ -1648,15 +1648,15 @@
         "Id": 58,
         "Index": 3,
         "Label": "",
-        "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\4.0.indd",
-        "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent",
+        "FullName": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\4.0.indd",
+        "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent",
         "Size": 2695168,
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
           "Id": 6,
           "Name": "4.0.indd",
-          "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\4.0.indd",
+          "FullName": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\4.0.indd",
           "Label": "",
           "Index": 1,
           "Visible": false,
@@ -1732,7 +1732,7 @@
                             "Name": "5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
                             "Label": "",
                             "Index": 3,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
                             "AssetURL": "",
                             "AssetID": ""
                           }
@@ -1768,7 +1768,7 @@
                             "Name": "8778687-78676876-54354-786786ghfhgf.jpg",
                             "Label": "",
                             "Index": 2,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\8778687-78676876-54354-786786ghfhgf.jpg",
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\8778687-78676876-54354-786786ghfhgf.jpg",
                             "AssetURL": "",
                             "AssetID": ""
                           }
@@ -2562,15 +2562,15 @@
         "Id": 63,
         "Index": 4,
         "Label": "",
-        "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\6.0.indd",
-        "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent",
+        "FullName": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\6.0.indd",
+        "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent",
         "Size": 3444736,
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
           "Id": 8,
           "Name": "6.0.indd",
-          "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\6.0.indd",
+          "FullName": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\6.0.indd",
           "Label": "",
           "Index": 1,
           "Visible": false,
@@ -2646,7 +2646,7 @@
                             "Name": "5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
                             "Label": "",
                             "Index": 3,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
                             "AssetURL": "",
                             "AssetID": ""
                           }
@@ -2682,7 +2682,7 @@
                             "Name": "8778687-78676876-54354-786786ghfhgf.jpg",
                             "Label": "",
                             "Index": 2,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\assets\\8778687-78676876-54354-786786ghfhgf.jpg",
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\8778687-78676876-54354-786786ghfhgf.jpg",
                             "AssetURL": "",
                             "AssetID": ""
                           }
@@ -2766,7 +2766,7 @@
                             "Name": "TC9990701-IMG03.jpg",
                             "Label": "",
                             "Index": 6,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\TC9990701-IMG03.jpg",
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\TC9990701-IMG03.jpg",
                             "AssetURL": "",
                             "AssetID": ""
                           }
@@ -2802,7 +2802,7 @@
                             "Name": "TC9990701-IMG02.jpg",
                             "Label": "",
                             "Index": 5,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\TC9990701-IMG02.jpg",
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\TC9990701-IMG02.jpg",
                             "AssetURL": "",
                             "AssetID": ""
                           }
@@ -3713,15 +3713,15 @@
         "Id": 66,
         "Index": 5,
         "Label": "",
-        "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\1.0.indd",
-        "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent",
-        "Size": 1495040,
+        "FullName": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\1.0.indd",
+        "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f",
+        "Size": 2400256,
         "Status": 1148150596,
         "Document": {
           "Type": "Document",
           "Id": 10,
           "Name": "1.0.indd",
-          "FullName": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\BookContent\\1.0.indd",
+          "FullName": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\1.0.indd",
           "Label": "",
           "Index": 1,
           "Visible": false,
@@ -3754,7 +3754,7 @@
                 {
                   "Type": "Page",
                   "Id": 294,
-                  "Name": "8",
+                  "Name": "1",
                   "Label": "",
                   "Index": 1,
                   "PageColor": 1346594413,
@@ -3785,7 +3785,7 @@
                       "Images": [
                         {
                           "Type": "Image",
-                          "Id": 3297,
+                          "Id": 3866,
                           "Name": "",
                           "Label": "",
                           "Index": 1,
@@ -3797,7 +3797,7 @@
                             "Name": "5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
                             "Label": "",
                             "Index": 3,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg",
                             "AssetURL": "",
                             "AssetID": ""
                           }
@@ -3821,7 +3821,7 @@
                       "Images": [
                         {
                           "Type": "Image",
-                          "Id": 3300,
+                          "Id": 3869,
                           "Name": "",
                           "Label": "",
                           "Index": 1,
@@ -3833,7 +3833,7 @@
                             "Name": "8778687-78676876-54354-786786ghfhgf.jpg",
                             "Label": "",
                             "Index": 2,
-                            "FilePath": "C:\\Users\\win10\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\assets\\8778687-78676876-54354-786786ghfhgf.jpg",
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\8778687-78676876-54354-786786ghfhgf.jpg",
                             "AssetURL": "",
                             "AssetID": ""
                           }
@@ -3858,6 +3858,437 @@
                     }
                   ],
                   "TextFrames": []
+                }
+              ]
+            },
+            {
+              "Type": "Spread",
+              "Id": 3681,
+              "Name": "",
+              "Label": "",
+              "Index": 2,
+              "PageTransitionDirection": "idNotApplicable",
+              "PageTransitionDuration": "idMedium",
+              "PageTransitionType": "idNone",
+              "Pages": [
+                {
+                  "Type": "Page",
+                  "Id": 3686,
+                  "Name": "2",
+                  "Label": "",
+                  "Index": 1,
+                  "PageColor": 1346594413,
+                  "Bounds": [
+                    0.0,
+                    0.0,
+                    11.0,
+                    8.5
+                  ],
+                  "DocumentOffset": 2,
+                  "OptionalPage": false,
+                  "Side": 1970496888,
+                  "Rectangles": [
+                    {
+                      "Type": "Rectangle",
+                      "Id": 4009,
+                      "Name": "",
+                      "Label": "",
+                      "Index": 1,
+                      "Visible": true,
+                      "ItemLayer": 107,
+                      "GeometricBounds": [
+                        6.5269444444444451,
+                        0.2169444444444445,
+                        10.413055555555559,
+                        7.8830555555555542
+                      ],
+                      "Images": [
+                        {
+                          "Type": "Image",
+                          "Id": 4011,
+                          "Name": "",
+                          "Label": "",
+                          "Index": 1,
+                          "ItemLayer": 107,
+                          "Visible": true,
+                          "Link": {
+                            "Type": "Link",
+                            "Id": 4015,
+                            "Name": "TC9990701-IMG03.jpg",
+                            "Label": "",
+                            "Index": 6,
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\TC9990701-IMG03.jpg",
+                            "AssetURL": "",
+                            "AssetID": ""
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "Type": "Rectangle",
+                      "Id": 3883,
+                      "Name": "",
+                      "Label": "",
+                      "Index": 2,
+                      "Visible": true,
+                      "ItemLayer": 107,
+                      "GeometricBounds": [
+                        0.50694444444444442,
+                        2.0969444444444445,
+                        2.0330555555555572,
+                        8.3830555555555542
+                      ],
+                      "Images": [
+                        {
+                          "Type": "Image",
+                          "Id": 3885,
+                          "Name": "",
+                          "Label": "",
+                          "Index": 1,
+                          "ItemLayer": 107,
+                          "Visible": true,
+                          "Link": {
+                            "Type": "Link",
+                            "Id": 3889,
+                            "Name": "TC9990701-IMG02.jpg",
+                            "Label": "",
+                            "Index": 5,
+                            "FilePath": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy\\Tests\\Functional\\Fixures\\templates\\c2335ce8-7000-4287-8972-f355ed23bd7f\\TC9990701-IMG02.jpg",
+                            "AssetURL": "",
+                            "AssetID": ""
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "Type": "Rectangle",
+                      "Id": 3878,
+                      "Name": "",
+                      "Label": "",
+                      "Index": 3,
+                      "Visible": true,
+                      "ItemLayer": 107,
+                      "GeometricBounds": [
+                        0.50694444444444442,
+                        0.2169444444444445,
+                        2.0330555555555572,
+                        1.9230555555555553
+                      ],
+                      "Images": []
+                    }
+                  ],
+                  "TextFrames": [
+                    {
+                      "Type": "TextFrame",
+                      "Id": 3963,
+                      "Name": "",
+                      "Label": "",
+                      "Index": 1,
+                      "Visible": true,
+                      "ItemLayer": 107,
+                      "GeometricBounds": [
+                        3.42,
+                        3.77,
+                        6.0400000000000018,
+                        8.0300000000000011
+                      ],
+                      "Paragraphs": [
+                        {
+                          "Type": "Paragraph",
+                          "Contents": "Lantur, torae optae pero te re rest ant.\r",
+                          "FontStyle": "Roman",
+                          "Index": 1,
+                          "AppliedParagraphStyle": {
+                            "Type": "ParagraphStyle",
+                            "Id": 53,
+                            "Index": 1,
+                            "Name": "[Kein Absatzformat]",
+                            "Label": "",
+                            "AppliedFontFullName": "Die angeforderte Skripteigenschaft ist nicht für die Schriftart verfügbar."
+                          },
+                          "AppliedCharacterStyle": {
+                            "Type": "CharacterStyle",
+                            "Id": 54,
+                            "Name": "[Ohne]",
+                            "Label": "",
+                            "Index": 1,
+                            "AppliedFont": "",
+                            "FontStyle": 1851876449,
+                            "Position": 1851876449
+                          },
+                          "AppliedFont": {
+                            "Type": "Font",
+                            "Index": 0,
+                            "Location": null,
+                            "Name": "Times\tRoman",
+                            "Family": "Times",
+                            "FontStyleName": "Roman",
+                            "PostScriptName": "Times-Roman",
+                            "FullName": null,
+                            "FullNameNative": null,
+                            "FontType": null
+                          },
+                          "Images": []
+                        },
+                        {
+                          "Type": "Paragraph",
+                          "Contents": "Doloritatem doluptas alicaes eruntur? Quiati quas maiosam eatur? Quid earum exerum quides et eicidig nimusapid mo offic tet est, sum coria volora consequatius dolora dolectem verum volorument as paribus.\r",
+                          "FontStyle": "Roman",
+                          "Index": 42,
+                          "AppliedParagraphStyle": {
+                            "Type": "ParagraphStyle",
+                            "Id": 53,
+                            "Index": 1,
+                            "Name": "[Kein Absatzformat]",
+                            "Label": "",
+                            "AppliedFontFullName": "Die angeforderte Skripteigenschaft ist nicht für die Schriftart verfügbar."
+                          },
+                          "AppliedCharacterStyle": {
+                            "Type": "CharacterStyle",
+                            "Id": 54,
+                            "Name": "[Ohne]",
+                            "Label": "",
+                            "Index": 1,
+                            "AppliedFont": "",
+                            "FontStyle": 1851876449,
+                            "Position": 1851876449
+                          },
+                          "AppliedFont": {
+                            "Type": "Font",
+                            "Index": 0,
+                            "Location": null,
+                            "Name": "Times\tRoman",
+                            "Family": "Times",
+                            "FontStyleName": "Roman",
+                            "PostScriptName": "Times-Roman",
+                            "FullName": null,
+                            "FullNameNative": null,
+                            "FontType": null
+                          },
+                          "Images": []
+                        },
+                        {
+                          "Type": "Paragraph",
+                          "Contents": "Dae reperum volorem lit eum necae offic te nonem ipit optur sequas et volut quo cum di core seque pos sunt ut ut qui nonsequiatem ium apidem fuga. Us, et voluptatem que est, ulpa cus doluptatibus dempos nos doluptat.\r",
+                          "FontStyle": "Roman",
+                          "Index": 246,
+                          "AppliedParagraphStyle": {
+                            "Type": "ParagraphStyle",
+                            "Id": 53,
+                            "Index": 1,
+                            "Name": "[Kein Absatzformat]",
+                            "Label": "",
+                            "AppliedFontFullName": "Die angeforderte Skripteigenschaft ist nicht für die Schriftart verfügbar."
+                          },
+                          "AppliedCharacterStyle": {
+                            "Type": "CharacterStyle",
+                            "Id": 54,
+                            "Name": "[Ohne]",
+                            "Label": "",
+                            "Index": 1,
+                            "AppliedFont": "",
+                            "FontStyle": 1851876449,
+                            "Position": 1851876449
+                          },
+                          "AppliedFont": {
+                            "Type": "Font",
+                            "Index": 0,
+                            "Location": null,
+                            "Name": "Times\tRoman",
+                            "Family": "Times",
+                            "FontStyleName": "Roman",
+                            "PostScriptName": "Times-Roman",
+                            "FullName": null,
+                            "FullNameNative": null,
+                            "FontType": null
+                          },
+                          "Images": []
+                        },
+                        {
+                          "Type": "Paragraph",
+                          "Contents": "Et ipsunt autem quae pos aut ut la volupta taerum quia imporitibus et es sit lis doluptatem nonsequiam quat landae comnihic temporrum que prem il incieni debit de optaten daesequidit, velia simpores rehenduntem essinim invelissi",
+                          "FontStyle": "Roman",
+                          "Index": 463,
+                          "AppliedParagraphStyle": {
+                            "Type": "ParagraphStyle",
+                            "Id": 53,
+                            "Index": 1,
+                            "Name": "[Kein Absatzformat]",
+                            "Label": "",
+                            "AppliedFontFullName": "Die angeforderte Skripteigenschaft ist nicht für die Schriftart verfügbar."
+                          },
+                          "AppliedCharacterStyle": {
+                            "Type": "CharacterStyle",
+                            "Id": 54,
+                            "Name": "[Ohne]",
+                            "Label": "",
+                            "Index": 1,
+                            "AppliedFont": "",
+                            "FontStyle": 1851876449,
+                            "Position": 1851876449
+                          },
+                          "AppliedFont": {
+                            "Type": "Font",
+                            "Index": 0,
+                            "Location": null,
+                            "Name": "Times\tRoman",
+                            "Family": "Times",
+                            "FontStyleName": "Roman",
+                            "PostScriptName": "Times-Roman",
+                            "FullName": null,
+                            "FullNameNative": null,
+                            "FontType": null
+                          },
+                          "Images": []
+                        }
+                      ]
+                    },
+                    {
+                      "Type": "TextFrame",
+                      "Id": 3937,
+                      "Name": "",
+                      "Label": "",
+                      "Index": 2,
+                      "Visible": true,
+                      "ItemLayer": 107,
+                      "GeometricBounds": [
+                        3.42,
+                        0.21000000000000008,
+                        6.0400000000000018,
+                        3.67
+                      ],
+                      "Paragraphs": [
+                        {
+                          "Type": "Paragraph",
+                          "Contents": "Gia idunt. Fuga. Incienienis et dollut occum con et ea cum que eatem ra qui nobis que commolo reperis cus assi audictet antemporiam derum etur accus ent eum conet laborestium reriae adi ut fugia saessit, volor raerspereium et a cumet qui voluptur? Qui sunt min por ma iliquisqui quis dit et voluptatibus accus.\r",
+                          "FontStyle": "Roman",
+                          "Index": 1,
+                          "AppliedParagraphStyle": {
+                            "Type": "ParagraphStyle",
+                            "Id": 53,
+                            "Index": 1,
+                            "Name": "[Kein Absatzformat]",
+                            "Label": "",
+                            "AppliedFontFullName": "Die angeforderte Skripteigenschaft ist nicht für die Schriftart verfügbar."
+                          },
+                          "AppliedCharacterStyle": {
+                            "Type": "CharacterStyle",
+                            "Id": 54,
+                            "Name": "[Ohne]",
+                            "Label": "",
+                            "Index": 1,
+                            "AppliedFont": "",
+                            "FontStyle": 1851876449,
+                            "Position": 1851876449
+                          },
+                          "AppliedFont": {
+                            "Type": "Font",
+                            "Index": 0,
+                            "Location": null,
+                            "Name": "Times\tRoman",
+                            "Family": "Times",
+                            "FontStyleName": "Roman",
+                            "PostScriptName": "Times-Roman",
+                            "FullName": null,
+                            "FullNameNative": null,
+                            "FontType": null
+                          },
+                          "Images": []
+                        },
+                        {
+                          "Type": "Paragraph",
+                          "Contents": "Daecati venist faccatq uisquiam et volupta quo doloritatur rescidelenis volor aut aut lations edigendam rercien dandendem quiatetur modit quibus que autem ipieturerrum re consequ asperum sit expedit venditat inciis velesti dolor simi, ommolupta doluptiis volorpo ribusandis nis mi,",
+                          "FontStyle": "Roman",
+                          "Index": 312,
+                          "AppliedParagraphStyle": {
+                            "Type": "ParagraphStyle",
+                            "Id": 53,
+                            "Index": 1,
+                            "Name": "[Kein Absatzformat]",
+                            "Label": "",
+                            "AppliedFontFullName": "Die angeforderte Skripteigenschaft ist nicht für die Schriftart verfügbar."
+                          },
+                          "AppliedCharacterStyle": {
+                            "Type": "CharacterStyle",
+                            "Id": 54,
+                            "Name": "[Ohne]",
+                            "Label": "",
+                            "Index": 1,
+                            "AppliedFont": "",
+                            "FontStyle": 1851876449,
+                            "Position": 1851876449
+                          },
+                          "AppliedFont": {
+                            "Type": "Font",
+                            "Index": 0,
+                            "Location": null,
+                            "Name": "Times\tRoman",
+                            "Family": "Times",
+                            "FontStyleName": "Roman",
+                            "PostScriptName": "Times-Roman",
+                            "FullName": null,
+                            "FullNameNative": null,
+                            "FontType": null
+                          },
+                          "Images": []
+                        }
+                      ]
+                    },
+                    {
+                      "Type": "TextFrame",
+                      "Id": 3911,
+                      "Name": "",
+                      "Label": "",
+                      "Index": 3,
+                      "Visible": true,
+                      "ItemLayer": 107,
+                      "GeometricBounds": [
+                        2.58,
+                        0.21000000000000008,
+                        3.1200000000000014,
+                        8.25
+                      ],
+                      "Paragraphs": [
+                        {
+                          "Type": "Paragraph",
+                          "Contents": "This is a huge headline",
+                          "FontStyle": "Black",
+                          "Index": 1,
+                          "AppliedParagraphStyle": {
+                            "Type": "ParagraphStyle",
+                            "Id": 53,
+                            "Index": 1,
+                            "Name": "[Kein Absatzformat]",
+                            "Label": "",
+                            "AppliedFontFullName": "Die angeforderte Skripteigenschaft ist nicht für die Schriftart verfügbar."
+                          },
+                          "AppliedCharacterStyle": {
+                            "Type": "CharacterStyle",
+                            "Id": 54,
+                            "Name": "[Ohne]",
+                            "Label": "",
+                            "Index": 1,
+                            "AppliedFont": "",
+                            "FontStyle": 1851876449,
+                            "Position": 1851876449
+                          },
+                          "AppliedFont": {
+                            "Type": "Font",
+                            "Index": 5,
+                            "Location": null,
+                            "Name": "Arial\tBlack",
+                            "Family": "Arial",
+                            "FontStyleName": "Black",
+                            "PostScriptName": "Arial-Black",
+                            "FullName": null,
+                            "FullNameNative": null,
+                            "FontType": null
+                          },
+                          "Images": []
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }

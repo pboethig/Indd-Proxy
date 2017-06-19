@@ -31,7 +31,15 @@ namespace Indd.Service.Commands.Document {
                     {
                         this.document = _document;
 
-                        this.document.Save(this.documentPath, false, "autosave copy", true);
+                        try
+                        {
+                            this.document.Save(this.documentPath, false, "autosave copy", true);
+                        }
+                        catch
+                        {
+
+                        }
+                        
 
                         this.document.Close();
                     }

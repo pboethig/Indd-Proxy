@@ -60,7 +60,7 @@ namespace Indd.Service.Commands.Document {
             }
             catch (System.Exception ex)
             {
-                throw new SystemException("Document.Export to JPG failed: " + ex.Message);
+                throw new SystemException("Document.Export to JPG failed: " + ex.Message + "\nExportFilePath:" + this.exportFilePath);
             }
 
             return true;

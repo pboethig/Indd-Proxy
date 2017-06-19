@@ -10,3 +10,12 @@ C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\RabbitMQConsumer
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\RabbitMQConsumerService\obj\Debug\RabbitMQConsumerService.csproj.GenerateResource.Cache
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\RabbitMQConsumerService\obj\Debug\RabbitMQConsumerService.exe
 C:\Users\win10\Documents\Visual Studio 2017\Projects\Indd-Proxy\RabbitMQConsumerService\obj\Debug\RabbitMQConsumerService.pdb
+C:\Users\pboet\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\RabbitMQConsumerService.exe.config
+C:\Users\pboet\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\RabbitMQConsumerService.exe
+C:\Users\pboet\Documents\Visual Studio 2017\Projects\Indd-Proxy\bin\Debug\RabbitMQConsumerService.pdb
+C:\Users\pboet\Documents\Visual Studio 2017\Projects\Indd-Proxy\RabbitMQConsumerService\obj\Debug\RabbitMQConsumerService.csprojResolveAssemblyReference.cache
+C:\Users\pboet\Documents\Visual Studio 2017\Projects\Indd-Proxy\RabbitMQConsumerService\obj\Debug\RabbitMQConsumerService.RabbitMQConsumerService.resources
+C:\Users\pboet\Documents\Visual Studio 2017\Projects\Indd-Proxy\RabbitMQConsumerService\obj\Debug\RabbitMQConsumerService.ProjectInstaller.resources
+C:\Users\pboet\Documents\Visual Studio 2017\Projects\Indd-Proxy\RabbitMQConsumerService\obj\Debug\RabbitMQConsumerService.csproj.GenerateResource.Cache
+C:\Users\pboet\Documents\Visual Studio 2017\Projects\Indd-Proxy\RabbitMQConsumerService\obj\Debug\RabbitMQConsumerService.exe
+C:\Users\pboet\Documents\Visual Studio 2017\Projects\Indd-Proxy\RabbitMQConsumerService\obj\Debug\RabbitMQConsumerService.pdb

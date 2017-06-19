@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Indd-proyx.exe" size="125920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Indd-proyx.exe" size="131040">
       <assemblyIdentity name="Indd-proyx" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8AiPfdPpiD6ZPNIhmAuJgF62mrWNpXEI+fjrn8Mu7hA=</dsig:DigestValue>
+        <dsig:DigestValue>HJoBrCinpH44fxwIxfr7YcUqfqmdQGKge7oP4egV3ns=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -101,13 +101,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Indd-proyx.exe.config" size="1056">
+  <file name="Indd-proyx.exe.config" size="1036">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GTgbkIL9ZEoaU2SgbJNnuNiKcPvzpn6IYMlFao+3IL8=</dsig:DigestValue>
+      <dsig:DigestValue>27EdEvDuIVuF7I1VNQ5shZlCUzQcqDCqTsrmCJ+OFXc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Tests\Functional\Fixures\assets\5e513f64-2dee-4e21-9871-53af41d6bf7b.jpg" size="197014">

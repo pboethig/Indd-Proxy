@@ -96,6 +96,7 @@
     <Compile Include="Service\Abstract.cs" />
     <Compile Include="Service\Commands\Abstract.cs" />
     <Compile Include="Service\Commands\BookContents\Add.cs" />
+    <Compile Include="Service\Commands\Book\ExportJPG.cs" />
     <Compile Include="Service\Commands\Book\ExportJSON.cs" />
     <Compile Include="Service\Commands\Book\ExportPDF.cs" />
     <Compile Include="Service\Commands\Book\Open.cs" />
@@ -148,6 +149,7 @@
     <Compile Include="Tests\Functional\Log\SyslogTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\BookContents\AddTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Book\ExportJSONTest.cs" />
+    <Compile Include="Tests\Functional\Service\Commands\Book\ExportJPG.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportJPGSinglePageTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportJPGTest.cs" />
     <Compile Include="Tests\Functional\Service\Commands\Document\ExportXMLTest.cs" />
@@ -199,8 +201,11 @@
     <None Include="Tests\Functional\Fixures\assets\TC9990701-PREVIEW.pdf" />
     <None Include="Tests\Functional\Fixures\jobQueue\bak\Book.Contents.Add.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\bak\Book.ExportJSON.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\bak\Book.ExportJPG.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\bak\Book.ExportPDF.json" />
-    <None Include="Tests\Functional\Fixures\jobQueue\bak\Book.Open.json" />
+    <None Include="Tests\Functional\Fixures\jobQueue\bak\Book.Open.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Tests\Functional\Fixures\jobQueue\bak\Document.CreateCopy.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\bak\Document.ExportHTMLFX.json" />
     <None Include="Tests\Functional\Fixures\jobQueue\bak\Document.ExportIDML.json" />
@@ -259,17 +264,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="InDesignServer">
-      <Guid>{92BE3467-0FEE-4FAD-8E98-D6DF8730A096}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
@@ -305,6 +299,17 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="InDesignServer">
+      <Guid>{92BE3467-0FEE-4FAD-8E98-D6DF8730A096}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
