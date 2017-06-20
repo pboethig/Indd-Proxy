@@ -59,5 +59,21 @@
         {
             Assert.Throws<System.Exception>(() => ConfigManager.getStoragePath("asenselesspath"));
         }
+
+        [Test]
+        public void StorageManager_getLocalIPAddress()
+        {
+            string ip = ConfigManager.getLocalIPAddress();
+
+            Assert.IsNotEmpty(ip);
+        }
+
+        [Test]
+        public void StorageManager_WriteNetworkInfos()
+        {
+            dynamic networkInfos = ConfigManager.writeNetworkInfosToSharedConfigFolder();
+
+            Assert.IsNotEmpty(networkInfos.InDesignServerIPAddress);
+        }
     }
 }

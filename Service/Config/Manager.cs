@@ -110,5 +110,40 @@ namespace Indd.Service.Config
 
             return path.Replace("\\bin\\Debug", "");
         }
+
+        /// <summary>
+        /// Returns local IP
+        /// </summary>
+        /// <returns>string</returns>    
+        public static string getLocalIPAddress()
+        {
+            var host = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName());
+
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                {
+                    return ip.ToString();
+                }
+            }
+
+            throw new System.Exception("no local IP found");
+        }
+
+        /// <summary>
+        /// Writes local NetworkInfos to shared storage.
+        /// </summary>
+        public static dynamic writeNetworkInfosToSharedConfigFolder()
+        {
+            dynamic networkInfos = new { InDesignServerIPAddress=getLocalIPAddress()};
+
+            string JSONString = Indd.Helper.Json.Convert.toJson(networkInfos);
+
+            string sharePath = getStoragePath("config");
+
+            System.IO.File.WriteAllText(sharePath+"\\networkInfos.json", JSONString);
+
+            return networkInfos;
+        }
     }
 }

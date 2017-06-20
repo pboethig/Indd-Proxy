@@ -59,13 +59,16 @@ namespace RabbitMQConsumerService
         {
             try
             {
-                Syslog.log("RabbitMQ-Cosumer started. ", System.Diagnostics.EventLogEntryType.SuccessAudit);
+                ///create networkservice infos as json on share\\config
+                Indd.Service.Config.Manager.writeNetworkInfosToSharedConfigFolder();
 
+                Syslog.log("RabbitMQ-Cosumer started. ", System.Diagnostics.EventLogEntryType.SuccessAudit);
+                
                 Consumer consumer = new Consumer();
             }
             catch (System.Exception ex)
             {
-                Syslog.log("RabbitMQ-Consumer faied with:" + ex.Message);
+                Syslog.log("RabbitMQ-Consumer failed with:" + ex.Message);
             }
         }
         

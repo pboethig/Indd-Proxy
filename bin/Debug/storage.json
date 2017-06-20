@@ -1,6 +1,7 @@
 ﻿{
   "paths": {
     "root": "C:\\Users\\pboet\\Documents\\Visual Studio 2017\\Projects\\Indd-Proxy",
-    "templates": "$root\\Tests\\Functional\\Fixures\\templates"
+    "templates": "$root\\Tests\\Functional\\Fixures\\templates",
+    "config": "\\\\vmware-host\\Shared Folders\\shared_storage\\config"
   }
 }
